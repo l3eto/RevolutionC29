@@ -1,0 +1,14 @@
+.pusher{
+  min-height: 100%;
+  background-color: #fafafa;
+}
+
+.ui.masthead{
+  width: 100%;
+  background-color: #1b1c1d;
+  border: 0 solid black;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
