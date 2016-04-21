@@ -12,3 +12,20 @@
 .masthead .ui.menu .ui.button {
     margin-left: 0.5em;
 }
+
+.ui.text.container{
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.item.i1{
+  width: 50%;
+}
+
+.item.i2{
+  width: 25%;
+}
+
+.ui.song-container{
+  margin: 2.5em;
+}
