@@ -29,3 +29,14 @@
 .ui.song-container{
   margin: 2.5em;
 }
+
+.icon.logo.c29 {
+  background-image: url('../images/logo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: 1.5em;
+  display: inline-block;
+  vertical-align: bottom;;
+  margin: -.3em 0;
+  /*padding: 0em 1.14285714em;*/
+}

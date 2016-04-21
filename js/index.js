@@ -37,8 +37,8 @@ Songs.prototype.addSongs = function () {
 };
 
 Songs.prototype.setActualSong = function () {
-  var tab = $('#' + $('.item.i1.active').html() ).find( $('.item.i2.active') ).attr("data-tab");
-  this._audios._actual = this._audios[tab]
+  if( this._audios._actual ) this._audios._actual.pause();
+  this._audios._actual = this._audios[ $('#' + $('.item.i1.active').html() ).find( $('.item.i2.active') ).attr("data-tab") ];
 };
 
 Songs.prototype.loaded = function () {
@@ -55,7 +55,7 @@ Songs.prototype.play = function(){
 
 Songs.prototype.pause = function(){
   this.setActualSong();
-  if(this._audios._actual.duration > 0 && !this._audios._actual.paused) this._audios._actual.pause();
+  if( this._audios._actual.duration > 0 && !this._audios._actual.paused ) this._audios._actual.pause();
 }
 
 Songs.prototype.stop = function(){
