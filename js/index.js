@@ -1,4 +1,14 @@
 $( document ).ready(function() {
+    if( localStorage.getItem("mode") ){
+      $( '#' + $('.item.i1.active').html() ).removeClass('active');
+      $( '[data-tab="' + $('.item.i1.active').html() + '"]').removeClass('active');
+      $( '#' + localStorage.getItem("mode") ).addClass('active');
+      $( '[data-tab="' + localStorage.getItem("mode") + '"]').addClass('active');
+    }
+    if( localStorage.getItem("song") ){
+      $( '#' + $('.item.i1.active').html() ).find( '[data-tab="song-1"]' ).removeClass('active');
+      $( '#' + $('.item.i1.active').html() ).find( '[data-tab="'+localStorage.getItem("song")+'"]' ).addClass('active');
+    }
     $('.menu.m1 .item.i1').tab();
     $('.menu.m2 .item.i2').tab();
 });
@@ -14,6 +24,11 @@ var songsNames = [
 window.onload = function(){
   songs = new Songs( songsNames );
 }
+
+window.onbeforeunload = function() {
+  localStorage.setItem( "mode" , $('.item.i1.active').html() );
+  localStorage.setItem( "song" , $('#' + $('.item.i1.active').html() ).find( $('.item.i2.active') ).attr("data-tab") );
+};
 
 var Songs = function( songs ){
   this._songs = songs;
