@@ -55,13 +55,13 @@ Songs.prototype.play = function(){
 
 Songs.prototype.pause = function(){
   this.setActualSong();
-  if(this._audios._actual.duration > 0 && !this._audios._actual.paused) {
-    this._audios._actual.currentTime = 0;
-    this._audios._actual.pause();
-  }
+  if(this._audios._actual.duration > 0 && !this._audios._actual.paused) this._audios._actual.pause();
 }
 
 Songs.prototype.stop = function(){
   this.setActualSong();
-  if(this._audios._actual.duration > 0 && !this._audios._actual.paused) this._audios._actual.pause();
+  if(this._audios._actual.duration > 0 && !this._audios._actual.paused) {
+    this._audios._actual.currentTime = 0;
+    this._audios._actual.pause();
+  }
 }
