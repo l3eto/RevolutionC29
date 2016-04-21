@@ -38,7 +38,8 @@
   display: inline-block;
   vertical-align: bottom;;
   margin: -.3em 0;
-  /*padding: 0em 1.14285714em;*/
+  width: 60px;
+  height: 60px;
 }
 
 .ui.menu.item.chords {
@@ -61,4 +62,21 @@
 
 .ui.divider {
     margin: 0rem 0;
+}
+
+#facebook-link.facebook.activeicon{
+  cursor:pointer;
+  color:#3b5998;
+}
+.google.activeicon{
+  cursor:pointer;
+  color:#DB4437;
+}
+.android.activeicon{
+  cursor:pointer;
+  color:#77C159;
+}
+#instagram-link.instagram.activeicon{
+  cursor:pointer;
+  color:#125688;
 }
