@@ -44,21 +44,29 @@
       <div class="ui text container">
 
         <!-- CHOOSE LETTER OR CHORDS -->
-        <div class="ui two item stackable tabs menu m1">
+        <div class="ui fluid two item tabs menu m1">
           <a class="item i1 active" data-tab="letter">Letras</a>
           <a class="item i1" data-tab="chords">Acordes</a>
         </div>
 
         <!-- CHOOSE LETTER -->
-        <div class="ui tab center aligned segment active" data-tab="letter">
-          <div class="ui large secondary pointing menu m2">
+        <div class="ui tab active" data-tab="letter">
+          <div class="ui four item menu m2"  id="Letras">
             <a class="item i2 active" data-tab="song-1">Experiencia de Adorar</a>
-            <a class="item i2" data-tab="song-2">Gracia Sublime</a>
+            <a class="item i2" data-tab="song-2">Gracia Sublime Es</a>
             <a class="item i2" data-tab="song-3">En Tu Nombre</a>
             <a class="item i2" data-tab="song-4">Vives en mi</a>
           </div>
-          <div class="ui tab active" data-tab="song-1">
-            <div class="ui left aligned song-container">
+
+          <!-- PLAY SONGS -->
+          <div class="ui fluid three item menu">
+            <a class="item play song disabled"><i class="icon play"></i></a>
+            <a class="item pause song disabled"><i class="icon pause"></i></a>
+            <a class="item stop song disabled"><i class="icon stop"></i></a>
+          </div>
+
+          <div class="ui tab center aligned segment active" data-tab="song-1">
+            <div class="ui song-container">
               <p>Es mejor un día en tu presencia</p>
               <p>Que mil años fuera de ella</p>
               <p>Pues nada se compara a ella</p>
@@ -82,13 +90,37 @@
               <p>Quiero adorar hasta que no tenga fuerzas///</p>
             </div>
           </div>
-          <div class="ui tab" data-tab="song-2">
-            <div class="ui left aligned song-container">
-
+          <div class="ui tab center aligned segment" data-tab="song-2">
+            <div class="ui center aligned song-container">
+              <p>Quién rompe el poder del pecado</p>
+              <p>Su amor es fuerte y poderoso</p>
+              <p>El Rey de gloria, El Rey de majestad</p>
+              <p>Conmueve el mundo con su estruendo</p>
+              <p>Y nos asombra con maravillas</p>
+              <p>El Rey de gloria, El Rey de majestad</p>
+              <br>
+              <p>Gracia sublime es</p>
+              <p>Perfecto es tu amor</p>
+              <p>Tomaste mi lugar</p>
+              <p>Cargaste tu mi cruz</p>
+              <p>Tu vida diste ahí</p>
+              <p>Y ahora libre soy</p>
+              <p>Jesús te adoro</p>
+              <p>por lo que hiciste en mi</p>
+              <br>
+              <p>Pusiste en orden todo el caos</p>
+              <p>Nos adoptaste como tus hijos</p>
+              <p>El Rey de gloria, El Rey de majestad</p>
+              <p>El que gobierna con su justicia</p>
+              <p>Y resplandece con su belleza</p>
+              <p>El Rey de gloria, El Rey de majestad</p>
+              <br>
+              <p>Digno es el Cordero de Dios</p>
+              <p>Digno es el Rey que la muerte venció</p>
             </div>
           </div>
-          <div class="ui tab" data-tab="song-3">
-            <div class="ui left aligned song-container">
+          <div class="ui tab center aligned segment" data-tab="song-3">
+            <div class="ui center aligned song-container">
               <p>En tu nombre hoy venimos</p>
               <p>Estamos tan agradecidos</p>
               <p>Y por eso levantamos la voz y el corazón a ti</p>
@@ -111,8 +143,8 @@
               <p>Tu grandeza y tu bondad//</p>
             </div>
           </div>
-          <div class="ui tab" data-tab="song-4">
-            <div class="ui left aligned song-container">
+          <div class="ui tab center aligned segment" data-tab="song-4">
+            <div class="ui center aligned song-container">
               <p>Al despertar te cantaré,</p>
               <p>mis ojos en ti fijaré,</p>
               <p>al ritmo de tu corazón</p>
@@ -133,7 +165,7 @@
               <p>soy tuyo para siempre.</p>
               <p>Vives en mí, vives en mí,</p>
               <p>soy tuyo para siempre.</p>
-
+              <br>
               <p>Tu fuego en mi interior</p>
               <p>ardiendo está.</p>
               <p>Salvaje amor que brillará,</p>
@@ -168,13 +200,21 @@
           </div>
         </div>
         <!-- CHOOSE CHORDS -->
-        <div class="ui tab segment" data-tab="chords">
-          <div class="ui large secondary pointing menu m2">
+        <div class="ui tab" data-tab="chords">
+          <div class="ui four item menu m2"  id="Acordes">
             <a class="item i2 active" data-tab="song-1">Experiencia de Adorar</a>
-            <a class="item i2" data-tab="song-2">Gracia Sublime</a>
+            <a class="item i2" data-tab="song-2">Gracia Sublime Es</a>
             <a class="item i2" data-tab="song-3">En tu Nombre</a>
             <a class="item i2" data-tab="song-4">Vives en mi</a>
           </div>
+
+          <!-- PLAY SONGS -->
+          <div class="ui fluid three item menu">
+            <a class="item play song disabled"><i class="icon play"></i></a>
+            <a class="item pause song disabled"><i class="icon pause"></i></a>
+            <a class="item stop song disabled"><i class="icon stop"></i></a>
+          </div>
+
           <div class="ui tab active" data-tab="song-1">
             <div class="ui left aligned song-container">
               <p>Es mejor un día en tu presencia</p>
@@ -200,12 +240,12 @@
               <p>Quiero adorar hasta que no tenga fuerzas///</p>
             </div>
           </div>
-          <div class="ui tab" data-tab="song-2">
+          <div class="ui tab segment" data-tab="song-2">
             <div class="ui left aligned song-container">
 
             </div>
           </div>
-          <div class="ui tab" data-tab="song-3">
+          <div class="ui tab segment" data-tab="song-3">
             <div class="ui left aligned song-container">
               <p>En tu nombre hoy venimos</p>
               <p>Estamos tan agradecidos</p>
@@ -229,7 +269,7 @@
               <p>Tu grandeza y tu bondad//</p>
             </div>
           </div>
-          <div class="ui tab" data-tab="song-4">
+          <div class="ui tab segment" data-tab="song-4">
             <div class="ui left aligned song-container">
               <p>Al despertar te cantaré,</p>
               <p>mis ojos en ti fijaré,</p>
@@ -251,7 +291,7 @@
               <p>soy tuyo para siempre.</p>
               <p>Vives en mí, vives en mí,</p>
               <p>soy tuyo para siempre.</p>
-
+              <br>
               <p>Tu fuego en mi interior</p>
               <p>ardiendo está.</p>
               <p>Salvaje amor que brillará,</p>
