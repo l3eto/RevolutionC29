@@ -120,6 +120,11 @@
   box-shadow: none;
 }
 
+.ui.list .list>.item:last-child, .ui.list>.item:last-child, ol.ui.list li:last-child, ul.ui.list li:last-child {
+  /*margin-left: 30px;
+  margin-bottom: 10px;*/
+}
+
 .ui.grid>.column:not(.row) {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -197,10 +202,10 @@ ui.grid.sixteen>.column:not(.row) {
 h3.ui.header {
     font-size: 1rem;
 }
-/
+
 .chord {
-  background: #f3f4f5;
-  color: #1B1C1D;
+  background: #D7D8D8;
+  color: #222;
   padding: 0rem;
   box-shadow: none;
   border: 1px solid #d4d4d5;

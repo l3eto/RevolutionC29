@@ -23,31 +23,13 @@ var songsNames = [
   }
 ];
 
-var number = {
-  '1':'one',
-  '2':'two',
-  '3':'three',
-  '4':'four',
-  '5':'five',
-  '6':'six'
-}
-
-var controls = [
-  {'a':'item backward song disabled','i':'icon step backward'},
-  {'a':'item play song disabled','i':'icon play'},
-  {'a':'item stop song disabled','i':'icon stop'},
-  {'a':'item forward song disabled','i':'icon step forward'}
-]
-
-
-
 
 
 $( document ).ready(function() {
   //create elements
   beru = new Elements();
 
-  //mode container
+  //mode container Letras
   beru.getById('Letras');
   beru.save();
   beru.new('div');
@@ -58,6 +40,7 @@ $( document ).ready(function() {
   for( i in songsNames ){
     beru.new('a');
     beru.add('class','item i2');
+    if( i == '0' ) beru.add('class','item i2 active');
     beru.add('data-tab','song-' + (parseInt(i)+1).toString() );
     beru.add( songsNames[i].song );
     beru.addToSave();
@@ -88,8 +71,10 @@ $( document ).ready(function() {
   for( i in songsNames ){
     var dataSong = getData( songsNames[i].autor , songsNames[i].song );
     if( dataSong ){
+      //ADD LYRICS
       beru.new('div');
       beru.add('class','ui tab center aligned segment');
+      if( i == '0' ) beru.add('class','ui tab center aligned active segment');
       beru.add('data-tab','song-'+ (parseInt(i)+1).toString() );
       beru.addToSave();
       beru.save();
@@ -98,16 +83,18 @@ $( document ).ready(function() {
       beru.addToSave();
       beru.save();
       for( j in dataSong.order ){
-        if( dataSong.lyrics[ dataSong.order[j] ] ){
-          for( k in dataSong.lyrics[ dataSong.order[j] ] ){
-            for( var l in dataSong.lyrics[ dataSong.order[j] ][k] ) {
-              beru.new( l );
-              beru.add( dataSong.lyrics[ dataSong.order[j] ][k][l] );
-              beru.addToSave();
+        if( dataSong.lyrics ){
+          if( dataSong.lyrics[ dataSong.order[j] ] ){
+            for( k in dataSong.lyrics[ dataSong.order[j] ] ){
+              for( var l in dataSong.lyrics[ dataSong.order[j] ][k] ) {
+                beru.new( l );
+                beru.add( dataSong.lyrics[ dataSong.order[j] ][k][l] );
+                beru.addToSave();
+              }
             }
+            beru.new('br');
+            beru.addToSave();
           }
-          beru.new('br');
-          beru.addToSave();
         }
       }
       beru.restore();
@@ -115,8 +102,175 @@ $( document ).ready(function() {
     }
   }
 
+
+
+
+  //mode container Chords
+  beru.getById('Acordes');
+  beru.save();
+  beru.new('div');
+  beru.add('class','ui '+ number[ songsNames.length ]+' item menu m2');
+  beru.addToSave();
+  beru.save();
+  //add songs
+  for( i in songsNames ){
+    beru.new('a');
+    beru.add('class','item i2');
+    if( i == '0' ) beru.add('class','item i2 active');
+    beru.add('data-tab','song-' + (parseInt(i)+1).toString() );
+    beru.add( songsNames[i].song );
+    beru.addToSave();
+  }
+
+  //control container
+  beru.getById('Acordes');
+  beru.save();
+  beru.new('div');
+  beru.add('class','ui fluid '+ number[ controls.length ] +' item menu');
+  beru.addToSave();
+  beru.save();
+  //add controls
+  for( i in controls ){
+    beru.new('a');
+    beru.add('class', controls[i].a );
+    beru.addToSave();
+    beru.save();
+    beru.new('i');
+    beru.add('class', controls[i].i );
+    beru.addToSave();
+    beru.restore();
+  }
+
+  //songs container
+  beru.getById('Acordes');
+  beru.save();
+  for( i in songsNames ){
+    var dataSong = getData( songsNames[i].autor , songsNames[i].song );
+    if( dataSong ){
+      if( dataSong.chords ){
+        console.log(dataSong);
+        //ADD chords
+        beru.new('div');
+        beru.add('class','ui tab center aligned segment');
+        if( i == '0' ) beru.add('class','ui tab center aligned active segment');
+        beru.add('data-tab','song-'+ (parseInt(i)+1).toString() );
+        beru.addToSave();
+        beru.save();
+        beru.new('div');
+        beru.add('class', 'ui song-container');
+        beru.addToSave();
+        beru.save();
+        for( j in dataSong.order ){
+            if( dataSong.chords[ dataSong.order[j] ] ){
+
+              beru.new('div');
+              beru.add('class','sixteen wide column');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','ui divided list');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','item');
+              beru.addToSave();
+
+              beru.new('div');
+              beru.add('class','item');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('i');
+              beru.add('class','music icon');
+              beru.addToSave();
+
+              beru.new('div');
+              beru.add('class','content');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','header');
+              beru.add( part[ dataSong.order[j] ] );
+              beru.addToSave();
+
+              beru.restore();
+              beru.restore();
+              beru.restore();
+
+              beru.new('div');
+              beru.add('class','row chords');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','ui grid');
+              beru.addToSave();
+              beru.save();
+
+              for( k in dataSong.chords[ dataSong.order[j] ] ){
+                for( var l in dataSong.chords[ dataSong.order[j] ][k] ) {
+                  beru.new('div');
+                  beru.add('class', number[l] +' wide column' );
+                  beru.addToSave();
+                  beru.save();
+
+                  beru.new('div');
+                  beru.add('class','chord');
+                  beru.add( dataSong.chords[ dataSong.order[j] ][k][l] );
+                  beru.addToSave();
+                  beru.restore();
+                }
+              }
+
+              beru.restore();
+              beru.restore();
+
+              beru.new('div');
+              beru.add('class','row letters');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','ui one column grid');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','column');
+              beru.addToSave();
+              beru.save();
+
+              beru.new('div');
+              beru.add('class','letter');
+              if( dataSong.lyrics[ dataSong.order[j] ] ) beru.add( getStringData( dataSong.lyrics[ dataSong.order[j] ] ) );
+              beru.addToSave();
+              beru.restore();
+              beru.restore();
+              beru.restore();
+              beru.restore();
+          }
+        }
+        beru.restore();
+        beru.restore();
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
   //load songs
   songs = new Songs( songsNames );
+
 
   if( localStorage.getItem("mode") ){
     $( '#' + $('.item.i1.active').html() ).removeClass('active');

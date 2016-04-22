@@ -16,34 +16,74 @@ var data = [
         'bridge',
         'bridge',
         'chorus-1',
-        'chorus-2'
+        'chorus-2',
+        'intro'
       ],
       'lyrics':{
         'verse-1':[
-          {'p':'Es mejor un día en tu presencia'},
-          {'p':'Que mil años fuera de ella'},
-          {'p':'Pues nada se compara a ella'}
+          {'p':'Es mejor un día en tu presencia,'},
+          {'p':'que mil años fuera de ella,'},
+          {'p':'pues nada se compara a ella'}
         ],
         'verse-2':[
-          {'p':'Es mejor un rincón en tu casa'},
-          {'p':'Que tener el mejor palacio'},
-          {'p':'Mejor estar en tu regazo'}
+          {'p':'Es mejor un rincón en tu casa,'},
+          {'p':'que tener el mejor palacio,'},
+          {'p':'mejor estar en tu regazo'}
         ],
         'chorus-1':[
           {'p':'Y adorar, desde hoy hasta la eternidad'},
-          {'p':'Y en tu presencia descansar'},
-          {'p':'Pues no hay mejor lugar que estar donde tú estás'}
+          {'p':'y en tu presencia descansar,'},
+          {'p':'pues no hay mejor lugar que estar donde tú estás'}
         ],
         'chorus-2':[
-          {'p':'Y habitar, bajo tus alas contemplar'},
-          {'p':'Tú gran poder y tu bondad'},
-          {'p':'Y disfrutar de la experiencia de adorarte Jesús'}
+          {'p':'Y habitar, bajo tus alas contemplar,'},
+          {'p':'tú gran poder y tu bondad'},
+          {'p':'y disfrutar de la experiencia de adorarte Jesús'}
         ],
         'bridge':[
-          {'p':'Quiero vivir en tu presencia'},
-          {'p':'Quiero adorar hasta que no tenga fuerzas'}
+          {'p':'Quiero vivir en tu presencia,'},
+          {'p':'quiero adorar hasta que no tenga fuerzas'}
+        ]
+      },
+      'chords':{
+        'intro':[
+          {'4':'C'},
+          {'4':'G'},
+          {'4':'Am'},
+          {'4':'F'}
+        ],
+        'verse-1':[
+          {'4':'C'},
+          {'4':'Em'},
+          {'4':'Am'},
+          {'4':'F'}
+        ],
+        'verse-2':[
+          {'4':'C'},
+          {'4':'Em'},
+          {'4':'Am'},
+          {'4':'F'}
+        ],
+        'chorus-1':[
+          {'4':'C'},
+          {'4':'G'},
+          {'4':'Am'},
+          {'4':'F'}
+        ],
+        'chorus-2':[
+          {'4':'C'},
+          {'4':'G'},
+          {'4':'Am'},
+          {'4':'F'}
+        ],
+        'bridge':[
+          {'4':'Dm'},
+          {'4':'C'},
+          {'4':'G'},
+          {'4':'F'}
         ]
       }
+
     }
     ,
     {
@@ -69,44 +109,106 @@ var data = [
       ],
       'lyrics':{
         'verse-1':[
-          {'p':'Quién rompe el poder del pecado'},
-          {'p':'Su amor es fuerte y poderoso'},
-          {'p':'El Rey de gloria, El Rey de majestad'}
+          {'p':'Quién rompe el poder del pecado,'},
+          {'p':'su amor es fuerte y poderoso,'},
+          {'p':'el Rey de gloria, el Rey de majestad'}
         ],
         'verse-2':[
           {'p':'Conmueve el mundo con su estruendo'},
-          {'p':'Y nos asombra con maravillas'},
-          {'p':'El Rey de gloria, El Rey de majestad'}
+          {'p':'y nos asombra con maravillas,'},
+          {'p':'el Rey de gloria, el Rey de majestad'}
         ],
         'verse-3':[
-          {'p':'Pusiste en orden todo el caos'},
-          {'p':'Nos adoptaste como tus hijos'},
-          {'p':'El Rey de gloria, El Rey de majestad'}
+          {'p':'Pusiste en orden todo el caos,'},
+          {'p':'nos adoptaste como tus hijos,'},
+          {'p':'el Rey de gloria, el Rey de majestad'}
         ],
         'verse-4':[
           {'p':'El que gobierna con su justicia'},
-          {'p':'Y resplandece con su belleza'},
-          {'p':'El Rey de gloria, El Rey de majestad'}
+          {'p':'y resplandece con su belleza,'},
+          {'p':'el Rey de gloria, el Rey de majestad'}
         ],
         'chorus-1':[
-          {'p':'Gracia sublime es'},
-          {'p':'Perfecto es tu amor'},
-          {'p':'Tomaste mi lugar'},
-          {'p':'Cargaste tu mi cruz'}
+          {'p':'Gracia sublime es,'},
+          {'p':'perfecto es tu amor,'},
+          {'p':'tomaste mi lugar,'},
+          {'p':'cargaste tu mi cruz'}
         ],
         'chorus-2':[
           {'p':'Tu vida diste ahí'},
-          {'p':'Y ahora libre soy'},
+          {'p':'y ahora libre soy,'},
           {'p':'Jesús te adoro'},
           {'p':'por lo que hiciste en mi'}
         ],
         'bridge-1':[
-          {'p':'Digno es el Cordero de Dios'},
-          {'p':'Digno es el Rey que la muerte venció'}
+          {'p':'Digno es el Cordero de Dios,'},
+          {'p':'digno es el Rey que la muerte venció'}
         ],
         'bridge-2':[
-          {'p':'Digno es el Cordero de Dios'},
-          {'p':'Digno, Digno, Digno'}
+          {'p':'Digno es el Cordero de Dios,'},
+          {'p':'digno, digno, digno'}
+        ],
+      },
+      'chords':{
+        'intro':[
+          {'4':'A'},
+          {'4':'Asus'},
+          {'4':'D'},
+          {'4':'Dsus'}
+        ],
+      'verse-1':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'2':'E'},
+          {'2':'D'}
+        ],
+        'verse-2':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'2':'E'},
+          {'2':'D'}
+        ],
+        'verse-3':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'2':'E'},
+          {'2':'D'}
+        ],
+        'verse-4':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'2':'E'},
+          {'2':'D'}
+        ],
+        'chorus-1':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'4':'E'}
+        ],
+        'chorus-2':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'E'},
+          {'4':'D'}
+        ],
+        'bridge-1':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'2':'E'},
+          {'2':'D'}
+        ],
+        'bridge-2':[
+          {'4':'A'},
+          {'4':'D'},
+          {'4':'F#m'},
+          {'2':'E'},
+          {'2':'D'}
         ]
       }
     }
@@ -132,29 +234,72 @@ var data = [
       ],
       'lyrics':{
         'verse-1':[
-          {'p':'En tu nombre hoy venimos'},
-          {'p':'Estamos tan agradecidos'},
-          {'p':'Y por eso levantamos la voz y el corazón a ti'}
+          {'p':'En tu nombre hoy venimos,'},
+          {'p':'estamos tan agradecidos'},
+          {'p':'y por eso levantamos la voz y el corazón a ti'}
         ],
         'verse-2':[
-          {'p':'La alabanza te entregamos'},
-          {'p':'Nuestro corazón postramos'},
-          {'p':'Porque tú eres el motivo de nuestra adoración'}
+          {'p':'La alabanza te entregamos,'},
+          {'p':'nuestro corazón postramos,'},
+          {'p':'porque tú eres el motivo de nuestra adoración'}
         ],
         'pre-chorus':[
-          {'p':'A nadie daremos tu gloria compartida'},
-          {'p':'Pues es sólo para ti'},
-          {'p':'Pues es sólo para ti'}
+          {'p':'A nadie daremos tu gloria compartida,'},
+          {'p':'pues es sólo para ti,'},
+          {'p':'pues es sólo para ti'}
         ],
         'chorus-1':[
-          {'p':'Levantamos nuestras manos'},
-          {'p':'En tu nombre adoramos'},
-          {'p':'Por quién eres, lo que has hecho y lo que harás'},
+          {'p':'Levantamos nuestras manos,'},
+          {'p':'en tu nombre adoramos,'},
+          {'p':'por quién eres, lo que has hecho y lo que harás'},
         ],
         'chorus-2':[
-          {'p':'Eres rey y nos postramos'},
-          {'p':'Eres Dios y proclamamos'},
-          {'p':'Tu grandeza y tu bondad'},
+          {'p':'Eres rey y nos postramos,'},
+          {'p':'eres Dios y proclamamos,'},
+          {'p':'tu grandeza y tu bondad'},
+        ]
+      },
+      'chords':{
+        'intro':[
+          {'4':'D'},
+          {'4':'A'},
+          {'4':'C'},
+          {'2':'G'},
+          {'2':'A'}
+        ],
+        'verse-1':[
+          {'4':'D'},
+          {'4':'A'},
+          {'4':'C'},
+          {'2':'G'},
+          {'2':'A'}
+        ],
+        'verse-2':[
+          {'4':'D'},
+          {'4':'A'},
+          {'4':'C'},
+          {'2':'G'},
+          {'2':'A'}
+        ],
+        'pre-chorus':[
+          {'4':'Bm'},
+          {'4':'G'},
+          {'4':'D'},
+          {'4':'A'}
+        ],
+        'chorus-1':[
+          {'4':'D'},
+          {'4':'A'},
+          {'4':'Bm'},
+          {'2':'A'},
+          {'2':'G'}
+        ],
+        'chorus-2':[
+          {'4':'D'},
+          {'4':'A'},
+          {'4':'Bm'},
+          {'2':'A'},
+          {'2':'G'}
         ]
       }
     }
@@ -219,12 +364,84 @@ var data = [
           {'p':'Por siempre, por siempre,'},
           {'p':'por siempre, yo sé que...'}
         ]
+      },
+      'chords':{
+        'intro':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ],
+        'verse-1':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ],
+        'verse-2':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ],
+        'pre-chorus':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ],
+        'chorus-1':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ],
+        'bridge-1':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ],
+        'bridge-2':[
+          {'4':'C'},
+          {'4':'D'},
+          {'4':'Bm'},
+          {'4':'Em'}
+        ]
       }
     }
 ];
 
 
 
+var number = {
+  '1':'one',
+  '2':'two',
+  '3':'three',
+  '4':'four',
+  '5':'five',
+  '6':'six'
+}
+
+var part = {
+  'intro':'Intro',
+  'verse-1':'Verso 1',
+  'verse-2':'Verso 2',
+  'verse-3':'Verso 3',
+  'verse-4':'Verso 4',
+  'chorus-1':'Coro',
+  'chorus-2':'Coro',
+  'bridge':'Puente',
+  'bridge-1':'Puente',
+  'bridge-2':'Puente'
+}
+
+var controls = [
+  {'a':'item backward song disabled','i':'icon step backward'},
+  {'a':'item play song disabled','i':'icon play'},
+  {'a':'item stop song disabled','i':'icon stop'},
+  {'a':'item forward song disabled','i':'icon step forward'}
+]
 
 var getData = function( artist , song ){
   for( i in data ){
@@ -233,4 +450,15 @@ var getData = function( artist , song ){
     }
   }
   return null;
+}
+
+var getStringData = function( obj ){
+  var string = ' ';
+  for( i in obj ){
+    for( j in obj[i] ){
+      string += obj[i][j];
+      string += ' ';
+    }
+  }
+  return string;
 }
