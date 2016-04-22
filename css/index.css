@@ -4,13 +4,80 @@
 }
 
 .ui.masthead{
-  width: 100%;
   background-color: #222222;
-  border: 0 solid black;
+  padding: 25px;
+  padding-top: 35px;
+  border-bottom: 2px solid #aaa;
 }
 
-.masthead .ui.menu .ui.button {
-    margin-left: 0.5em;
+.ui.masthead-mobile{
+  background-color: #222222;
+  border-bottom: 3px solid #aaa;
+  color: white;
+}
+
+.ui.grid+.grid {
+    margin-top: 0rem;
+}
+
+.four.wide.column.mobile-container{
+  height: 50px;
+}
+
+.four.wide.column.mobile-container.active{
+  background-color: #CA9696;
+}
+
+.four.wide.column.mobile-container.active .icon.element-mobile{
+  color:black;
+}
+
+.container-logoc29{
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.logoc29{
+  height: 100%;
+  width: 100%;
+}
+
+.icon.element-mobile{
+  margin: 15px auto 0 auto;
+  width: 100%;
+}
+
+.icon.element-mobile:hover{
+  color:#aaa;
+}
+
+.four.wide.column.mobile-container.active .icon.element-mobile:hover{
+  color:black;
+}
+
+.masthead .ui.menu .item{
+  color: white
+}
+.masthead .ui.secondary.pointing.menu .active.item {
+  color: white;
+}
+
+.masthead .ui.secondary.pointing.menu .active.item:hover {
+  color: white;
+}
+
+.ui.secondary.pointing.menu .dropdown.item:hover, .ui.secondary.pointing.menu .link.item:hover, .ui.secondary.pointing.menu a.item:hover {
+  background-color: transparent;
+  color: #aaa;
+}
+
+.ui.secondary.pointing.menu .active.item {
+    border-color: white;
+}
+.ui.secondary.pointing.menu .active.item:hover {
+    border-color: white;
 }
 
 .ui.text.container{
@@ -26,9 +93,15 @@
   width: 25%;
 }
 
-.ui.song-container{
+#Letras .ui.song-container{
   margin: 2.5em;
 }
+
+#Acordes .ui.song-container{
+  margin: 1.25em;
+  padding: 0em;
+}
+
 
 .icon.logo.c29 {
   background-image: url('../images/logo.png');
@@ -50,14 +123,30 @@
 .ui.grid>.column:not(.row) {
     padding-top: 0rem;
     padding-bottom: 0rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+    position: relative;
+    display: inline-block;
+    width: 6.25%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    vertical-align: top;
+}
+
+.ui.horizontal.icon.divider{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .chord{
-  color: #990000;
+  color: #1b1c1d;
 }
 
 .letter{
+  margin-bottom: 1rem;
+  font-size: .8em;
 }
 
 .ui.divider {
@@ -76,7 +165,77 @@
   cursor:pointer;
   color:#77C159;
 }
+
 #instagram-link.instagram.activeicon{
   cursor:pointer;
   color:#125688;
+}
+
+.row.tittle {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #6B1719;
+}
+
+.row.letters {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.row.chords {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ui.grid.sixteen>.column:not(.row) {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3.ui.header {
+    font-size: 1rem;
+}
+/
+.chord {
+  background: #f3f4f5;
+  color: #1B1C1D;
+  padding: 0rem;
+  box-shadow: none;
+  border: 1px solid #d4d4d5;
+  border-radius: .5rem;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.chord:hover {
+  cursor: pointer;
+  background: #D7D8D8;
+  color: #70282A;
+  padding: 0rem;
+  box-shadow: none;
+  border: 1px solid #d4d4d5;
+  border-radius: .5rem;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+
+.ui.list:first-child, ol.ui.list:first-child, ul.ui.list:first-child {
+    margin-top: 1rem;
+    padding-top: 0;
+}
+
+.ui.secondary.inverted.pointing.menu .active.item {
+    border-color: #fff;
+    color: #fff;
+}
+
+.left.item{
+  height: 90px;
 }

@@ -60,9 +60,10 @@ var data = [
         'verse-4',
         'chorus-1',
         'chorus-2',
-        'bridge',
-        'bridge',
-        'bridge',
+        'bridge-1',
+        'bridge-1',
+        'bridge-1',
+        'bridge-2',
         'chorus-1',
         'chorus-2'
       ],
@@ -99,9 +100,13 @@ var data = [
           {'p':'Jesús te adoro'},
           {'p':'por lo que hiciste en mi'}
         ],
-        'bridge':[
+        'bridge-1':[
           {'p':'Digno es el Cordero de Dios'},
           {'p':'Digno es el Rey que la muerte venció'}
+        ],
+        'bridge-2':[
+          {'p':'Digno es el Cordero de Dios'},
+          {'p':'Digno, Digno, Digno'}
         ]
       }
     }
