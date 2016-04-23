@@ -148,7 +148,6 @@ $( document ).ready(function() {
     var dataSong = getData( songsNames[i].autor , songsNames[i].song );
     if( dataSong ){
       if( dataSong.chords ){
-        console.log(dataSong);
         //ADD chords
         beru.new('div');
         beru.add('class','ui tab center aligned segment');
@@ -335,7 +334,8 @@ Songs.prototype.addSongs = function () {
     this._songs[i].tab = 'song-' + (parseInt(i)+1).toString();
     audio.setAttribute('song',this._songs[i].song);
     audio.setAttribute('autor',this._songs[i].autor);
-    audio.addEventListener('canplaythrough', this.addAudio.bind( this, audio , i ), false);
+    this.addAudio( audio, i, null );
+    //audio.addEventListener('canplaythrough', this.addAudio.bind( this, audio , i ), false);
   }
 };
 
