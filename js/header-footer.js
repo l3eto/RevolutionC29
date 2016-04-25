@@ -1,15 +1,15 @@
 $( document ).ready(function() {
 
   $('.mobile-container.home-link').click( function(){
-    window.location.path = ''
+    window.location.href = '../'
   });
 
   $('.mobile-container.worship-link').click( function(){
-    window.location.path = 'worship';
+    window.location.href = '../worship';
   });
 
   $('.mobile-container.events-link').click( function(){
-    window.location.path = 'worship';
+    window.location.href = '../worship';
   });
 
   $('.mobile-container.language-link').click( function(){
