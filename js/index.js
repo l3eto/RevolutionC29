@@ -2,24 +2,24 @@ var songs = null;
 var beru = null;
 var songsNames = [
   {
-    'src':'Kike Pavón - La Experiencia de Adorar',
-    'autor':'Kike Pavón',
-    'song':'La Experiencia de Adorar'
+    'src':'Hillsong Worship - En Esto Creo',
+    'autor':'Hillsong Worship',
+    'song':'En Esto Creo'
   },
   {
-    'src':'Evan Craft - Gracia Sublime Es',
-    'autor':'Evan Craft',
-    'song':'Gracia Sublime Es'
+    'src':'Hillsong United - Reinas por la Eternidad',
+    'autor':'Hillsong United',
+    'song':'Reinas por la Eternidad'
   },
   {
-    'src':'Kike Pavón - En Tu Nombre',
-    'autor':'Kike Pavón',
-    'song':'En Tu Nombre'
+    'src':'Hillsong United - Tu Amor No Se Rinde',
+    'autor':'Hillsong United',
+    'song':'Tu Amor No Se Rinde'
   },
   {
-    'src':'Evan Craft - Vives en Mí',
-    'autor':'Evan Craft',
-    'song':'Vives en Mí'
+    'src':'Worship Central - Cristo Te Seguiré',
+    'autor':'Worship Central',
+    'song':'Cristo Te Seguiré'
   }
 ];
 
@@ -37,7 +37,7 @@ $( document ).ready(function() {
   beru.addToSave();
   beru.save();
   //add songs
-  for( i in songsNames ){
+  for( var i in songsNames ){
     beru.new('a');
     beru.add('class','item i2');
     if( i == '0' ) beru.add('class','item i2 active');
@@ -68,7 +68,7 @@ $( document ).ready(function() {
   //songs container
   beru.getById('Letras');
   beru.save();
-  for( i in songsNames ){
+  for( var i in songsNames ){
     var dataSong = getData( songsNames[i].autor , songsNames[i].song );
     if( dataSong ){
       //ADD LYRICS
