@@ -448,15 +448,15 @@ var data = [
       'song':'En Esto Creo',
       'order':[
         'intro',
-        'intro',
         'verse-1-1',
         'verse-1-2',
         'chorus-1-1',
         'chorus-1-2',
         'chorus-1-3',
         'chorus-1-4',
-        'verse-1-1',
-        'verse-1-2',
+        'intro',
+        'verse-2-1',
+        'verse-2-2',
         'chorus-1-1',
         'chorus-1-2',
         'chorus-1-3',
@@ -515,7 +515,8 @@ var data = [
           {'p':'que nos levantaras'}
         ],
         'chorus-1-4':[
-          {'p':'Creo en el nombre de Jesus Cristo.'}
+          {'p':'Creo en el nombre'},
+          {'p':'de Jesucristo'}
         ],
         'bridge-1':[
           {'p':'Creo en ti Jesús.'},
@@ -542,94 +543,95 @@ var data = [
       },
       'chords':{
         'intro':[
-          {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
+          {'4':'F'},
+          {'4':'Am/G'},
+          {'4':'C/F'},
           {'4':'G'}
         ],
         'verse-1-1':[
-          {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
+          {'4':'C/F'},
+          {'4':'Am/G'},
+          {'4':'C/F'},
           {'4':'G'}
         ],
         'verse-1-2':[
-          {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
+          {'4':'C/F'},
+          {'4':'Am/G'},
+          {'4':'C/F'},
           {'4':'G'}
         ],
         'verse-2-1':[
-          {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
+          {'4':'C/F'},
+          {'4':'Am/G'},
+          {'4':'C/F'},
           {'4':'G'}
         ],
         'verse-2-2':[
-          {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
+          {'4':'C/F'},
+          {'4':'Am/G'},
+          {'4':'C/F'},
           {'4':'G'}
         ],
         'chorus-1-1':[
-          {'4':'G'},
-          {'4':'Am'},
           {'4':'C'},
-          {'4':'D'}
+          {'4':''},
+          {'4':'Dm/F'},
+          {'4':''}
         ],
         'chorus-1-2':[
-          {'4':'G'},
-          {'4':'Am'},
-          {'4':'C'},
-          {'4':'D'}
+          {'4':'G/Am'},
+          {'4':''},
+          {'4':'F'},
+          {'4':''}
         ],
         'chorus-1-3':[
-          {'4':'G'},
-          {'4':'Am'},
           {'4':'C'},
-          {'4':'D'}
+          {'4':''},
+          {'4':'Dm/F'},
+          {'4':''}
         ],
         'chorus-1-4':[
-          {'4':'G'},
-          {'4':'Am'},
-          {'4':'C'},
-          {'4':'D'}
+          {'4':'G/Am'},
+          {'4':''},
+          {'4':'F'},
+          {'2':'G'},
+          {'2':'C'}
         ],
         'chorus-2-1':[
-          {'4':'G'},
-          {'4':'Am'},
           {'4':'C'},
-          {'4':'D'}
+          {'4':''},
+          {'4':'Dm/F'},
+          {'4':''}
         ],
         'chorus-2-2':[
-          {'4':'G'},
-          {'4':'Am'},
-          {'4':'C'},
-          {'4':'D'}
+          {'4':'G/Am'},
+          {'4':''},
+          {'4':'F'},
+          {'4':''}
         ],
         'chorus-2-3':[
-          {'4':'G'},
-          {'4':'Am'},
           {'4':'C'},
-          {'4':'D'}
+          {'4':''},
+          {'4':'Dm/F'},
+          {'4':''}
         ],
         'chorus-2-4':[
-          {'4':'G'},
-          {'4':'Am'},
-          {'4':'C'},
-          {'4':'D'}
+          {'4':'G/Am'},
+          {'4':''},
+          {'4':'F'},
+          {'4':''},
         ],
         'bridge-1':[
-          {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
-          {'4':'G'}
+          {'4':'F'},
+          {'4':'Am/G'},
+          {'4':'C/F'},
+          {'4':'Am/G'}
         ],
         'bridge-2':[
+          {'4':'F'},
+          {'4':'Am/G'},
           {'4':'C'},
-          {'4':'Em'},
-          {'4':'D'},
-          {'4':'G'}
+          {'4':'C'}
         ]
       }
     }
@@ -638,7 +640,8 @@ var data = [
       'artist':'Hillsong United',
       'song':'Reinas por la Eternidad',
       'order':[
-        'intro',
+        'intro-1',
+        'intro-2',
         'verse-1-1',
         'verse-1-2',
         'verse-1-3',
@@ -650,6 +653,8 @@ var data = [
         'chorus-1-1',
         'chorus-1-2',
         'chorus-1-3',
+        'intro-1',
+        'intro-2',
         'verse-3-1',
         'verse-3-2',
         'verse-3-3',
@@ -660,9 +665,11 @@ var data = [
         'chorus-1-1',
         'chorus-1-2',
         'chorus-1-3',
-        'bridge',
-        'bridge',
-        'bridge',
+        'bridge-1',
+        'bridge-1',
+        'bridge-1',
+        'bridge-1',
+        'bridge-2',
         'chorus-1-1',
         'chorus-1-2',
         'chorus-1-3',
@@ -683,7 +690,7 @@ var data = [
           {'p':'Eres luz, eres luz,'},
           {'p':'aun en la oscuridad'}
         ],
-        'verse-1-3':[
+        'verse-1-4':[
           {'p':'Eres fiel, eres fiel,'},
           {'p':'has borrado mi maldad '}
         ],
@@ -731,13 +738,131 @@ var data = [
           {'p':'Nada se puede comparar,'},
           {'p':'reinas por la Eternidad '}
         ],
-        'bridge':[
+        'bridge-1':[
           {'p':'Mi corazón,'},
           {'p':'te cantará,'},
           {'p':'Jesús, Jesús'},
         ]
       },
       'chords':{
+        'intro-1':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'intro-2':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'verse-1-1':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'verse-1-2':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'verse-1-3':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'verse-1-4':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'verse-2-1':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'verse-2-2':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'verse-2-3':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'verse-2-4':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'verse-3-1':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'verse-3-2':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'verse-3-3':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'C'}
+        ],
+        'verse-3-4':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'G'}
+        ],
+        'chorus-1-1':[
+          {'4':'C'},
+          {'4':'C'},
+          {'4':'G'},
+          {'4':'Am'}
+        ],
+        'chorus-1-2':[
+          {'4':'Am'},
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'F'}
+        ],
+        'chorus-1-3':[
+          {'2':'F'},
+          {'2':'Am'},
+          {'2':'G'},
+          {'2':'F'},
+          {'2':'F'},
+          {'2':'Am'},
+          {'2':'G'},
+          {'2':'F'}
+        ],
+        'bridge-1':[
+          {'4':'Am'},
+          {'4':'F'},
+          {'4':'C'},
+          {'4':'G'}
+        ],
+        'bridge-2':[
+          {'4':'F'},
+          {'4':'F'},
+          {'4':'F'},
+          {'4':'F'}
+        ]
       }
     }
     ,
@@ -753,21 +878,24 @@ var data = [
         'verse-1-4',
         'pre-chorus-1',
         'pre-chorus-2',
-        'chorus',
-        'chorus',
-        'chorus',
-        'chorus',
+        'chorus-1',
+        'chorus-2',
+        'chorus-1',
+        'chorus-2',
+        'intro',
         'verse-2-1',
         'verse-2-2',
         'verse-2-3',
         'verse-2-4',
         'verse-2-4',
-        'bridge-1',
-        'bridge-2',
-        'chorus',
-        'chorus',
-        'chorus',
-        'chorus'
+        'bridge-1-1',
+        'bridge-1-2',
+        'bridge-2-1',
+        'bridge-2-2',
+        'chorus-1',
+        'chorus-2',
+        'chorus-1',
+        'chorus-2'
       ],
       'lyrics':{
         'verse-1-1':[
@@ -802,27 +930,134 @@ var data = [
           {'p':'Me cubrirás, cubrirás,'},
           {'p':'Con tu eterno amor'}
         ],
-        'chorus':[
-          {'p':'Tu amor no se rinde.'},
+        'chorus-1':[
           {'p':'Tu amor no se rinde'}
         ],
-        'bridge-1':[
-          {'p':'Has abierto nuestros ojos,'},
-          {'p':'caminamos en'},
-          {'p':'tu libertad'}
+        'chorus-2':[
+          {'p':'Tu amor no se rinde'}
         ],
-        'bridge-2':[
+        'bridge-1-1':[
+          {'p':'Has abierto nuestros ojos,'},
+        ],
+        'bridge-1-2':[
+          {'p':'caminamos en tu libertad'},
+        ],
+        'bridge-2-1':[
           {'p':'Sin cesar tú lucharás'},
+        ],
+        'bridge-2-2':[
           {'p':'para salvar la humanidad'}
         ]
       },
-      'chords':[
-      ]
+      'chords':{
+        'intro':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-1-1':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-1-2':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-1-3':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-1-4':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-2-1':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-2-2':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-2-3':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'verse-2-4':[
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'pre-chorus-1':[
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'D'},
+          {'4':'A'}
+        ],
+        'pre-chorus-2':[
+          {'4':'G'},
+          {'4':'Bm'},
+          {'4':'D'},
+          {'4':'A'}
+        ],
+        'chorus-1':[
+          {'4':'D'},
+          {'4':'D'},
+          {'4':'G'},
+          {'4':'Bm'}
+        ],
+        'chorus-2':[
+          {'4':'Bm'},
+          {'4':'Bm'},
+          {'4':'G'},
+          {'4':'D'}
+        ],
+        'bridge-1-1':[
+          {'4':'A'},
+          {'4':'A'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'bridge-1-2':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'D'},
+          {'4':'A'}
+        ],
+        'bridge-2-1':[
+          {'4':'A'},
+          {'4':'A'},
+          {'4':'Bm'},
+          {'4':'G'}
+        ],
+        'bridge-2-2':[
+          {'4':'G'},
+          {'4':'G'},
+          {'4':'D'},
+          {'4':'A'}
+        ]
+      }
     }
     ,
     {
       'artist':'Worship Central',
-      'song':'Cristo Te Seguiré',
+      'song':'El Camino',
       'order':[
         'intro',
         'verse-1-1',
@@ -924,8 +1159,104 @@ var data = [
           {'p':'Con tu luz brillaré para siempre'}
         ]
       },
-      'chords':[
-      ]
+      'chords':{
+        'verse-1-1':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-1-2':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-1-3':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-2-1':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-2-2':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-2-3':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-3-1':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-3-2':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-3-3':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-4-1':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-4-2':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'verse-4-3':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'chorus-1-1':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'chorus-1-2':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'chorus-1-3':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ],
+        'chorus-1-4':[
+          {'4':'G#m'},
+          {'4':'E'},
+          {'4':'B'},
+          {'4':'B'}
+        ]
+      }
     }
 ];
 
@@ -938,19 +1269,35 @@ var number = {
   '3':'three',
   '4':'four',
   '5':'five',
-  '6':'six'
+  '6':'six',
+  '7':'seven',
+  '8':'eight'
 }
 
 var part = {
   'intro':'Intro',
+  'intro-1':'Intro',
+  'intro-2':'Intro',
   'verse-1':'Verso 1',
   'verse-1-1':'Verso 1',
-  'verse-2-1':'Verso 2',
+  'verse-1-2':'Verso 1',
+  'verse-1-3':'Verso 1',
+  'verse-1-4':'Verso 1',
   'verse-2':'Verso 2',
   'verse-2-1':'Verso 2',
   'verse-2-2':'Verso 2',
+  'verse-2-3':'Verso 2',
+  'verse-2-4':'Verso 2',
   'verse-3':'Verso 3',
+  'verse-3-1':'Verso 3',
+  'verse-3-2':'Verso 3',
+  'verse-3-3':'Verso 3',
+  'verse-3-4':'Verso 3',
   'verse-4':'Verso 4',
+  'verse-4-1':'Verso 4',
+  'verse-4-2':'Verso 4',
+  'verse-4-3':'Verso 4',
+  'verse-4-4':'Verso 4',
   'chorus-1':'Coro',
   'chorus-1-1':'Coro',
   'chorus-1-2':'Coro',
@@ -963,14 +1310,18 @@ var part = {
   'chorus-2-4':'Coro',
   'bridge':'Puente',
   'bridge-1':'Puente',
-  'bridge-2':'Puente'
+  'bridge-1-1':'Puente',
+  'bridge-1-2':'Puente',
+  'bridge-2':'Puente',
+  'bridge-2-1':'Puente',
+  'bridge-2-2':'Puente'
 }
 
 var controls = [
-  {'a':'item backward song disabled','i':'icon step backward'},
-  {'a':'item play song disabled','i':'icon play'},
-  {'a':'item stop song disabled','i':'icon stop'},
-  {'a':'item forward song disabled','i':'icon step forward'}
+  {'a':'item backward song disabled effect-revolution','i':'icon step backward'},
+  {'a':'item play song disabled effect-revolution','i':'icon play'},
+  {'a':'item stop song disabled effect-revolution','i':'icon stop'},
+  {'a':'item forward song disabled effect-revolution','i':'icon step forward'}
 ]
 
 var getData = function( artist , song ){

@@ -17,9 +17,9 @@ var songsNames = [
     'song':'Tu Amor No Se Rinde'
   },
   {
-    'src':'Worship Central - Cristo Te Seguiré',
+    'src':'Worship Central - El Camino',
     'autor':'Worship Central',
-    'song':'Cristo Te Seguiré'
+    'song':'El Camino'
   }
 ];
 
@@ -50,7 +50,7 @@ $( document ).ready(function() {
   beru.getById('Letras');
   beru.save();
   beru.new('div');
-  beru.add('class','ui fluid '+ number[ controls.length ] +' item menu');
+  beru.add('class','ui fluid '+ number[ controls.length ] +' item menu effect-revolution');
   beru.addToSave();
   beru.save();
   //add controls
@@ -126,7 +126,7 @@ $( document ).ready(function() {
   beru.getById('Acordes');
   beru.save();
   beru.new('div');
-  beru.add('class','ui fluid '+ number[ controls.length ] +' item menu');
+  beru.add('class','ui fluid '+ number[ controls.length ] +' item menu effect-revolution');
   beru.addToSave();
   beru.save();
   //add controls
