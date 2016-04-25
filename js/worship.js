@@ -2,22 +2,18 @@ var songs = null;
 var beru = null;
 var songsNames = [
   {
-    'src':'Hillsong Worship - En Esto Creo',
     'autor':'Hillsong Worship',
     'song':'En Esto Creo'
   },
   {
-    'src':'Hillsong United - Reinas por la Eternidad',
     'autor':'Hillsong United',
     'song':'Reinas por la Eternidad'
   },
   {
-    'src':'Hillsong United - Tu Amor No Se Rinde',
     'autor':'Hillsong United',
     'song':'Tu Amor No Se Rinde'
   },
   {
-    'src':'Worship Central - El Camino',
     'autor':'Worship Central',
     'song':'El Camino'
   }
@@ -292,21 +288,6 @@ $( document ).ready(function() {
   $('.menu.m1 .item.i1').tab();
   $('.menu.m2 .item.i2').tab();
 
-  $('.rounded.big.square.icon').hover(function(){
-      $(this).addClass('activeicon');
-      },function(){
-      $(this).removeClass('activeicon');
-  });
-
-  $('#facebook-link').click(function(){
-    var win = window.open( 'https://www.facebook.com/revolutionc29/', '_blank');
-    win.focus();
-  })
-  $('#instagram-link').click(function(){
-    var win = window.open( 'https://www.instagram.com/revolutionc29/', '_blank');
-    win.focus();
-  })
-
 });
 
 window.onbeforeunload = function() {
@@ -330,12 +311,11 @@ Songs.prototype.addAudio = function( audio, i, event ){
 
 Songs.prototype.addSongs = function () {
   for( i in this._songs ){
-    var audio = new Audio( '../audio/' + encodeURIComponent( this._songs[i].src ) + '.mp3' );
+    var audio = new Audio( '../audio/' + encodeURIComponent( this._songs[i].autor +' - '+ this._songs[i].song ) + '.mp3' );
     this._songs[i].tab = 'song-' + (parseInt(i)+1).toString();
     audio.setAttribute('song',this._songs[i].song);
     audio.setAttribute('autor',this._songs[i].autor);
     this.addAudio( audio, i, null );
-    //audio.addEventListener('canplaythrough', this.addAudio.bind( this, audio , i ), false);
   }
 };
 

@@ -1,0 +1,105 @@
+.pusher{
+  min-height: 100%;
+  background-color: #fafafa;
+}
+
+.ui.masthead{
+  background-color: #222222;
+  padding: 25px;
+  padding-top: 35px;
+  border-bottom: 2px solid #aaa;
+}
+
+.ui.masthead-mobile{
+  background-color: #222222;
+  border-bottom: 3px solid #aaa;
+  color: white;
+}
+
+
+.four.wide.column.mobile-container{
+  height: 50px;
+}
+
+.four.wide.column.mobile-container.active{
+  background-color: rgba(255, 141, 133, 0.86);
+}
+
+.four.wide.column.mobile-container.active .icon.element-mobile{
+  color:black;
+}
+
+.container-logoc29{
+  height: 50px;
+  width: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.logoc29{
+  height: 100%;
+  width: 100%;
+}
+
+.icon.element-mobile{
+  margin: 15px auto 0 auto;
+  width: 100%;
+}
+
+.icon.element-mobile:hover{
+  color:#aaa;
+}
+
+.four.wide.column.mobile-container.active .icon.element-mobile:hover{
+  color:black;
+}
+
+.masthead .ui.menu .item{
+  color: white
+}
+.masthead .ui.secondary.pointing.menu .active.item {
+  color: white;
+}
+
+.masthead .ui.secondary.pointing.menu .active.item:hover {
+  color: white;
+}
+
+
+.icon.logo.c29 {
+  background-image: url('../images/logo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: 1.5em;
+  display: inline-block;
+  vertical-align: bottom;;
+  margin: -.3em 0;
+  width: 60px;
+  height: 60px;
+}
+
+
+#facebook-link.facebook.activeicon{
+  cursor:pointer;
+  color:#3b5998;
+}
+.google.activeicon{
+  cursor:pointer;
+  color:#DB4437;
+}
+.android.activeicon{
+  cursor:pointer;
+  color:#77C159;
+}
+
+#instagram-link.instagram.activeicon{
+  cursor:pointer;
+  color:#125688;
+}
+
+.mobile-container.home-link:hover,
+.mobile-container.worship-link:hover,
+.mobile-container.events-link:hover,
+.mobile-container.language-link:hover{
+  cursor: pointer;
+}

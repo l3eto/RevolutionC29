@@ -1,73 +1,3 @@
-.pusher{
-  min-height: 100%;
-  background-color: #fafafa;
-}
-
-.ui.masthead{
-  background-color: #222222;
-  padding: 25px;
-  padding-top: 35px;
-  border-bottom: 2px solid #aaa;
-}
-
-.ui.masthead-mobile{
-  background-color: #222222;
-  border-bottom: 3px solid #aaa;
-  color: white;
-}
-
-.ui.grid+.grid {
-    margin-top: 0rem;
-}
-
-.four.wide.column.mobile-container{
-  height: 50px;
-}
-
-.four.wide.column.mobile-container.active{
-  background-color: rgba(255, 141, 133, 0.86);
-}
-
-.four.wide.column.mobile-container.active .icon.element-mobile{
-  color:black;
-}
-
-.container-logoc29{
-  height: 50px;
-  width: 50px;
-  margin-right: 50px;
-  margin-left: 50px;
-}
-
-.logoc29{
-  height: 100%;
-  width: 100%;
-}
-
-.icon.element-mobile{
-  margin: 15px auto 0 auto;
-  width: 100%;
-}
-
-.icon.element-mobile:hover{
-  color:#aaa;
-}
-
-.four.wide.column.mobile-container.active .icon.element-mobile:hover{
-  color:black;
-}
-
-.masthead .ui.menu .item{
-  color: white
-}
-.masthead .ui.secondary.pointing.menu .active.item {
-  color: white;
-}
-
-.masthead .ui.secondary.pointing.menu .active.item:hover {
-  color: white;
-}
-
 .ui.secondary.pointing.menu .dropdown.item:hover, .ui.secondary.pointing.menu .link.item:hover, .ui.secondary.pointing.menu a.item:hover {
   background-color: transparent;
   color: #aaa;
@@ -102,18 +32,6 @@
   padding: 0em;
 }
 
-
-.icon.logo.c29 {
-  background-image: url('../images/logo.png');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  margin-right: 1.5em;
-  display: inline-block;
-  vertical-align: bottom;;
-  margin: -.3em 0;
-  width: 60px;
-  height: 60px;
-}
 
 .ui.menu.item.chords {
   border: none;
@@ -158,23 +76,6 @@
     margin: 0rem 0;
 }
 
-#facebook-link.facebook.activeicon{
-  cursor:pointer;
-  color:#3b5998;
-}
-.google.activeicon{
-  cursor:pointer;
-  color:#DB4437;
-}
-.android.activeicon{
-  cursor:pointer;
-  color:#77C159;
-}
-
-#instagram-link.instagram.activeicon{
-  cursor:pointer;
-  color:#125688;
-}
 
 .row.tittle {
     margin-top: 1rem;
@@ -260,4 +161,8 @@ h3.ui.header {
 
 .ui.menu .item.effect-revolution:before {
     background: rgb(170, 170, 170);
+}
+
+.ui.grid+.grid {
+    margin-top: 0rem;
 }
