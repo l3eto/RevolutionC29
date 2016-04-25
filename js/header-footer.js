@@ -5,11 +5,11 @@ $( document ).ready(function() {
   });
 
   $('.mobile-container.worship-link').click( function(){
-    window.location.href = '../worship';
+    window.location.href = '../worship/';
   });
 
   $('.mobile-container.events-link').click( function(){
-    window.location.href = '../events';
+    window.location.href = '../events/';
   });
 
   $('.mobile-container.language-link').click( function(){
