@@ -1,13 +1,13 @@
 /* TEAM */
   Chef, UI developer, Web designer: Alberto Acuña
-  Contact: alberto [at] quinua.io
-  Twitter: @l3etoo
+  Facebook: l3eto23
+  Twitter: l3etoo
   From: Lima, Peru
-
-/* THANKS */
+  Adress : Barcelona, Spain
 
 /* SITE */
 	Last update:2016/21/04
 	Language: Castellano / English / Català
 	Doctype:HTML5
-	IDE: Atom, Git Bash, Semantic UI
+	IDE: Atom Editor, Git Bash
+  PLUGINS: Semantic UI Legacy

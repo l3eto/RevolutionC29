@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
   $('.mobile-container.home-link').click( function(){
-    window.location.href = '../'
+    window.location.href = '../home/'
   });
 
   $('.mobile-container.worship-link').click( function(){
