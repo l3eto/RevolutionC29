@@ -65,8 +65,6 @@ video {
 @media screen and (max-device-width: 800px) {
   body {
     background: url('../images/home.jpg') #000 no-repeat center center fixed;
-    background-size: cover;
-    transition: 1s opacity;
   }
   #bgvid {
     display: none;
