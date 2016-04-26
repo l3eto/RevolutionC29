@@ -61,3 +61,12 @@ video {
 .ui.secondary.pointing.menu .active.item {
     border-color: white;
 }
+
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url('../images/home.jpg') #000 no-repeat center center fixed;
+  }
+  #bgvid {
+    display: none;
+  }
+}
