@@ -57,3 +57,7 @@ video {
     height: 60px;
     width: 60px;
 }
+
+.ui.secondary.pointing.menu .active.item {
+    color: white;
+}
