@@ -2,8 +2,8 @@ var songs = null;
 var beru = null;
 var songsNames = [
   {
-    'autor':'Hillsong Worship',
-    'song':'En Esto Creo'
+    'autor':'Evan Craft',
+    'song':'Gracia Sublime Es'
   },
   {
     'autor':'Hillsong United',
