@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
-    <title>Día Internacional</title>
+    <header>Día Internacional</header>
     <date>Sábado 28 Mayo</date>
     <info>Este sábado a las 19h compartiremos de un tiempo "Internacional"</info>
     <alert>¡Te esperamos!</alert>
