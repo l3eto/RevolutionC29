@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
+    <header>¡Estamos de Vuelta!</header>
+     <date>Sábado 17 Septiembre</date>
+    <info>¡Asi es! Se terminaron las vacaciones y en Revolution ya estamos de vuelta para iniciar con muchos ánimos, asi que nos vemos éste sábado para compartir un tiempo estupendo en familia.</info>
+    <alert>¡Te esperamos!</alert>
+    <location>Granollers - Canovellas</location>
+    <hour>16h.</hour>
+    <src>../images/uploads/14355161_1830487937183880_5622032160511992633_n.jpg</src>
+    <instagram>https://www.instagram.com/p/BKWmNOsge4r/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1830487937183880/</facebook>
+  </event>
+  <event>
     <header>Fiesta de San Juan</header>
     <date>Sábado 23 Junio</date>
     <info>Este jueves tendremos una pequeña excusa para reunirnos y pasar un momento especial juntos.</info>
