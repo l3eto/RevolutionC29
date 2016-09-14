@@ -23,9 +23,23 @@ $( document ).ready(function() {
     }
   
   var events = xmlDoc.getElementsByTagName("event");
-  
+  var containerDIV = document.getElementById("events-container");
   if( events.length > 0 ){
-    console.log('nice')
+    for (var i = 0; i < events.length; i++) { 
+      //crear main div
+      var mainDIV = document.createElement('DIV');
+      mainDIV.setAttribute("class","item rev-publish");
+      var imgDIV = document.createElement('DIV');
+      imgDIV.setAttribute("class","ui medium image rev-img");
+      var img = document.createElement('IMG');
+      img.setAttribute("class","rev-img");
+      img.src = events[i].getElementsByTagName("src");
+      
+      imgDIV.appendChild(img);
+      mainDIV.appendChild(imgDIV);
+      
+      containerDIV.appendChild(mainDIV);
+    }
   }
     
   });
