@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
+    <header>Fiesta de San Juan</header>
+    <date>Sábado 23 Junio</date>
+    <info>Este jueves tendremos una pequeña excusa para reunirnos y pasar un momento especial juntos.</info>
+    <alert>¡No faltes!</alert>
+    <location>Bellaterra</location>
+    <hour>16h.</hour>
+    <src>../images/uploads/13507132_1791945337704807_5242462512565142388_n.jpg</src>
+    <instagram>https://www.instagram.com/p/BG9G6STSkOq/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1791945337704807/</facebook>
+  </event>
+  <event>
     <header>Juan Miguel Torres</header>
     <date>Sábado 18 Junio</date>
     <info>Nos vemos este sábado para compartir un tiempo estupendo entre jóvenes.</info>
