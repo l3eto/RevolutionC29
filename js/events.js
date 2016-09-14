@@ -13,7 +13,7 @@ $( document ).ready(function() {
 }
   console.log('lol');
   //usage:
-  readTextFile("events.json", function(text){
+  readTextFile("js/events.json", function(text){
     console.log('lol3');
       var data = JSON.parse(text);
       console.log(data);
