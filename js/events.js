@@ -39,7 +39,7 @@ $( document ).ready(function() {
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    console.log(xmlDoc);
+    console.log(xmlDoc.length);
   });
   
 
