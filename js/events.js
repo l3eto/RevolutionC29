@@ -1,4 +1,18 @@
 $( document ).ready(function() {
+  
+  function loadXMLDoc() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+      }
+    };
+    xmlhttp.open("GET", "events.xml", true);
+    xmlhttp.send();
+  }
+  function myFunction(xml) {
+    console.log(xml);
+  }
 
   $('#rev-28-05-16').find('.ui.circular.facebook.icon.button').click( function(){
       var win = window.open( 'https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1780890342143640/', '_blank');
