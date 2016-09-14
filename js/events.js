@@ -19,6 +19,26 @@ $( document ).ready(function() {
       console.log(data);
   });
   console.log('lol2');
+  
+  
+  //read xml
+  function readXML(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/xml");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+  }
+  readXML("../js/events.xml", function(text){
+    console.log('lol4');
+      var data = JSON.parse(text);
+      console.log(data);
+  });
+  
 
   $('#rev-28-05-16').find('.ui.circular.facebook.icon.button').click( function(){
       var win = window.open( 'https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1780890342143640/', '_blank');
