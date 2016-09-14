@@ -1,4 +1,3 @@
-var xml ;
 $( document ).ready(function() {
   
   //read xml
@@ -24,13 +23,14 @@ $( document ).ready(function() {
     }
   
   var events = xmlDoc.getElementsByTagName("event");
-  xml = xmlDoc;
   var containerDIV = document.getElementById("events-container");
   if( events.length > 0 ){
     for (var i = 0; i < events.length; i++) { 
       //crear main div
       var mainDIV = document.createElement('DIV');
       mainDIV.setAttribute("class","item rev-publish");
+      
+      //set image
       var imgDIV = document.createElement('DIV');
       imgDIV.setAttribute("class","ui medium image rev-img");
       var img = document.createElement('IMG');
@@ -39,6 +39,8 @@ $( document ).ready(function() {
       
       imgDIV.appendChild(img);
       mainDIV.appendChild(imgDIV);
+      
+      
       
       containerDIV.appendChild(mainDIV);
     }
