@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   
-  function readTextFile(file, callback) {
+  /*function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
@@ -10,15 +10,12 @@ $( document ).ready(function() {
         }
     }
     rawFile.send(null);
-}
-  console.log('lol');
+}*/
   //usage:
-  readTextFile("../js/events.json", function(text){
-    console.log('lol3');
+  /*readTextFile("../js/events.json", function(text){
       var data = JSON.parse(text);
       console.log(data);
-  });
-  console.log('lol2');
+  });*/
   
   
   //read xml
@@ -33,10 +30,16 @@ $( document ).ready(function() {
     }
     rawFile.send(null);
   }
-  readXML("../js/events.xml", function(text){
-    console.log('lol4');
-      var data = JSON.parse(text);
-      console.log(data);
+  readXML("../js/events.xml", function(data){
+    if (window.DOMParser){
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(data, "text/xml");
+    }else{
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.loadXML(data);
+    }
+    console.log(xmlDoc);
   });
   
 
