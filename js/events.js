@@ -33,7 +33,7 @@ $( document ).ready(function() {
       imgDIV.setAttribute("class","ui medium image rev-img");
       var img = document.createElement('IMG');
       img.setAttribute("class","rev-img");
-      img.src = events[i].getAttributeNode("src").nodeValue;
+      img.src = events[i].getAttributeNode("src");
       
       imgDIV.appendChild(img);
       mainDIV.appendChild(imgDIV);
