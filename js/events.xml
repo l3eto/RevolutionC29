@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
+    <header>Decídete</header>
+    <date>Sábado 4 Junio</date>
+    <info>No olvides que este sábado nos volvemos a ver para pasar un tiempo genial en familia.</info>
+    <alert>¡Te esperamos!</alert>
+    <location>Carrer Pinar del Río 5, bis.</location>
+    <hour>19h.</hour>
+    <src>../images/uploads/13312668_1783304111902263_4558249935220033043_n.jpg</src>
+    <instagram>https://www.instagram.com/p/BGNMgd_SkER/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1783304111902263/</facebook>
+  </event>
+  <event>
     <header>Día Internacional</header>
     <date>Sábado 28 Mayo</date>
     <info>Este sábado a las 19h compartiremos de un tiempo "Internacional"</info>
