@@ -1,18 +1,22 @@
 $( document ).ready(function() {
   
-  function loadXMLDoc() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
-      }
-    };
-    xmlhttp.open("GET", "events.xml", true);
-    xmlhttp.send();
-  }
-  function myFunction(xml) {
-    console.log(xml);
-  }
+  function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+//usage:
+readTextFile("events.json", function(text){
+    var data = JSON.parse(text);
+    console.log(data);
+});
 
   $('#rev-28-05-16').find('.ui.circular.facebook.icon.button').click( function(){
       var win = window.open( 'https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1780890342143640/', '_blank');
