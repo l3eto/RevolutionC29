@@ -1,23 +1,5 @@
 $( document ).ready(function() {
   
-  /*function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
-}*/
-  //usage:
-  /*readTextFile("../js/events.json", function(text){
-      var data = JSON.parse(text);
-      console.log(data);
-  });*/
-  
-  
   //read xml
   function readXML(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -39,7 +21,7 @@ $( document ).ready(function() {
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    console.log(xmlDoc.length);
+    console.log(xmlDoc.getElementsByTagName("event"));
   });
   
 
