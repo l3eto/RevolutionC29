@@ -11,12 +11,14 @@ $( document ).ready(function() {
     }
     rawFile.send(null);
 }
-
-//usage:
-readTextFile("events.json", function(text){
-    var data = JSON.parse(text);
-    console.log(data);
-});
+  console.log('lol');
+  //usage:
+  readTextFile("events.json", function(text){
+    console.log('lol3');
+      var data = JSON.parse(text);
+      console.log(data);
+  });
+  console.log('lol2');
 
   $('#rev-28-05-16').find('.ui.circular.facebook.icon.button').click( function(){
       var win = window.open( 'https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1780890342143640/', '_blank');
