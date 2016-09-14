@@ -35,7 +35,7 @@ $( document ).ready(function() {
       imgDIV.setAttribute("class","ui medium image rev-img");
       var img = document.createElement('IMG');
       img.setAttribute("class","rev-img");
-      img.src = events[i].getElementsByTagName("src");
+      img.src = events[i].getElementsByTagName("src")[0].textContent;
       imgDIV.appendChild(img);
       
       //append to main DIV
@@ -48,7 +48,7 @@ $( document ).ready(function() {
       //header
       var headerDIV = document.createElement('DIV');
       headerDIV.setAttribute("class","header");
-      headerDIV.innerHTML = events[i].getElementsByTagName("header");
+      headerDIV.innerHTML = events[i].getElementsByTagName("header")[0].textContent;
       txtDIV.appendChild(headerDIV);
       
       //meta
@@ -63,7 +63,7 @@ $( document ).ready(function() {
       //description
       var descriptionDIV = document.createElement('DIV');
       descriptionDIV.setAttribute("class","description");
-      descriptionDIV.innerHTML = "<p>"+events[i].getElementsByTagName("info")+"<br>"+events[i].getElementsByTagName("alert")+"</p>"+"<p>Lugar: "+events[i].getElementsByTagName("location")+"<br>Hora: "+events[i].getElementsByTagName("hour")+"</p>";
+      descriptionDIV.innerHTML = "<p>"+events[i].getElementsByTagName("info")[0].textContent+"<br>"+events[i].getElementsByTagName("alert")[0].textContent+"</p>"+"<p>Lugar: "+events[i].getElementsByTagName("location")[0].textContent+"<br>Hora: "+events[i].getElementsByTagName("hour")[0].textContent+"</p>";
       txtDIV.appendChild(descriptionDIV);
       
       //extra info
