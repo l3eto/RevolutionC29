@@ -21,8 +21,22 @@ $( document ).ready(function() {
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    console.log(xmlDoc.getElementsByTagName("event"));
+  
+  var events = xmlDoc.getElementsByTagName("event");
+  
+  if( events.length > 0 ){
+    console.log('nice')
+  }
+    
   });
+  
+  
+  
+  
+  
+  
+  
+  
   
 
   $('#rev-28-05-16').find('.ui.circular.facebook.icon.button').click( function(){
