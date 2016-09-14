@@ -36,12 +36,62 @@ $( document ).ready(function() {
       var img = document.createElement('IMG');
       img.setAttribute("class","rev-img");
       img.src = events[i].getElementsByTagName("src");
-      
       imgDIV.appendChild(img);
+      
+      //append to main DIV
       mainDIV.appendChild(imgDIV);
       
+      //set text
+      var txtDIV = document.createElement('DIV');
+      txtDIV.setAttribute("class","top aligned content");
       
+      //header
+      var headerDIV = document.createElement('DIV');
+      headerDIV.setAttribute("class","header");
+      headerDIV.innerHTML = events[i].getElementsByTagName("header");
+      txtDIV.appendChild(headerDIV);
       
+      //meta
+      var metaDIV = document.createElement('DIV');
+      metaDIV.setAttribute("class","meta");
+      var SPAN = document.createElement('DIV');
+      SPAN.setAttribute("class","date");
+      SPAN.innerHTML = events[i].getElementsByTagName("date");
+      metaDIV.appendChild(SPAN);
+      txtDIV.appendChild(metaDIV);
+      
+      //description
+      var descriptionDIV = document.createElement('DIV');
+      descriptionDIV.setAttribute("class","description");
+      descriptionDIV.innerHTML = "<p>"+events[i].getElementsByTagName("info")+"<br>"+events[i].getElementsByTagName("alert")+"</p>"+"<p>Lugar: "+events[i].getElementsByTagName("location")+"<br>Hora: "+events[i].getElementsByTagName("hour")+"</p>";
+      txtDIV.appendChild(descriptionDIV);
+      
+      //extra info
+      var extraDIV = document.createElement('DIV');
+      extraDIV.setAttribute("class","ui extra");
+      var extrainfoDIV = document.createElement('DIV');
+      var SPAN = document.createElement('SPAN');
+      SPAN.innerHTML = "Ver en publicación :";
+      entrainfoDIV.appendChild(SPAN);
+      var BUTTON = document.createElement('BUTTON');
+      BUTTON.setAttribute("class","ui circular facebook icon button");
+      var ICON = document.createElement('I');
+      ICON.setAttribute("class","facebook icon");
+      BUTTON.appendChild(ICON);
+      extrainfoDIV.appendChild(BUTTON);
+      var BUTTON = document.createElement('BUTTON');
+      BUTTON.setAttribute("class","ui circular instagram icon button");
+      var ICON = document.createElement('I');
+      ICON.setAttribute("class","instagram icon");
+      BUTTON.appendChild(ICON);
+      extrainfoDIV.appendChild(BUTTON);
+      extraDIV.appendChild(extrainfoDIV);
+      txtDIV.appendChild(extraDIV);
+      
+      //set to main DIV
+      mainDIV.appendChild(txtDIV);
+      
+      //append to main DIV
       containerDIV.appendChild(mainDIV);
     }
   }
