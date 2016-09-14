@@ -56,7 +56,7 @@ $( document ).ready(function() {
       metaDIV.setAttribute("class","meta");
       var SPAN = document.createElement('DIV');
       SPAN.setAttribute("class","date");
-      SPAN.innerHTML = events[i].getElementsByTagName("date");
+      SPAN.innerHTML = events[i].getElementsByTagName("date")[0].textContent;
       metaDIV.appendChild(SPAN);
       txtDIV.appendChild(metaDIV);
       
