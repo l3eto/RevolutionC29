@@ -5,10 +5,21 @@
     <date>Sábado 28 Mayo</date>
     <info>Este sábado a las 19h compartiremos de un tiempo "Internacional"</info>
     <alert>¡Te esperamos!</alert>
-    <location>Lugar: Carrer Pinar del Río 5, bis.</location>
-    <hour>Hora: 19h.</hour>
+    <location>Carrer Pinar del Río 5, bis.</location>
+    <hour>19h.</hour>
     <src>../images/2016/mayo/3.png</src>
     <instagram>https://www.instagram.com/p/BF81RsNykOn/</instagram>
-    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1780890342143640/'</facebook>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1780890342143640/</facebook>
+  </event>
+  <event>
+    <header>About Time</header>
+    <date>Sábado 21 Mayo</date>
+    <info>Te esperamos este sábado a las 19h en Calle Pinar del Río 5 bis para compartir un tiempo en familia.</info>
+    <alert>¡No faltes!</alert>
+    <location>Carrer Pinar del Río 5, bis.</location>
+    <hour>19h.</hour>
+    <src>../images/2016/mayo/2.png</src>
+    <instagram>https://www.instagram.com/p/BFqfwf8SkEF/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1778284352404239/</facebook>
   </event>
 </events>
