@@ -72,7 +72,7 @@ $( document ).ready(function() {
       var extrainfoDIV = document.createElement('DIV');
       var SPAN = document.createElement('SPAN');
       SPAN.innerHTML = "Ver en publicación :";
-      entrainfoDIV.appendChild(SPAN);
+      extrainfoDIV.appendChild(SPAN);
       var BUTTON = document.createElement('BUTTON');
       BUTTON.setAttribute("class","ui circular facebook icon button");
       var ICON = document.createElement('I');
