@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
-    <title>good job</title>
+    <title>Día Internacional</title>
+    <date>Sábado 28 Mayo</date>
+    <info>Este sábado a las 19h compartiremos de un tiempo "Internacional"</info>
+    <alert>¡Te esperamos!</alert>
+    <location>Lugar: Carrer Pinar del Río 5, bis.</location>
+    <hour>Hora: 19h.</hour>
+    <instagram></instagram>
+    <facebook></facebook>
   </event>
 </events>
