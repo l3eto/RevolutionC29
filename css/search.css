@@ -199,3 +199,9 @@ h3.ui.header {
 .ui.grid>.column:not(.row), .ui.grid>.row>.column {
     padding-top: 0.6em;
 }
+
+.ui.divider:not(.vertical):not(.horizontal) {
+    border-top: 1px solid rgba(234, 194, 194, 0.55);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0em 3em !important;
+}
