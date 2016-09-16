@@ -97,8 +97,8 @@ $( document ).ready(function(){
       setTitle( title );
       setAudio( title );
       setMenu();
-      setLetras();
-      setAcordes();
+      setLetras(song,orden);
+      setAcordes(song,orden);
       $('.menu .item').tab();
     });
   }else{
@@ -174,7 +174,7 @@ function setMenu(){
 }
 
 //set letras
-function setLetras( song ){
+function setLetras( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui active tab");
   div.setAttribute("data-tab","Letra");
@@ -182,10 +182,14 @@ function setLetras( song ){
   container.setAttribute("class","ui center aligned segment");
   var songcontainer = document.createElement('DIV');
   songcontainer.setAttribute("class","ui song-container");
-  
-  
-  
-  
+  for( var i = 0 ; i < orden.length ; i++ ){
+    var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
+    for( var j = 0 ; j < lyric.length ; j++ ){
+      var SPAN = document.createElement('SPAN');
+      SPAN.innerHTML = lyric[i].getAttribute("text");
+      songcontainer.appendChild(SPAN);
+    }
+  }
   container.appendChild(songcontainer);
   div.appendChild(container);
   document.getElementById('search-result').appendChild( div );
