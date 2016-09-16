@@ -116,7 +116,7 @@ function setAudio( title ){
   //pause
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","audio.pause();");
+  item.setAttribute("onclick","audio.pause();");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon pause");
   item.appendChild(icon);
@@ -124,7 +124,7 @@ function setAudio( title ){
   //play
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","audio.play();");
+  item.setAttribute("onclick","audio.play();");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon play");
   item.appendChild(icon);
@@ -132,7 +132,7 @@ function setAudio( title ){
   //stop
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","audio.pause();audio.currentTime = 0;;");
+  item.setAttribute("onclick","audio.pause();audio.currentTime = 0;;");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon stop");
   item.appendChild(icon);
@@ -140,7 +140,7 @@ function setAudio( title ){
   //repeat
   var item = document.createElement('DIV);
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('repeat');");
+  item.setAttribute("onclick","console.log('repeat');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
