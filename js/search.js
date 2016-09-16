@@ -245,19 +245,29 @@ function setAcordes( song , orden ){
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
     var chord = $( song ).find('chord[name="'+lyric.getAttribute("chord")+'"]').get(0); //load chord from lyric
     if( chord ){
-      //if have lyric and chord
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
+        //add divider
+        var divGrid = document.createElement('DIV');
+        divGrid.setAttribute("class","sixteen wide column");
+        var divider = document.createElement('DIV');
+        divider.setAttribute("class","ui divider");
+        divGrid.appendChild(divider);
+        grid.appendChild(divGrid);
+        //add notes if exists
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
-        for( var k = 0 ; k < notes.length ; k ++ ){
-          var divGrid = document.createElement('DIV');
-          divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
-          var divNote = document.createElement('A');
-          divNote.setAttribute("class","ui red basic label");
-          divNote.setAttribute("style","font-size:0.8em");
-          divNote.innerHTML = notes[k].getAttribute("note");
-          divGrid.appendChild(divNote);
-          grid.appendChild(divGrid);
+        if( notes.length > 0 ){
+          for( var k = 0 ; k < notes.length ; k ++ ){
+            var divGrid = document.createElement('DIV');
+            divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
+            var divNote = document.createElement('A');
+            divNote.setAttribute("class","ui red basic label");
+            divNote.setAttribute("style","font-size:0.8em");
+            divNote.innerHTML = notes[k].getAttribute("note");
+            divGrid.appendChild(divNote);
+            grid.appendChild(divGrid);
+          }
         }
+        //add lyrics if exists
         if( lyric.getElementsByTagName("p").length > 0 ){
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class","sixteen wide column");
