@@ -1,3 +1,9 @@
+var content = [
+    { title: 'Andorra'},
+    { title: 'United Arab Emirates' }
+  ];
+
+
 $( document ).ready(function() {
   //read xml
   function readXML(file, callback) {
@@ -23,12 +29,6 @@ $( document ).ready(function() {
   
   var songs = xmlDoc.getElementsByTagName("event");
   console.log(songs);
-  
-  var content = [
-    { title: 'Andorra'},
-    { title: 'United Arab Emirates' }
-  ];
-  
   /*if( events.length > 0 ){
     for (var i = 0; i < events.length; i++) {
     
