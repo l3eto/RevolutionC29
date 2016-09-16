@@ -1,6 +1,6 @@
 //get search
   function getSearchURL(){
-    var result = /^[?](song)=(.*)$/gmi.exec( window.location.search );
+    var result = /^[?](song)[=](.*)$/gmi.exec( window.location.search );
     if(result){
       result.shift();
       if( result[0] == 'song'){
