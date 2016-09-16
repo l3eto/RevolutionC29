@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<songs>
-  <song
-  name="Camino"
-  src=""></song>
-  
-  
-</songs>
+<artists>
+  <artist name="Kike Pavón">
+    <songs>
+      <song name="La Experiencia de Adorar" id="ueu6r8jjor">
+        <order>
+          
+        </order>
+        <chords>
+          <intro num="1">
+            <a temp="4" note="C"></a>
+            <a temp="4" note="C"></a>
+            <a temp="4" note="C"></a>
+          </intro>
+          
+        </chords>
+        <lyrics>
+          <verse num="1">
+            <p text="Es mejor un día en tu presencia"></p>
+            <p text="que mil años fuera de ella"></p>
+            <p text="pues nada se compara a ella"></p>
+          </verse>
+          <verse num="2">
+            <p text="Es mejor un rincón en tu casa"></p>
+            <p text="que tener el mejor palacio"></p>
+            <p text="mejor estar en tu regazo"></p>
+          </verse>
+          <chorus num="1">
+            <p text="Y adorar, desde hoy hasta la eternidad"></p>
+            <p text="y en tu presencia descansar"></p>
+            <p text="pues no hay mejor lugar que estar donde tú estás"></p>
+          </chorus>
+          <chorus num="2">
+            <p text="Y habitar, bajo tus alas contemplar"></p>
+            <p text="tú gran poder y tu bondad"></p>
+            <p text="y disfrutar de la experiencia de adorarte Jesús"></p>
+          </chorus>
+          <bridge num="1">
+            <p text="Quiero vivir en tu presencia"></p>
+            <p text="Quiero adorar hasta que no tenga fuerzas"></p>
+          </bridge>
+        </lyrics>
+      </song>
+    </songs>
+  </artist>
+</artists>
+
