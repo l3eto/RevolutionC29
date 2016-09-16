@@ -1,6 +1,6 @@
 var content = [
-    { title: 'Andorra' , description:'xxxxxxxaaa' , key:'asdasd'},
-    { title: 'United Arab Emirates' , description:'zzzzzz' , key:'111' }
+    { title: 'Andorra' , description:'xxxxxxxaaa' },
+    { title: 'United Arab Emirates' , description:'zzzzzz' }
   ];
 
 //read xml
@@ -28,10 +28,18 @@ var content = [
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    var songs = xmlDoc.getElementsByTagName("artist");
-    if( songs.length > 0 ){
-        for( var i = 0 ; i < songs.length ; i++){
-            console.log( songs[i] );
+    var artist = xmlDoc.getElementsByTagName("artist");
+    if( artist.length > 0 ){
+        for( var i = 0 ; i < artist.length ; i++){
+            var artistname = artist[i].getAttribute("name");
+            var songs = artist[i].getElementsByTagName("song");
+            if( songs.length > 0 ){
+                for( var j = 0 ; j < songs.length ; j< ){
+                    var songname = songs[j].getAttribute("name");
+                    var songid = songs[j].getAttribute("id");
+                    data.push( { title: songname.concat(' - ',artistname)  , description: songid } )
+                }
+            }
         }
     }
     });
