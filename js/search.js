@@ -230,27 +230,28 @@ function setAcordes( song , orden ){
     //set tittle
     var divGrid = document.createElement('DIV');
     divGrid.setAttribute("class","left aligned sixteen wide column");
-    divGrid.setAttribute("style","padding-top: 1em;padding-bottom: 1em;margin-left:3em;");
+    divGrid.setAttribute("style","padding:1em;");
     var musicon = document.createElement('I');
     musicon.setAttribute("class","music icon");
+    musicon.setAttribute("style","font-size:1em;");
     divGrid.appendChild(musicon);
     var divTitle = document.createElement('DIV');
     divTitle.setAttribute("class","ui left pointing black ignored label");
-    divTitle.setAttribute("style","font-size:0.9em;");
+    divTitle.setAttribute("style","font-size:1em;");
     divTitle.innerHTML = customLabels[ orden[i] ];
     divGrid.appendChild(divTitle);
     grid.appendChild(divGrid);
     //set notes and chords
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
     var chord = $( song ).find('chord[name="'+lyric.getAttribute("chord")+'"]').get(0); //load chord from lyric
-    //if( lyric.getElementsByTagName("p").length > 0 ){
+    if( chord ){
       //if have lyric and chord
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
         for( var k = 0 ; k < notes.length ; k ++ ){
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
-          var divNote = document.createElement('DIV');
+          var divNote = document.createElement('A');
           divNote.setAttribute("class","ui red basic label");
           divNote.setAttribute("style","font-size:0.8em");
           divNote.innerHTML = notes[k].getAttribute("note");
@@ -264,61 +265,7 @@ function setAcordes( song , orden ){
           grid.appendChild(divGrid);
         }
       }
-    //}
-    /*else{
-      //if have not lyric only chord
-      for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
-        var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
-        for( var k = 0 ; k < notes.length ; k ++ ){
-          var divGrid = document.createElement('DIV');
-          divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
-          var divNote = document.createElement('DIV');
-          divNote.setAttribute("class","ui red basic label");
-          divNote.setAttribute("style","font-size:0.8em");
-          divNote.innerHTML = notes[k].getAttribute("note");
-          divGrid.appendChild(divNote);
-          grid.appendChild(divGrid);
-        }
-      }
-    }*/
-    
-    
-    
-    
-    
-    //setnotes
-    //var chordname = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
-    //var chords = $( song ).find('chord[name="'+chordname+'"]').get(0).getElementsByTagName("a");
-   /* if( chordname ){
-      var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
-      if( lyric.length > 0 & chords.length > 0 ){
-        //set lyrics&notes
-        for( var j = 0 ; j < lyric.length ; j++ ){
-          //set notes first
-          for( var k = 0 ; k < chords.length ; k ++ ){
-            var divGrid = document.createElement('DIV');
-            divGrid.setAttribute("class",customLabels[chords[k].getAttribute("temp")]+" wide column");
-            divGrid.innerHTML = chords[k].getAttribute("note");
-            grid.appendChild(divGrid);  
-          }
-          //set lyrcis
-          var divGrid = document.createElement('DIV');
-          divGrid.setAttribute("class","sixteen wide column");
-          divGrid.innerHTML = lyric[j].getAttribute("text");
-          grid.appendChild(divGrid);
-        }
-      }else{
-        //only set notes
-        if( chords.length > 0 ){
-          for( var k = 0 ; k < chords.length ; k ++ ){
-            var divGrid = document.createElement('DIV');
-            divGrid.setAttribute("class",customLabels[chords[k].getAttribute("temp")]+" wide column");
-            divGrid.innerHTML = chords[k].getAttribute("note");
-            grid.appendChild(divGrid);  
-          }
-        }
-      }
-    }*/
+    }
   }
   songcontainer.appendChild(grid);
   container.appendChild(songcontainer);
