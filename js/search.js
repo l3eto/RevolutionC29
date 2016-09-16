@@ -87,7 +87,8 @@ $( document ).ready(function(){
       var artistName = song.parentNode.parentNode.getAttribute("name");
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
-      var orden = getOrden( song.getAttribute("order") );
+      var orden = song.getAttribute("order").split("-");
+      console.log(orden);
       document.title = songName+' | Revolution C29';
       $('input')[0].value = title;
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
@@ -105,17 +106,6 @@ $( document ).ready(function(){
     $('#search-result').remove();
   }
 });
-
-//get orden
-function getOrden( song ){
-  var result = /\-?([^\-]*)\-?/gmi.exec( song );
-  if(result){
-    result.shift();
-    console.log(result);
-  }else{
-    return null;
-  }
-}
 
 //set tittle
 function setTitle( title ){
