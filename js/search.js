@@ -2,6 +2,20 @@
 var audio;
 var loop = false;
 
+//customlabels
+var customLabels = {
+  'intro':'Intro',
+  'verse':'Verso',
+  'verse1':'Verso 1',
+  'verse2':'Verso 2',
+  'chorus':'Coro',
+  'chorus1':'Coro 1',
+  'chorus2':'Coro 2',
+  'bridge':'Puente',
+  '4':'four'
+  
+}
+
 //get search
   function getSearchURL(){
     var result = /^[?](song)[=](.*)$/gmi.exec( window.location.search );
@@ -93,9 +107,9 @@ $( document ).ready(function(){
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
       }, false);
-      setAudio( title );
       setTitle( title );
       setMenu();
+      setAudio( title );
       setLetras(song,orden);
       setAcordes(song,orden);
       $('.menu .item').tab();
@@ -211,28 +225,44 @@ function setAcordes( song , orden ){
   var grid = document.createElement('DIV');
   grid.setAttribute("class","ui grid");
   for( var i = 0 ; i < orden.length ; i++ ){
-    var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
-    console.log(lyric);
-    /*
-    if( lyric.length > 0 ){
-      for( var j = 0 ; j < lyric.length ; j++ ){
-        var chord = $( song ).find('chord[name="'+lyric[i].getAttribute('chord')+'"]').get(0).getElementsByTagName("a");
-        if( chord.length > 0 ){
-          for( var k = 0 ; k < chord.length ; k++ ){
-            var chordDIV = document.createElement("DIV");
-            chordDIV.setAttribute("class", numchord[chord[k].getAttribute("temp")]+" wide column");
-            chordDIV.innerHTML = chord[k].getAttribute("note");
-            chordDIV.appendChild( grid );
+    //set tittle
+    var divGrid = document.createElement('DIV');
+    divGrid.setAttribute("sixteen wide column");
+    divGrid.innerHTML = customLabels[ orden[i] ];
+    grid.appendChild(divGrid);
+    //setnotes
+    var chordname = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
+    var chords = $( song ).find('chord[name="'+lyric[i].getAttribute('chord')+'"]').get(0).getElementsByTagName("a");
+    if( chordname ){
+      var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
+      if( lyric.length > 0 & chords.length > 0 ){
+        //set lyrics&notes
+        for( var j = 0 ; j < lyric.length ; j++ ){
+          //set notes first
+          for( var k = 0 ; k < chords.length ; k ++ ){
+            var divGrid = document.createElement('DIV');
+            divGrid.setAttribute(customLabels[chords[k].getAttribute("temp")]+" wide column");
+            divGrid.innerHTML = chords[k].getAttribute("note");
+            grid.appendChild(divGrid);  
+          }
+          //set lyrcis
+          var divGrid = document.createElement('DIV');
+          divGrid.setAttribute("sxiteen wide column");
+          divGrid.innerHTML = lyric[j].getAttribute("text");
+          grid.appendChild(divGrid);
+        }
+      }else{
+        //only set notes
+        if( chords.length > 0 ){
+          for( var j = 0 ; j < chords.length ; chords ++ ){
+            var divGrid = document.createElement('DIV');
+            divGrid.setAttribute(customLabels[chords[i].getAttribute("temp")]+" wide column");
+            divGrid.innerHTML = chords[i].getAttribute("note");
+            grid.appendChild(divGrid);  
           }
         }
-        var SPAN = document.createElement('SPAN');
-        SPAN.innerHTML = lyric[j].getAttribute("text");
-        grid.appendChild(SPAN);
-        grid.appendChild(document.createElement('BR'));
       }
-      grid.appendChild(document.createElement('BR'));
-    }*/
-    
+    }
   }
   songcontainer.appendChild(grid);
   container.appendChild(songcontainer);
