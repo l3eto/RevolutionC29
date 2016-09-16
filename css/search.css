@@ -191,3 +191,7 @@ h3.ui.header {
 .ui.search>.results .result .description {
     display:none!important;
 }
+
+.effect-revolution:hover{
+  cursor:pointer;
+}
