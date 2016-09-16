@@ -138,7 +138,7 @@ function setAudio( title ){
   item.appendChild(icon);
   div.appendChild(item);
   //repeat
-  var item = document.createElement('DIV);
+  var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("onclick","console.log('repeat');");
   var icon = document.createElement('I');
