@@ -86,6 +86,7 @@ $( document ).ready(function(){
     var artistName = song.parentNode.parentNode.getAttribute("name");
     var songName = song.getAttribute("name");
     var title = artistName+' - '+songName;
+    document.title = title+' | Revolution C29';
     audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
     audio.addEventListener('ended', function() {
       if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
@@ -93,6 +94,7 @@ $( document ).ready(function(){
     setTitle( title );
     setAudio( title );
     setMenu();
+     $('.menu .item').tab();
     });
     
     
