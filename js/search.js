@@ -84,7 +84,7 @@ $( document ).ready(function(){
     //get values
     var artistName = song.parentNode.parentNode.getAttribute("name");
     var songName = song.getAttribute("name");
-    var title = artistName+"' - '+songName;
+    var title = artistName+' - '+songName;
     audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
     setTitle( title );
     setAudio( title );
@@ -114,7 +114,7 @@ function setAudio( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid four item menu effect-revolution");
   //pause
-  var item = document.createElement('DIV');
+  var item = document.createElement('A');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","audio.pause();");
   var icon = document.createElement('I');
@@ -122,7 +122,7 @@ function setAudio( title ){
   item.appendChild(icon);
   div.appendChild(item);
   //play
-  var item = document.createElement('DIV');
+  var item = document.createElement('A');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","audio.play();");
   var icon = document.createElement('I');
@@ -130,7 +130,7 @@ function setAudio( title ){
   item.appendChild(icon);
   div.appendChild(item);
   //stop
-  var item = document.createElement('DIV');
+  var item = document.createElement('A');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","audio.pause();audio.currentTime = 0;;");
   var icon = document.createElement('I');
@@ -138,7 +138,7 @@ function setAudio( title ){
   item.appendChild(icon);
   div.appendChild(item);
   //repeat
-  var item = document.createElement('DIV');
+  var item = document.createElement('A');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","console.log('repeat');");
   var icon = document.createElement('I');
