@@ -1,8 +1,3 @@
-var content = [
-    { title: 'Andorra' , description:'xxxxxxxaaa' },
-    { title: 'United Arab Emirates' , description:'zzzzzz' }
-  ];
-
 //read xml
   function readXML(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -48,5 +43,6 @@ var content = [
   }
 
 $( document ).ready(function() {
-  $('.ui.search').search({source: getContent() });
+  var content = getContent();
+  $('.ui.search').search({source: content });
 });
