@@ -275,16 +275,16 @@ function setAcordes( song , orden ){
           divGrid.innerHTML = lyric.getElementsByTagName("p")[j].getAttribute("text");
           grid.appendChild(divGrid);
         }
-        //add divider
-        var divGrid = document.createElement('DIV');
-        divGrid.setAttribute("class","sixteen wide column");
-        divGrid.setAttribute("style","padding-top: 0px;");
-        var divider = document.createElement('DIV');
-        divider.setAttribute("class","ui divider");
-        divGrid.appendChild(divider);
-        grid.appendChild(divGrid);
       }
     }
+    //add divider
+    var divGrid = document.createElement('DIV');
+    divGrid.setAttribute("class","sixteen wide column");
+    divGrid.setAttribute("style","padding-top: 0px;");
+    var divider = document.createElement('DIV');
+    divider.setAttribute("class","ui divider");
+    divGrid.appendChild(divider);
+    grid.appendChild(divGrid);
   }
   songcontainer.appendChild(grid);
   container.appendChild(songcontainer);
