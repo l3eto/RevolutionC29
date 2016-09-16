@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  
   //read xml
   function readXML(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -24,13 +23,23 @@ $( document ).ready(function() {
   
   var songs = xmlDoc.getElementsByTagName("event");
   console.log(songs);
-  if( events.length > 0 ){
+  
+  var content = [
+    { title: 'Andorra' , description: 'xxxaxa' },
+    { title: 'United Arab Emirates', description: 'zzzza' }
+  ]
+  
+  /*if( events.length > 0 ){
     for (var i = 0; i < events.length; i++) {
     
     }
-  }
+  }*/
     
   });
   
+  //search
+  $('.ui.search').search({
+    source: content
+  });
 
 });
