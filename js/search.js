@@ -93,8 +93,8 @@ $( document ).ready(function(){
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
       }, false);
-      setTitle( title );
       setAudio( title );
+      setTitle( title );
       setMenu();
       setLetras(song,orden);
       setAcordes(song,orden);
@@ -111,6 +111,7 @@ function setTitle( title ){
   div.setAttribute("class","ui fluid one item tabs menu");
   var div2 = document.createElement('SPAN');
   div2.setAttribute("class","item");
+  div2.setAttribute("style","font-size:1.5em;");
   div2.innerHTML = title;
   div.appendChild( div2 );
   document.getElementById('search-result').appendChild( div );
@@ -199,13 +200,42 @@ function setLetras( song , orden ){
 }
 
 //set acordes
-function setAcordes(){
+function setAcordes( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui tab");
   div.setAttribute("data-tab","Acordes");
   var container = document.createElement('DIV');
   container.setAttribute("class","ui center aligned segment");
-  
+  var songcontainer = document.createElement('DIV');
+  songcontainer.setAttribute("class","ui song-container");
+  var grid = document.createElement('DIV');
+  grid.setAttribute("class","ui grid");
+  for( var i = 0 ; i < orden.length ; i++ ){
+    var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
+    console.log(lyric);
+    /*
+    if( lyric.length > 0 ){
+      for( var j = 0 ; j < lyric.length ; j++ ){
+        var chord = $( song ).find('chord[name="'+lyric[i].getAttribute('chord')+'"]').get(0).getElementsByTagName("a");
+        if( chord.length > 0 ){
+          for( var k = 0 ; k < chord.length ; k++ ){
+            var chordDIV = document.createElement("DIV");
+            chordDIV.setAttribute("class", numchord[chord[k].getAttribute("temp")]+" wide column");
+            chordDIV.innerHTML = chord[k].getAttribute("note");
+            chordDIV.appendChild( grid );
+          }
+        }
+        var SPAN = document.createElement('SPAN');
+        SPAN.innerHTML = lyric[j].getAttribute("text");
+        grid.appendChild(SPAN);
+        grid.appendChild(document.createElement('BR'));
+      }
+      grid.appendChild(document.createElement('BR'));
+    }*/
+    
+  }
+  songcontainer.appendChild(grid);
+  container.appendChild(songcontainer);
   div.appendChild(container);
   document.getElementById('search-result').appendChild( div );
 }
