@@ -232,7 +232,7 @@ function setAcordes( song , orden ){
     grid.appendChild(divGrid);
     //setnotes
     var chordname = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
-    var chords = $( song ).find('chord[name="'+lyric[i].getAttribute('chord')+'"]').get(0).getElementsByTagName("a");
+    var chords = $( song ).find('chord[name="'+chordname+'"]').get(0).getElementsByTagName("a");
     if( chordname ){
       var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
       if( lyric.length > 0 & chords.length > 0 ){
