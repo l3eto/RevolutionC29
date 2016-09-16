@@ -114,7 +114,7 @@ function setAudio( title ){
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","console.log('pause'");
-  var icon = document.createElement('DIV');
+  var icon = document.createElement('I');
   icon.setAttribute("class","icon pause");
   item.appendChild(icon);
   div.appendChild(item);
@@ -122,7 +122,7 @@ function setAudio( title ){
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","console.log('play'");
-  var icon = document.createElement('DIV');
+  var icon = document.createElement('I');
   icon.setAttribute("class","icon play");
   item.appendChild(icon);
   div.appendChild(item);
@@ -130,7 +130,7 @@ function setAudio( title ){
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","console.log('stop'");
-  var icon = document.createElement('DIV');
+  var icon = document.createElement('I');
   icon.setAttribute("class","icon stop");
   item.appendChild(icon);
   div.appendChild(item);
@@ -138,7 +138,7 @@ function setAudio( title ){
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("click","console.log('repeat'");
-  var icon = document.createElement('DIV');
+  var icon = document.createElement('I');
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
   div.appendChild(item);
