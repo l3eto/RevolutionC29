@@ -13,7 +13,7 @@ $( document ).ready(function() {
   });
 
   $('.mobile-container.language-link').click( function(){
-    //window.location.path = 'worship';
+    window.location.href = '../search/';
   });
 
   $('.rounded.big.square.icon').hover(function(){
