@@ -1,5 +1,6 @@
 //global var
 var audio;
+var loop = false;
 
 //get search
   function getSearchURL(){
@@ -86,6 +87,9 @@ $( document ).ready(function(){
     var songName = song.getAttribute("name");
     var title = artistName+' - '+songName;
     audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
+    audio.addEventListener('ended', function() {
+      if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
+    }, false);
     setTitle( title );
     setAudio( title );
     
@@ -140,7 +144,7 @@ function setAudio( title ){
   //repeat
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("onclick","console.log('repeat');");
+  item.setAttribute("onclick","loop=!loop;");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
