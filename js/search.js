@@ -14,6 +14,7 @@ var loop = false;
       return null;
     }
   }
+  
 
 //read xml
   function readXML(file, callback) {
@@ -86,6 +87,7 @@ $( document ).ready(function(){
       var artistName = song.parentNode.parentNode.getAttribute("name");
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
+      var orden = getOrden( song.getAttribute("order") );
       document.title = songName+' | Revolution C29';
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
       audio.addEventListener('ended', function() {
@@ -94,7 +96,7 @@ $( document ).ready(function(){
       setTitle( title );
       setAudio( title );
       setMenu();
-      setLetras(song);
+      setLetras();
       setAcordes();
       $('.menu .item').tab();
     });
@@ -102,6 +104,17 @@ $( document ).ready(function(){
     $('#search-result').remove();
   }
 });
+
+//get orden
+function getOrden( song ){
+  var result = \-?([^\-]*)\-?/gmi.exec( song );
+    if(result){
+      result.shift();
+      console.log(result);
+    }else{
+      return null;
+    }
+}
 
 //set tittle
 function setTitle( title ){
@@ -179,7 +192,10 @@ function setLetras( song ){
   container.setAttribute("class","ui center aligned segment");
   var songcontainer = document.createElement('DIV');
   songcontainer.setAttribute("class","ui song-container");
-  console.log(song);
+  
+  
+  
+  
   container.appendChild(songcontainer);
   div.appendChild(container);
   document.getElementById('search-result').appendChild( div );
@@ -192,7 +208,7 @@ function setAcordes(){
   div.setAttribute("data-tab","Acordes");
   var container = document.createElement('DIV');
   container.setAttribute("class","ui center aligned segment");
-  container.innerHTML='ASDAS2122';
+  
   div.appendChild(container);
   document.getElementById('search-result').appendChild( div );
 }
