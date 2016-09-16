@@ -197,8 +197,6 @@ function setLetras( song , orden ){
   var songcontainer = document.createElement('DIV');
   songcontainer.setAttribute("class","ui song-container");
   for( var i = 0 ; i < orden.length ; i++ ){
-    console.log( orden );
-    console.log( $( song ).find('lyric[name="'+orden[i]+'"]').get(0) );
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
     if( lyric.length > 0 ){
       for( var j = 0 ; j < lyric.length ; j++ ){
