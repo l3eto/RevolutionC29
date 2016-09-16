@@ -9,12 +9,12 @@
           </chord>
           <chord name="2">
             <p><a temp="8" note="C"></a><a temp="8" note="Em"></a></p>
-            <p><a temp="8" note="Em"><a temp="8" note="Am"></a></p>
-            <p><a temp="8" note="Am"><a temp="8" note="F"></a></p>
+            <p><a temp="8" note="Em"></a><a temp="8" note="Am"></a></p>
+            <p><a temp="8" note="Am"></a><a temp="8" note="F"></a></p>
           </chord>
           <chord name="3">
             <p><a temp="8" note="C"></a><a temp="8" note="Am"></a></p>
-            <p><a temp="8" note="Am"><a temp="8" note="G"></a></p>
+            <p><a temp="8" note="Am"></a><a temp="8" note="G"></a></p>
             <p><a temp="8" note="G"></a><a temp="8" note="F"></a></p>
           </chord>
           <chord name="4">
