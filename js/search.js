@@ -243,7 +243,7 @@ function setAcordes( song , orden ){
     //set notes and chords
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
     var chord = $( song ).find('chord[name="'+lyric.getAttribute("chord")+'"]').get(0); //load chord from lyric
-    if( lyric.getElementsByTagName("p").length > 0 ){
+    //if( lyric.getElementsByTagName("p").length > 0 ){
       //if have lyric and chord
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
@@ -251,29 +251,35 @@ function setAcordes( song , orden ){
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
           var divNote = document.createElement('DIV');
-          divNote.setAttribute("class","ui pointing below red basic label");
-          divNote.setAttribute("style","font-size:1em");
+          divNote.setAttribute("class","ui red basic label");
+          divNote.setAttribute("style","font-size:0.8em");
           divNote.innerHTML = notes[k].getAttribute("note");
           divGrid.appendChild(divNote);
           grid.appendChild(divGrid);
         }
-        var divGrid = document.createElement('DIV');
-        divGrid.setAttribute("class","sixteen wide column");
-        divGrid.innerHTML = lyric.getElementsByTagName("p")[j].getAttribute("text");
-        grid.appendChild(divGrid);
+        if( lyric.getElementsByTagName("p").length > 0 ){
+          var divGrid = document.createElement('DIV');
+          divGrid.setAttribute("class","sixteen wide column");
+          divGrid.innerHTML = lyric.getElementsByTagName("p")[j].getAttribute("text");
+          grid.appendChild(divGrid);
+        }
       }
-    }else{
+    //}/*else{
       //if have not lyric only chord
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
         for( var k = 0 ; k < notes.length ; k ++ ){
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
-          divGrid.innerHTML = notes[k].getAttribute("note");
+          var divNote = document.createElement('DIV');
+          divNote.setAttribute("class","ui red basic label");
+          divNote.setAttribute("style","font-size:0.8em");
+          divNote.innerHTML = notes[k].getAttribute("note");
+          divGrid.appendChild(divNote);
           grid.appendChild(divGrid);
         }
       }
-    }
+    }*/
     
     
     
