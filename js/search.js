@@ -230,6 +230,7 @@ function setAcordes( song , orden ){
     //set tittle
     var divGrid = document.createElement('DIV');
     divGrid.setAttribute("class","sixteen wide column");
+    divGrid.setAttribute("style","padding-top: 1em;padding-bottom: 1em;margin-left:3em;");
     var musicon = document.createElement('I');
     musicon.setAttribute("class","music icon");
     divGrid.appendChild(musicon);
