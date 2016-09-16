@@ -25,9 +25,9 @@ $( document ).ready(function() {
   console.log(songs);
   
   var content = [
-    { title: 'Andorra' , description: 'xxxaxa' },
-    { title: 'United Arab Emirates', description: 'zzzza' }
-  ]
+    { title: 'Andorra'},
+    { title: 'United Arab Emirates' }
+  ];
   
   /*if( events.length > 0 ){
     for (var i = 0; i < events.length; i++) {
