@@ -92,7 +92,7 @@ $( document ).ready(function(){
     }, false);
     setTitle( title );
     setAudio( title );
-    
+    setMenu();
     });
     
     
@@ -142,12 +142,29 @@ function setAudio( title ){
   item.appendChild(icon);
   div.appendChild(item);
   //repeat
-  var item = document.createElement('DIV');
+  var item = document.createElement('A');
   item.setAttribute("class","item effect-revolution");
   item.setAttribute("onclick","loop=!loop;$(this).find('i').toggleClass('repeat');$(this).find('i').toggleClass('refresh');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
+  div.appendChild(item);
+  document.getElementById('search-result').appendChild( div );
+}
+
+//set menu
+function setMenu(){
+  var div = document.createElement('DIV');
+  div.setAttribute("class","ui fluid two item tabs menu");
+  var item = documente.createElement('A');
+  item.setAttribute("class","item");
+  item.setAttribute("data-tab","Letra");
+  item.innerHTML="Letra";
+  div.appendChild(item);
+  var item = documente.createElement('A');
+  item.setAttribute("class","item");
+  item.setAttribute("data-tab","Acordes");
+  item.innerHTML="Acordes";
   div.appendChild(item);
   document.getElementById('search-result').appendChild( div );
 }
