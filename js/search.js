@@ -236,6 +236,7 @@ function setAcordes( song , orden ){
     divGrid.appendChild(musicon);
     var divTitle = document.createElement('DIV');
     divTitle.setAttribute("class","ui left pointing black ignored label");
+    divTitle.setAttribute("style","font-size:0.9em;");
     divTitle.innerHTML = customLabels[ orden[i] ];
     divGrid.appendChild(divTitle);
     grid.appendChild(divGrid);
@@ -249,7 +250,11 @@ function setAcordes( song , orden ){
         for( var k = 0 ; k < notes.length ; k ++ ){
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
-          divGrid.innerHTML = notes[k].getAttribute("note");
+          var divNote = document.createElement('DIV');
+          divNote.setAttribute("class","ui pointing below red basic label");
+          divNote.setAttribute("style","font-size:1em");
+          divNote.innerHTML = notes[k].getAttribute("note");
+          divGrid.appendChild(divNote);
           grid.appendChild(divGrid);
         }
         var divGrid = document.createElement('DIV');
