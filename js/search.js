@@ -27,7 +27,7 @@ var content = [
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    var data = [];
+    var xmldata = [];
     var artist = xmlDoc.getElementsByTagName("artist");
     if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++){
@@ -38,39 +38,15 @@ var content = [
                     var songname = songs[j].getAttribute("name");
                     var songid = songs[j].getAttribute("id");
                     var title = songname.concat(' - ',artistname);
-                    data.push( { title: title  , description: songid } );
+                    xmldata.push( { title: title  , description: songid } );
                 }
             }
         }
     }
+    return xmldata;
     });
-    return data;
   }
 
 $( document ).ready(function() {
-   /* 
-  readXML("../uploads/songs.xml", function(data){
-    if (window.DOMParser){
-      parser = new DOMParser();
-      xmlDoc = parser.parseFromString(data, "text/xml");
-    }else{
-      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-      xmlDoc.async = false;
-      xmlDoc.loadXML(data);
-    }
-  
-  var songs = xmlDoc.getElementsByTagName("event");
-  console.log(songs);*/
-  /*if( events.length > 0 ){
-    for (var i = 0; i < events.length; i++) {
-    
-    }
-  }*/
-    
- // });
- 
-  var xmldata = getContent();
-  //search
-  $('.ui.search').search({source: xmldata });
-
+  $('.ui.search').search({source: getContent() });
 });
