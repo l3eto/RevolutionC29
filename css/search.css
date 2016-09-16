@@ -195,3 +195,7 @@ h3.ui.header {
 .effect-revolution:hover{
   cursor:pointer;
 }
+
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+    padding-top: 0.6em;
+}
