@@ -3,7 +3,9 @@
     var result = /^[?](song)=(.*)$/gmi.exec( window.location.search );
     if(result){
       result.shift();
-      console.log(result);
+      if( result[0] == 'song'){
+        return result[1];
+      }
     }
   }
 
