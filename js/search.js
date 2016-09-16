@@ -72,33 +72,32 @@ $( document ).ready(function(){
   if( searchingsong ){
     //search especific song
     readXML("../uploads/songs.xml", function(data){
-    if (window.DOMParser){
-      parser = new DOMParser();
-      xmlDoc = parser.parseFromString(data, "text/xml");
-    }else{
-      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-      xmlDoc.async = false;
-      xmlDoc.loadXML(data);
-    }
-    //get song
-    var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]').get(0);
-    //get values
-    var artistName = song.parentNode.parentNode.getAttribute("name");
-    var songName = song.getAttribute("name");
-    var title = artistName+' - '+songName;
-    document.title = title+' | Revolution C29';
-    audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
-    audio.addEventListener('ended', function() {
-      if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
-    }, false);
-    setTitle( title );
-    setAudio( title );
-    setMenu();
-     $('.menu .item').tab();
+      if (window.DOMParser){
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(data, "text/xml");
+      }else{
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = false;
+        xmlDoc.loadXML(data);
+      }
+      //get song
+      var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]').get(0);
+      //get values
+      var artistName = song.parentNode.parentNode.getAttribute("name");
+      var songName = song.getAttribute("name");
+      var title = artistName+' - '+songName;
+      document.title = title+' | Revolution C29';
+      audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
+      audio.addEventListener('ended', function() {
+        if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
+      }, false);
+      setTitle( title );
+      setAudio( title );
+      setMenu();
+      $('.menu .item').tab();
+      setLetras();
+      setAcordes();
     });
-    
-    
-    
   }else{
     $('#search-result').remove();
   }
@@ -168,5 +167,29 @@ function setMenu(){
   item.setAttribute("data-tab","Acordes");
   item.innerHTML="Acordes";
   div.appendChild(item);
+  document.getElementById('search-result').appendChild( div );
+}
+
+//set letras
+function setLetras(){
+  var div = document.createElement('DIV')  ;
+  div.setAttribute("class","ui active tab");
+  div.setAttribute("data-tab","Letra");
+  var container = document.createElement('DIV');
+  container.setAttribute("class","ui center aligned segment");
+  container.innerHTML='ASDASD';
+  div.appendChild(container);
+  document.getElementById('search-result').appendChild( div );
+}
+
+//set acordes
+function setAcordes(){
+  var div = document.createElement('DIV')  ;
+  div.setAttribute("class","ui tab");
+  div.setAttribute("data-tab","Acordes");
+  var container = document.createElement('DIV');
+  container.setAttribute("class","ui center aligned segment");
+  container.innerHTML='ASDAS2122';
+  div.appendChild(container);
   document.getElementById('search-result').appendChild( div );
 }
