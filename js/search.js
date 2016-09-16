@@ -14,10 +14,10 @@ var content = [
         }
     }
     rawFile.send(null);
-}
+    }
 
 //get content
-function getContent(){
+  function getContent(){
     readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
@@ -29,12 +29,12 @@ function getContent(){
     }
     var songs = xmlDoc.getElementsByTagName("song");
     var data = [];
-    if(songs.length>0){
-        for( var i = 0 ; i < songs.length; i++){
+    if( songs.length > 0 ){
+        for( var i = 0 ; i < songs.length ; i++){
             console.log( songs[i] );
         }
     }
-}
+  }
 
 $( document ).ready(function() {
    /* 
