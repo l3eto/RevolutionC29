@@ -144,7 +144,7 @@ function setAudio( title ){
   //repeat
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("onclick","loop=!loop;");
+  item.setAttribute("onclick","loop=!loop;$(this).find('i').toggleClass('repeat');$(this).find('i').toggleClass('refresh');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
