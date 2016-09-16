@@ -237,8 +237,8 @@ function setAcordes( song , orden ){
       
     }else{
       //if have not lyric only chord
-      for( var j = 0 ; j < chords.getElementsByTagName("p").length ; j ++ ){
-        var notes = chords.getElementsByTagName("p")[j].getElementsByTagName("a");
+      for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
+        var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
         for( var k = 0 ; k < notes.length ; k ++ ){
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
