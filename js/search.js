@@ -34,7 +34,7 @@ var content = [
             var artistname = artist[i].getAttribute("name");
             var songs = artist[i].getElementsByTagName("song");
             if( songs.length > 0 ){
-                for( var j = 0 ; j < songs.length ; j< ){
+                for( var j = 0 ; j < songs.length ; j++ ){
                     var songname = songs[j].getAttribute("name");
                     var songid = songs[j].getAttribute("id");
                     var title = songname.concat(' - ',artistname);
