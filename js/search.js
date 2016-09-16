@@ -23,7 +23,7 @@
     };
 
 //get content
-  function getContent(){
+  function setContent(){
     readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
@@ -49,14 +49,11 @@
             }
         }
     }
-    return xmldata;
     console.log(xmldata);
+    $('.ui.search').search({source: xmldata });
     });
-    console.log(xmldata);
   }
 var content = [];
 $( document ).ready(function() {
-  content = getContent();
-  console.log(content);
-  $('.ui.search').search({source: content });
+  setContent();
 });
