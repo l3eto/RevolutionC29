@@ -230,10 +230,32 @@ function setAcordes( song , orden ){
     divGrid.setAttribute("class","sixteen wide column");
     divGrid.innerHTML = customLabels[ orden[i] ];
     grid.appendChild(divGrid);
+    //set notes and chords
+    var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
+    var chord = $( song ).find('chord[name="'+lyric.getAttribute("chord")+'"]').get(0); //load chord from lyric
+    if( lyric.getElementsByTagName("p").length > 0 ){
+      
+    }else{
+      //if have not lyric only chord
+      for( var j = 0 ; j < chords.getElementsByTagName("p").length ; j ++ ){
+        var notes = chords.getElementsByTagName("p")[j].getElementsByTagName("a");
+        for( var k = 0 ; k < notes.length ; k ++ ){
+          var divGrid = document.createElement('DIV');
+          divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
+          divGrid.innerHTML = notes[k].getAttribute("note");
+          grid.appendChild(divGrid);
+        }
+      }
+    }
+    
+    
+    
+    
+    
     //setnotes
-    var chordname = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
-    var chords = $( song ).find('chord[name="'+chordname+'"]').get(0).getElementsByTagName("a");
-    if( chordname ){
+    //var chordname = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getAttribute("chord");
+    //var chords = $( song ).find('chord[name="'+chordname+'"]').get(0).getElementsByTagName("a");
+   /* if( chordname ){
       var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
       if( lyric.length > 0 & chords.length > 0 ){
         //set lyrics&notes
@@ -254,15 +276,15 @@ function setAcordes( song , orden ){
       }else{
         //only set notes
         if( chords.length > 0 ){
-          for( var j = 0 ; j < chords.length ; chords ++ ){
+          for( var k = 0 ; k < chords.length ; k ++ ){
             var divGrid = document.createElement('DIV');
-            divGrid.setAttribute("class",customLabels[chords[j].getAttribute("temp")]+" wide column");
-            divGrid.innerHTML = chords[j].getAttribute("note");
+            divGrid.setAttribute("class",customLabels[chords[k].getAttribute("temp")]+" wide column");
+            divGrid.innerHTML = chords[k].getAttribute("note");
             grid.appendChild(divGrid);  
           }
         }
       }
-    }
+    }*/
   }
   songcontainer.appendChild(grid);
   container.appendChild(songcontainer);
