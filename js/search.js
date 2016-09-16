@@ -227,7 +227,7 @@ function setAcordes( song , orden ){
   for( var i = 0 ; i < orden.length ; i++ ){
     //set tittle
     var divGrid = document.createElement('DIV');
-    divGrid.setAttribute("sixteen wide column");
+    divGrid.setAttribute("class","sixteen wide column");
     divGrid.innerHTML = customLabels[ orden[i] ];
     grid.appendChild(divGrid);
     //setnotes
@@ -241,13 +241,13 @@ function setAcordes( song , orden ){
           //set notes first
           for( var k = 0 ; k < chords.length ; k ++ ){
             var divGrid = document.createElement('DIV');
-            divGrid.setAttribute(customLabels[chords[k].getAttribute("temp")]+" wide column");
+            divGrid.setAttribute("class",customLabels[chords[k].getAttribute("temp")]+" wide column");
             divGrid.innerHTML = chords[k].getAttribute("note");
             grid.appendChild(divGrid);  
           }
           //set lyrcis
           var divGrid = document.createElement('DIV');
-          divGrid.setAttribute("sxiteen wide column");
+          divGrid.setAttribute("class","sixteen wide column");
           divGrid.innerHTML = lyric[j].getAttribute("text");
           grid.appendChild(divGrid);
         }
@@ -256,7 +256,7 @@ function setAcordes( song , orden ){
         if( chords.length > 0 ){
           for( var j = 0 ; j < chords.length ; chords ++ ){
             var divGrid = document.createElement('DIV');
-            divGrid.setAttribute(customLabels[chords[i].getAttribute("temp")]+" wide column");
+            divGrid.setAttribute("class",customLabels[chords[i].getAttribute("temp")]+" wide column");
             divGrid.innerHTML = chords[i].getAttribute("note");
             grid.appendChild(divGrid);  
           }
