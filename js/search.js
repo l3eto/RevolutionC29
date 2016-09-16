@@ -78,7 +78,7 @@ $( document ).ready(function(){
       xmlDoc.loadXML(data);
     }
     var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]');
-    console.log( x.parentNode.parentNode.getAttribute("name") );
+    console.log( song.parentNode.parentNode.getAttribute("name") );
     
     
     });
