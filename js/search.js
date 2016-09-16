@@ -14,7 +14,7 @@ var content = [
         }
     }
     rawFile.send(null);
-    }
+    };
 
 //get content
   function getContent(){
@@ -34,7 +34,7 @@ var content = [
             console.log( songs[i] );
         }
     }
-  }
+  };
 
 $( document ).ready(function() {
    /* 
