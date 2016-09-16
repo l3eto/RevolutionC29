@@ -68,8 +68,9 @@ $( document ).ready(function() {
     
  // });
  
-  
+  var content = getContent();
+  console.log(content);
   //search
-  $('.ui.search').search({source: getContent() });
+  $('.ui.search').search({source: content });
 
 });
