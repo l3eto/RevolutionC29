@@ -34,7 +34,8 @@ var content = [
             console.log( songs[i] );
         }
     }
-  };
+    });
+  }
 
 $( document ).ready(function() {
    /* 
