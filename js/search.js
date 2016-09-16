@@ -37,7 +37,8 @@ var content = [
                 for( var j = 0 ; j < songs.length ; j< ){
                     var songname = songs[j].getAttribute("name");
                     var songid = songs[j].getAttribute("id");
-                    data.push( { title: songname.concat(' - ',artistname)  , description: songid } )
+                    var title = songname.concat(' - ',artistname);
+                    data.push( { title: title  , description: songid } );
                 }
             }
         }
