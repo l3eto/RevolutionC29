@@ -234,7 +234,20 @@ function setAcordes( song , orden ){
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
     var chord = $( song ).find('chord[name="'+lyric.getAttribute("chord")+'"]').get(0); //load chord from lyric
     if( lyric.getElementsByTagName("p").length > 0 ){
-      
+      //if have lyric and chord
+      for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
+        var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
+        for( var k = 0 ; k < notes.length ; k ++ ){
+          var divGrid = document.createElement('DIV');
+          divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
+          divGrid.innerHTML = notes[k].getAttribute("note");
+          grid.appendChild(divGrid);
+        }
+        var divGrid = document.createElement('DIV');
+        divGrid.setAttribute("class","sixteen wide column");
+        divGrid.innerHTML = lyric.getElementsByTagName("p")[j].getAttribute("text");
+        grid.appendChild(divGrid);
+      }
     }else{
       //if have not lyric only chord
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
