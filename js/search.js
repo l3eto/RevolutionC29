@@ -256,8 +256,8 @@ function setAcordes( song , orden ){
         if( chords.length > 0 ){
           for( var j = 0 ; j < chords.length ; chords ++ ){
             var divGrid = document.createElement('DIV');
-            divGrid.setAttribute("class",customLabels[chords[i].getAttribute("temp")]+" wide column");
-            divGrid.innerHTML = chords[i].getAttribute("note");
+            divGrid.setAttribute("class",customLabels[chords[j].getAttribute("temp")]+" wide column");
+            divGrid.innerHTML = chords[j].getAttribute("note");
             grid.appendChild(divGrid);  
           }
         }
