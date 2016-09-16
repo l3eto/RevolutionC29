@@ -187,3 +187,7 @@ h3.ui.header {
 .ui.facebook.button {
   margin-left: 10px;
 }
+
+.ui.search>.results .result .description {
+    display:none!important;
+}
