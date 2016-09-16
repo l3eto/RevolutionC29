@@ -77,9 +77,13 @@ $( document ).ready(function(){
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
+    //get song
     var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]').get(0);
-    console.log(song);
-    console.log( song.parentNode.parentNode.getAttribute("name") );
+    //get values
+    var artistName = song.parentNode.parentNode.getAttribute("name");
+    var songName = song.getAttribute("name");
+    var title = artistName+' - '+songName;
+    setTitle( title );
     
     
     });
@@ -87,6 +91,18 @@ $( document ).ready(function(){
     
     
   }else{
-    $('#searchresult').remove();
+    $('#search-result').remove();
   }
 });
+
+//set tittle
+function setTitle( title ){
+  var div = document.createElement('DIV');
+  div.setAttribute("class","ui fluid one item tabs menu");
+  var div2 = document.createElement('SPAN');
+  div2.setAttribute("class","item");
+  div2.innerHTML = title;
+  div.appendChild( div2 );
+  document.getElementById('search-result').appendChild( div );
+  
+}
