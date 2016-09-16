@@ -99,10 +99,49 @@ $( document ).ready(function(){
 function setTitle( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid one item tabs menu");
+  div.setAttribute("style","padding-top: 0em");
   var div2 = document.createElement('SPAN');
   div2.setAttribute("class","item");
   div2.innerHTML = title;
   div.appendChild( div2 );
   document.getElementById('search-result').appendChild( div );
-  
+}
+
+//set audio
+function setAudio( title ){
+  var div = document.createElement('DIV');
+  div.setAttribute("class","ui fluid four item menu effect-revolution");
+  //pause
+  var item = document.createElement('DIV');
+  item.setAttribute("class","item effect-revolution");
+  item.setAttribute("click","console.log('pause'");
+  var icon = document.createElement('DIV');
+  icon.setAttribute("class","icon pause");
+  item.appendChild(icon);
+  div.appendChild(item);
+  //play
+  var item = document.createElement('DIV');
+  item.setAttribute("class","item effect-revolution");
+  item.setAttribute("click","console.log('play'");
+  var icon = document.createElement('DIV');
+  icon.setAttribute("class","icon play");
+  item.appendChild(icon);
+  div.appendChild(item);
+  //stop
+  var item = document.createElement('DIV');
+  item.setAttribute("class","item effect-revolution");
+  item.setAttribute("click","console.log('stop'");
+  var icon = document.createElement('DIV');
+  icon.setAttribute("class","icon stop");
+  item.appendChild(icon);
+  div.appendChild(item);
+  //repeat
+  var item = document.createElement('DIV');
+  item.setAttribute("class","item effect-revolution");
+  item.setAttribute("click","console.log('repeat'");
+  var icon = document.createElement('DIV');
+  icon.setAttribute("class","icon repeat");
+  item.appendChild(icon);
+  div.appendChild(item);
+  document.getElementById('search-result').appendChild( div );
 }
