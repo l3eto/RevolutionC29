@@ -224,6 +224,7 @@ function setAcordes( song , orden ){
   container.setAttribute("class","ui center aligned segment");
   var songcontainer = document.createElement('DIV');
   songcontainer.setAttribute("class","ui song-container");
+  songcontainer.setAttribute("style","padding-bottom: 15px;padding-top: 15px;")
   var grid = document.createElement('DIV');
   grid.setAttribute("class","ui grid");
   for( var i = 0 ; i < orden.length ; i++ ){
@@ -261,7 +262,7 @@ function setAcordes( song , orden ){
             var divGrid = document.createElement('DIV');
             divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
             var divNote = document.createElement('A');
-            divNote.setAttribute("class","ui red basic label");
+            divNote.setAttribute("class","ui black basic label");
             divNote.setAttribute("style","font-size:0.8em");
             divNote.innerHTML = notes[k].getAttribute("note");
             divGrid.appendChild(divNote);
@@ -277,14 +278,6 @@ function setAcordes( song , orden ){
         }
       }
     }
-    //add divider
-    var divGrid = document.createElement('DIV');
-    divGrid.setAttribute("class","sixteen wide column");
-    divGrid.setAttribute("style","padding-top: 0px;");
-    var divider = document.createElement('DIV');
-    divider.setAttribute("class","ui divider");
-    divGrid.appendChild(divider);
-    grid.appendChild(divGrid);
   }
   songcontainer.appendChild(grid);
   container.appendChild(songcontainer);
