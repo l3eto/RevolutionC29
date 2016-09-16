@@ -162,7 +162,7 @@ function setMenu(){
   item.setAttribute("data-tab","Letra");
   item.innerHTML="Letra";
   div.appendChild(item);
-  var item = documente.createElement('A');
+  var item = document.createElement('A');
   item.setAttribute("class","item");
   item.setAttribute("data-tab","Acordes");
   item.innerHTML="Acordes";
