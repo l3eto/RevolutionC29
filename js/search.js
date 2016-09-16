@@ -157,7 +157,7 @@ function setAudio( title ){
 function setMenu(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid two item tabs menu");
-  var item = documente.createElement('A');
+  var item = document.createElement('A');
   item.setAttribute("class","item");
   item.setAttribute("data-tab","Letra");
   item.innerHTML="Letra";
