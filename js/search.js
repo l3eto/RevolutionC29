@@ -78,7 +78,9 @@ $( document ).ready(function(){
       xmlDoc.loadXML(data);
     }
     //var song = xmlDoc.getElementsByTagName("song");
-    console.log( $(xmlDoc).find("value[id='"+searchingsong+"'] order") );
+    
+    
+    console.log(  $( xmlDoc ).find('song[id="'+searchingsong+'"]') );
     });
     
     
