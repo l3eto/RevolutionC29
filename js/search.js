@@ -264,7 +264,8 @@ function setAcordes( song , orden ){
           grid.appendChild(divGrid);
         }
       }
-    //}/*else{
+    //}
+    /*else{
       //if have not lyric only chord
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
