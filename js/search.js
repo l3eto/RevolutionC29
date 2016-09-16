@@ -241,19 +241,19 @@ function setAcordes( song , orden ){
     divTitle.innerHTML = customLabels[ orden[i] ];
     divGrid.appendChild(divTitle);
     grid.appendChild(divGrid);
+    //add divider
+    var divGrid = document.createElement('DIV');
+    divGrid.setAttribute("class","sixteen wide column");
+    divGrid.setAttribute("style","padding-top: 0px;");
+    var divider = document.createElement('DIV');
+    divider.setAttribute("class","ui divider");
+    divGrid.appendChild(divider);
+    grid.appendChild(divGrid);
     //set notes and chords
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
     var chord = $( song ).find('chord[name="'+lyric.getAttribute("chord")+'"]').get(0); //load chord from lyric
     if( chord ){
       for( var j = 0 ; j < chord.getElementsByTagName("p").length ; j ++ ){
-        //add divider
-        var divGrid = document.createElement('DIV');
-        divGrid.setAttribute("class","sixteen wide column");
-        divGrid.setAttribute("style","padding-top: 0px;");
-        var divider = document.createElement('DIV');
-        divider.setAttribute("class","ui divider");
-        divGrid.appendChild(divider);
-        grid.appendChild(divGrid);
         //add notes if exists
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
         if( notes.length > 0 ){
