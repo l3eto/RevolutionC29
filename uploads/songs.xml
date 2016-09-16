@@ -2,8 +2,7 @@
 <artists>
   <artist name="Kike Pavón">
     <songs>
-      <song name="La Experiencia de Adorar" id="ueu6r8jjor">
-        <order temp="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro"></order>
+      <song name="La Experiencia de Adorar" id="ueu6r8jjor" order="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro">
         <chords>
           <chord name="1">
             <a temp="4" note="C"></a>
