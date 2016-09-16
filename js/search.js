@@ -66,7 +66,6 @@ $( document ).ready(function(){
   //read if some song is on search
   var searchingsong = getSearchURL();
   if( searchingsong ){
-    
     //search especific song
     readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
@@ -113,7 +112,7 @@ function setAudio( title ){
   //pause
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('pause'");
+  item.setAttribute("click","console.log('pause');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon pause");
   item.appendChild(icon);
@@ -121,7 +120,7 @@ function setAudio( title ){
   //play
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('play'");
+  item.setAttribute("click","console.log('play');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon play");
   item.appendChild(icon);
@@ -129,7 +128,7 @@ function setAudio( title ){
   //stop
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('stop'");
+  item.setAttribute("click","console.log('stop');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon stop");
   item.appendChild(icon);
@@ -137,7 +136,7 @@ function setAudio( title ){
   //repeat
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('repeat'");
+  item.setAttribute("click","console.log('repeat');");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
