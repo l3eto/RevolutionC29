@@ -6,6 +6,8 @@
       if( result[0] == 'song'){
         return result[1];
       }
+    }else{
+      return null;
     }
   }
 
@@ -20,7 +22,7 @@
         }
     }
     rawFile.send(null);
-    };
+  };
 
 //get content
   function setContent(){
@@ -49,17 +51,22 @@
             }
         }
     }
-    console.log(xmldata);
     $('.ui.search').search({
       source: xmldata ,
       onSelect: function(result, response) {
-        console.log(result);
-        //return false;
+        window.location.search = "?song=".concat(result.description);
       }
     });
     });
   }
 var content = [];
-$( document ).ready(function() {
+$( document ).ready(function(){
+  var searchingsong = getSearchURL();
+  if( searchingsong ){
+    console.log('loadsong'+searchingsong);
+  }else{
+    console.log('whitepage');
+  }
+  //set songs on search
   setContent();
 });
