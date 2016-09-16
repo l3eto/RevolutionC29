@@ -50,8 +50,9 @@
     return xmldata;
     });
   }
-
+var content = [];
 $( document ).ready(function() {
-  var content = getContent();
+  content = getContent();
+  console.log(content);
   $('.ui.search').search({source: content });
 });
