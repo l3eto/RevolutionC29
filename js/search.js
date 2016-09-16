@@ -2,6 +2,7 @@ var content = [
     { title: 'Andorra' , description:'xxxxxxxaaa' },
     { title: 'United Arab Emirates' , description:'zzzzzz' }
   ];
+var data = [];
 
 //read xml
   function readXML(file, callback) {
@@ -18,7 +19,6 @@ var content = [
 
 //get content
   function getContent(){
-    var data = [];
     readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
@@ -69,9 +69,8 @@ $( document ).ready(function() {
     
  // });
  
-  var content = getContent();
-  console.log(content);
+  var xmldata = getContent();
   //search
-  $('.ui.search').search({source: content });
+  $('.ui.search').search({source: xmldata });
 
 });
