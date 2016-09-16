@@ -262,7 +262,7 @@ function setAcordes( song , orden ){
             var divGrid = document.createElement('DIV');
             divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
             var divNote = document.createElement('A');
-            divNote.setAttribute("class","ui black basic label");
+            divNote.setAttribute("class","ui red basic label");
             divNote.setAttribute("style","font-size:0.8em");
             divNote.innerHTML = notes[k].getAttribute("note");
             divGrid.appendChild(divNote);
