@@ -50,7 +50,9 @@
         }
     }
     return xmldata;
+    console.log(xmldata);
     });
+    console.log(xmldata);
   }
 var content = [];
 $( document ).ready(function() {
