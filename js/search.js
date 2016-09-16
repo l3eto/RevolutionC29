@@ -2,7 +2,6 @@ var content = [
     { title: 'Andorra' , description:'xxxxxxxaaa' },
     { title: 'United Arab Emirates' , description:'zzzzzz' }
   ];
-var data = [];
 
 //read xml
   function readXML(file, callback) {
@@ -28,6 +27,7 @@ var data = [];
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
+    var data = [];
     var artist = xmlDoc.getElementsByTagName("artist");
     if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++){
