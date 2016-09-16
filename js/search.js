@@ -88,7 +88,6 @@ $( document ).ready(function(){
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
       var orden = song.getAttribute("order").split("-");
-      console.log(orden);
       document.title = songName+' | Revolution C29';
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
       audio.addEventListener('ended', function() {
@@ -189,7 +188,9 @@ function setLetras( song , orden ){
         var SPAN = document.createElement('SPAN');
         SPAN.innerHTML = lyric[j].getAttribute("text");
         songcontainer.appendChild(SPAN);
+        songcontainer.appendChild(document.createElement('BR'));
       }
+      songcontainer.appendChild(document.createElement('BR'));
     }
   }
   container.appendChild(songcontainer);
