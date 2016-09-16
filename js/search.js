@@ -77,10 +77,10 @@ $( document ).ready(function(){
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    //var song = xmlDoc.getElementsByTagName("song");
+    var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]');
+    console.log( x.parentNode.parentNode.getAttribute("name") );
     
     
-    console.log(  $( xmlDoc ).find('song[id="'+searchingsong+'"]') );
     });
     
     
