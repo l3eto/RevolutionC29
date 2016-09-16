@@ -1,3 +1,6 @@
+//global var
+var audio;
+
 //get search
   function getSearchURL(){
     var result = /^[?](song)[=](.*)$/gmi.exec( window.location.search );
@@ -81,7 +84,8 @@ $( document ).ready(function(){
     //get values
     var artistName = song.parentNode.parentNode.getAttribute("name");
     var songName = song.getAttribute("name");
-    var title = artistName+' - '+songName;
+    var title = artistName+"' - '+songName;
+    audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
     setTitle( title );
     setAudio( title );
     
@@ -112,7 +116,7 @@ function setAudio( title ){
   //pause
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('pause');");
+  item.setAttribute("click","audio.pause();");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon pause");
   item.appendChild(icon);
@@ -120,7 +124,7 @@ function setAudio( title ){
   //play
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('play');");
+  item.setAttribute("click","audio.play();");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon play");
   item.appendChild(icon);
@@ -128,7 +132,7 @@ function setAudio( title ){
   //stop
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("click","console.log('stop');");
+  item.setAttribute("click","audio.pause();audio.currentTime = 0;;");
   var icon = document.createElement('I');
   icon.setAttribute("class","icon stop");
   item.appendChild(icon);
