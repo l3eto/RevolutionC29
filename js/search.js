@@ -233,7 +233,7 @@ function setAcordes( song , orden ){
     divGrid.setAttribute("style","padding:1em;margin-left:2em;");
     var musicon = document.createElement('I');
     musicon.setAttribute("class","music icon");
-    musicon.setAttribute("style","font-size:1em;");
+    musicon.setAttribute("style","font-size:1.5em;");
     divGrid.appendChild(musicon);
     var divTitle = document.createElement('DIV');
     divTitle.setAttribute("class","ui left pointing black ignored label");
@@ -275,6 +275,14 @@ function setAcordes( song , orden ){
           divGrid.innerHTML = lyric.getElementsByTagName("p")[j].getAttribute("text");
           grid.appendChild(divGrid);
         }
+        //add divider
+        var divGrid = document.createElement('DIV');
+        divGrid.setAttribute("class","sixteen wide column");
+        divGrid.setAttribute("style","padding-top: 0px;");
+        var divider = document.createElement('DIV');
+        divider.setAttribute("class","ui divider");
+        divGrid.appendChild(divider);
+        grid.appendChild(divGrid);
       }
     }
   }
