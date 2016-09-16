@@ -84,7 +84,7 @@ $( document ).ready(function(){
     var songName = song.getAttribute("name");
     var title = artistName+' - '+songName;
     setTitle( title );
-    
+    setAudio( title );
     
     });
     
@@ -99,7 +99,6 @@ $( document ).ready(function(){
 function setTitle( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid one item tabs menu");
-  div.setAttribute("style","padding-top: 0em");
   var div2 = document.createElement('SPAN');
   div2.setAttribute("class","item");
   div2.innerHTML = title;
