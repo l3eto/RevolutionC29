@@ -1,3 +1,12 @@
+//get search
+  function getSearchURL(){
+    var result = /^[?](song)=(.*)$/gmi.exec( window.location.search );
+    if(result){
+      result.shift();
+      console.log(result);
+    }
+  }
+
 //read xml
   function readXML(file, callback) {
     var rawFile = new XMLHttpRequest();
