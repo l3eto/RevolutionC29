@@ -50,7 +50,13 @@
         }
     }
     console.log(xmldata);
-    $('.ui.search').search({source: xmldata });
+    $('.ui.search').search({
+      source: xmldata ,
+      onSelect: function(result, response) {
+        console.log(result);
+        //return false;
+      }
+    });
     });
   }
 var content = [];
