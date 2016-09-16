@@ -90,7 +90,6 @@ $( document ).ready(function(){
       var orden = song.getAttribute("order").split("-");
       console.log(orden);
       document.title = songName+' | Revolution C29';
-      $('input')[0].value = title;
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
