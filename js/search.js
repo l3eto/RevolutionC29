@@ -230,7 +230,7 @@ function setAcordes( song , orden ){
     //set tittle
     var divGrid = document.createElement('DIV');
     divGrid.setAttribute("class","left aligned sixteen wide column");
-    divGrid.setAttribute("style","padding:1em;");
+    divGrid.setAttribute("style","padding:1em;margin-left:2em;");
     var musicon = document.createElement('I');
     musicon.setAttribute("class","music icon");
     musicon.setAttribute("style","font-size:1em;");
@@ -249,6 +249,7 @@ function setAcordes( song , orden ){
         //add divider
         var divGrid = document.createElement('DIV');
         divGrid.setAttribute("class","sixteen wide column");
+        divGrid.setAttribute("style","padding-top: 0px;");
         var divider = document.createElement('DIV');
         divider.setAttribute("class","ui divider");
         divGrid.appendChild(divider);
