@@ -184,6 +184,7 @@ function setLetras( song , orden ){
   songcontainer.setAttribute("class","ui song-container");
   for( var i = 0 ; i < orden.length ; i++ ){
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
+    console.log(lyric);
     for( var j = 0 ; j < lyric.length ; j++ ){
       var SPAN = document.createElement('SPAN');
       SPAN.innerHTML = lyric[i].getAttribute("text");
