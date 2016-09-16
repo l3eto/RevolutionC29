@@ -27,7 +27,7 @@ var content = [
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    var songs = xmlDoc.getElementsByTagName("song");
+    var songs = xmlDoc.getElementsByTagName("artist");
     var data = [];
     if( songs.length > 0 ){
         for( var i = 0 ; i < songs.length ; i++){
