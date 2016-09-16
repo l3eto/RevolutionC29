@@ -59,14 +59,31 @@
     });
     });
   }
-var content = [];
+
 $( document ).ready(function(){
-  var searchingsong = getSearchURL();
-  if( searchingsong ){
-    console.log('loadsong'+searchingsong);
-  }else{
-    console.log('whitepage');
-  }
   //set songs on search
   setContent();
+  //read if some song is on search
+  var searchingsong = getSearchURL();
+  if( searchingsong ){
+    
+    //search especific song
+    readXML("../uploads/songs.xml", function(data){
+    if (window.DOMParser){
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(data, "text/xml");
+    }else{
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.loadXML(data);
+    }
+    //var song = xmlDoc.getElementsByTagName("song");
+    console.log( $(xmlDoc).find("value[id='"+searchingsong+"'] order") );
+    });
+    
+    
+    
+  }else{
+    $('#searchresult').remove();
+  }
 });
