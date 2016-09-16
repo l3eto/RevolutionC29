@@ -230,7 +230,13 @@ function setAcordes( song , orden ){
     //set tittle
     var divGrid = document.createElement('DIV');
     divGrid.setAttribute("class","sixteen wide column");
-    divGrid.innerHTML = customLabels[ orden[i] ];
+    var musicon = document.createElement('I');
+    musicon.setAttribute("class","music icon");
+    divGrid.appendChild(musicon);
+    var divTitle = document.createElement('DIV');
+    divTitle.setAttribute("class","ui left pointing black ignored label");
+    divTitle.innerHTML = customLabels[ orden[i] ];
+    divGrid.appendChild(divTitle);
     grid.appendChild(divGrid);
     //set notes and chords
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0); //load lyric by orden
