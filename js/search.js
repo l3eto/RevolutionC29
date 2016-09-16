@@ -18,6 +18,7 @@ var content = [
 
 //get content
   function getContent(){
+    var data = [];
     readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
@@ -28,13 +29,13 @@ var content = [
       xmlDoc.loadXML(data);
     }
     var songs = xmlDoc.getElementsByTagName("artist");
-    var data = [];
     if( songs.length > 0 ){
         for( var i = 0 ; i < songs.length ; i++){
             console.log( songs[i] );
         }
     }
     });
+    return data;
   }
 
 $( document ).ready(function() {
@@ -61,6 +62,6 @@ $( document ).ready(function() {
  
   
   //search
-  $('.ui.search').search({source: content});
+  $('.ui.search').search({source: getContent() });
 
 });
