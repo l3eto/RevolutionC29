@@ -201,7 +201,19 @@ h3.ui.header {
 }
 
 .ui.divider:not(.vertical):not(.horizontal) {
-    border-top: 1px solid rgba(234, 194, 194, 0.55);
+    border-top: 1px solid #e17e77!important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0em 3em !important;
+}
+
+.ui.basic.red.labels a.label:hover, a.ui.basic.red.label:hover {
+    background-color: #fff!important;
+    color: #e17e77!important;
+    border-color: #e17e77!important;
+}
+
+.ui.basic.red.label {
+    background-color: #fff!important;
+    color: #e17e77!important;
+    border-color: #e17e77!important;
 }
