@@ -89,6 +89,7 @@ $( document ).ready(function(){
       var title = artistName+' - '+songName;
       var orden = getOrden( song.getAttribute("order") );
       document.title = songName+' | Revolution C29';
+      $('input')[0].value = title;
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
@@ -107,13 +108,13 @@ $( document ).ready(function(){
 
 //get orden
 function getOrden( song ){
-  var result = \-?([^\-]*)\-?/gmi.exec( song );
-    if(result){
-      result.shift();
-      console.log(result);
-    }else{
-      return null;
-    }
+  var result = /\-?([^\-]*)\-?/gmi.exec( song );
+  if(result){
+    result.shift();
+    console.log(result);
+  }else{
+    return null;
+  }
 }
 
 //set tittle
