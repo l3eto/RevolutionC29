@@ -1,11 +1,9 @@
 var content = [
-    { title: 'Andorra' , description:'xxxxxxxaaa'},
-    { title: 'United Arab Emirates' , description:'zzzzzz' }
+    { title: 'Andorra' , description:'xxxxxxxaaa' , key:'asdasd'},
+    { title: 'United Arab Emirates' , description:'zzzzzz' , key:'111' }
   ];
 
-
-$( document ).ready(function() {
-  //read xml
+//read xml
   function readXML(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/xml");
@@ -16,7 +14,30 @@ $( document ).ready(function() {
         }
     }
     rawFile.send(null);
-  }
+}
+
+//get content
+function getContent(){
+    readXML("../uploads/songs.xml", function(data){
+    if (window.DOMParser){
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(data, "text/xml");
+    }else{
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.loadXML(data);
+    }
+    var songs = xmlDoc.getElementsByTagName("song");
+    var data = [];
+    if(songs.length>0){
+        for( var i = 0 ; i < songs.length; i++){
+            console.log( songs[i] );
+        }
+    }
+}
+
+$( document ).ready(function() {
+   /* 
   readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
@@ -28,18 +49,17 @@ $( document ).ready(function() {
     }
   
   var songs = xmlDoc.getElementsByTagName("event");
-  console.log(songs);
+  console.log(songs);*/
   /*if( events.length > 0 ){
     for (var i = 0; i < events.length; i++) {
     
     }
   }*/
     
-  });
+ // });
+ 
   
   //search
-  $('.ui.search').search({
-    source: content
-  });
+  $('.ui.search').search({source: content});
 
 });
