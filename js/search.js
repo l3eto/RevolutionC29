@@ -94,9 +94,9 @@ $( document ).ready(function(){
       setTitle( title );
       setAudio( title );
       setMenu();
-      $('.menu .item').tab();
       setLetras();
       setAcordes();
+      $('.menu .item').tab();
     });
   }else{
     $('#search-result').remove();
