@@ -245,6 +245,7 @@ function setAcordes( song , orden ){
     //add divider
     var divGrid = document.createElement('DIV');
     divGrid.setAttribute("class","sixteen wide column");
+    divGrid.setAttribute("style","padding-bottom: 0.5em;");
     var divider = document.createElement('DIV');
     divider.setAttribute("class","ui divider");
     divGrid.appendChild(divider);
