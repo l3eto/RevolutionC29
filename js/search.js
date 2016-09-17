@@ -46,8 +46,8 @@ var customLabels = {
   };
 
 //get content
-  function setContent(){
-    readXML("../uploads/songs.xml", function(data){
+function setContent(){
+  readXML("../uploads/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
       xmlDoc = parser.parseFromString(data, "text/xml");
@@ -58,10 +58,9 @@ var customLabels = {
     }
     var xmldata = [];
     var artist = xmlDoc.getElementsByTagName("artist");
-    console.log(xmlDoc);
-    console.log(artist);
-    if( artist.length > 0 ){
-      
+    var error = xmlDoc.getElementsByTagName("parsererror");
+    if( error ){
+      if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++){
             var artistname = artist[i].getAttribute("name");
             var songs = artist[i].getElementsByTagName("song");
@@ -74,16 +73,18 @@ var customLabels = {
                 }
             }
         }
-    }
-    console.log(xmldata);
-    $('.ui.search').search({
-      source: xmldata ,
-      onSelect: function(result, response) {
-        window.location.search = "?song=".concat(result.description);
       }
-    });
-    });
-  }
+      $('.ui.search').search({
+        source: xmldata ,
+        onSelect: function(result, response) {
+          window.location.search = "?song=".concat(result.description);
+        }
+      });
+    }else{
+      console.log(error);
+    }
+  });
+}
 
 $( document ).ready(function(){
   //set songs on search
