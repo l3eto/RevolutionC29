@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <artists>
-  <artist name="EvanCraft">
+  <artist name="Evan Craft">
     <songs>
       <song name="Vives En Mí" id="8xyb42pswv" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-bridge-prechorus-chorus">
         <chords>
@@ -13,12 +13,6 @@
             <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
             <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
             <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-          </chord>
-          <chord name="3">
-            <p><a temp="16" note="C"></a></p>
-            <p><a temp="16" note="D"></a></p>
-            <p><a temp="16" note="Bm"></a></p>
-            <p><a temp="16" note="Em"></a></p>
           </chord>
         </chords>
         <lyrics>
@@ -36,11 +30,11 @@
             <p text="Esta pasión, todos verán"></p>
             <p text="tu gloria resplandecerá"></p>
           </lyric>
-          <lyric name="prechorus" chord="3">
-            <p text="Tú nunca me dejarás"></p>
-            <p text="tu amor me sostendrá"></p>
-            <p text="junto a mí estarás"></p>
-            <p text="y por siempre brillarás"></p>
+          <lyric name="prechorus" chord="2">
+            <p text="Tú nunca me dejarás, tu amor me sostendrá"></p>
+            <p text="junto a mí estarás y por siempre brillarás"></p>
+            <p text="Tú nunca me dejarás, tu amor me sostendrá"></p>
+            <p text="junto a mí estarás y por siempre brillarás"></p>
           </lyric>
           <lyric name="chorus" chord="2">
             <p text="Tú vives en mí, vives en mí"></p>
