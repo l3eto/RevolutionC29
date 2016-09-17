@@ -268,14 +268,20 @@ function setAcordes( song , orden ){
         var notes = chord.getElementsByTagName("p")[j].getElementsByTagName("a");
         if( notes.length > 0 ){
           for( var k = 0 ; k < notes.length ; k ++ ){
-            var divGrid = document.createElement('DIV');
-            divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
-            var divNote = document.createElement('A');
-            divNote.setAttribute("class","ui red basic label");
-            divNote.setAttribute("style","font-size:0.8em");
-            divNote.innerHTML = notes[k].getAttribute("note");
-            divGrid.appendChild(divNote);
-            grid.appendChild(divGrid);
+            if( notes[k].getAttribute("note") == "null" ){
+              var divGrid = document.createElement('DIV');
+              divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
+              grid.appendChild(divGrid);
+            }else{
+              var divGrid = document.createElement('DIV');
+              divGrid.setAttribute("class",customLabels[notes[k].getAttribute("temp")]+" wide column");
+              var divNote = document.createElement('A');
+              divNote.setAttribute("class","ui red basic label");
+              divNote.setAttribute("style","font-size:0.8em");
+              divNote.innerHTML = notes[k].getAttribute("note");
+              divGrid.appendChild(divNote);
+              grid.appendChild(divGrid);
+            }
           }
         }
         //add lyrics if exists
