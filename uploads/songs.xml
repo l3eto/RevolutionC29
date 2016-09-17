@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <artists>
+  <artist name="EvanCraft">
+    <songs>
+      <song name="Vives En Mí" id="8xyb42pswv" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-bridge-prechorus-chorus">
+        <chords>
+          <chord name="1">
+            <p><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="4" note="Em"></a></p>
+            <p><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="4" note="Em"></a></p>
+          </chord>
+          <chord name="2">
+            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+          </chord>
+          <chord name="3">
+            <p><a temp="16" note="C"></a></p>
+            <p><a temp="16" note="D"></a></p>
+            <p><a temp="16" note="Bm"></a></p>
+            <p><a temp="16" note="Em"></a></p>
+          </chord>
+        </chords>
+        <lyrics>
+          <lyric name="intro" chord="1">
+          </lyric>
+          <lyric name="verse1" chord="2">
+            <p text="Al despertar te cantaré"></p>
+            <p text="mis ojos en ti fijaré"></p>
+            <p text="al ritmo de tu corazón"></p>
+            <p text="caminaré hacia tu amor"></p>
+          </lyric>
+          <lyric name="verse2" chord="2">
+            <p text="Tu fuego en mi interior, ardiendo está"></p>
+            <p text="salvaje amor que brillará"></p>
+            <p text="Esta pasión, todos verán"></p>
+            <p text="tu gloria resplandecerá"></p>
+          </lyric>
+          <lyric name="prechorus" chord="3">
+            <p text="Tú nunca me dejarás"></p>
+            <p text="tu amor me sostendrá"></p>
+            <p text="junto a mí estarás"></p>
+            <p text="y por siempre brillarás"></p>
+          </lyric>
+          <lyric name="chorus" chord="2">
+            <p text="Tú vives en mí, vives en mí"></p>
+            <p text="soy tuyo para siempre"></p>
+            <p text="Vives en mí, vives en mí"></p>
+            <p text="soy tuyo para siempre"></p>
+          </lyric>
+          <lyric name="bridge" chord="2">
+            <p text="Por siempre, por siempre"></p>
+            <p text="por siempre en tu amor"></p>
+            <p text="por siempre, por siempre"></p>
+            <p text="por siempre, yo sé que"></p>
+          </lyric>
+        </lyrics>
+      </song>
+    </songs>
+  </artist>
   <artist name="Twice">
     <songs>
       <song name="El Camino" id="lfg2o7xwrt" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-intro-chorus1-chorus2-intro-chorus1-chorus2">
