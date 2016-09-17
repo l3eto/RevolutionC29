@@ -8,7 +8,8 @@
             <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
           </chord>
           <chord name="2">
-            
+            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a</p>
+            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"><a temp="4" note="G"></a></p>
           </chord>
         </chords>
         <lyrics>
