@@ -20,10 +20,10 @@
             <p><a temp="16" note="A"></a></p>
           </chord>
           <chord name="4">
-            <p><a temp="8" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></a></p>
-            <p><a temp="8" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></a></p>
-            <p><a temp="8" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="A"></a></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></a></p>
+            <p><a temp="8" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></p>
+            <p><a temp="8" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></p>
+            <p><a temp="8" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="A"></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></p>
             <p><a temp="16" note="Bm"></a></p>
           </chord>
           <chord name="5">
