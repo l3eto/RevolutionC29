@@ -2,6 +2,60 @@
 <artists>
   <artist name="Twice">
     <songs>
+      <song name="El Camino" id="lfg2o7xwrt" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-intro-chorus1-chorus2-intro-chorus1-chorus2">
+        <chords>
+          <chord name="1">
+            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+          </chord>
+          <chord name="1">
+            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+          </chord>
+        </chords>
+        <lyrics>
+          <lyric name="intro" chord="1">
+          </lyric>
+          <lyric name="verse1" chord="2">
+            <p text="Cuando estaba perdido en pecado"></p>
+            <p text="tu amor me rescató"></p>
+            <p text="me salvaste y borraste el pecado"></p>
+            <p text="Cristo te seguiré"></p>
+          </lyric>
+          <lyric name="verse2" chord="2">
+            <p text="Era ciego y hoy veo por gracia"></p>
+            <p text="ahora veo en tu luz"></p>
+            <p text="me cambiaste y me diste esperanza"></p>
+            <p text="Cristo te seguiré"></p>
+          </lyric>
+          <lyric name="verse3" chord="2">
+            <p text="Creeré y confiaré en tu promesa"></p>
+            <p text="tú no me fallarás"></p>
+            <p text="por tu amor tengo vida eterna"></p>
+            <p text="Cristo te seguiré"></p>
+          </lyric>
+          <lyric name="verse4" chord="2">
+            <p text="Viviré de victoria en victoria"></p>
+            <p text="danzaré en libertad"></p>
+            <p text="tu me llevas de gloria en gloria"></p>
+            <p text="Cristo te seguiré"></p>
+          </lyric>
+          <lyric name="chorus1" chord="2">
+            <p text="Te seguiré"></p>
+            <p text="te seguiré"></p>
+            <p text="tu amor me salvó de la muerte"></p>
+            <p text="Cristo te seguiré"></p>
+          </lyric>
+          <lyric name="chorus2" chord="2">
+            <p text="Te seguiré"></p>
+            <p text="te seguiré"></p>
+            <p text="con tu luz brillaré para siempre"></p>
+            <p text="Cristo te seguiré"></p>
+          </lyric>
+        </lyrics>
+      </song>
       <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-postchorus-prechorus-chorus">
         <chords>
           <chord name="1">
