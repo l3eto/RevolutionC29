@@ -2,56 +2,69 @@
 <artists>
   <artist name="Twice">
     <songs>
-      <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-chorus-verse2-chorus-bridge-bridge-intro-chorus">
+      <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-verse2-prechorus-chorus-postchorus-prechorus-chorus">
         <chords>
           <chord name="1">
-            <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
+            <p><a temp="16" note="D"></p>
           </chord>
           <chord name="2">
-            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
-            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
-            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
-            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
+            <p><a temp="8" note="D"></a><a temp="8" note="Bm"></a></p>
+            <p><a temp="8" note="G"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="D"></a><a temp="8" note="Bm"></a></p>
+            <p><a temp="8" note="G"></a><a temp="8" note="D"></a></p>
           </chord>
           <chord name="3">
-            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
-            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
-            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="4" note="d"></a><a temp="4" note="C"></a></p>
+            <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+            <p><a temp="8" note="D"></a><a temp="8" note="G"></a></p>
+            <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="A"></a></p>
+          </chord>
+          <chord name="4">
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
+            <p><a temp="16" note="Bm"></a></p>
+          </chord>
+          <chord name="5">
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
           </chord>
         </chords>
         <lyrics>
           <lyric name="intro" chord="1">
           </lyric>
           <lyric name="verse1" chord="2">
-            <p text="En el silencio, en la espera"></p>
-            <p text="un canto nuevo has puesto en mi"></p>
-            <p text="tu presencia, mi promesa"></p>
-            <p text="caminaré yo confiado en ti"></p>
+            <p text="La gente pregunta por qué defiendes tu fe"></p>
+            <p text="te dicen que no, que no existe Dios"></p>
+            <p text="pensabas que no iba a pasar, que todo iba bien"></p>
+            <p text="más no callarás, no te callarán"></p>
           </lyric>
           <lyric name="verse2" chord="2">
-            <p text="Guías mis pasos, en ti seguro estoy"></p>
-            <p text="sobre las aguas caminaré"></p>
-            <p text="mi fe fortaleces y me levantas"></p>
-            <p text="a tu llamado responderé"></p>
+            <p text="El miedo en tus ojos se ve, no quieres fallar"></p>
+            <p text="no vas a parar, no te rendirás"></p>
+            <p text="cuando te intenten callar, tu voz apagar"></p>
+            <p text="no tengas temor, levanta tu voz"></p>
           </lyric>
-          <lyric name="chorus" chord="3">
-            <p text="En la tempestad tu amor me sostendrá"></p>
-            <p text="no tropezaré tu me protegerás"></p>
-            <p text="y es tu gracia mi fortaleza en la debilidad"></p>
-            <p text="Jesús, mi buen pastor"></p>
-            <p text="guíame a tu corazón"></p>
+          <lyric name="prechorus" chord="3">
+            <p text="No es fácil, no"></p>
+            <p text="ponerse de pie y creer"></p>
+            <p text="cuando solo estés"></p>
+            <p text="recuerda que"></p>
           </lyric>
-          <lyric name="bridge" chord="2">
-            <p text="Te amo tanto, te amo tanto"></p>
-            <p text="tu nunca me dejarás"></p>
-            <p text="Te amo tanto, te amo tanto"></p>
-            <p text="y a tu lado quiero estar"></p>
+          <lyric name="chorus" chord="4">
+            <p text="Él va contigo, Un camino abrirá a tus pies"></p>
+            <p text="de día y de noche, Su fuego arderá en tu ser"></p>
+            <p text="y cuando el mundo intente robar tu fe"></p>
+            <p text="Él te sostiene Y no te dejará caer"></p>
+            <p text="no te dejará caer"></p>
+          </lyric>
+          <lyric name="postchorus" chord="5">
+            <p text="No te dejará caer"></p>
+            <p text="No te dejará caer"></p>
           </lyric>
         </lyrics>
       </song>
-      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-bridge-bridge-intro-chorus">
+      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-intro-bridge-bridge-intro-chorus">
         <chords>
           <chord name="1">
             <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
@@ -67,7 +80,7 @@
             <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
             <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
             <p><a temp="8" note="Am"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="4" note="d"></a><a temp="4" note="C"></a></p>
+            <p><a temp="8" note="Am"></a><a temp="4" note="D"></a><a temp="4" note="C"></a></p>
           </chord>
         </chords>
         <lyrics>
