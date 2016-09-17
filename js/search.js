@@ -60,7 +60,7 @@ function setContent(){
     var xmldata = [];
     var artist = xmlDoc.getElementsByTagName("artist");
     var error = xmlDoc.getElementsByTagName("parsererror");
-    if( error ){
+    if( error.length == 0 ){
       if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++){
             var artistname = artist[i].getAttribute("name");
