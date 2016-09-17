@@ -2,7 +2,7 @@
 <artists>
   <artist name="Twice">
     <songs>
-      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus">
+      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus">
         <chords>
           <chord name="1">
             <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
