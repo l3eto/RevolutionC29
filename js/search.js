@@ -58,8 +58,10 @@ var customLabels = {
     }
     var xmldata = [];
     var artist = xmlDoc.getElementsByTagName("artist");
+    console.log(xmlDoc);
+    console.log(artist);
     if( artist.length > 0 ){
-      console.log(artist);
+      
         for( var i = 0 ; i < artist.length ; i++){
             var artistname = artist[i].getAttribute("name");
             var songs = artist[i].getElementsByTagName("song");
