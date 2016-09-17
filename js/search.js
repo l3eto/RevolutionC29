@@ -72,7 +72,7 @@ function setContent(){
                 for( var j = 0 ; j < songs.length ; j++ ){
                     var songname = songs[j].getAttribute("name");
                     var songid = songs[j].getAttribute("id");
-                    var title = songname.concat(' - ',artistname);
+                    var title = artistname.concat(' - ',songname);
                     xmldata.push( { title: title  , description: songid } );
                 }
             }
