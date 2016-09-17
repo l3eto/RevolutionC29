@@ -14,6 +14,7 @@ var customLabels = {
   'bridge':'Puente',
   '2':'two',
   '4':'four',
+  '6':'six',
   '8':'eight',
   '16':'sixteen'
   
