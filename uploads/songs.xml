@@ -2,7 +2,7 @@
 <artists>
   <artist name="Twice">
     <songs>
-      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus">
+      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-bridge-bridge-intro-chorus">
         <chords>
           <chord name="1">
             <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
@@ -14,9 +14,9 @@
             <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
           </chord>
           <chord name="3">
-            <p><a temp="6" note="D"></a><a temp="2" note="Em"></a><a temp="6" note="C"></a><a temp="2" note="G"></a></p>
-            <p><a temp="6" note="D"></a><a temp="2" note="Em"></a><a temp="6" note="C"></a><a temp="2" note="G"></a></p>
-            <p><a temp="6" note="D"></a><a temp="2" note="Em"></a><a temp="6" note="C"></a><a temp="2" note="G"></a></p>
+            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
             <p><a temp="8" note="Am"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a></p>
             <p><a temp="8" note="Am"></a><a temp="4" note="d"></a><a temp="4" note="C"></a></p>
           </chord>
@@ -42,6 +42,12 @@
             <p text="y es tu gracia mi fortaleza en la debilidad"></p>
             <p text="Jesús, mi buen pastor"></p>
             <p text="guíame a tu corazón"></p>
+          </lyric>
+          <lyric name="bridge" chord="2">
+            <p text="Te amo tanto, te amo tanto"></p>
+            <p text="tu nunca me dejarás"></p>
+            <p text="Te amo tanto, te amo tanto"></p>
+            <p text="y a tu lado quiero estar"></p>
           </lyric>
         </lyrics>
       </song>
