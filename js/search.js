@@ -5,6 +5,7 @@ var loop = false;
 //customlabels
 var customLabels = {
   'intro':'Intro',
+  'prechorus':'Pre Coro',
   'verse':'Verso',
   'verse1':'Verso 1',
   'verse2':'Verso 2',
