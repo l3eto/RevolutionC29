@@ -85,7 +85,7 @@ function setContent(){
         }
       });
     }else{
-      console.log(error);
+      console.log(error.innerHTML);
     }
   });
 }
