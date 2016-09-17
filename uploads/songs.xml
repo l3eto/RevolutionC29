@@ -2,7 +2,7 @@
 <artists>
   <artist name="Twice">
     <songs>
-      <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-verse2-prechorus-chorus-postchorus-prechorus-chorus">
+      <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-postchorus-prechorus-chorus">
         <chords>
           <chord name="1">
             <p><a temp="16" note="D"></a></p>
