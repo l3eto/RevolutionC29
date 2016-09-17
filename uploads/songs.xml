@@ -20,10 +20,10 @@
             <p><a temp="16" note="A"></a></p>
           </chord>
           <chord name="4">
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note=""></a></p>
+            <p><a temp="8" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></a></p>
+            <p><a temp="8" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></a></p>
+            <p><a temp="8" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="A"></a></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a></a></p>
             <p><a temp="16" note="Bm"></a></p>
           </chord>
           <chord name="5">
@@ -52,10 +52,10 @@
             <p text="recuerda que"></p>
           </lyric>
           <lyric name="chorus" chord="4">
-            <p text="Él va contigo, Un camino abrirá a tus pies"></p>
-            <p text="de día y de noche, Su fuego arderá en tu ser"></p>
+            <p text="Él va contigo, un camino abrirá a tus pies"></p>
+            <p text="de día y de noche, su fuego arderá en tu ser"></p>
             <p text="y cuando el mundo intente robar tu fe"></p>
-            <p text="Él te sostiene Y no te dejará caer"></p>
+            <p text="Él te sostiene y no te dejará caer"></p>
             <p text="no te dejará caer"></p>
           </lyric>
           <lyric name="postchorus" chord="5">
