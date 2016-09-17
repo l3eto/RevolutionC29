@@ -20,16 +20,14 @@
             <p><a temp="6" note="Bm"></a><a temp="4" note="A"></a><a temp="6" note="A9"></a></p>
           </chord>
           <chord name="4">
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="null"></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="null"></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="A"></a><a temp="4" note="null"></a></p>
+            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+            <p><a temp="6" note="G"></a><a temp="4" note="Bm"></a><a temp="6" note="A"></a></p>
             <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
           </chord>
           <chord name="5">
-            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
-            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
-            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
-            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
+            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
           </chord>
         </chords>
         <lyrics>
@@ -60,10 +58,8 @@
             <p text="Él te sostiene y no te dejará caer, no te dejará caer"></p>
           </lyric>
           <lyric name="postchorus" chord="5">
-            <p text="Oh, oh, oh"></p>
-            <p text="No te dejará caer"></p>
-            <p text="Oh, oh, oh"></p>
-            <p text="No te dejará caer"></p>
+            <p text="Oh, oh, oh, no te dejará caer"></p>
+            <p text="Oh, oh, oh, no te dejará caer"></p>
           </lyric>
         </lyrics>
       </song>
