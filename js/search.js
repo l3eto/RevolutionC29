@@ -10,6 +10,8 @@ var customLabels = {
   'verse':'Verso',
   'verse1':'Verso 1',
   'verse2':'Verso 2',
+  'verse3':'Verso 3',
+  'verse4':'Verso 4',
   'chorus':'Coro',
   'chorus1':'Coro 1',
   'chorus2':'Coro 2',
