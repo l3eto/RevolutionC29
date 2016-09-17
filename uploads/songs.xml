@@ -3,16 +3,27 @@
   <artist name="Twice">
     <songs>
       <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1">
-      <chords>
-      </chords>
-      <lyrics>
-        <lyric name="intro">
-        </lyric>
-        <lyric name="verse1">
-          <p text="En el silencio, en la espera"></p>
-          <p text="Un canto nuevo has puesto en mi"></p>
-        </lyric>
-      </lyrics>
+        <chords>
+          <chord name="1">
+            <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
+          </chord>
+          <chord name="2">
+            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
+            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"><a temp="4" note="G"></a></p>
+            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
+            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"><a temp="4" note="G"></a></p>
+          </chord>
+        </chords>
+        <lyrics>
+          <lyric name="intro" chord="1">
+          </lyric>
+          <lyric name="verse1" chord="2">
+            <p text="En el silencio, en la espera"></p>
+            <p text="un canto nuevo has puesto en mi"></p>
+            <p text="tu presencia, mi promesa"></p>
+            <p text="caminaré yo confiado en ti"></p>
+          </lyric>
+        </lyrics>
       </song>
     </songs>
   </artist>
