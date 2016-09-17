@@ -14,6 +14,16 @@
             <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
             <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
           </chord>
+          <chord name="2">
+            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+          </chord>
         </chords>
         <lyrics>
           <lyric name="intro" chord="1">
@@ -42,7 +52,11 @@
             <p text="Vives en mí, vives en mí"></p>
             <p text="soy tuyo para siempre"></p>
           </lyric>
-          <lyric name="bridge" chord="2">
+          <lyric name="bridge" chord="3">
+            <p text="Por siempre, por siempre"></p>
+            <p text="por siempre en tu amor"></p>
+            <p text="por siempre, por siempre"></p>
+            <p text="por siempre en tu amor"></p>
             <p text="Por siempre, por siempre"></p>
             <p text="por siempre en tu amor"></p>
             <p text="por siempre, por siempre"></p>
