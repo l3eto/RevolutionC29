@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <artists>
+  <artist name="Twice">
+    <songs>
+      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1">
+      <chords>
+      </chords>
+      <lyrics>
+        <lyric name="intro">
+        <lyric>
+        <lyric name="verse1">
+          <p text="En el silencio, en la espera">
+          <p text="Un canto nuevo has puesto en mi">
+        <lyric>
+      </lyrics>
+      </song>
+    </songs>
+  </artist>
   <artist name="Kike Pavón">
     <songs>
       <song name="La Experiencia de Adorar" id="ueu6r8jjor" order="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro">
