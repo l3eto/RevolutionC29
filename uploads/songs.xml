@@ -2,6 +2,55 @@
 <artists>
   <artist name="Twice">
     <songs>
+      <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-chorus-verse2-chorus-bridge-bridge-intro-chorus">
+        <chords>
+          <chord name="1">
+            <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
+          </chord>
+          <chord name="2">
+            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
+            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
+            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
+            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
+          </chord>
+          <chord name="3">
+            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+            <p><a temp="8" note="Am"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a></p>
+            <p><a temp="8" note="Am"></a><a temp="4" note="d"></a><a temp="4" note="C"></a></p>
+          </chord>
+        </chords>
+        <lyrics>
+          <lyric name="intro" chord="1">
+          </lyric>
+          <lyric name="verse1" chord="2">
+            <p text="En el silencio, en la espera"></p>
+            <p text="un canto nuevo has puesto en mi"></p>
+            <p text="tu presencia, mi promesa"></p>
+            <p text="caminaré yo confiado en ti"></p>
+          </lyric>
+          <lyric name="verse2" chord="2">
+            <p text="Guías mis pasos, en ti seguro estoy"></p>
+            <p text="sobre las aguas caminaré"></p>
+            <p text="mi fe fortaleces y me levantas"></p>
+            <p text="a tu llamado responderé"></p>
+          </lyric>
+          <lyric name="chorus" chord="3">
+            <p text="En la tempestad tu amor me sostendrá"></p>
+            <p text="no tropezaré tu me protegerás"></p>
+            <p text="y es tu gracia mi fortaleza en la debilidad"></p>
+            <p text="Jesús, mi buen pastor"></p>
+            <p text="guíame a tu corazón"></p>
+          </lyric>
+          <lyric name="bridge" chord="2">
+            <p text="Te amo tanto, te amo tanto"></p>
+            <p text="tu nunca me dejarás"></p>
+            <p text="Te amo tanto, te amo tanto"></p>
+            <p text="y a tu lado quiero estar"></p>
+          </lyric>
+        </lyrics>
+      </song>
       <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-bridge-bridge-intro-chorus">
         <chords>
           <chord name="1">
