@@ -72,6 +72,7 @@ var customLabels = {
             }
         }
     }
+    console.log(xmldata);
     $('.ui.search').search({
       source: xmldata ,
       onSelect: function(result, response) {
