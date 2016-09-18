@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
-  <song name="Empezar De Nuevo" id="w3ury5mju6" order="intro">
+  <song name="Empezar De Nuevo" id="w3ury5mju6" order="intro-verse1-verse2-prechorus-chorus-intro-verse3-verse4-prechorus-chorus-prechorus-chorus-chorus-intro">
     <artists>
       <artist name="Kike Pavón"></artist>
     </artists>
     <chords>
       <chord name="1">
-        <p><a temp="4" note="D"></a><a temp="4" note="A"></a><<a temp="4" note="Bm"></a><a temp="4" note="G"></a></p>
+        <p><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a><a temp="4" note="G"></a></p>
       </chord>
       <chord name="2">
         <p><a temp="8" note="D"></a><a temp="8" note="A"></a></p>
