@@ -80,6 +80,7 @@ function setContent(){
           var title = artistname.concat(" - ",songname);
           xmldata.push( { title: title  , description: songid } );
         }
+      }
     /*    
     var artist = xmlDoc.getElementsByTagName("artist");
     var error = xmlDoc.getElementsByTagName("parsererror");
