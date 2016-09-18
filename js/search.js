@@ -64,6 +64,23 @@ function setContent(){
       xmlDoc.loadXML(data);
     }
     var xmldata = [];
+    var song = xmlDoc.getElementsByTagName("song");
+    var error = xmlDoc.getElementsByTagName("parsererror");
+    if( error.length == 0 ){
+      if( song.length > 0 ){
+        for( var i = 0 ; i < song.length ; i++ ){
+          var songname = song[i].getAttribute("name");
+          var songid = song[i].getAttribute("id");
+          var artists = song[i].getElementsByTagName("artist");
+          var artist = [];
+          for( var j = 0 ; j < artists.length ; j++ ){
+            artist.push( artists[j].getAttribute("name") );
+          }
+          var artistname = artist.join(" & ");
+          var title = artistname.concat(" - ",songname);
+          xmldata.push( { title: title  , description: songid } );
+        }
+    /*    
     var artist = xmlDoc.getElementsByTagName("artist");
     var error = xmlDoc.getElementsByTagName("parsererror");
     if( error.length == 0 ){
@@ -80,7 +97,7 @@ function setContent(){
                 }
             }
         }
-      }
+      }*/
       $('.ui.search').search({
         source: xmldata ,
         onSelect: function(result, response) {
