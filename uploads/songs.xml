@@ -1,305 +1,291 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<artists>
-  <artist name="Evan Craft">
-    <songs>
-      <song name="Vives En Mí" id="8xyb42pswv" order="intro-verse1-verse2-prechorus-intro-chorus-intro-verse2-intro-prechorus-chorus-bridge-prechorus-chorus">
-        <artist>
-          <artist name="Evan Craft"></artist>
-        </artist>
-        <chords>
-          <chord name="1">
-            <p><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="4" note="Em"></a></p>
-            <p><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="4" note="Em"></a></p>
-          </chord>
-          <chord name="2">
-            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
-            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
-            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-          </chord>
-          <chord name="2">
-            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
-            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
-            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
-            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-            <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
-            <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
-          </chord>
-        </chords>
-        <lyrics>
-          <lyric name="intro" chord="1">
-          </lyric>
-          <lyric name="verse1" chord="2">
-            <p text="Al despertar te cantaré"></p>
-            <p text="mis ojos en ti fijaré"></p>
-            <p text="al ritmo de tu corazón"></p>
-            <p text="caminaré hacia tu amor"></p>
-          </lyric>
-          <lyric name="verse2" chord="2">
-            <p text="Tu fuego en mi interior, ardiendo está"></p>
-            <p text="salvaje amor que brillará"></p>
-            <p text="Esta pasión, todos verán"></p>
-            <p text="tu gloria resplandecerá"></p>
-          </lyric>
-          <lyric name="prechorus" chord="2">
-            <p text="Tú nunca me dejarás, tu amor me sostendrá"></p>
-            <p text="junto a mí estarás y por siempre brillarás"></p>
-            <p text="Tú nunca me dejarás, tu amor me sostendrá"></p>
-            <p text="junto a mí estarás y por siempre brillarás"></p>
-          </lyric>
-          <lyric name="chorus" chord="2">
-            <p text="Tú vives en mí, vives en mí"></p>
-            <p text="soy tuyo para siempre"></p>
-            <p text="Vives en mí, vives en mí"></p>
-            <p text="soy tuyo para siempre"></p>
-          </lyric>
-          <lyric name="bridge" chord="3">
-            <p text="Por siempre, por siempre"></p>
-            <p text="por siempre en tu amor"></p>
-            <p text="por siempre, por siempre"></p>
-            <p text="por siempre en tu amor"></p>
-            <p text="Por siempre, por siempre"></p>
-            <p text="por siempre en tu amor"></p>
-            <p text="por siempre, por siempre"></p>
-            <p text="por siempre, yo sé que"></p>
-          </lyric>
-        </lyrics>
-      </song>
-    </songs>
-  </artist>
-  <artist name="Twice">
-    <songs>
-      <song name="El Camino" id="lfg2o7xwrt" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-intro-chorus1-chorus2-intro-chorus1-chorus2">
-        <artist>
-          <artist name="Twice"></artist>
-        </artist>
-        <chords>
-          <chord name="1">
-            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
-            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
-          </chord>
-          <chord name="2">
-            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
-            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
-            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
-            <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
-          </chord>
-        </chords>
-        <lyrics>
-          <lyric name="intro" chord="1">
-          </lyric>
-          <lyric name="verse1" chord="2">
-            <p text="Cuando estaba perdido en pecado"></p>
-            <p text="tu amor me rescató"></p>
-            <p text="me salvaste y borraste el pecado"></p>
-            <p text="Cristo te seguiré"></p>
-          </lyric>
-          <lyric name="verse2" chord="2">
-            <p text="Era ciego y hoy veo por gracia"></p>
-            <p text="ahora veo en tu luz"></p>
-            <p text="me cambiaste y me diste esperanza"></p>
-            <p text="Cristo te seguiré"></p>
-          </lyric>
-          <lyric name="verse3" chord="2">
-            <p text="Creeré y confiaré en tu promesa"></p>
-            <p text="tú no me fallarás"></p>
-            <p text="por tu amor tengo vida eterna"></p>
-            <p text="Cristo te seguiré"></p>
-          </lyric>
-          <lyric name="verse4" chord="2">
-            <p text="Viviré de victoria en victoria"></p>
-            <p text="danzaré en libertad"></p>
-            <p text="tu me llevas de gloria en gloria"></p>
-            <p text="Cristo te seguiré"></p>
-          </lyric>
-          <lyric name="chorus1" chord="2">
-            <p text="Te seguiré"></p>
-            <p text="te seguiré"></p>
-            <p text="tu amor me salvó de la muerte"></p>
-            <p text="Cristo te seguiré"></p>
-          </lyric>
-          <lyric name="chorus2" chord="2">
-            <p text="Te seguiré"></p>
-            <p text="te seguiré"></p>
-            <p text="con tu luz brillaré para siempre"></p>
-            <p text="Cristo te seguiré"></p>
-          </lyric>
-        </lyrics>
-      </song>
-      <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-postchorus-prechorus-chorus">
-        <artist>
-          <artist name="Twice"></artist>
-        </artist>
-        <chords>
-          <chord name="1">
-            <p><a temp="16" note="D"></a></p>
-          </chord>
-          <chord name="2">
-            <p><a temp="8" note="D"></a><a temp="8" note="Bm"></a></p>
-            <p><a temp="6" note="Bm"></a><a temp="4" note="G"></a><a temp="6" note="D"></a></p>
-            <p><a temp="8" note="D"></a><a temp="8" note="Bm"></a></p>
-            <p><a temp="6" note="Bm"></a><a temp="4" note="G"></a><a temp="6" note="D"></a></p>
-          </chord>
-          <chord name="3">
-            <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
-            <p><a temp="6" note="Bm"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
-            <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
-            <p><a temp="6" note="Bm"></a><a temp="4" note="A"></a><a temp="6" note="A9"></a></p>
-          </chord>
-          <chord name="4">
-            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
-            <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
-            <p><a temp="6" note="G"></a><a temp="4" note="Bm"></a><a temp="6" note="A"></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
-          </chord>
-          <chord name="5">
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
-            <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
-          </chord>
-        </chords>
-        <lyrics>
-          <lyric name="intro" chord="1">
-          </lyric>
-          <lyric name="verse1" chord="2">
-            <p text="La gente pregunta por qué defiendes tu fe"></p>
-            <p text="te dicen que no, que no existe Dios"></p>
-            <p text="pensabas que no iba a pasar, que todo iba bien"></p>
-            <p text="más no callarás, no te callarán"></p>
-          </lyric>
-          <lyric name="verse2" chord="2">
-            <p text="El miedo en tus ojos se ve, no quieres fallar"></p>
-            <p text="no vas a parar, no te rendirás"></p>
-            <p text="cuando te intenten callar, tu voz apagar"></p>
-            <p text="no tengas temor, levanta tu voz"></p>
-          </lyric>
-          <lyric name="prechorus" chord="3">
-            <p text="No es fácil, no"></p>
-            <p text="ponerse de pie y creer"></p>
-            <p text="cuando solo estés"></p>
-            <p text="recuerda que"></p>
-          </lyric>
-          <lyric name="chorus" chord="4">
-            <p text="Él va contigo, un camino abrirá a tus pies"></p>
-            <p text="de día y de noche, su fuego arderá en tu ser"></p>
-            <p text="y cuando el mundo intente robar tu fe"></p>
-            <p text="Él te sostiene y no te dejará caer, no te dejará caer"></p>
-          </lyric>
-          <lyric name="postchorus" chord="5">
-            <p text="Oh, oh, oh, no te dejará caer"></p>
-            <p text="Oh, oh, oh, no te dejará caer"></p>
-          </lyric>
-        </lyrics>
-      </song>
-      <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-intro-bridge-bridge-intro-chorus">
-        <artist>
-          <artist name="Twice"></artist>
-        </artist>
-        <chords>
-          <chord name="1">
-            <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
-          </chord>
-          <chord name="2">
-            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
-            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
-            <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
-            <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
-          </chord>
-          <chord name="3">
-            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
-            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
-            <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="4" note="D"></a><a temp="4" note="C"></a></p>
-          </chord>
-        </chords>
-        <lyrics>
-          <lyric name="intro" chord="1">
-          </lyric>
-          <lyric name="verse1" chord="2">
-            <p text="En el silencio, en la espera"></p>
-            <p text="un canto nuevo has puesto en mi"></p>
-            <p text="tu presencia, mi promesa"></p>
-            <p text="caminaré yo confiado en ti"></p>
-          </lyric>
-          <lyric name="verse2" chord="2">
-            <p text="Guías mis pasos, en ti seguro estoy"></p>
-            <p text="sobre las aguas caminaré"></p>
-            <p text="mi fe fortaleces y me levantas"></p>
-            <p text="a tu llamado responderé"></p>
-          </lyric>
-          <lyric name="chorus" chord="3">
-            <p text="En la tempestad tu amor me sostendrá"></p>
-            <p text="no tropezaré tu me protegerás"></p>
-            <p text="y es tu gracia mi fortaleza en la debilidad"></p>
-            <p text="Jesús, mi buen pastor"></p>
-            <p text="guíame a tu corazón"></p>
-          </lyric>
-          <lyric name="bridge" chord="2">
-            <p text="Te amo tanto, te amo tanto"></p>
-            <p text="tu nunca me dejarás"></p>
-            <p text="Te amo tanto, te amo tanto"></p>
-            <p text="y a tu lado quiero estar"></p>
-          </lyric>
-        </lyrics>
-      </song>
-    </songs>
-  </artist>
-  <artist name="Kike Pavón">
-    <songs>
-      <song name="La Experiencia de Adorar" id="ueu6r8jjor" order="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro">
-        <artist>
-          <artist name="Kike Pavón"></artist>
-        </artist>
-        <chords>
-          <chord name="1">
-            <p><a temp="4" note="C"></a><a temp="4" note="G"></a><a temp="4" note="Am"></a><a temp="4" note="F"></a></p>
-          </chord>
-          <chord name="2">
-            <p><a temp="8" note="C"></a><a temp="8" note="Em"></a></p>
-            <p><a temp="8" note="Em"></a><a temp="8" note="Am"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="8" note="F"></a></p>
-          </chord>
-          <chord name="3">
-            <p><a temp="8" note="C"></a><a temp="8" note="G"></a></p>
-            <p><a temp="8" note="G"></a><a temp="8" note="Am"></a></p>
-            <p><a temp="8" note="Am"></a><a temp="8" note="F"></a></p>
-          </chord>
-          <chord name="4">
-            <p><a temp="8" note="Dm"></a><a temp="8" note="G"></a></p>
-            <p><a temp="8" note="C"></a><a temp="8" note="F"></a></p>
-          </chord>
-        </chords>
-        <lyrics>
-          <lyric name="intro" chord="1">
-          </lyric>
-          <lyric name="verse1" chord="2">
-            <p text="Es mejor un día en tu presencia"></p>
-            <p text="que mil años fuera de ella"></p>
-            <p text="pues nada se compara a ella"></p>
-          </lyric>
-          <lyric name="verse2" chord="2">
-            <p text="Es mejor un rincón en tu casa"></p>
-            <p text="que tener el mejor palacio"></p>
-            <p text="mejor estar en tu regazo"></p>
-          </lyric>
-          <lyric name="chorus1" chord="3">
-            <p text="Y adorar, desde hoy hasta la eternidad"></p>
-            <p text="y en tu presencia descansar"></p>
-            <p text="pues no hay mejor lugar que estar donde tú estás"></p>
-          </lyric>
-          <lyric name="chorus2" chord="3">
-            <p text="Y habitar, bajo tus alas contemplar"></p>
-            <p text="tú gran poder y tu bondad"></p>
-            <p text="y disfrutar de la experiencia de adorarte Jesús"></p>
-          </lyric>
-          <lyric name="bridge" chord="4">
-            <p text="Quiero vivir en tu presencia"></p>
-            <p text="Quiero adorar hasta que no tenga fuerzas"></p>
-          </lyric>
-        </lyrics>
-      </song>
-    </songs>
-  </artist>
-</artists>
+<song name="Vives En Mí" id="8xyb42pswv" order="intro-verse1-verse2-prechorus-intro-chorus-intro-verse2-intro-prechorus-chorus-bridge-prechorus-chorus">
+  <artists>
+    <artist name="Evan Craft"></artist>
+  </artists>
+  <chords>
+    <chord name="1">
+      <p><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="4" note="Em"></a></p>
+      <p><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="4" note="Em"></a></p>
+    </chord>
+    <chord name="2">
+      <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+      <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+      <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+      <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+    </chord>
+    <chord name="2">
+      <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+      <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+      <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+      <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+      <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+      <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+      <p><a temp="8" note="C"></a><a temp="8" note="D"></a></p>
+      <p><a temp="8" note="Bm"></a><a temp="8" note="Em"></a></p>
+    </chord>
+  </chords>
+  <lyrics>
+    <lyric name="intro" chord="1">
+    </lyric>
+    <lyric name="verse1" chord="2">
+      <p text="Al despertar te cantaré"></p>
+      <p text="mis ojos en ti fijaré"></p>
+      <p text="al ritmo de tu corazón"></p>
+      <p text="caminaré hacia tu amor"></p>
+    </lyric>
+    <lyric name="verse2" chord="2">
+      <p text="Tu fuego en mi interior, ardiendo está"></p>
+      <p text="salvaje amor que brillará"></p>
+      <p text="Esta pasión, todos verán"></p>
+      <p text="tu gloria resplandecerá"></p>
+    </lyric>
+    <lyric name="prechorus" chord="2">
+      <p text="Tú nunca me dejarás, tu amor me sostendrá"></p>
+      <p text="junto a mí estarás y por siempre brillarás"></p>
+      <p text="Tú nunca me dejarás, tu amor me sostendrá"></p>
+      <p text="junto a mí estarás y por siempre brillarás"></p>
+    </lyric>
+    <lyric name="chorus" chord="2">
+      <p text="Tú vives en mí, vives en mí"></p>
+      <p text="soy tuyo para siempre"></p>
+      <p text="Vives en mí, vives en mí"></p>
+      <p text="soy tuyo para siempre"></p>
+    </lyric>
+    <lyric name="bridge" chord="3">
+      <p text="Por siempre, por siempre"></p>
+      <p text="por siempre en tu amor"></p>
+      <p text="por siempre, por siempre"></p>
+      <p text="por siempre en tu amor"></p>
+      <p text="Por siempre, por siempre"></p>
+      <p text="por siempre en tu amor"></p>
+      <p text="por siempre, por siempre"></p>
+      <p text="por siempre, yo sé que"></p>
+    </lyric>
+  </lyrics>
+</song>
+<song name="El Camino" id="lfg2o7xwrt" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-intro-chorus1-chorus2-intro-chorus1-chorus2">
+  <artists>
+    <artist name="Twice"></artist>
+  </artists>
+  <chords>
+    <chord name="1">
+      <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+      <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+    </chord>
+    <chord name="2">
+      <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+      <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+      <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+      <p><a temp="4" note="G#m"></a><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="B"></a></p>
+    </chord>
+  </chords>
+  <lyrics>
+    <lyric name="intro" chord="1">
+    </lyric>
+    <lyric name="verse1" chord="2">
+      <p text="Cuando estaba perdido en pecado"></p>
+      <p text="tu amor me rescató"></p>
+      <p text="me salvaste y borraste el pecado"></p>
+      <p text="Cristo te seguiré"></p>
+    </lyric>
+    <lyric name="verse2" chord="2">
+      <p text="Era ciego y hoy veo por gracia"></p>
+      <p text="ahora veo en tu luz"></p>
+      <p text="me cambiaste y me diste esperanza"></p>
+      <p text="Cristo te seguiré"></p>
+    </lyric>
+    <lyric name="verse3" chord="2">
+      <p text="Creeré y confiaré en tu promesa"></p>
+      <p text="tú no me fallarás"></p>
+      <p text="por tu amor tengo vida eterna"></p>
+      <p text="Cristo te seguiré"></p>
+    </lyric>
+    <lyric name="verse4" chord="2">
+      <p text="Viviré de victoria en victoria"></p>
+      <p text="danzaré en libertad"></p>
+      <p text="tu me llevas de gloria en gloria"></p>
+      <p text="Cristo te seguiré"></p>
+    </lyric>
+    <lyric name="chorus1" chord="2">
+      <p text="Te seguiré"></p>
+      <p text="te seguiré"></p>
+      <p text="tu amor me salvó de la muerte"></p>
+      <p text="Cristo te seguiré"></p>
+    </lyric>
+    <lyric name="chorus2" chord="2">
+      <p text="Te seguiré"></p>
+      <p text="te seguiré"></p>
+      <p text="con tu luz brillaré para siempre"></p>
+      <p text="Cristo te seguiré"></p>
+    </lyric>
+  </lyrics>
+</song>
+<song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-postchorus-prechorus-chorus">
+  <artists>
+    <artist name="Twice"></artist>
+  </artists>
+  <chords>
+    <chord name="1">
+      <p><a temp="16" note="D"></a></p>
+    </chord>
+    <chord name="2">
+      <p><a temp="8" note="D"></a><a temp="8" note="Bm"></a></p>
+      <p><a temp="6" note="Bm"></a><a temp="4" note="G"></a><a temp="6" note="D"></a></p>
+      <p><a temp="8" note="D"></a><a temp="8" note="Bm"></a></p>
+      <p><a temp="6" note="Bm"></a><a temp="4" note="G"></a><a temp="6" note="D"></a></p>
+    </chord>
+    <chord name="3">
+      <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+      <p><a temp="6" note="Bm"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
+      <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+      <p><a temp="6" note="Bm"></a><a temp="4" note="A"></a><a temp="6" note="A9"></a></p>
+    </chord>
+    <chord name="4">
+      <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+      <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+      <p><a temp="6" note="G"></a><a temp="4" note="Bm"></a><a temp="6" note="A"></a></p>
+      <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
+    </chord>
+    <chord name="5">
+      <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
+      <p><a temp="4" note="G"></a><a temp="4" note="D"></a><a temp="4" note="A"></a><a temp="4" note="Bm"></a></p>
+    </chord>
+  </chords>
+  <lyrics>
+    <lyric name="intro" chord="1">
+    </lyric>
+    <lyric name="verse1" chord="2">
+      <p text="La gente pregunta por qué defiendes tu fe"></p>
+      <p text="te dicen que no, que no existe Dios"></p>
+      <p text="pensabas que no iba a pasar, que todo iba bien"></p>
+      <p text="más no callarás, no te callarán"></p>
+    </lyric>
+    <lyric name="verse2" chord="2">
+      <p text="El miedo en tus ojos se ve, no quieres fallar"></p>
+      <p text="no vas a parar, no te rendirás"></p>
+      <p text="cuando te intenten callar, tu voz apagar"></p>
+      <p text="no tengas temor, levanta tu voz"></p>
+    </lyric>
+    <lyric name="prechorus" chord="3">
+      <p text="No es fácil, no"></p>
+      <p text="ponerse de pie y creer"></p>
+      <p text="cuando solo estés"></p>
+      <p text="recuerda que"></p>
+    </lyric>
+    <lyric name="chorus" chord="4">
+      <p text="Él va contigo, un camino abrirá a tus pies"></p>
+      <p text="de día y de noche, su fuego arderá en tu ser"></p>
+      <p text="y cuando el mundo intente robar tu fe"></p>
+      <p text="Él te sostiene y no te dejará caer, no te dejará caer"></p>
+    </lyric>
+    <lyric name="postchorus" chord="5">
+      <p text="Oh, oh, oh, no te dejará caer"></p>
+      <p text="Oh, oh, oh, no te dejará caer"></p>
+    </lyric>
+  </lyrics>
+</song>
+<song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-intro-bridge-bridge-intro-chorus">
+  <artists>
+    <artist name="Twice"></artist>
+  </artists>
+  <chords>
+    <chord name="1">
+      <p><a temp="4" note="G"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="2" note="D"></a><a temp="2" note="G"></a></p>
+    </chord>
+    <chord name="2">
+      <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
+      <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
+      <p><a temp="8" note="G"></a><a temp="8" note="G/B"></a></p>
+      <p><a temp="4" note="G/B"></a><a temp="4" note="C"></a><a temp="4" note="D"></a><a temp="4" note="G"></a></p>
+    </chord>
+    <chord name="3">
+      <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+      <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+      <p><a temp="4" note="D"></a><a temp="4" note="Em"></a><a temp="4" note="C"></a><a temp="4" note="G"></a></p>
+      <p><a temp="8" note="Am"></a><a temp="4" note="G/B"></a><a temp="4" note="C"></a></p>
+      <p><a temp="8" note="Am"></a><a temp="4" note="D"></a><a temp="4" note="C"></a></p>
+    </chord>
+  </chords>
+  <lyrics>
+    <lyric name="intro" chord="1">
+    </lyric>
+    <lyric name="verse1" chord="2">
+      <p text="En el silencio, en la espera"></p>
+      <p text="un canto nuevo has puesto en mi"></p>
+      <p text="tu presencia, mi promesa"></p>
+      <p text="caminaré yo confiado en ti"></p>
+    </lyric>
+    <lyric name="verse2" chord="2">
+      <p text="Guías mis pasos, en ti seguro estoy"></p>
+      <p text="sobre las aguas caminaré"></p>
+      <p text="mi fe fortaleces y me levantas"></p>
+      <p text="a tu llamado responderé"></p>
+    </lyric>
+    <lyric name="chorus" chord="3">
+      <p text="En la tempestad tu amor me sostendrá"></p>
+      <p text="no tropezaré tu me protegerás"></p>
+      <p text="y es tu gracia mi fortaleza en la debilidad"></p>
+      <p text="Jesús, mi buen pastor"></p>
+      <p text="guíame a tu corazón"></p>
+    </lyric>
+    <lyric name="bridge" chord="2">
+      <p text="Te amo tanto, te amo tanto"></p>
+      <p text="tu nunca me dejarás"></p>
+      <p text="Te amo tanto, te amo tanto"></p>
+      <p text="y a tu lado quiero estar"></p>
+    </lyric>
+  </lyrics>
+</song>
+<song name="La Experiencia de Adorar" id="ueu6r8jjor" order="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro">
+  <artists>
+    <artist name="Kike Pavón"></artist>
+  </artists>
+  <chords>
+    <chord name="1">
+      <p><a temp="4" note="C"></a><a temp="4" note="G"></a><a temp="4" note="Am"></a><a temp="4" note="F"></a></p>
+    </chord>
+    <chord name="2">
+      <p><a temp="8" note="C"></a><a temp="8" note="Em"></a></p>
+      <p><a temp="8" note="Em"></a><a temp="8" note="Am"></a></p>
+      <p><a temp="8" note="Am"></a><a temp="8" note="F"></a></p>
+    </chord>
+    <chord name="3">
+      <p><a temp="8" note="C"></a><a temp="8" note="G"></a></p>
+      <p><a temp="8" note="G"></a><a temp="8" note="Am"></a></p>
+      <p><a temp="8" note="Am"></a><a temp="8" note="F"></a></p>
+    </chord>
+    <chord name="4">
+      <p><a temp="8" note="Dm"></a><a temp="8" note="G"></a></p>
+      <p><a temp="8" note="C"></a><a temp="8" note="F"></a></p>
+    </chord>
+  </chords>
+  <lyrics>
+    <lyric name="intro" chord="1">
+    </lyric>
+    <lyric name="verse1" chord="2">
+      <p text="Es mejor un día en tu presencia"></p>
+      <p text="que mil años fuera de ella"></p>
+      <p text="pues nada se compara a ella"></p>
+    </lyric>
+    <lyric name="verse2" chord="2">
+      <p text="Es mejor un rincón en tu casa"></p>
+      <p text="que tener el mejor palacio"></p>
+      <p text="mejor estar en tu regazo"></p>
+    </lyric>
+    <lyric name="chorus1" chord="3">
+      <p text="Y adorar, desde hoy hasta la eternidad"></p>
+      <p text="y en tu presencia descansar"></p>
+      <p text="pues no hay mejor lugar que estar donde tú estás"></p>
+    </lyric>
+    <lyric name="chorus2" chord="3">
+      <p text="Y habitar, bajo tus alas contemplar"></p>
+      <p text="tú gran poder y tu bondad"></p>
+      <p text="y disfrutar de la experiencia de adorarte Jesús"></p>
+    </lyric>
+    <lyric name="bridge" chord="4">
+      <p text="Quiero vivir en tu presencia"></p>
+      <p text="Quiero adorar hasta que no tenga fuerzas"></p>
+    </lyric>
+  </lyrics>
+</song>
