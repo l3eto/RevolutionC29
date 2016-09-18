@@ -112,7 +112,7 @@ $( document ).ready(function(){
       //get song
       var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]').get(0);
       //get values
-      var artists = song[i].getElementsByTagName("artist");
+      var artists = song.getElementsByTagName("artist");
       var artist = [];
       for( var j = 0 ; j < artists.length ; j++ ){
         artist.push( artists[j].getAttribute("name") );
