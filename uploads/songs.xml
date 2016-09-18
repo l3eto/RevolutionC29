@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Empezar De Nuevo" id="w3ury5mju6" order="intro-verse1-verse2-prechorus-chorus-intro-verse3-verse4-prechorus-chorus-prechorus-chorus-chorus-intro">
+    <artists>
+      <artist name="Kike Pavón"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="D"></a><a temp="2" note="A/C#"></a><a temp="2" note="A"></a><a temp="4" note="Bm"></a><a temp="4" note="G"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="8" note="D"></a><a temp="8" note="A"></a></p>
+        <p><a temp="8" note="Bm"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="D"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="8" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="Bm"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="8" note="D"></a><a temp="8" note="A"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="16" note="D"></a></p>
+        <p><a temp="16" note="A"></a></p>
+        <p><a temp="8" note="Bm"></a><a temp="8" note="G"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Hoy, una nueva oportunidad"></p>
+        <p text="el ayer es pasado, el mañana es futuro"></p>
+        <p text="y todo lo que tengo hoy es un día más"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Para conocerte un poco más"></p>
+        <p text="para andar de tu lado agarrado a tu mano"></p>
+        <p text="sin miedo a este mundo"></p>
+      </lyric>
+      <lyric name="verse3" chord="2">
+        <p text="Hoy, nuestra historia debe continuar"></p>
+        <p text="pues aunque pasan los años, tu amor esta intacto"></p>
+        <p text="y todo lo que quiero yo es contigo estar"></p>
+      </lyric>
+      <lyric name="verse4" chord="2">
+        <p text="Me haces falta para respirar"></p>
+        <p text="porque es por tu sangre que puedo levantarme"></p>
+        <p text="y darte las gracias"></p>
+      </lyric>
+      <lyric name="prechorus" chord="3">
+        <p text="Y viviré, cada día como si fuera el último"></p>
+        <p text="disfrutaré, cada día como el primero"></p>
+        <p text="te entregaré, todo lo que soy cada mañana"></p>
+        <p text="desde que sale el sol en mi ventana"></p>
+      </lyric>
+      <lyric name="chorus1" chord="4">
+        <p text="Voy buscarte encontrate, en tu pecho recostarme"></p>
+        <p text="mirarte, abrazarte, mi vida regalarte"></p>
+        <p text="y cada día empezar de nuevo"></p>
+      </lyric>
+      <lyric name="chorus2" chord="4">
+        <p text="Voy a seguirte y amarte, vivir para adorarte"></p>
+        <p text="en tu cruz renovarme y seguirte sin cansarme"></p>
+        <p text="y cada día empezar de nuevo"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Océanos" id="or4uhj6nh9" order="intro-verse1-chorus-intro-verse2-chorus-bridge-bridge-intro-chorus-intro">
     <artists>
       <artist name="Hillsong UNITED"></artist>
