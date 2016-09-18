@@ -81,24 +81,6 @@ function setContent(){
           xmldata.push( { title: title  , description: songid } );
         }
       }
-    /*    
-    var artist = xmlDoc.getElementsByTagName("artist");
-    var error = xmlDoc.getElementsByTagName("parsererror");
-    if( error.length == 0 ){
-      if( artist.length > 0 ){
-        for( var i = 0 ; i < artist.length ; i++){
-            var artistname = artist[i].getAttribute("name");
-            var songs = artist[i].getElementsByTagName("song");
-            if( songs.length > 0 ){
-                for( var j = 0 ; j < songs.length ; j++ ){
-                    var songname = songs[j].getAttribute("name");
-                    var songid = songs[j].getAttribute("id");
-                    var title = artistname.concat(' - ',songname);
-                    xmldata.push( { title: title  , description: songid } );
-                }
-            }
-        }
-      }*/
       $('.ui.search').search({
         source: xmldata ,
         onSelect: function(result, response) {
@@ -130,7 +112,12 @@ $( document ).ready(function(){
       //get song
       var song = $( xmlDoc ).find('song[id="'+searchingsong+'"]').get(0);
       //get values
-      var artistName = song.parentNode.parentNode.getAttribute("name");
+      var artists = song[i].getElementsByTagName("artist");
+      var artist = [];
+      for( var j = 0 ; j < artists.length ; j++ ){
+        artist.push( artists[j].getAttribute("name") );
+      }
+      var artistName = artist.join(" & ");
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
       var orden = song.getAttribute("order").split("-");
