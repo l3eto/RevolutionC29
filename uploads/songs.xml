@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Océanos" id="or4uhj6nh9" order="intro-verse1-chorus-intro-verse2-chorus-bridge-bridge-intro-chorus-intro">
+    <artists>
+      <artist name="Hillsong UNITED"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="Bm"></a><a temp="2" note="A/C#"></a><a temp="2" note="D"></a><a temp="4" note="A"></a><a temp="4" note="G"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="G"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="8" note="Bm"></a><a temp="4" note="A/C#"></a><a temp="4" note="D"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="Bm"></a><a temp="4" note="A/C#"></a><a temp="4" note="D"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="G"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+        <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+        <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
+        <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="Bm"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="8" note="Bm"></a><a temp="8" note="G"></a></p>
+        <p><a temp="16" note="D"></a></p>
+        <p><a temp="16" note="A"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="16" note="A"></a></p>
+        <p><a temp="16" note="Em"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Tu voz me llama a las aguas"></p>
+        <p text="donde mis pies pueden fallar"></p>
+        <p text="y ahí te encuentro en lo incierto"></p>
+        <p text="caminaré sobre el mar"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Tu gracia abunda en la tormenta"></p>
+        <p text="tu mano Dios, me guiará"></p>
+        <p text="cuando hay temor en mi camino"></p>
+        <p text="Tú eres fiel y no cambiarás"></p>
+      </lyric>
+      <lyric name="chorus" chord="3">
+        <p text="Y a tu nombre clamaré"></p>
+        <p text="en ti mis ojos fijaré"></p>
+        <p text="en tempestad, descansaré en tu poder"></p>
+        <p text="pues tuyo soy hasta el final"></p>
+      </lyric>
+      <lyric name="bridge" chord="4">
+        <p text="Que tu Espíritu me guíe sin fronteras"></p>
+        <p text="más allá de las barreras"></p>
+        <p text="a donde tú me llames"></p>
+        <p text="tú me llevas más allá de lo soñado"></p>
+        <p text="donde puedo estar confiado"></p>
+        <p text="al estar en tu presencia"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Vives En Mí" id="8xyb42pswv" order="intro-verse1-verse2-prechorus-intro-chorus-intro-verse2-intro-prechorus-chorus-bridge-prechorus-chorus">
     <artists>
       <artist name="Evan Craft"></artist>
