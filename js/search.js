@@ -150,12 +150,13 @@ function setTitle( artist , song , imgsrc ){
   h2.setAttribute("class","ui left floated header beru-title");
   //image artist
   var img = document.createElement('IMG');
-  img.setAttribute("class","ui circular image");
+  img.setAttribute("class","ui circular image beru-image");
   img.setAttribute("src",imgsrc);
   h2.appendChild(img);
   //title
   var titlespancontainer = document.createElement('DIV');
   titlespancontainer.setAttribute("class","item");
+  titlespancontainer.setAttribute("style","display:inline-block;")
   var span = document.createElement('SPAN');
   span.setAttribute("class","beru-artist");
   span.setAttribute("style","margin-left: 16px!important;")
