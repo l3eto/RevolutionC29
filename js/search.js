@@ -157,7 +157,7 @@ function setTitle( artist , song , imgsrc ){
   var titlespancontainer = document.createElement('DIV');
   titlespancontainer.setAttribute("class","item");
   titlespancontainer.setAttribute("style","display:inline-block;")
-  var span = document.createElement('SPAN');
+  var span = document.createElement('A');
   span.setAttribute("class","beru-artist");
   span.setAttribute("style","margin-left: 16px!important;")
   span.innerHTML = artist;
