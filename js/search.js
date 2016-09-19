@@ -143,8 +143,7 @@ function setTitle( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid one item tabs menu");
   var div2 = document.createElement('SPAN');
-  div2.setAttribute("class","item");
-  div2.setAttribute("style","font-size:1.5em;");
+  div2.setAttribute("class","item beru-title");
   div2.innerHTML = title;
   div.appendChild( div2 );
   document.getElementById('search-result').appendChild( div );
