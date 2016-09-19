@@ -120,8 +120,9 @@ $( document ).ready(function(){
       var artistName = artist.join(" & ");
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
-      if( artists[0].getAttribute("id") ){ var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("src"),".jpg");}
-      else{ var imgsrc = "../uploads/img/unknow.jpg";};
+      var imgsrc = "../uploads/img/unknow.jpg";
+      console.log(artists);
+      if( artists[0].getAttribute("id") ) var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("id"),".jpg");
       var orden = song.getAttribute("order").split("-");
       document.title = songName+' | Revolution C29';
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
