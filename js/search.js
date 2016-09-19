@@ -156,7 +156,7 @@ function setTitle( title , imgsrc ){
   //title
   var span = document.createElement('SPAN');
   span.setAttribute("class","item");
-  span.setAttribute("style","margin-left: 18px;")
+  span.setAttribute("style","margin-left: 16px;")
   span.innerHTML = title;
   h2.appendChild(span);
   div.appendChild(h2);
@@ -171,10 +171,10 @@ function setTitle( title , imgsrc ){
   div.appendChild(setting);
   //settings contents
   var hiddendiv = document.createElement("DIV");
-  hiddendiv.setAttribute("class","ui setting-container transition hidden");
+  hiddendiv.setAttribute("class","ui setting-container transition hidden inverted segment");
   var div2 = document.createElement("DIV");
   div2.setAttribute("class","ui left floated header beru-title");
-  div2.setAttribute("style","padding:20px;width: 100%;");
+  div2.setAttribute("style","width:100%;margin-top:16px;");
   //add buttons
   var buttons = document.createElement("DIV");
   buttons.setAttribute("class","ui grid");
@@ -182,7 +182,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon red button");
+  button.setAttribute("class","ui labeled icon black button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(-2);");
   var icon = document.createElement("I");
@@ -197,7 +197,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon blue button");
+  button.setAttribute("class","ui labeled icon black button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(-1);");
   var icon = document.createElement("I");
@@ -227,7 +227,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon green button");
+  button.setAttribute("class","ui labeled icon black button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(+2);");
   var icon = document.createElement("I");
