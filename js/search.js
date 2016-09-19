@@ -124,7 +124,7 @@ $( document ).ready(function(){
       var title = artistName+' - '+songName;
       var imgsrc = "../uploads/img/unknow.jpg";
       var artistId = null;
-      if( artists[0].getAttribute("id") ){var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("id"),".jpg");artisId=artists[0].getAttribute("id");}
+      if( artists[0].getAttribute("id") ){var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("id"),".jpg");artistId=artists[0].getAttribute("id");}
       var orden = song.getAttribute("order").split("-");
       document.title = songName+' | Revolution C29';
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
@@ -163,8 +163,8 @@ function setTitle( artist , song , imgsrc , artistid ){
   var span = document.createElement('A');
   span.setAttribute("class","beru-artist");
   span.setAttribute("style","margin-left: 16px!important;");
-  if( artistid ){span.setAttribute("href",window.location.hostname+window.location.pathname+"?artist="+artistid);}
-  else{ span.setAttribute("href","#");}
+  if( artistid == null ){span.setAttribute("href","#");}
+  else{ span.setAttribute("href",window.location.hostname+window.location.pathname+"?artist="+artistid);}
   span.innerHTML = artist;
   titlespancontainer.appendChild(span);
   var br = document.createElement('BR');
