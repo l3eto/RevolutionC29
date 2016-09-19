@@ -140,7 +140,7 @@ $( document ).ready(function(){
 
 //set tittle
 function setTitle( title ){
-  var div = document.createElement('DIV');
+  /*var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid one item tabs menu");
   var div2 = document.createElement('SPAN');
   div2.setAttribute("class","item beru-title");
@@ -148,7 +148,22 @@ function setTitle( title ){
   div.appendChild( div2 );
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon");
-  div.appendChild(icon);
+  div.appendChild(icon);*/
+  var div = document.createElement('DIV');
+  div.setAttribute("ui clearing segment");
+  var h2 = document.createElement("H2");
+  h2.setAttribute("ui left floated header");
+  var span = document.createElement('SPAN');
+  span.setAttribute("class","item beru-title");
+  span.innerHTML = title;
+  h2.appendChild(span);
+  div.appendChild(h2);
+  var h2 = document.createElement("H2");
+  h2.setAttribute("ui right floated header");
+  var icon = document.createElement('I');
+  icon.setAttribute("class","setting icon beru-title");
+  h2.appendChild(icon);
+  div.appendChild(h2);
   document.getElementById('search-result').appendChild( div );
 }
 
