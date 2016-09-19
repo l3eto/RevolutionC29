@@ -26,12 +26,14 @@ var customLabels = {
 }
 
 //get search
-  function getSearchURL(){
-    var result = /^[?](song)[=](.*)$/gmi.exec( window.location.search );
+  function getSearchURL( type ){
+    var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
     if(result){
       result.shift();
-      if( result[0] == 'song'){
+      if( result[0] == type){
         return result[1];
+      }else{
+        return null;
       }
     }else{
       return null;
@@ -97,7 +99,7 @@ $( document ).ready(function(){
   //set songs on search
   setContent();
   //read if some song is on search
-  var searchingsong = getSearchURL();
+  var searchingsong = getSearchURL('song');
   if( searchingsong ){
     //search especific song
     readXML("../uploads/xml/songs.xml", function(data){
@@ -129,7 +131,7 @@ $( document ).ready(function(){
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
       }, false);
-      setTitle(artistName,songName,imgsrc );
+      setTitle(artistName,songName,imgsrc,artistId);
       setMenu();
       setAudio( title );
       setLetras(song,orden);
