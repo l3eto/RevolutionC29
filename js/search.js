@@ -159,6 +159,8 @@ function setTitle( artist , song , imgsrc ){
   span.setAttribute("style","margin-left: 16px!important;")
   span.innerHTML = artist;
   h2.appendChild(span);
+  var br = document.createElement('BR');
+  h2.appendChild(br);
   var span = document.createElement('SPAN');
   span.setAttribute("class","item beru-song");
   span.setAttribute("style","margin-left: 16px!important;")
