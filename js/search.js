@@ -146,6 +146,9 @@ function setTitle( title ){
   div2.setAttribute("class","item beru-title");
   div2.innerHTML = title;
   div.appendChild( div2 );
+  var icon = document.createElement('I');
+  icon.setAttribute("class","setting icon");
+  div.appendChild(icon);
   document.getElementById('search-result').appendChild( div );
 }
 
