@@ -216,7 +216,7 @@ function setLetras( song , orden ){
   var container = document.createElement('DIV');
   container.setAttribute("class","ui center aligned segment");
   var songcontainer = document.createElement('DIV');
-  songcontainer.setAttribute("class","ui song-container");
+  songcontainer.setAttribute("class","ui song-container beru-container");
   for( var i = 0 ; i < orden.length ; i++ ){
     var lyric = $( song ).find('lyric[name="'+orden[i]+'"]').get(0).getElementsByTagName("p");
     if( lyric.length > 0 ){
@@ -243,7 +243,7 @@ function setAcordes( song , orden ){
   container.setAttribute("class","ui center aligned segment");
   var songcontainer = document.createElement('DIV');
   songcontainer.setAttribute("class","ui song-container");
-  songcontainer.setAttribute("style","padding-bottom: 15px;padding-top: 15px;")
+  songcontainer.setAttribute("class","ui song-container beru-container");
   var grid = document.createElement('DIV');
   grid.setAttribute("class","ui grid");
   for( var i = 0 ; i < orden.length ; i++ ){
