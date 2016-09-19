@@ -175,7 +175,7 @@ function setTitle( title , imgsrc ){
   //settings container
   var div2 = document.createElement("DIV");
   div2.setAttribute("class","ui left floated header beru-title inverted segment");
-  div2.setAttribute("style","width:100%;margin-top:16px;");
+  div2.setAttribute("style","width:100%;margin-top:16px!important;");
   //title for buttons
   var span = document.createElement("SPAN");
   span.innerHTML="Cambiar Tono";
