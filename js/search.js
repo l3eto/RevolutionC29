@@ -140,28 +140,19 @@ $( document ).ready(function(){
 
 //set tittle
 function setTitle( title ){
-  /*var div = document.createElement('DIV');
-  div.setAttribute("class","ui fluid one item tabs menu");
-  var div2 = document.createElement('SPAN');
-  div2.setAttribute("class","item beru-title");
-  div2.innerHTML = title;
-  div.appendChild( div2 );
-  var icon = document.createElement('I');
-  icon.setAttribute("class","setting icon");
-  div.appendChild(icon);*/
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   var h2 = document.createElement("H2");
-  h2.setAttribute("class","ui left floated header");
+  h2.setAttribute("class","ui left floated header beru-title");
   var span = document.createElement('SPAN');
-  span.setAttribute("class","item beru-title");
+  span.setAttribute("class","item");
   span.innerHTML = title;
   h2.appendChild(span);
   div.appendChild(h2);
   var h2 = document.createElement("H2");
-  h2.setAttribute("class","ui right floated header");
+  h2.setAttribute("class","ui right floated header beru-title");
   var icon = document.createElement('I');
-  icon.setAttribute("class","setting icon beru-title");
+  icon.setAttribute("class","setting icon");
   h2.appendChild(icon);
   div.appendChild(h2);
   document.getElementById('search-result').appendChild( div );
