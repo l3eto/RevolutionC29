@@ -156,7 +156,7 @@ function setTitle( title , imgsrc ){
   //title
   var span = document.createElement('SPAN');
   span.setAttribute("class","item");
-  span.setAttribute("style","margin-left: 16px;")
+  span.setAttribute("style","margin-left: 16px!important;")
   span.innerHTML = title;
   h2.appendChild(span);
   div.appendChild(h2);
