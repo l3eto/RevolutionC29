@@ -159,7 +159,7 @@ $( document ).ready(function(){
       //set title
       setArtistTitle(artistName,searchingartist);
       setDivition();
-      setSongs( artist );
+      setSongs(artist);
     });
   }else{
     $('#search-result').remove();
@@ -207,6 +207,7 @@ function setSongs( artist ){
     header.innerHTML = songName;
     content.appendChild(header);
     item.appendChild(content);
+    div.appendChild(item);
   });
   document.getElementById('search-result').appendChild( div );
 }
