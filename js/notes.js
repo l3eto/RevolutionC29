@@ -21,7 +21,7 @@ var modifynote = function( tone ){
     if( posmi > -1 ){var pos = posmi;var vect = minors;}
     if( posmi9 > -1 ){var pos = posmi9;var vect = minors9;}
     if( posmi7 > -1 ){var pos = posmi7;var vect = minors7;}
-    if( posma == -1 && posma9 == -1 && posma7 == -1 && gposma == -1 && posmi9 == -1 && posmi7 == -1 && posmi == -1 ){alert('Lo Sentimos, ha ocurridou un error');window.location.reload();};
+    if( posma == -1 && posma9 == -1 && posma7 == -1 && gposma == -1 && posmi9 == -1 && posmi7 == -1 && posmi == -1 ){console.log($(this).html());alert('Lo Sentimos, ha ocurridou un error');window.location.reload();};
     if( pos+tone >= vect.length  ){
       $( this ).html( vect[pos+tone-vect.length] );
     }else if( pos+tone < 0  ){
