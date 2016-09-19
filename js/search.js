@@ -135,7 +135,6 @@ $( document ).ready(function(){
       setLetras(song,orden);
       setAcordes(song,orden);
       $('.menu .item').tab();
-      $('.ui.modal.note').modal({blurring: true}).modal('show').modal('setting', 'transition', 'scale');
     });
   }else{
     $('#search-result').remove();
