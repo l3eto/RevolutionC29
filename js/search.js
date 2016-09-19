@@ -199,7 +199,7 @@ function setSongs( artist ){
     var songId = song.getAttribute("id");
     var item = document.createElement('A');
     item.setAttribute("class","item");
-    item.setAtribute("href","?song="+songId);
+    item.setAttribute("href","?song="+songId);
     item.setAttribute("style","margin: 0em 3em !important;");
     var icon = document.createElement('I');
     icon.setAttribute("class","play icon");
