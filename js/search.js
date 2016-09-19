@@ -185,6 +185,7 @@ function setArtistTitle( name , id ){
 function setDivition(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui divider");
+  div.setAttribute("style","padding-bottom:14px;");
   document.getElementById('search-result').appendChild( div );
 }
 
@@ -195,8 +196,10 @@ function setSongs( artist ){
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
     var songName = song.getAttribute("name");
+    var songId = song.getAttribute("id");
     var item = document.createElement('A');
     item.setAttribute("class","item");
+    item.setAtribute("href","?song="+songId);
     item.setAttribute("style","margin: 0em 3em !important;");
     var icon = document.createElement('I');
     icon.setAttribute("class","play icon");
