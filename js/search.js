@@ -134,6 +134,7 @@ $( document ).ready(function(){
       setLetras(song,orden);
       setAcordes(song,orden);
       $('.menu .item').tab();
+      $('.beru-note').click(function(){ shownote( this ); });
     });
   }else{
     $('#search-result').remove();
