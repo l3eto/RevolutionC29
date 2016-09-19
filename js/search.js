@@ -145,25 +145,84 @@ $( document ).ready(function(){
 function setTitle( title , imgsrc ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
+  //title container
   var h2 = document.createElement("H2");
   h2.setAttribute("class","ui left floated header beru-title");
+  //image artist
   var img = document.createElement('IMG');
   img.setAttribute("class","ui circular image");
   img.setAttribute("src",imgsrc);
   h2.appendChild(img);
+  //title
   var span = document.createElement('SPAN');
   span.setAttribute("class","item");
   span.setAttribute("style","margin-left: 18px;")
   span.innerHTML = title;
   h2.appendChild(span);
   div.appendChild(h2);
-  var h2 = document.createElement("A");
-  h2.setAttribute("class","ui right floated header beru-title");
-  h2.setAttribute("style","padding-top: 13px;");
+  //icon settings
+  var setting = document.createElement("A");
+  setting.setAttribute("class","ui right floated header beru-title");
+  setting.setAttribute("style","padding-top: 13px;");
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon");
-  h2.appendChild(icon);
-  div.appendChild(h2);
+  setting.appendChild(icon);
+  div.appendChild(setting);
+  //settings contents
+  var div = document.createElement("DIV");
+  div.setAttribute("class","ui inverted segment");
+  var divcontainer = document.createElement("DIV");
+  divcontainer.setAttribute("class","ui center aligned inverted header");
+  var buttons = document.createElement("DIV");
+  buttons.setAttribute("class","ui buttons");
+  //add buttons
+  var button = document.createElement("BUTTON");
+  button.setAttribute("class","ui labeled icon red button");
+  var icon = document.createElement("I");
+  icon.setAttribute("left minus icon");
+  button.appendChild(icon);
+  var span = document.createElement("SPAN");
+  span.innerHTML = "-1 Tono";
+  button.appendChild(span);
+  buttons.appendChild(button);
+  var button = document.createElement("BUTTON");
+  button.setAttribute("class","ui labeled icon blue button");
+  var icon = document.createElement("I");
+  icon.setAttribute("left minus icon");
+  button.appendChild(icon);
+  var span = document.createElement("SPAN");
+  span.innerHTML = "-1/2 Tono";
+  button.appendChild(span);
+  buttons.appendChild(button);
+  var button = document.createElement("BUTTON");
+  button.setAttribute("class","ui labeled icon button");
+  var icon = document.createElement("I");
+  icon.setAttribute("reset icon");
+  button.appendChild(icon);
+  var span = document.createElement("SPAN");
+  span.innerHTML = "Restaurar Tono";
+  button.appendChild(span);
+  buttons.appendChild(button);
+  var button = document.createElement("BUTTON");
+  button.setAttribute("class","ui labeled icon black button");
+  var icon = document.createElement("I");
+  icon.setAttribute("right plus icon");
+  button.appendChild(icon);
+  var span = document.createElement("SPAN");
+  span.innerHTML = "+1/2 Tono";
+  button.appendChild(span);
+  buttons.appendChild(button);
+  var button = document.createElement("BUTTON");
+  button.setAttribute("class","ui labeled icon green button");
+  var icon = document.createElement("I");
+  icon.setAttribute("right plus icon");
+  button.appendChild(icon);
+  var span = document.createElement("SPAN");
+  span.innerHTML = "+1 Tono";
+  button.appendChild(span);
+  buttons.appendChild(button);
+  divcontainer.appendChild(buttons);
+  div.appendChild(divcontainer);
   document.getElementById('search-result').appendChild( div );
 }
 
