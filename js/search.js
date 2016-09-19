@@ -146,7 +146,7 @@ function setTitle( title , imgsrc ){
   div.setAttribute("class","ui clearing segment");
   var h2 = document.createElement("H2");
   h2.setAttribute("class","ui left floated header beru-title");
-  var img = document.createElement('DIV');
+  var img = document.createElement('IMG');
   img.setAttribute("class","ui circular image");
   img.setAttribute("src",imgsrc);
   h2.appendChild(img);
