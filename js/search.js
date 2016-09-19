@@ -188,7 +188,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon beru-icon black button");
+  button.setAttribute("class","ui labeled icon beru-icon black button beru-button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(-2);");
   var icon = document.createElement("I");
@@ -208,7 +208,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon beru-icon black button");
+  button.setAttribute("class","ui labeled icon beru-icon black button beru-button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(-1);");
   var icon = document.createElement("I");
@@ -228,7 +228,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon beru-icon black button");
+  button.setAttribute("class","ui labeled icon beru-icon black button beru-button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(+1);");
   var icon = document.createElement("I");
@@ -248,7 +248,7 @@ function setTitle( title , imgsrc ){
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon beru-icon black button");
+  button.setAttribute("class","ui labeled icon beru-icon black button beru-button");
   button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(+2);");
   var icon = document.createElement("I");
