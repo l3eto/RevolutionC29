@@ -195,8 +195,9 @@ function setSongs( artist ){
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
     var songName = song.getAttribute("name");
-    var item = document.createElement('DIV');
+    var item = document.createElement('A');
     item.setAttribute("class","item");
+    item.setAttribute("style","margin: 0em 3em !important;");
     var icon = document.createElement('I');
     icon.setAttribute("class","play icon");
     item.appendChild(icon);
