@@ -171,9 +171,9 @@ function setTitle( title , imgsrc ){
   div.appendChild(setting);
   //settings contents
   var hiddendiv = document.createElement("DIV");
-  hiddendiv.setAttribute("class","ui setting-container transition hidden inverted segment");
+  hiddendiv.setAttribute("class","ui setting-container transition hidden");
   var div2 = document.createElement("DIV");
-  div2.setAttribute("class","ui left floated header beru-title");
+  div2.setAttribute("class","ui left floated header beru-title inverted segment");
   div2.setAttribute("style","width:100%;margin-top:16px;");
   //add buttons
   var buttons = document.createElement("DIV");
