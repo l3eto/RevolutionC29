@@ -174,15 +174,15 @@ function setTitle( title , imgsrc ){
   hiddendiv.setAttribute("class","ui setting-container transition hidden");
   var div2 = document.createElement("DIV");
   div2.setAttribute("class","ui left floated header beru-title");
-  div2.setAttribute("style","padding-top:20px;");
+  div2.setAttribute("style","padding:20px;");
   //add buttons
-  var divcontainer = document.createElement("DIV");
-  divcontainer.setAttribute("class","ui center aligned inverted header");
+  //var divcontainer = document.createElement("DIV");
+  //divcontainer.setAttribute("class","ui center aligned inverted header");
   var buttons = document.createElement("DIV");
-  buttons.setAttribute("class","ui equal width grid");
+  buttons.setAttribute("class","ui grid");
   //button
   var column = document.createElement("DIV");
-  column.setAttribute("class","column");
+  column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
   button.setAttribute("onclick","modifynote(-2);");
@@ -196,7 +196,7 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(column);
   //button
   var column = document.createElement("DIV");
-  column.setAttribute("class","column");
+  column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon blue button");
   button.setAttribute("onclick","modifynote(-1);");
@@ -210,21 +210,7 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(column);
   //button
   var column = document.createElement("DIV");
-  column.setAttribute("class","column");
-  var button = document.createElement("BUTTON");
-  button.setAttribute("class","ui labeled icon button");
-  button.setAttribute("onclick","window.location.reload;");
-  var icon = document.createElement("I");
-  icon.setAttribute("class","reset icon");
-  button.appendChild(icon);
-  var span = document.createElement("SPAN");
-  span.innerHTML = "Tono Original";
-  button.appendChild(span);
-  column.appendChild(button);
-  buttons.appendChild(column);
-  //button
-  var column = document.createElement("DIV");
-  column.setAttribute("class","column");
+  column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon black button");
   button.setAttribute("onclick","modifynote(+1);");
@@ -238,7 +224,7 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(column);
   //button
   var column = document.createElement("DIV");
-  column.setAttribute("class","column");
+  column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon green button");
   button.setAttribute("onclick","modifynote(+2);");
@@ -250,8 +236,8 @@ function setTitle( title , imgsrc ){
   button.appendChild(span);
   column.appendChild(button);
   buttons.appendChild(column);
-  divcontainer.appendChild(buttons);
-  div2.appendChild(divcontainer);
+  //divcontainer.appendChild(buttons);
+  div2.appendChild(buttons);
   hiddendiv.appendChild(div2);
   div.appendChild(hiddendiv);
   document.getElementById('search-result').appendChild( div );
