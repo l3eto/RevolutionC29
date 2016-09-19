@@ -68,7 +68,7 @@
   </song>
   <song name="Océanos" id="or4uhj6nh9" order="intro-verse1-chorus-intro-verse2-chorus-bridge-bridge-intro-chorus-intro">
     <artists>
-      <artist name="Hillsong UNITED"></artist>
+      <artist name="Hillsong UNITED" id="h1ls0ngp3r"></artist>
     </artists>
     <chords>
       <chord name="1">
@@ -367,7 +367,7 @@
   </song>
   <song name="La Experiencia de Adorar" id="ueu6r8jjor" order="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro">
     <artists>
-      <artist name="Kike Pavón" id="pwrm2i93j5"></artist>
+      <artist name="Kike Pavón"></artist>
     </artists>
     <chords>
       <chord name="1">
