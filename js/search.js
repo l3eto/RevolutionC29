@@ -175,11 +175,14 @@ function setTitle( title , imgsrc ){
   var div2 = document.createElement("DIV");
   div2.setAttribute("class","ui left floated header beru-title");
   div2.setAttribute("style","padding-top:20px;");
+  //add buttons
   var divcontainer = document.createElement("DIV");
   divcontainer.setAttribute("class","ui center aligned inverted header");
   var buttons = document.createElement("DIV");
-  buttons.setAttribute("class","ui five buttons");
-  //add buttons
+  buttons.setAttribute("class","ui equal width grid");
+  //button
+  var column = document.createElement("DIV");
+  column.setAttribute("class","column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
   button.setAttribute("onclick","modifynote(-2);");
@@ -189,7 +192,11 @@ function setTitle( title , imgsrc ){
   var span = document.createElement("SPAN");
   span.innerHTML = "1 Tono";
   button.appendChild(span);
-  buttons.appendChild(button);
+  column.appendChild(button);
+  buttons.appendChild(column);
+  //button
+  var column = document.createElement("DIV");
+  column.setAttribute("class","column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon blue button");
   button.setAttribute("onclick","modifynote(-1);");
@@ -199,7 +206,11 @@ function setTitle( title , imgsrc ){
   var span = document.createElement("SPAN");
   span.innerHTML = "1/2 Tono";
   button.appendChild(span);
-  buttons.appendChild(button);
+  column.appendChild(button);
+  buttons.appendChild(column);
+  //button
+  var column = document.createElement("DIV");
+  column.setAttribute("class","column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon button");
   button.setAttribute("onclick","window.location.reload;");
@@ -209,7 +220,11 @@ function setTitle( title , imgsrc ){
   var span = document.createElement("SPAN");
   span.innerHTML = "Tono Original";
   button.appendChild(span);
-  buttons.appendChild(button);
+  column.appendChild(button);
+  buttons.appendChild(column);
+  //button
+  var column = document.createElement("DIV");
+  column.setAttribute("class","column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon black button");
   button.setAttribute("onclick","modifynote(+1);");
@@ -219,7 +234,11 @@ function setTitle( title , imgsrc ){
   var span = document.createElement("SPAN");
   span.innerHTML = "1/2 Tono";
   button.appendChild(span);
-  buttons.appendChild(button);
+  column.appendChild(button);
+  buttons.appendChild(column);
+  //button
+  var column = document.createElement("DIV");
+  column.setAttribute("class","column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon green button");
   button.setAttribute("onclick","modifynote(+2);");
@@ -229,7 +248,8 @@ function setTitle( title , imgsrc ){
   var span = document.createElement("SPAN");
   span.innerHTML = "1 Tono";
   button.appendChild(span);
-  buttons.appendChild(button);
+  column.appendChild(button);
+  buttons.appendChild(column);
   divcontainer.appendChild(buttons);
   div2.appendChild(divcontainer);
   hiddendiv.appendChild(div2);
