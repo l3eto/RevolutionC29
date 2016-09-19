@@ -121,7 +121,6 @@ $( document ).ready(function(){
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
       var imgsrc = "../uploads/img/unknow.jpg";
-      console.log(artists);
       if( artists[0].getAttribute("id") ) var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("id"),".jpg");
       var orden = song.getAttribute("order").split("-");
       document.title = songName+' | Revolution C29';
