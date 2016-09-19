@@ -214,7 +214,7 @@ function setTitle( title , imgsrc ){
   var icon = document.createElement("I");
   icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
-  vvar span = document.createElement("SPAN");
+  var span = document.createElement("SPAN");
   span.setAttribute("class","beru-only-mobile-desktop");
   span.innerHTML = "1/2";
   button.appendChild(span);
