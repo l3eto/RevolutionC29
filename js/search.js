@@ -155,6 +155,10 @@ $( document ).ready(function(){
       }
       //get artist
       var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
+      var artistName = artist.get(0).getAttribute("name");
+      //set title
+      setArtistTitle(artistName,searchingartist);
+   
       $( artist ).each(function(){
         console.log( this.parentNode.parentNode );
       });
@@ -163,6 +167,21 @@ $( document ).ready(function(){
     $('#search-result').remove();
   }
 });
+
+//set artitsTitle
+
+function setArtistTitle( name , id ){
+  var h1 = document.createElement('H1');
+  h1.setAttribute("class","ui header");
+  var img = document.createElement("IMG");
+  img.setAttribute("class","ui circular image");
+  img.setAttribute("src","../uploads/img/".concat(id,".jpg");
+  var span = document.createElement("SPAN");
+  span.innerHTML = name;
+  h1.appendChild(img);
+  h1.appendChild(span);
+  document.getElementById('search-result').appendChild( h1 );
+}
 
 //set tittle
 function setTitle( artist , song , imgsrc , artistid ){
