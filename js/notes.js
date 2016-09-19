@@ -4,9 +4,16 @@ var modifynote = function( tone ){
   $('.beru-note').each(function() {
     var posma = mayors.indexOf( $(this).html() );
     var posmi = minors.indexOf( $(this).html() );
-    if( posma > -1 ){$( this ).html( mayors[posma+tone] );}
-    else if( posmi > -1 ){$( this ).html( minors[posmi+tone] );}
-    else{alert('we cant update this note: '+$(this).html());}
+    if( posma > -1 ){var pos = posma;var vect = mayors;}
+    if( posmi > -1 ){var pos = posmi;var vect = minors;}
+    if( posma == -1 && posmi == -1){alert('Lo Sentimos, ha ocurridou un error');window.location.reload();};
+    if( pos+tone >= vect.length  ){
+      $( this ).html( vect[posma+tone-vect.length] );
+    }else if( pos+tone < 0  ){
+      $( this ).html( vect[pos+tone+vect.length] );  
+    }else{
+      $( this ).html( vect[pos+tone] );
+    }
   });
 }
 
