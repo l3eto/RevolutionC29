@@ -169,8 +169,11 @@ function setTitle( title , imgsrc ){
   setting.appendChild(icon);
   div.appendChild(setting);
   //settings contents
+  var hiddendiv = document.createElement("DIV");
+  hiddendiv.setAttribute("class","ui setting-container transition hidden");
   var div2 = document.createElement("DIV");
-  div2.setAttribute("class","ui inverted segment");
+  div2.setAttribute("class","ui left floated header beru-title");
+  div2.setAttribute("style","padding-top:20px;");
   var divcontainer = document.createElement("DIV");
   divcontainer.setAttribute("class","ui center aligned inverted header");
   var buttons = document.createElement("DIV");
@@ -223,7 +226,8 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(button);
   divcontainer.appendChild(buttons);
   div2.appendChild(divcontainer);
-  div.appendChild(div2);
+  hiddendiv.appendChild(div2);
+  div.appendChild(hiddendiv);
   document.getElementById('search-result').appendChild( div );
 }
 
