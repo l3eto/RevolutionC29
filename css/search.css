@@ -218,4 +218,12 @@ h3.ui.header {
     border-color: #e17e77!important;
 }
 
+.beru-title{
+  font-size:1.5rem !important;  
+}
 
+@media (max-width: 780px){
+  .beru-title{
+    font-size:1.14285714rem !important;  
+  }
+}
