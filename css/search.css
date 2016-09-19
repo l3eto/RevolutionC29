@@ -241,7 +241,7 @@ a.ui.right.floated.header.beru-title:hover{
   cursor:pointer;
 }
 
-img .beru-image{
+.ui.circular.image.beru-image{
   margin-top: -25px!important;
 }
 
