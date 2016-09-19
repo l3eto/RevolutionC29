@@ -159,9 +159,9 @@ function setTitle( title , imgsrc ){
   div.appendChild(h2);
   var h2 = document.createElement("H2");
   h2.setAttribute("class","ui right floated header beru-title");
+  h2.setAttribute("style","padding-top: 13px;");
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon");
-  icon.setAttribute("style","padding-top: 13px;");
   h2.appendChild(icon);
   div.appendChild(h2);
   document.getElementById('search-result').appendChild( div );
