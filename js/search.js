@@ -183,6 +183,7 @@ function setTitle( title , imgsrc ){
   //add buttons
   var buttons = document.createElement("DIV");
   buttons.setAttribute("class","ui grid");
+  buttons.setAttribute("style","padding:10px;");
   //button
   var column = document.createElement("DIV");
   column.setAttribute("class","ui four wide column");
