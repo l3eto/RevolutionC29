@@ -54,7 +54,7 @@ var customLabels = {
 
 //get content
 function setContent(){
-  readXML("../uploads/songs.xml", function(data){
+  readXML("../uploads/xml/songs.xml", function(data){
     if (window.DOMParser){
       parser = new DOMParser();
       xmlDoc = parser.parseFromString(data, "text/xml");
@@ -100,7 +100,7 @@ $( document ).ready(function(){
   var searchingsong = getSearchURL();
   if( searchingsong ){
     //search especific song
-    readXML("../uploads/songs.xml", function(data){
+    readXML("../uploads/xml/songs.xml", function(data){
       if (window.DOMParser){
         parser = new DOMParser();
         xmlDoc = parser.parseFromString(data, "text/xml");
@@ -120,13 +120,15 @@ $( document ).ready(function(){
       var artistName = artist.join(" & ");
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
+      if( artists[0].getAttribute("src") ){ var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("src"),".jpg");}
+      else{ var imgsrc = "../uploads/img/unknow.jpg");}
       var orden = song.getAttribute("order").split("-");
       document.title = songName+' | Revolution C29';
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
       }, false);
-      setTitle( title );
+      setTitle( title,imgsrc );
       setMenu();
       setAudio( title );
       setLetras(song,orden);
@@ -139,11 +141,15 @@ $( document ).ready(function(){
 });
 
 //set tittle
-function setTitle( title ){
+function setTitle( title , imgsrc ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   var h2 = document.createElement("H2");
   h2.setAttribute("class","ui left floated header beru-title");
+  var img = document.createElement('DIV');
+  img.setAttribute("class","ui circular image");
+  img.setAttribute("src",imgsrc);
+  h2.appendChild(img);
   var span = document.createElement('SPAN');
   span.setAttribute("class","item");
   span.innerHTML = title;
