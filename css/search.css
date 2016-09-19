@@ -229,6 +229,14 @@ h3.ui.header {
   padding-top: 15px;
 }
 
+.beru-only-mobile-desktop{
+  
+}
+
+.beru-only-desktop{
+  
+}
+
 a.ui.right.floated.header.beru-title:hover{
   cursor:pointer;
 }
@@ -239,5 +247,8 @@ a.ui.right.floated.header.beru-title:hover{
   }
   .beru-title{
     font-size:1.14285714rem !important;  
+  }
+  .beru-only-desktop{
+    font-size:0rem;
   }
 }
