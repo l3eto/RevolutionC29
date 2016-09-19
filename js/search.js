@@ -155,7 +155,9 @@ $( document ).ready(function(){
       }
       //get artist
       var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
-      console.log(artist);
+      $( artist ).each(function(){
+        console.log( this );
+      });
     });
   }else{
     $('#search-result').remove();
