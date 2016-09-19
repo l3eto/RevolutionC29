@@ -179,6 +179,7 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
   var icon = document.createElement("I");
+  
   icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
