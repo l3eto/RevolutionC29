@@ -175,7 +175,7 @@ function setArtistTitle( name , id ){
   h1.setAttribute("class","ui header");
   var img = document.createElement("IMG");
   img.setAttribute("class","ui circular image");
-  img.setAttribute("src","../uploads/img/".concat(id,".jpg");
+  img.setAttribute("src","../uploads/img/".concat(id,".jpg"));
   var span = document.createElement("SPAN");
   span.innerHTML = name;
   h1.appendChild(img);
