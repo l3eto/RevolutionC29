@@ -154,18 +154,21 @@ function setTitle( artist , song , imgsrc ){
   img.setAttribute("src",imgsrc);
   h2.appendChild(img);
   //title
+  var titlespancontainer = document.createElement('DIV');
+  titlespancontainer.setAttribute("class","item");
   var span = document.createElement('SPAN');
-  span.setAttribute("class","item beru-artist");
+  span.setAttribute("class","beru-artist");
   span.setAttribute("style","margin-left: 16px!important;")
   span.innerHTML = artist;
-  h2.appendChild(span);
+  titlespancontainer.appendChild(span);
   var br = document.createElement('BR');
-  h2.appendChild(br);
+  titlespancontainer.appendChild(br);
   var span = document.createElement('SPAN');
-  span.setAttribute("class","item beru-song");
+  span.setAttribute("class","beru-song");
   span.setAttribute("style","margin-left: 16px!important;")
   span.innerHTML = song;
-  h2.appendChild(span);
+  titlespancontainer.appendChild(span);
+  h2.appendChild(titlespancontainer);
   div.appendChild(h2);
   //icon settings
   var setting = document.createElement("A");
