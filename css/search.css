@@ -254,4 +254,7 @@ a.ui.right.floated.header.beru-title:hover{
   .beru-only-mobile-desktop{
     margin-left: -15px;
   }
+  .ui.header .icon.beru-icon:only-child {
+    height: 0%!important;
+  }
 }
