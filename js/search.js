@@ -190,10 +190,25 @@ function setDivition(){
 
 //set Songs
 function setSongs( artist ){
+  var div = document.createElement('DIV');
+  div.setAttribute("class","ui middle aligned selection list");
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
-    console.log(song.getAttribute("name")  );
+    var songName = song.getAttribute("name");
+    var item = document.createElement('DIV');
+    item.setAttribute("class","item");
+    var icon = document.createElement('I');
+    icon.setAttribute("class","play icon");
+    item.appendChild(icon);
+    var content = document.createElement('DIV');
+    content.setAttribute("class","content");
+    var header = document.createElement('DIV');
+    header.setAttribute("class","header");
+    header.innerHTML = songName;
+    content.appendChild(header);
+    item.appendChild(content);
   });
+  document.getElementById('search-result').appendChild( div );
 }
 
 //set tittle
