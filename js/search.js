@@ -121,7 +121,8 @@ $( document ).ready(function(){
       var songName = song.getAttribute("name");
       var title = artistName+' - '+songName;
       var imgsrc = "../uploads/img/unknow.jpg";
-      if( artists[0].getAttribute("id") ) var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("id"),".jpg");
+      var artistId = null;
+      if( artists[0].getAttribute("id") ){var imgsrc = "../uploads/img/".concat(artists[0].getAttribute("id"),".jpg");artisId=artists[0].getAttribute("id");}
       var orden = song.getAttribute("order").split("-");
       document.title = songName+' | Revolution C29';
       audio = new Audio( '../audio/'+encodeURI(title)+'.mp3');
@@ -142,7 +143,7 @@ $( document ).ready(function(){
 });
 
 //set tittle
-function setTitle( artist , song , imgsrc ){
+function setTitle( artist , song , imgsrc , artistid ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   //title container
@@ -159,7 +160,9 @@ function setTitle( artist , song , imgsrc ){
   titlespancontainer.setAttribute("style","display:inline-block;")
   var span = document.createElement('A');
   span.setAttribute("class","beru-artist");
-  span.setAttribute("style","margin-left: 16px!important;")
+  span.setAttribute("style","margin-left: 16px!important;");
+  if( artistid ){span.setAttribute("href",window.location.hostname+window.location.pathname+"?artist="+artistid);}
+  else{ span.setAttribute("href","#");}
   span.innerHTML = artist;
   titlespancontainer.appendChild(span);
   var br = document.createElement('BR');
