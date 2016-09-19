@@ -4,7 +4,7 @@ var upnote = function( note , tone ){
 }
 
 var shownote = function( element ){
-  $('#note-name').html( element.html );
+  $('.ui.modal.note').find('.header').html( element.innerHTML );
   $('.ui.modal.note').modal({blurring: true}).modal('show').modal('setting', 'transition', 'scale');
 }
 
