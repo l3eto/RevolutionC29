@@ -169,8 +169,8 @@ function setTitle( title , imgsrc ){
   setting.appendChild(icon);
   div.appendChild(setting);
   //settings contents
-  var div = document.createElement("DIV");
-  div.setAttribute("class","ui inverted segment");
+  var div2 = document.createElement("DIV");
+  div2.setAttribute("class","ui inverted segment");
   var divcontainer = document.createElement("DIV");
   divcontainer.setAttribute("class","ui center aligned inverted header");
   var buttons = document.createElement("DIV");
@@ -179,11 +179,10 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
   var icon = document.createElement("I");
-  
   icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
-  span.innerHTML = "-1 Tono";
+  span.innerHTML = "1 Tono";
   button.appendChild(span);
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
@@ -192,7 +191,7 @@ function setTitle( title , imgsrc ){
   icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
-  span.innerHTML = "-1/2 Tono";
+  span.innerHTML = "1/2 Tono";
   button.appendChild(span);
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
@@ -210,7 +209,7 @@ function setTitle( title , imgsrc ){
   icon.setAttribute("class","right plus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
-  span.innerHTML = "+1/2 Tono";
+  span.innerHTML = "1/2 Tono";
   button.appendChild(span);
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
@@ -219,11 +218,12 @@ function setTitle( title , imgsrc ){
   icon.setAttribute("class","right plus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
-  span.innerHTML = "+1 Tono";
+  span.innerHTML = "1 Tono";
   button.appendChild(span);
   buttons.appendChild(button);
   divcontainer.appendChild(buttons);
-  div.appendChild(divcontainer);
+  div2.appendChild(divcontainer);
+  div.appendChild(div2);
   document.getElementById('search-result').appendChild( div );
 }
 
