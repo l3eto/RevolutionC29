@@ -169,12 +169,17 @@ function setTitle( title , imgsrc ){
   icon.setAttribute("class","setting icon");
   setting.appendChild(icon);
   div.appendChild(setting);
-  //settings contents
+  //settings hidde div
   var hiddendiv = document.createElement("DIV");
   hiddendiv.setAttribute("class","ui setting-container transition hidden");
+  //settings container
   var div2 = document.createElement("DIV");
   div2.setAttribute("class","ui left floated header beru-title inverted segment");
   div2.setAttribute("style","width:100%;margin-top:16px;");
+  //title for buttons
+  var span = document.createElement("SPAN");
+  span.innerHTML="Cambiar Tono";
+  div2.appendChild(span);
   //add buttons
   var buttons = document.createElement("DIV");
   buttons.setAttribute("class","ui grid");
