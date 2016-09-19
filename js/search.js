@@ -98,8 +98,11 @@ function setContent(){
 $( document ).ready(function(){
   //set songs on search
   setContent();
-  //read if some song is on search
+  //read if some song is on search url
   var searchingsong = getSearchURL('song');
+  //read if some artist is on search url
+  var searchingartist = getSearchURL('artist');
+  //conditionals
   if( searchingsong ){
     //search especific song
     readXML("../uploads/xml/songs.xml", function(data){
@@ -138,6 +141,21 @@ $( document ).ready(function(){
       setAcordes(song,orden);
       $('.menu .item').tab();
       $('.beru-note').click(function(){ shownote( this ); });
+    });
+  }else if( searchingartist ){
+    //search especific artist
+    readXML("../uploads/xml/songs.xml", function(data){
+      if (window.DOMParser){
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(data, "text/xml");
+      }else{
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = false;
+        xmlDoc.loadXML(data);
+      }
+      //get artist
+      var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]').get(0);
+      console.log(artist);
     });
   }else{
     $('#search-result').remove();
