@@ -164,7 +164,7 @@ function setTitle( title , imgsrc ){
   var setting = document.createElement("A");
   setting.setAttribute("class","ui right floated header beru-title");
   setting.setAttribute("style","padding-top: 13px;");
-  setting.setAttribute("onclick","$('.ui.setting-container').transition('horizontal flip', '500ms');")
+  setting.setAttribute("onclick","$('.ui.setting-container').transition('vertical flip', '800ms');")
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon");
   setting.appendChild(icon);
@@ -178,10 +178,11 @@ function setTitle( title , imgsrc ){
   var divcontainer = document.createElement("DIV");
   divcontainer.setAttribute("class","ui center aligned inverted header");
   var buttons = document.createElement("DIV");
-  buttons.setAttribute("class","ui buttons");
+  buttons.setAttribute("class","ui five buttons");
   //add buttons
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
+  button.setAttribute("onclick","modifynote(-2);");
   var icon = document.createElement("I");
   icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
@@ -191,6 +192,7 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon blue button");
+  button.setAttribute("onclick","modifynote(-1);");
   var icon = document.createElement("I");
   icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
@@ -200,15 +202,17 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon button");
+  button.setAttribute("onclick","window.location.reload;");
   var icon = document.createElement("I");
   icon.setAttribute("class","reset icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
-  span.innerHTML = "Restaurar Tono";
+  span.innerHTML = "Tono Original";
   button.appendChild(span);
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon black button");
+  button.setAttribute("onclick","modifynote(+1);");
   var icon = document.createElement("I");
   icon.setAttribute("class","right plus icon");
   button.appendChild(icon);
@@ -218,6 +222,7 @@ function setTitle( title , imgsrc ){
   buttons.appendChild(button);
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon green button");
+  button.setAttribute("onclick","modifynote(+2);");
   var icon = document.createElement("I");
   icon.setAttribute("class","right plus icon");
   button.appendChild(icon);
