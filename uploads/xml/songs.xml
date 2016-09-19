@@ -194,7 +194,7 @@
   </song>
   <song name="El Camino" id="lfg2o7xwrt" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-intro-chorus1-chorus2-intro-chorus1-chorus2">
     <artists>
-      <artist name="Twice"></artist>
+      <artist name="Twice" id="9ikw8nf7ye"></artist>
     </artists>
     <chords>
       <chord name="1">
@@ -251,7 +251,7 @@
   </song>
   <song name="Él Te Sostiene" id="xwr1m3opun" order="intro-verse1-prechorus-chorus-intro-verse2-prechorus-chorus-postchorus-prechorus-chorus">
     <artists>
-      <artist name="Twice"></artist>
+      <artist name="Twice" id="9ikw8nf7ye"></artist>
     </artists>
     <chords>
       <chord name="1">
@@ -315,7 +315,7 @@
   </song>
   <song name="Mi Buen Pastor" id="art3p4oiuk" order="intro-verse1-chorus-verse2-chorus-intro-bridge-bridge-intro-chorus">
     <artists>
-      <artist name="Twice"></artist>
+      <artist name="Twice" id="9ikw8nf7ye"></artist>
     </artists>
     <chords>
       <chord name="1">
@@ -367,7 +367,7 @@
   </song>
   <song name="La Experiencia de Adorar" id="ueu6r8jjor" order="intro-verse1-verse2-chorus1-intro-verse1-verse2-chorus1-chorus2-bridge-bridge-bridge-chorus1-chorus2-intro">
     <artists>
-      <artist name="Kike Pavón"></artist>
+      <artist name="Kike Pavón" id="pwrm2i93j5"></artist>
     </artists>
     <chords>
       <chord name="1">
