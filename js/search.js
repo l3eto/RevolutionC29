@@ -128,7 +128,7 @@ $( document ).ready(function(){
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
       }, false);
-      setTitle( title,imgsrc );
+      setTitle(artistName,songName,imgsrc );
       setMenu();
       setAudio( title );
       setLetras(song,orden);
@@ -142,7 +142,7 @@ $( document ).ready(function(){
 });
 
 //set tittle
-function setTitle( title , imgsrc ){
+function setTitle( artist , song , imgsrc ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   //title container
@@ -155,9 +155,14 @@ function setTitle( title , imgsrc ){
   h2.appendChild(img);
   //title
   var span = document.createElement('SPAN');
-  span.setAttribute("class","item");
+  span.setAttribute("class","item beru-artist");
   span.setAttribute("style","margin-left: 16px!important;")
-  span.innerHTML = title;
+  span.innerHTML = artist;
+  h2.appendChild(span);
+  var span = document.createElement('SPAN');
+  span.setAttribute("class","item beru-song");
+  span.setAttribute("style","margin-left: 16px!important;")
+  span.innerHTML = song;
   h2.appendChild(span);
   div.appendChild(h2);
   //icon settings
