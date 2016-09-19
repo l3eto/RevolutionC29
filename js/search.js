@@ -150,16 +150,16 @@ function setTitle( title ){
   icon.setAttribute("class","setting icon");
   div.appendChild(icon);*/
   var div = document.createElement('DIV');
-  div.setAttribute("ui clearing segment");
+  div.setAttribute("class","ui clearing segment");
   var h2 = document.createElement("H2");
-  h2.setAttribute("ui left floated header");
+  h2.setAttribute("class","ui left floated header");
   var span = document.createElement('SPAN');
   span.setAttribute("class","item beru-title");
   span.innerHTML = title;
   h2.appendChild(span);
   div.appendChild(h2);
   var h2 = document.createElement("H2");
-  h2.setAttribute("ui right floated header");
+  h2.setAttribute("class","ui right floated header");
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon beru-title");
   h2.appendChild(icon);
