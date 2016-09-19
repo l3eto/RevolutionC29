@@ -174,10 +174,8 @@ function setTitle( title , imgsrc ){
   hiddendiv.setAttribute("class","ui setting-container transition hidden");
   var div2 = document.createElement("DIV");
   div2.setAttribute("class","ui left floated header beru-title");
-  div2.setAttribute("style","padding:20px;");
+  div2.setAttribute("style","padding:20px;width: 100%;");
   //add buttons
-  //var divcontainer = document.createElement("DIV");
-  //divcontainer.setAttribute("class","ui center aligned inverted header");
   var buttons = document.createElement("DIV");
   buttons.setAttribute("class","ui grid");
   //button
@@ -185,6 +183,7 @@ function setTitle( title , imgsrc ){
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
+  button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(-2);");
   var icon = document.createElement("I");
   icon.setAttribute("class","left minus icon");
@@ -199,6 +198,7 @@ function setTitle( title , imgsrc ){
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon blue button");
+  button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(-1);");
   var icon = document.createElement("I");
   icon.setAttribute("class","left minus icon");
@@ -213,6 +213,7 @@ function setTitle( title , imgsrc ){
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon black button");
+  button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(+1);");
   var icon = document.createElement("I");
   icon.setAttribute("class","right plus icon");
@@ -227,6 +228,7 @@ function setTitle( title , imgsrc ){
   column.setAttribute("class","ui four wide column");
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon green button");
+  button.setAttribute("style","width: 100%;height: 100%;");
   button.setAttribute("onclick","modifynote(+2);");
   var icon = document.createElement("I");
   icon.setAttribute("class","right plus icon");
