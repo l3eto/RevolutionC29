@@ -267,7 +267,7 @@
         <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
         <p><a temp="6" note="Bm"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
         <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
-        <p><a temp="6" note="Bm"></a><a temp="4" note="A"></a><a temp="6" note="A9"></a></p>
+        <p><a temp="6" note="Bm"></a><a temp="4" note="A"></a><a temp="6" note="A"></a></p>
       </chord>
       <chord name="4">
         <p><a temp="6" note="G"></a><a temp="4" note="D"></a><a temp="6" note="A"></a></p>
