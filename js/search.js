@@ -164,7 +164,7 @@ function setTitle( title , imgsrc ){
   var setting = document.createElement("A");
   setting.setAttribute("class","ui right floated header beru-title");
   setting.setAttribute("style","padding-top: 13px;");
-  setting.setAttribute("onclick","$('.ui.setting-container').transition('drop', '800ms');")
+  setting.setAttribute("onclick","$('.ui.setting-container').transition('drop', '500ms');")
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon");
   setting.appendChild(icon);
