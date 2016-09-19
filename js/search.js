@@ -154,7 +154,7 @@ $( document ).ready(function(){
         xmlDoc.loadXML(data);
       }
       //get artist
-      var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]').get(0);
+      var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
       console.log(artist);
     });
   }else{
