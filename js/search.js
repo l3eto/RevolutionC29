@@ -179,7 +179,7 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon red button");
   var icon = document.createElement("I");
-  icon.setAttribute("left minus icon");
+  icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
   span.innerHTML = "-1 Tono";
@@ -188,7 +188,7 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon blue button");
   var icon = document.createElement("I");
-  icon.setAttribute("left minus icon");
+  icon.setAttribute("class","left minus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
   span.innerHTML = "-1/2 Tono";
@@ -197,7 +197,7 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon button");
   var icon = document.createElement("I");
-  icon.setAttribute("reset icon");
+  icon.setAttribute("class","reset icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
   span.innerHTML = "Restaurar Tono";
@@ -206,7 +206,7 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon black button");
   var icon = document.createElement("I");
-  icon.setAttribute("right plus icon");
+  icon.setAttribute("class","right plus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
   span.innerHTML = "+1/2 Tono";
@@ -215,7 +215,7 @@ function setTitle( title , imgsrc ){
   var button = document.createElement("BUTTON");
   button.setAttribute("class","ui labeled icon green button");
   var icon = document.createElement("I");
-  icon.setAttribute("right plus icon");
+  icon.setAttribute("class","right plus icon");
   button.appendChild(icon);
   var span = document.createElement("SPAN");
   span.innerHTML = "+1 Tono";
