@@ -158,10 +158,8 @@ $( document ).ready(function(){
       var artistName = artist.get(0).getAttribute("name");
       //set title
       setArtistTitle(artistName,searchingartist);
-   
-      $( artist ).each(function(){
-        console.log( this.parentNode.parentNode );
-      });
+      setDivition();
+      setSongs( artist );
     });
   }else{
     $('#search-result').remove();
@@ -169,7 +167,6 @@ $( document ).ready(function(){
 });
 
 //set artitsTitle
-
 function setArtistTitle( name , id ){
   var h1 = document.createElement('H1');
   h1.setAttribute("class","ui header");
@@ -177,10 +174,26 @@ function setArtistTitle( name , id ){
   img.setAttribute("class","ui circular image");
   img.setAttribute("src","../uploads/img/".concat(id,".jpg"));
   var span = document.createElement("SPAN");
+  span.setAttribute("style","margin-left: 18px;");
   span.innerHTML = name;
   h1.appendChild(img);
   h1.appendChild(span);
   document.getElementById('search-result').appendChild( h1 );
+}
+
+//set divition
+function setDivition(){
+  var div = document.createElement('DIV');
+  div.setAttribute("class","ui divider");
+  document.getElementById('search-result').appendChild( div );
+}
+
+//set Songs
+function setSongs( artist ){
+  $( artist ).each(function(){
+    var song = this.parentNode.parentNode;
+    console.log(song.getAttribute("name")  );
+  });
 }
 
 //set tittle
