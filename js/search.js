@@ -184,6 +184,8 @@ function setArtistTitle( name , id ){
   var br = document.createElement("BR");
   h1.appendChild(br);
   //media player
+  var segment = document.createElement("DIV");
+  segment.setAttribute("class","ui center aligned segment");
   var music = document.createElement("DIV");
   music.setAttribute("class","ui right aligned compact menu");
   var item = document.createElement("A");
@@ -210,7 +212,8 @@ function setArtistTitle( name , id ){
   icon.setAttribute("class","next icon");
   item.appendChild(icon);
   music.appendChild(item);
-  h1.appendChild(music);
+  segment.appendChild(music);
+  h1.appendChild(segment);
   document.getElementById('search-result').appendChild( h1 );
 }
 
