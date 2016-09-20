@@ -266,7 +266,14 @@ a.beru-artist:hover{
   cursor:pointer;
 }
 
+.beru-item{
+  margin: 0em 3em !important;
+}
+
 @media (max-width: 780px){
+  .beru-item{
+    margin: 0em 0em !important;
+  }
   .beru-container{
     font-size:1rem !important;
   }
