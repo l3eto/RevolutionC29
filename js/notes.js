@@ -42,6 +42,7 @@ var shownote = function( element ){
 var Playlist = function( artist ){
   this._song = null;
   this._songs = [];
+  this._index = null;
   this.setSongs(artist);
 }
 
@@ -55,22 +56,47 @@ Playlist.prototype.setSongs = function( artist ){
   this._songs = songs;
 }
 
-Playlist.prototype.setSong = function( index ){
-  this._song = this._songs[index];
+Playlist.prototype.setIndex = function( index ){
+  this._index = index;
+}
+
+Playlist.prototype.setSong = function(){
+  this._song = this._songs[this._index];
 }
 
 Playlist.prototype.playSong = function(){
+  if( this._index == null ){ this.setIndex(0);this.setSong();}
   this._song.play();
 }
 
-Playlist.prototype.stopSong = function(){
+Playlist.prototype.pauseSong = function(){
   this._song.pause();
+}
+
+Playlist.prototype.stopSong = function(){
+  this.pauseSong();
   this._song.currentTime = 0
 }
 
 Playlist.prototype.clickOnItem = function( item ){
-  var index = $( '.ui.selection.list .item.beru-item' ).index( item )
+  this.setIndex( $( '.ui.selection.list .item.beru-item' ).index( item ) );
   this.stopSong();
-  this.setSong( index );
+  this.setSong();
   this.playSong();
+}
+
+Playlist.prototype.decreaseIndex = function(){
+
+Playlist.prototype.backwardSong = function(){
+  this.stopSong();
+  if( this._index - 1 < 0  ){this.setIndex( this._songs.length );}
+  else{ this._index -= 1;}
+}
+
+Playlist.prototype.forwardSong = function(){
+  
+}
+
+Playlist.prototype.randomMode = function(){
+  
 }
