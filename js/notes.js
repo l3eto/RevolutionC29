@@ -3,6 +3,7 @@ var modifynote = function( tone ){
   var mayors9 = ['A9','A#9','B9','C9','C#9','D9','D#9','E9','F9','F#9','G9','G#9'];
   var mayors7 = ['A7','A#7','B7','C7','C#7','D7','D#7','E7','F7','F#7','G7','G#7'];
   var mayorsG = ['F#/A#','G/B','G#/C','A/C#','A#/D','B/D#','C/E','C#/F','D/F#','D#/G','E/G#','F/A'];
+  var mayorsSUS = ['Asus','A#sus','Bsus','Csus','C#sus','Dsus','D#sus','Esus','Fsus','F#sus','Gsus','G#sus'];
   var minors = ['Am','A#m','Bm','Cm','C#m','Dm','D#m','Em','Fm','F#m','Gm','G#m'];
   var minors9 = ['Am9','A#m9','Bm9','Cm9','C#m9','Dm9','D#m9','Em9','Fm9','F#m9','Gm9','G#m9'];
   var minors7 = ['Am9','A#m9','Bm9','Cm9','C#m9','Dm9','D#m9','Em9','Fm9','F#m9','Gm9','G#m9'];
@@ -13,6 +14,7 @@ var modifynote = function( tone ){
     var posma9 = mayors9.indexOf( $(this).html() );
     var posma7 = minors7.indexOf( $(this).html() );
     var posmaG = mayorsG.indexOf( $(this).html() );
+    var posmaSUS = mayorsSUS.indexOf( $(this).html() );
     var posmi = minors.indexOf( $(this).html() );
     var posmi9 = minors9.indexOf( $(this).html() );
     var posmi7 = minors7.indexOf( $(this).html() );
@@ -20,6 +22,7 @@ var modifynote = function( tone ){
     if( posma9 > -1 ){pos = posma9;vect = mayors9;}
     if( posma7 > -1 ){pos = posma7;vect = mayors7;}
     if( posmaG > -1 ){pos = posmaG;vect = mayorsG;}
+    if( posmaSUS > -1 ){pos = posmaSUS;vect = mayorsSUS;}
     if( posmi > -1 ){pos = posmi;vect = minors;}
     if( posmi9 > -1 ){pos = posmi9;vect = minors9;}
     if( posmi7 > -1 ){pos = posmi7;vect = minors7;}
