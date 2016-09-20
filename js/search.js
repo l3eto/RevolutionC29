@@ -17,6 +17,7 @@ var customLabels = {
   'chorus1':'Coro 1',
   'chorus2':'Coro 2',
   'bridge':'Puente',
+  'ending':'Final',
   '2':'two',
   '4':'four',
   '6':'six',
