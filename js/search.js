@@ -1,5 +1,6 @@
 //global var
 var audio;
+var playlist;
 var loop = false;
 
 //customlabels
