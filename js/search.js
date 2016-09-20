@@ -191,6 +191,12 @@ function setArtistTitle( name , id ){
   var item = document.createElement("A");
   item.setAttribute("class","item");
   var icon = document.createElement("I");
+  icon.setAttribute("class","step backward icon");
+  item.appendChild(icon);
+  music.appendChild(item);
+  var item = document.createElement("A");
+  item.setAttribute("class","item");
+  var icon = document.createElement("I");
   icon.setAttribute("class","pause icon");
   item.appendChild(icon);
   music.appendChild(item);
@@ -203,13 +209,13 @@ function setArtistTitle( name , id ){
   var item = document.createElement("A");
   item.setAttribute("class","item");
   var icon = document.createElement("I");
-  icon.setAttribute("class","sufle icon");
+  icon.setAttribute("class","stop icon");
   item.appendChild(icon);
   music.appendChild(item);
   var item = document.createElement("A");
   item.setAttribute("class","item");
   var icon = document.createElement("I");
-  icon.setAttribute("class","next icon");
+  icon.setAttribute("class","step forward icon");
   item.appendChild(icon);
   music.appendChild(item);
   segment.appendChild(music);
