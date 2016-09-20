@@ -38,3 +38,16 @@ var shownote = function( element ){
   $('.ui.modal.note').find('.ui.center.aligned.header').html( $(element).html() );
   $('.ui.modal.note').modal({blurring: true}).modal('show').modal('setting', 'transition', 'scale');
 }
+
+var Playlist = function( artist ){
+  this._songs = [];
+  this.setSongs(artist);
+}
+
+Playlist.prototype.setSongs = function( artist ){
+  var songs = [];
+  $( artist ).each(function(){
+    songs.push("../audio/"+encodeURI(artist.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name"))+".mp3");
+  }
+  this._songs = songs;
+}
