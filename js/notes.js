@@ -40,6 +40,7 @@ var shownote = function( element ){
 }
 
 var Playlist = function( artist ){
+  this._song = null;
   this._songs = [];
   this.setSongs(artist);
 }
@@ -47,7 +48,17 @@ var Playlist = function( artist ){
 Playlist.prototype.setSongs = function( artist ){
   var songs = [];
   $( artist ).each(function(){
-    songs.push("../audio/"+encodeURI(artist.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name"))+".mp3");
+    var src = artist.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
+    var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
+    songs.push( audio );
   }
   this._songs = songs;
+}
+
+Playlist.prototype.setSong = function( index ){
+  this._song = this._songs[index];
+}
+
+Playlist.prototype.playSong = function(){
+  this._song.play();
 }
