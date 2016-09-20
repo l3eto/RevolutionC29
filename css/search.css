@@ -255,6 +255,12 @@ a.beru-artist{
   color:white!important;
 }
 
+.beru-bg-color:hover{
+  background:#ed3338!important;
+  background-color:#ed3338!important;
+  color:white!important;
+}
+
 a.beru-artist:hover{
   color: #ed3338;
   cursor:pointer;
