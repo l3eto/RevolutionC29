@@ -52,7 +52,7 @@ Playlist.prototype.setSongs = function( artist ){
   $( artist ).each(function(){
     var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
-    audio.addEventListener("ended", this.songEnded.bind(that) );
+    audio.addEventListener("ended", that.songEnded.bind(this) );
     songs.push( audio );
   });
   this._songs = songs;
