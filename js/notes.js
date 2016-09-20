@@ -85,7 +85,8 @@ Playlist.prototype.stopSong = function(){
 
 Playlist.prototype.restoreColor = function(){
   var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
-  if ( $( element ).hasClass("beru-text-color") ){ $( element ).removeClass( "myClass yourClass" );}
+  if ( $( element ).find('i.play.icon').hasClass("beru-text-color") ){ $( element ).find('i.play.icon').removeClass( "beru-text-color" );}
+  if ( $( element ).find('.content .header').hasClass("beru-text-color") ){ $( element ).find('.content .header').removeClass( "beru-text-color" );}
 }
 
 Playlist.prototype.setPlayColor = function(){
