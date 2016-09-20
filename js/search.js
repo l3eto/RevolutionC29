@@ -189,8 +189,9 @@ function setArtistTitle( name , id ){
   //media player
   var segment = document.createElement("DIV");
   segment.setAttribute("class","ui center aligned segment beru-false-segment");
+  segment.setAttribute("style","margin-top: 16px!important;");
   var music = document.createElement("DIV");
-  music.setAttribute("class","ui right aligned compact menu");
+  music.setAttribute("class","ui compact menu");
   var item = document.createElement("A");
   item.setAttribute("class","item");
   item.setAttribute("onclick","playlist.backwardSong();");
