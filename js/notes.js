@@ -86,17 +86,29 @@ Playlist.prototype.clickOnItem = function( item ){
 }
 
 Playlist.prototype.decreaseIndex = function(){
-
-Playlist.prototype.backwardSong = function(){
-  this.stopSong();
-  if( this._index - 1 < 0  ){this.setIndex( this._songs.length );}
+  if( this._index - 1 < 0  ){this._index = this._songs.length - 1;}
   else{ this._index -= 1;}
 }
 
+Playlist.prototype.increaseIndex = function(){
+  if( this._index + 1 >= this._songs.length  ){this._index = 0;}
+  else{ this._index += 1;}
+}
+
+Playlist.prototype.backwardSong = function(){
+  this.decreaseIndex();
+  this.stopSong();
+  this.setSong();
+  this.playSong();
+}
+
 Playlist.prototype.forwardSong = function(){
-  
+  this.increaseIndex();
+  this.stopSong();
+  this.setSong();
+  this.playSong();
 }
 
 Playlist.prototype.randomMode = function(){
-  
+  alert('random mode is not avaible yet');
 }
