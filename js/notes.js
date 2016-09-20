@@ -62,3 +62,15 @@ Playlist.prototype.setSong = function( index ){
 Playlist.prototype.playSong = function(){
   this._song.play();
 }
+
+Playlist.prototype.stopSong = function(){
+  this._song.pause();
+  this._song.currentTime = 0
+}
+
+Playlist.prototype.clickOnItem = function( item ){
+  var index = $( '.ui.selection.list .item.beru-item' ).index( item )
+  this.stopSong();
+  this.setSong( index );
+  this.playSong();
+}
