@@ -71,11 +71,13 @@ Playlist.prototype.playSong = function(){
 }
 
 Playlist.prototype.pauseSong = function(){
+  if( this._index == null ){ this.setIndex(0);this.setSong();}
   this._song.pause();
   this.restoreColor();
 }
 
 Playlist.prototype.stopSong = function(){
+  if( this._index == null ){ this.setIndex(0);this.setSong();}
   this.pauseSong();
   this._song.currentTime = 0
   this.restoreColor();
