@@ -53,13 +53,14 @@ Playlist.prototype.setSongs = function( artist ){
   $( artist ).each(function(){
     var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
-    audio.addEventListener("ended", that.songEnded.bind(this) );
+    audio.addEventListener("ended", that.songEnded.bind(that) );
     songs.push( audio );
   });
   this._songs = songs;
 }
 
 Playlist.prototype.songEnded = function(){
+  console.log(this);
   if( this._randomSong == true ){
     
   }else{
