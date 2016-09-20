@@ -244,7 +244,7 @@ function setSongs( artist ){
     var songId = song.getAttribute("id");
     var item = document.createElement('DIV');
     item.setAttribute("class","item beru-item");
-    item.setAttribute("onclick","playlist.setSong( $( .ui.selection.list .item.beru-item ).index( this ) );playlist.playSong();");
+    item.setAttribute("onclick","playlist.setSong( $( '.ui.selection.list .item.beru-item' ).index( this ) );playlist.playSong();");
     var watchsong = document.createElement('A');
     watchsong.setAttribute("class","right floated tiny beru-bg-color ui button");
     watchsong.setAttribute("href","?song="+songId);
