@@ -41,6 +41,7 @@ var shownote = function( element ){
 
 var Playlist = function( artist ){
   this._song = null;
+  this._randomMode = false;
   this._songs = [];
   this._index = null;
   this.setSongs(artist);
@@ -60,6 +61,10 @@ Playlist.prototype.setSongs = function( artist ){
 
 Playlist.prototype.songEnded = function(){
   if( this._randomSong == true ){
+    
+  }else{
+    this.forwardSong();
+  }
 }
 
 Playlist.prototype.setIndex = function( index ){
@@ -99,9 +104,9 @@ Playlist.prototype.restoreColor = function(){
   $('.ui.compact.menu').find('i.pause.icon').removeClass("pause icon").addClass("play icon");
   //change color icon list
   var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
-  if ( $( element ).find('i.pause.icon').hasClass("beru-text-color") ){ $( element ).find('i.pause.icon').removeClass( "beru-text-color" );}
+  if( $( element ).find('i.pause.icon').hasClass("beru-text-color") ){ $( element ).find('i.pause.icon').removeClass( "beru-text-color" );}
   $( element ).find('i.pause.icon').removeClass("pause icon").addClass("play icon");
-  if ( $( element ).find('.content .header').hasClass("beru-text-color") ){ $( element ).find('.content .header').removeClass( "beru-text-color" );}
+  if( $( element ).find('.content .header').hasClass("beru-text-color") ){ $( element ).find('.content .header').removeClass( "beru-text-color" );}
 }
 
 Playlist.prototype.setPlayColor = function(){
@@ -150,5 +155,6 @@ Playlist.prototype.forwardSong = function(){
 }
 
 Playlist.prototype.randomMode = function(){
-  alert('Sufle Mode is not avaible yet, we working on it ... :)');
+  alert('estamos trabajando en esta funcion, gracias.');
+  this._randomMode =! this._randomMode;
 }
