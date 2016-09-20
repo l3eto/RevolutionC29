@@ -198,9 +198,8 @@ function setSongs( artist ){
     var songName = song.getAttribute("name");
     var songId = song.getAttribute("id");
     var item = document.createElement('DIV');
-    item.setAttribute("class","item");
+    item.setAttribute("class","item beru-item");
     item.setAttribute("onclick","console.log(this);");
-    item.setAttribute("style","margin: 0em 3em !important;");
     var icon = document.createElement('I');
     icon.setAttribute("class","play icon");
     item.appendChild(icon);
@@ -213,7 +212,7 @@ function setSongs( artist ){
     var watchsong = document.createElement('A');
     watchsong.setAttribute("class","right floated tiny beru-bg-color ui button");
     watchsong.setAttribute("href","?song="+songId);
-    watchsong.innerHTML="Ver Canción";
+    watchsong.innerHTML="Ver";
     item.appendChild(watchsong);
     item.appendChild(content);
     div.appendChild(item);
