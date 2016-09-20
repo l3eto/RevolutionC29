@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Gracia Sublime Es" id="wx2ka9w3jn" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-chorus2-bridge1-bridge1-bridge1-bridge2-chorus1-chorus2">
+    <artists>
+      <artist name="Evan Craft" id="om8wnxy28d"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="B"></a><a temp="4" note="Bsus"></a><a temp="4" note="E"></a><a temp="4" note="Esus"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="4" note="B"></a><a temp="4" note="Bsus"></a><a temp="8" note="B"></a></p>
+        <p><a temp="4" note="E"></a><a temp="4" note="Esus"></a><a temp="8" note="E"></a></p>
+        <p><a temp="6" note="G#m"></a><a temp="4" note="F#"></a><a temp="6" note="E"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="8" note="B"></a><a temp="8" note="E"></a></p>
+        <p><a temp="8" note="G#m"></a><a temp="8" note="F#"></a></p>
+        <p><a temp="8" note="B"></a><a temp="8" note="E"></a></p>
+        <p><a temp="8" note="F#"></a><a temp="8" note="E"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="16" note="B"></a></p>
+        <p><a temp="16" note="E"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Quién rompe el poder del pecado"></p>
+        <p text="su amor es fuerte y poderoso"></p>
+        <p text="el Rey de gloria, el Rey de majestad"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Conmueve el mundo con su estruendo"></p>
+        <p text="y nos asombra con maravillas"></p>
+        <p text="el Rey de gloria, el Rey de majestad"></p>
+      </lyric>
+      <lyric name="verse3" chord="2">
+        <p text="Pusiste en orden todo el caos"></p>
+        <p text="nos adoptaste como tus hijos"></p>
+        <p text="el Rey de gloria, el Rey de majestad"></p>
+      </lyric>
+      <lyric name="verse4" chord="2">
+        <p text="El que gobierna con su justicia"></p>
+        <p text="y resplandece con su belleza"></p>
+        <p text="el Rey de gloria, el Rey de majestad"></p>
+      </lyric>
+      <lyric name="chorus1" chord="3">
+        <p text="Gracia sublime es"></p>
+        <p text="perfecto es tu amor"></p>
+        <p text="tomaste mi lugar"></p>
+        <p text="cargaste tu mi cruz"></p>
+      </lyric>
+      <lyric name="chorus2" chord="3">
+        <p text="Tu vida diste ahí"></p>
+        <p text="y ahora libre soy"></p>
+        <p text="Jesús te adoro"></p>
+        <p text="por lo que hiciste en mi"></p>
+      </lyric>
+      <lyric name="bridge1" chord="4">
+        <p text="Digno es el Cordero de Dios"></p>
+        <p text="digno es el Rey que la muerte venció"></p>
+      </lyric>
+      <lyric name="bridge2" chord="4">
+        <p text="Digno es el Cordero de Dios"></p>
+        <p text="digno, digno, digno"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Cautivado" id="ws9d8ek3jn" order="intro-verse1-chorus-intro-verse2-chorus-intro-bridge-chorus-intro-ending">
     <artists>
       <artist name="Evan Craft" id="om8wnxy28d"></artist>
