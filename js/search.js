@@ -156,6 +156,8 @@ $( document ).ready(function(){
       //get artist
       var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
       var artistName = artist.get(0).getAttribute("name");
+      //playlist 
+      playlist = new Playlist(artist);
       //set title
       setArtistTitle(artistName,searchingartist);
       setDivition();
@@ -197,7 +199,7 @@ function setArtistTitle( name , id ){
   var item = document.createElement("A");
   item.setAttribute("class","item");
   var icon = document.createElement("I");
-  icon.setAttribute("class","pause icon");
+  icon.setAttribute("class","stop icon");
   item.appendChild(icon);
   music.appendChild(item);
   var item = document.createElement("A");
@@ -209,7 +211,7 @@ function setArtistTitle( name , id ){
   var item = document.createElement("A");
   item.setAttribute("class","item");
   var icon = document.createElement("I");
-  icon.setAttribute("class","stop icon");
+  icon.setAttribute("class","random icon");
   item.appendChild(icon);
   music.appendChild(item);
   var item = document.createElement("A");
