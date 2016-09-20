@@ -121,7 +121,8 @@ Playlist.prototype.setPlayColor = function(){
 Playlist.prototype.clickOnItem = function( item ){
   var newindex = $( '.ui.selection.list .item.beru-item' ).index( item );
   if( this._index == newindex ){
-    this.pauseSong();
+    //if( this._)
+    this.playSong();
   }else{
     this.stopSong();
     this.setIndex( newindex );
