@@ -270,6 +270,14 @@ a.beru-artist:hover{
   margin: 0em 3em !important;
 }
 
+.beru-item > i.icon{
+  padding-top: 6px!important;
+}
+
+.beru-item > div.content{
+  padding-top: 6px!important;
+}
+
 @media (max-width: 780px){
   .beru-item{
     margin: 0em 0em !important;
