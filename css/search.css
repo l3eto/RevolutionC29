@@ -278,6 +278,15 @@ a.beru-artist:hover{
   padding-top: 6px!important;
 }
 
+.beru-false-segment{
+  margin:0rem!important;
+  padding:0rem!important;
+  background: none!important;
+  box-shadow: none!important;
+  border-radius: 0rem!important;
+  border: none!important;
+}
+
 @media (max-width: 780px){
   .beru-item{
     margin: 0em 0em !important;
