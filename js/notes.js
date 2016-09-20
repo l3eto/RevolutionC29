@@ -95,10 +95,13 @@ Playlist.prototype.stopSong = function(){
 }
 
 Playlist.prototype.restoreColor = function(){
+  //change color icon menu
   if( $('.ui.compact.menu').find('i.pause.icon').hasClass("beru-text-color") ){ $('.ui.compact.menu').find('i.pause.icon').removeClass( "beru-text-color" );}
   $('.ui.compact.menu').find('i.pause.icon').removeClass("pause icon").addClass("play icon");
+  //change color icon list
   var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
-  if ( $( element ).find('i.play.icon').hasClass("beru-text-color") ){ $( element ).find('i.play.icon').removeClass( "beru-text-color" );}
+  if ( $( element ).find('i.pause.icon').hasClass("beru-text-color") ){ $( element ).find('i.pause.icon').removeClass( "beru-text-color" );}
+  $( element ).find('i.pause.icon').removeClass("pause icon").addClass("play icon");
   if ( $( element ).find('.content .header').hasClass("beru-text-color") ){ $( element ).find('.content .header').removeClass( "beru-text-color" );}
 }
 
@@ -107,6 +110,7 @@ Playlist.prototype.setPlayColor = function(){
   $('.ui.compact.menu').find('i.play.icon').removeClass("play icon").addClass("pause icon");
   var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
   $( element ).find('i.play.icon').addClass("beru-text-color");
+  $( element ).find('i.play.icon').removeClass("play icon").addClass("pause icon");
   $( element ).find('.content .header').addClass("beru-text-color");
 }
 
