@@ -51,7 +51,7 @@ Playlist.prototype.setSongs = function( artist ){
     var src = artist.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
     songs.push( audio );
-  }
+  });
   this._songs = songs;
 }
 
