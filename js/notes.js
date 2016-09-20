@@ -111,10 +111,15 @@ Playlist.prototype.setPlayColor = function(){
 }
 
 Playlist.prototype.clickOnItem = function( item ){
-  this.stopSong();
-  this.setIndex( $( '.ui.selection.list .item.beru-item' ).index( item ) );
-  this.setSong();
-  this.playSong();
+  var newindex = $( '.ui.selection.list .item.beru-item' ).index( item );
+  if( this._index == newindex ){
+    this.pauseSong();
+  }else{
+    this.stopSong();
+    this.setIndex( newindex );
+    this.setSong();
+    this.playSong();
+  }
 }
 
 Playlist.prototype.decreaseIndex = function(){
