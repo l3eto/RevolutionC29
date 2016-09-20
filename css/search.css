@@ -249,6 +249,12 @@ a.beru-artist{
   color: #e17e77;
 }
 
+.beru-bg-color{
+  background:#e17e77!important;
+  background-color:#e17e77!important;
+  color:white!important;
+}
+
 a.beru-artist:hover{
   color: #ed3338;
   cursor:pointer;
