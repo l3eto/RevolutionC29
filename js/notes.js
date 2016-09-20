@@ -48,10 +48,11 @@ var Playlist = function( artist ){
 
 Playlist.prototype.setSongs = function( artist ){
   var songs = [];
+  var that = this;
   $( artist ).each(function(){
     var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
-    audio.addEventListener("ended", this.songEnded.bind(Playlist) );
+    audio.addEventListener("ended", this.songEnded.bind(that) );
     songs.push( audio );
   });
   this._songs = songs;
