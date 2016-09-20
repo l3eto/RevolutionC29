@@ -199,7 +199,7 @@ function setSongs( artist ){
     var songId = song.getAttribute("id");
     var item = document.createElement('A');
     item.setAttribute("class","item");
-    item.setAttribute("href","?song="+songId);
+    item.setAttribute("href","#");
     item.setAttribute("style","margin: 0em 3em !important;");
     var icon = document.createElement('I');
     icon.setAttribute("class","play icon");
@@ -210,6 +210,11 @@ function setSongs( artist ){
     header.setAttribute("class","header");
     header.innerHTML = songName;
     content.appendChild(header);
+    var watchsong = document.createElement('A');
+    watchsong.setAttribute("class","right floated tiny beru-bg-color ui button");
+    watchsong.setAttribute("href","?song="+songId);
+    watchsong.innerHTML="Ver Canción";
+    content.appendChild(watchsong);
     item.appendChild(content);
     div.appendChild(item);
   });
