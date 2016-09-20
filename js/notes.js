@@ -66,8 +66,12 @@ Playlist.prototype.setSong = function(){
 
 Playlist.prototype.playSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
-  this._song.play();
-  this.setPlayColor();
+  if( this._song.paused ){
+    this._song.play();
+    this.setPlayColor();
+  }else{
+    this.pauseSong();
+  }
 }
 
 Playlist.prototype.pauseSong = function(){
