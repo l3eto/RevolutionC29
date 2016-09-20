@@ -287,6 +287,10 @@ a.beru-artist:hover{
   border: none!important;
 }
 
+.beru-text-color{
+  color:#e17e77!important;
+}
+
 @media (max-width: 780px){
   .beru-item{
     margin: 0em 0em !important;
