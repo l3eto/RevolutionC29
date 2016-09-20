@@ -1,5 +1,89 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Cautivado" id="ws9d8ek3jn" order="intro-verse1-chorus-intro-verse2-chorus-intro-bridge-chorus-intro-ending">
+    <artists>
+      <artist name="Evan Craft" id="om8wnxy28d"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="F#"></a><a temp="4" note="G#m"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="6" note="E"></a><a temp="4" note="B"></a><a temp="6" note="F#"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="B"></a><a temp="6" note="F#"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="B"></a><a temp="6" note="F#"></a></p>
+        <p><a temp="8" note="E"></a><a temp="8" note="G#m"></p>
+        <p><a temp="8" note="E"></a><a temp="8" note="G#m"></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#"></a><a temp="6" note="F#"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="F#"></a><a temp="4" note="G#m"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="B"></a><a temp="6" note="F#"></a></p>
+        <p><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="F#"></a><a temp="4" note="G#m"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#"></a><a temp="6" note="E"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="8" note="C#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="8" note="B"></a><a temp="8" note="F#"></a></p>
+        <p><a temp="8" note="C#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="8" note="B"></a><a temp="8" note="F#"></a></p>
+        <p><a temp="8" note="C#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="8" note="B"></a><a temp="8" note="F#"></a></p>
+      </chord>
+      <chord name="5">
+        <p><a temp="6" note="E"></a><a temp="4" note="B"></a><a temp="6" note="F#"></a></p>
+        <p><a temp="4" note="E"></a><a temp="4" note="B"></a><a temp="4" note="F#"></a><a temp="4" note="G#m"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#"></a><a temp="6" note="E"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Estoy cautivado"></p>
+        <p text="no puedo huir de ti, me consumes"></p>
+        <p text="donde sea que vaya nunca me pierdes"></p>
+        <p text="no puedo escapar ni mirar atrás"></p>
+        <p text="eres todo lo que necesito"></p>
+        <p text="de mi corazón eres el latido"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Estoy cautivado"></p>
+        <p text="firme estoy en tu promesa"></p>
+        <p text="y no puedo comprender tu grandeza"></p>
+        <p text="irresistible y sin igual"></p>
+        <p text="su amor me capturó"></p>
+        <p text="y por tu gracia soy redimido"></p>
+      </lyric>
+      <lyric name="verse3" chord="2">
+        <p text="Estoy cautivado"></p>
+        <p text="firme estoy en tu promesa"></p>
+        <p text="y no puedo comprender tu grandeza"></p>
+        <p text="irresistible y sin igual"></p>
+        <p text="su amor me capturó"></p>
+        <p text="y por tu gracia soy redimido"></p>
+      </lyric>
+      <lyric name="chorus" chord="3">
+        <p text="Y nada me puede separar de ti"></p>
+        <p text="nada me puede apartar de tu amor"></p>
+        <p text="aún en el huracán y en la tormenta"></p>
+        <p text="es tu amor que me cautivo para siempre"></p>
+      </lyric>
+      <lyric name="bridge" chord="4">
+        <p text="Es el impacto de tu amor explosivo"></p>
+        <p text="la oscuridad vencida por la luz"></p>
+        <p text="tu corazón y mi ser se juntan"></p>
+        <p text="en el momento que encuentro tu luz"></p>
+        <p text="es el sonido de tu pueblo clamando"></p>
+        <p text="para que el mundo vea al Hijo"></p>
+      </lyric>
+      <lyric name="ending" chord="5">
+        <p text="Estoy cautivado"></p>
+        <p text="aún en el huracán y en la tormenta"></p>
+        <p text="es tu amor que me cautivo para siempre"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Empezar De Nuevo" id="w3ury5mju6" order="intro-verse1-verse2-prechorus-chorus1-chorus2-intro-verse3-verse4-prechorus-chorus1-chorus2-prechorus-chorus1-chorus2-chorus1-chorus2-intro">
     <artists>
       <artist name="Kike Pavón" id="pwrm2i93j5"></artist>
