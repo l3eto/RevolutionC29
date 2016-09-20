@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
-  <song name="Gracia Sublime Es" id="wx2ka9w3jn" order="intro-verse1-verse2-chorus1-chorus2-intro-verse3-verse4-chorus1-chorus2-bridge1-bridge1-bridge1-bridge2-chorus1-chorus2">
+  <song name="Gracia Sublime Es" id="wx2ka9w3jn" order="intro-verse1-verse2-chorus-intro-verse3-verse4-chorus-bridge1-bridge1-bridge1-bridge2-chorus">
     <artists>
       <artist name="Evan Craft" id="om8wnxy28d"></artist>
     </artists>
@@ -47,17 +47,11 @@
         <p text="y resplandece con su belleza"></p>
         <p text="el Rey de gloria, el Rey de majestad"></p>
       </lyric>
-      <lyric name="chorus1" chord="3">
-        <p text="Gracia sublime es"></p>
-        <p text="perfecto es tu amor"></p>
-        <p text="tomaste mi lugar"></p>
-        <p text="cargaste tu mi cruz"></p>
-      </lyric>
-      <lyric name="chorus2" chord="3">
-        <p text="Tu vida diste ahí"></p>
-        <p text="y ahora libre soy"></p>
-        <p text="Jesús te adoro"></p>
-        <p text="por lo que hiciste en mi"></p>
+      <lyric name="chorus" chord="3">
+        <p text="Gracia sublime es, perfecto es tu amor"></p>
+        <p text="tomaste mi lugar, cargaste tu mi cruz"></p>
+        <p text="Tu vida diste ahí y ahora libre soy"></p>
+        <p text="Jesús te adoro por lo que hiciste en mi"></p>
       </lyric>
       <lyric name="bridge1" chord="4">
         <p text="Digno es el Cordero de Dios"></p>
