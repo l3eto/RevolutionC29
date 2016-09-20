@@ -185,7 +185,7 @@ function setArtistTitle( name , id ){
   h1.appendChild(br);
   //media player
   var segment = document.createElement("DIV");
-  segment.setAttribute("class","ui center aligned segment");
+  segment.setAttribute("class","ui center aligned segment beru-false-segment");
   var music = document.createElement("DIV");
   music.setAttribute("class","ui right aligned compact menu");
   var item = document.createElement("A");
