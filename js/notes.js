@@ -84,7 +84,7 @@ Playlist.prototype.stopSong = function(){
 }
 
 Playlist.prototype.restoreColor = function(){
-  $('.compact menu').find('i.pause.icon').hasClass("beru-text-color") ){ $('.compact menu').find('i.pause.icon').removeClass( "beru-text-color" );}
+  if( $('.compact menu').find('i.pause.icon').hasClass("beru-text-color") ){ $('.compact menu').find('i.pause.icon').removeClass( "beru-text-color" );}
   $('.compact menu').find('i.pause.icon').removeClass("pause icon").addClass("play icon");
   var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
   if ( $( element ).find('i.play.icon').hasClass("beru-text-color") ){ $( element ).find('i.play.icon').removeClass( "beru-text-color" );}
