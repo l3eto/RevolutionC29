@@ -48,7 +48,7 @@ var Playlist = function( artist ){
 Playlist.prototype.setSongs = function( artist ){
   var songs = [];
   $( artist ).each(function(){
-    var src = artist.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
+    var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
     songs.push( audio );
   });
