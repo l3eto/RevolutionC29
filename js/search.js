@@ -180,9 +180,12 @@ function setArtistTitle( name , id ){
   span.setAttribute("style","margin-left: 18px;");
   span.innerHTML = name;
   h1.appendChild(span);
+  //add space
+  var br = document.createElement("BR");
+  h1.appendChild(br);
   //media player
   var music = document.createElement("DIV");
-  music.setAttribute("class","ui compact menu");
+  music.setAttribute("class","ui right aligned compact menu");
   var item = document.createElement("A");
   item.setAttribute("class","item");
   var icon = document.createElement("I");
