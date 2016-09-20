@@ -170,14 +170,44 @@ $( document ).ready(function(){
 function setArtistTitle( name , id ){
   var h1 = document.createElement('H1');
   h1.setAttribute("class","ui header");
+  //author img
   var img = document.createElement("IMG");
   img.setAttribute("class","ui circular image");
   img.setAttribute("src","../uploads/img/".concat(id,".jpg"));
+  h1.appendChild(img);
+  //author name
   var span = document.createElement("SPAN");
   span.setAttribute("style","margin-left: 18px;");
   span.innerHTML = name;
-  h1.appendChild(img);
   h1.appendChild(span);
+  //media player
+  var music = document.createElement("DIV");
+  music.setAttribute("class","ui compact menu");
+  var item = document.createElement("A");
+  item.setAttribute("class","item");
+  var icon = document.createElement("I");
+  icon.setAttribute("class","pause icon");
+  item.appendChild(icon);
+  music.appendChild(item);
+  var item = document.createElement("A");
+  item.setAttribute("class","item");
+  var icon = document.createElement("I");
+  icon.setAttribute("class","play icon");
+  item.appendChild(icon);
+  music.appendChild(item);
+  var item = document.createElement("A");
+  item.setAttribute("class","item");
+  var icon = document.createElement("I");
+  icon.setAttribute("class","sufle icon");
+  item.appendChild(icon);
+  music.appendChild(item);
+  var item = document.createElement("A");
+  item.setAttribute("class","item");
+  var icon = document.createElement("I");
+  icon.setAttribute("class","next icon");
+  item.appendChild(icon);
+  music.appendChild(item);
+  h1.appendChild(music);
   document.getElementById('search-result').appendChild( h1 );
 }
 
@@ -192,7 +222,7 @@ function setDivition(){
 //set Songs
 function setSongs( artist ){
   var div = document.createElement('DIV');
-  div.setAttribute("class","ui selection list");//middle aligned 
+  div.setAttribute("class","ui selection list");
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
     var songName = song.getAttribute("name");
