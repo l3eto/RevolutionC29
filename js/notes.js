@@ -67,20 +67,34 @@ Playlist.prototype.setSong = function(){
 Playlist.prototype.playSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
   this._song.play();
+  this.setPlayColor();
 }
 
 Playlist.prototype.pauseSong = function(){
   this._song.pause();
+  this.restoreColor();
 }
 
 Playlist.prototype.stopSong = function(){
   this.pauseSong();
   this._song.currentTime = 0
+  this.restoreColor();
+}
+
+Playlist.prototype.restoreColor = function(){
+  var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
+  if ( $( element ).hasClass("beru-text-color") ){ $( element ).removeClass( "myClass yourClass" );}
+}
+
+Playlist.prototype.setPlayColor = function(){
+  var element = $( '.ui.selection.list .item.beru-item' ).get( this._index );
+  $( element ).find('i.play.icon').addClass("beru-text-color");
+  $( element ).find('.content .header').addClass("beru-text-color");
 }
 
 Playlist.prototype.clickOnItem = function( item ){
-  this.setIndex( $( '.ui.selection.list .item.beru-item' ).index( item ) );
   this.stopSong();
+  this.setIndex( $( '.ui.selection.list .item.beru-item' ).index( item ) );
   this.setSong();
   this.playSong();
 }
@@ -96,19 +110,19 @@ Playlist.prototype.increaseIndex = function(){
 }
 
 Playlist.prototype.backwardSong = function(){
-  this.decreaseIndex();
   this.stopSong();
+  this.decreaseIndex();
   this.setSong();
   this.playSong();
 }
 
 Playlist.prototype.forwardSong = function(){
-  this.increaseIndex();
   this.stopSong();
+  this.increaseIndex();
   this.setSong();
   this.playSong();
 }
 
 Playlist.prototype.randomMode = function(){
-  alert('random mode is not avaible yet');
+  alert('Sufle Mode is not avaible yet, we working on it ... :)');
 }
