@@ -192,7 +192,7 @@ function setDivition(){
 //set Songs
 function setSongs( artist ){
   var div = document.createElement('DIV');
-  div.setAttribute("class","ui middle aligned selection list");
+  div.setAttribute("class","ui selection list");//middle aligned 
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
     var songName = song.getAttribute("name");
@@ -200,6 +200,11 @@ function setSongs( artist ){
     var item = document.createElement('DIV');
     item.setAttribute("class","item beru-item");
     item.setAttribute("onclick","console.log(this);");
+    var watchsong = document.createElement('A');
+    watchsong.setAttribute("class","right floated tiny beru-bg-color ui button");
+    watchsong.setAttribute("href","?song="+songId);
+    watchsong.innerHTML="Ver";
+    item.appendChild(watchsong);
     var icon = document.createElement('I');
     icon.setAttribute("class","play icon");
     item.appendChild(icon);
@@ -209,11 +214,6 @@ function setSongs( artist ){
     header.setAttribute("class","header");
     header.innerHTML = songName;
     content.appendChild(header);
-    var watchsong = document.createElement('A');
-    watchsong.setAttribute("class","right floated tiny beru-bg-color ui button");
-    watchsong.setAttribute("href","?song="+songId);
-    watchsong.innerHTML="Ver";
-    item.appendChild(watchsong);
     item.appendChild(content);
     div.appendChild(item);
   });
