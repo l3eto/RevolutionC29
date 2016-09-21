@@ -163,13 +163,7 @@ $( document ).ready(function(){
       }
       //get artist
       var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
-      var artists = song.getElementsByTagName("artist");
-      var artist = [];
-      for( var j = 0 ; j < artists.length ; j++ ){
-        artist.push( artists[j].getAttribute("name") );
-      }
-      var artistName = artist.join(" & ");
-      //var artistName = artist.get(0).getAttribute("name");
+      var artistName = artist.get(0).getAttribute("name");
       //playlist 
       playlist = new Playlist(artist);
       //set title
