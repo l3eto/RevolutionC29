@@ -79,7 +79,7 @@ Playlist.prototype.setSong = function(){
 }
 
 Playlist.prototype.setTitleSong = function(){
-  window.document.title = this._songs[this._index] + " | Revolution C29";
+  window.document.title = this._songs[this._index].song + " | Revolution C29";
 }
 
 Playlist.prototype.restoreTitle = function(){
