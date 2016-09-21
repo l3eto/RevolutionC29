@@ -47,7 +47,13 @@ Playlist.prototype.setSongs = function( artist ){
   var songs = [];
   var that = this;
   $( artist ).each(function(){
-    var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
+    var artists = this.getElementsByTagName("artist");
+    var artist = [];
+    for( var j = 0 ; j < artists.length ; j++ ){
+      artist.push( artists[j].getAttribute("name") );
+    }
+    var artistName = artist.join(" & ");
+    var src = artistName+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
     audio.song = this.parentNode.parentNode.getAttribute("name");
     audio.artist = this.getAttribute("name");
