@@ -52,14 +52,12 @@ Playlist.prototype.setSongs = function( artist ){
     audio.song = this.parentNode.parentNode.getAttribute("name");
     audio.artist = this.getAttribute("name");
     audio.addEventListener("ended", that.songEnded.bind(that) );
- //   audio.onended =that.songEnded();
     songs.push( audio );
   });
   this._songs = songs;
 }
 
 Playlist.prototype.songEnded = function(){
-  console.log(this);
   if( this._randomSong == true ){
     
   }else{
@@ -76,11 +74,17 @@ Playlist.prototype.setSong = function(){
 }
 
 Playlist.prototype.setTitleSong = function(){
+  window.document.title = this._song.song + " | Revolution C29";
+}
+
+Playlist.prototype.restoreTitle = function(){
+  window.document.title = "Buscar | Revolution C29";
+}
 
 Playlist.prototype.playSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
+  this.setTitleSong();
   if( this._song.paused ){
-    this.setTitleSong();
     this._song.play();
     this.setPlayColor();
   }else{
@@ -96,6 +100,7 @@ Playlist.prototype.pauseSong = function(){
 
 Playlist.prototype.stopSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
+  this.restoreTitle();
   this.pauseSong();
   this._song.currentTime = 0
   this.restoreColor();
@@ -124,7 +129,6 @@ Playlist.prototype.setPlayColor = function(){
 Playlist.prototype.clickOnItem = function( item ){
   var newindex = $( '.ui.selection.list .item.beru-item' ).index( item );
   if( this._index == newindex ){
-    //if( this._)
     this.playSong();
   }else{
     this.stopSong();
