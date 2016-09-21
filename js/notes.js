@@ -51,7 +51,7 @@ Playlist.prototype.setSongs = function( artist ){
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
     audio.song = this.parentNode.parentNode.getAttribute("name");
     audio.artist = this.getAttribute("name");
-    audio.addEventListener('load', function(){console.log( 'loaded: '+this.song );}, false);
+    audio.addEventListener('canplaythrough', function(){console.log( 'loaded: '+this.song );}, false);
     audio.addEventListener('ended', function(){that.songEnded();}, false);
     songs.push( audio );
   });
