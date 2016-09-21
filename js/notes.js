@@ -9,7 +9,7 @@ var modifynote = function( tone ){
   var minors7 = ['Am9','A#m9','Bm9','Cm9','C#m9','Dm9','D#m9','Em9','Fm9','F#m9','Gm9','G#m9'];*/
   var notes = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
   $('.beru-note').each(function(){
-    var n = '$(this).html();
+    var n = $(this).html();
     var r = '';
     for( var i = 0 ; i < n.length ; i ++ ){
       for( var j = 0 ; j < notes.length ; j ++ ){
