@@ -49,6 +49,8 @@ Playlist.prototype.setSongs = function( artist ){
   $( artist ).each(function(){
     var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
+    audio.song = this.parentNode.parentNode.getAttribute("name");
+    audio.artist = this.getAttribute("name");
     audio.addEventListener("ended", that.songEnded.bind(that) );
  //   audio.onended =that.songEnded();
     songs.push( audio );
@@ -73,9 +75,12 @@ Playlist.prototype.setSong = function(){
   this._song = this._songs[this._index];
 }
 
+Playlist.prototype.setTitleSong = function(){
+
 Playlist.prototype.playSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
   if( this._song.paused ){
+    this.setTitleSong();
     this._song.play();
     this.setPlayColor();
   }else{
