@@ -36,7 +36,7 @@ var shownote = function( element ){
 }
 
 var Playlist = function( artist ){
-  this._song = null;
+//  this._song = null;
   this._randomMode = false;
   this._songs = [];
   this._index = null;
@@ -59,12 +59,11 @@ Playlist.prototype.setSongs = function( artist ){
 }
 
 Playlist.prototype.songEnded = function(){
-  
-  if( this._randomSong == true ){
-    alert('random mode');
-  }else{
-    this.forwardSong();
-  }
+  this.stopSong();
+  if( this._randomSong == true ) this.randomIndex();
+  if( this._randomSong == false ) this.increaseIndex();
+  this.setSong();
+  this.playSong();
 }
 
 Playlist.prototype.songLoaded = function( audio ){
@@ -76,11 +75,11 @@ Playlist.prototype.setIndex = function( index ){
 }
 
 Playlist.prototype.setSong = function(){
-  this._song = this._songs[this._index];
+  //this._song = this._songs[this._index];
 }
 
 Playlist.prototype.setTitleSong = function(){
-  window.document.title = this._song.song + " | Revolution C29";
+  window.document.title = this._songs[this._index] + " | Revolution C29";
 }
 
 Playlist.prototype.restoreTitle = function(){
@@ -91,7 +90,7 @@ Playlist.prototype.playSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
   this.setTitleSong();
   if( this._song.paused ){
-    this._song.play();
+    this._songs[this._index].play();
     this.setPlayColor();
   }else{
     this.pauseSong();
@@ -100,7 +99,7 @@ Playlist.prototype.playSong = function(){
 
 Playlist.prototype.pauseSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
-  this._song.pause();
+  this._songs[this._index].pause();
   this.restoreColor();
 }
 
@@ -108,7 +107,7 @@ Playlist.prototype.stopSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
   this.restoreTitle();
   this.pauseSong();
-  this._song.currentTime = 0
+  this._songs[this._index].currentTime = 0
   this.restoreColor();
 }
 
@@ -154,6 +153,10 @@ Playlist.prototype.increaseIndex = function(){
   else{ this._index += 1;}
 }
 
+Playlist.prototype.randomIndex = function(){
+  this._index = Math.floor( Math.random()*this._songs.length );
+}
+
 Playlist.prototype.backwardSong = function(){
   this.stopSong();
   this.decreaseIndex();
@@ -169,6 +172,5 @@ Playlist.prototype.forwardSong = function(){
 }
 
 Playlist.prototype.randomMode = function(){
-  alert('estamos trabajando en esta funcion, gracias.');
   this._randomMode =! this._randomMode;
 }
