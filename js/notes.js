@@ -51,7 +51,8 @@ Playlist.prototype.setSongs = function( artist ){
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
     audio.song = this.parentNode.parentNode.getAttribute("name");
     audio.artist = this.getAttribute("name");
-    audio.addEventListener("ended", that.songEnded.bind(that) );
+    audio.addEventListener('load', function(){that.songLoaded(audio);}, false);
+    audio.addEventListener('ended', function(){that.songEnded();}, false);
     songs.push( audio );
   });
   this._songs = songs;
@@ -63,6 +64,10 @@ Playlist.prototype.songEnded = function(){
   }else{
     this.forwardSong();
   }
+}
+
+Playlist.prototype.songLoaded = function( audio ){
+  console.log( 'loaded: '+audio.song );
 }
 
 Playlist.prototype.setIndex = function( index ){
