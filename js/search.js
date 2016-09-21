@@ -100,6 +100,9 @@ function setContent(){
 }
 
 $( document ).ready(function(){
+  //get acordes or lyrics
+  var tab = localStorage.getItem("tab");
+  if( tab == null ){localStorage.setItem("tab","Letra");tab = "Letra";}
   //set songs on search
   setContent();
   //read if some song is on search url
@@ -460,12 +463,14 @@ function setMenu(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid two item tabs menu");
   var item = document.createElement('A');
-  item.setAttribute("class","item active");
+  item.setAttribute("class","active");
+  if( tab == "Letra") item.setAttribute("class","item active");
   item.setAttribute("data-tab","Letra");
   item.innerHTML="Letra";
   div.appendChild(item);
   var item = document.createElement('A');
   item.setAttribute("class","item");
+  if( tab == "Acordes") item.setAttribute("class","item active");
   item.setAttribute("data-tab","Acordes");
   item.innerHTML="Acordes";
   div.appendChild(item);
@@ -475,7 +480,8 @@ function setMenu(){
 //set letras
 function setLetras( song , orden ){
   var div = document.createElement('DIV')  ;
-  div.setAttribute("class","ui active tab");
+  div.setAttribute("class","ui tab");
+  if( tab == "Letra") div.setAttribute("class","ui active tab");
   div.setAttribute("data-tab","Letra");
   var container = document.createElement('DIV');
   container.setAttribute("class","ui center aligned segment");
@@ -502,6 +508,7 @@ function setLetras( song , orden ){
 function setAcordes( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui tab");
+  if( tab == "Acordes") div.setAttribute("class","ui active tab");
   div.setAttribute("data-tab","Acordes");
   var container = document.createElement('DIV');
   container.setAttribute("class","ui center aligned segment");
