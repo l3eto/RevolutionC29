@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Caigo En Tus Brazos" id="zpo3m4n7oa" order="intro-verse1-chorus-intro-verse2-bridge-bridge-chorus-bridge-intro-chorus-ending">
+    <artists>
+      <artist name="Twice" id="9ikw8nf7ye"></artist>
+      <artist name="Evan Craft" id="om8wnxy28d"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="8" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="8" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
+        <p><a temp="8" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
+        <p><a temp="8" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
+        <p><a temp="8" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="16" note="C"></a></p>
+        <p><a temp="16" note="Em"></a></p>
+        <p><a temp="6" note="G"></a><a temp="4" note="C"></a><a temp="6" note="Em"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="C"></a></p>
+        <p><a temp="16" note="Em"></a></p>
+        <p><a temp="6" note="G"></a><a temp="4" note="C"></a><a temp="4" note="Em"></a><a temp="2" note="G"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="16" note="G"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Viví mi vida hasta el extremo"></p>
+        <p text="hasta que fondo toqué"></p>
+        <p text="pero al caer me encontré en tus brazos"></p>
+        <p text="seguro siempre estaré"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Te di el control de mi vida"></p>
+        <p text="le diste a todo color"></p>
+        <p text="Jesús tu nunca me abandonaste"></p>
+        <p text="tu amor por mí no cambió"></p>
+      </lyric>
+      <lyric name="chorus" chord="3">
+        <p text="Mi vida te daré"></p>
+        <p text="pues nadie me ama"></p>
+        <p text="como tú, lo sé"></p>
+        <p text="no hay nada que perder"></p>
+        <p text="en tus brazos voy a dejarme caer"></p>
+        <p text="mi Dios"></p>
+      </lyric>
+      <lyric name="bridge" chord="4">
+        <p text="Como me amas quiero amarte"></p>
+      </lyric>
+      <lyric name="ending" chord="2">
+        <p text="Mi vida te daré"></p>
+        <p text="Mi vida te daré"></p>
+        <p text="Mi vida te daré"></p>
+        <p text="Mi vida te daré"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Gracia Sublime Es" id="wx2ka9w3jn" order="intro-verse1-verse2-chorus-intro-verse3-verse4-chorus-bridge1-bridge1-bridge1-bridge2-chorus">
     <artists>
       <artist name="Evan Craft" id="om8wnxy28d"></artist>
