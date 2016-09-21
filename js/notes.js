@@ -1,14 +1,44 @@
 var modifynote = function( tone ){
-  var mayors = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
+  /*var mayors = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
   var mayors9 = ['A9','A#9','B9','C9','C#9','D9','D#9','E9','F9','F#9','G9','G#9'];
   var mayors7 = ['A7','A#7','B7','C7','C#7','D7','D#7','E7','F7','F#7','G7','G#7'];
   var mayorsG = ['F#/A#','G/B','G#/C','A/C#','A#/D','B/D#','C/E','C#/F','D/F#','D#/G','E/G#','F/A'];
   var mayorsSUS = ['Asus','A#sus','Bsus','Csus','C#sus','Dsus','D#sus','Esus','Fsus','F#sus','Gsus','G#sus'];
   var minors = ['Am','A#m','Bm','Cm','C#m','Dm','D#m','Em','Fm','F#m','Gm','G#m'];
   var minors9 = ['Am9','A#m9','Bm9','Cm9','C#m9','Dm9','D#m9','Em9','Fm9','F#m9','Gm9','G#m9'];
-  var minors7 = ['Am9','A#m9','Bm9','Cm9','C#m9','Dm9','D#m9','Em9','Fm9','F#m9','Gm9','G#m9'];
-  $('.beru-note').each(function() {
-    var pos = null;
+  var minors7 = ['Am9','A#m9','Bm9','Cm9','C#m9','Dm9','D#m9','Em9','Fm9','F#m9','Gm9','G#m9'];*/
+  var notes = ['A','A#','B','C','C#','D','D#','E','F','F#','G','G#'];
+  $('.beru-note').each(function(){
+    var n = '$(this).html();
+    var r = '';
+    for( var i = 0 ; i < n.length ; i ++ ){
+      for( var j = 0 ; j < notes.length ; j ++ ){
+        var add = true;
+        var index = notes.indexOf( n[i] );
+        if( index > -1 ){
+          if( n[i+1] ){
+            var n2 = n[i]+n[i+1];
+            var index2 = notes.indexOf( n2 );
+            if( index2 > -1 ){
+              index = index2;
+              i ++;
+            }
+          }
+          var index3 = index + tone;
+          if( index3 >= notes.length  ) index3 -= notes.length;
+          if( index3 < 0  ) index3 += notes.length;
+          r += notes[ index3 ];
+          add = false;
+          break;
+        }
+      }
+      if( add == true ){
+        r += n[i];
+      }
+    }
+    $( this ).html( r );
+    
+    /*var pos = null;
     var vect = null;
     var posma = mayors.indexOf( $(this).html() );
     var posma9 = mayors9.indexOf( $(this).html() );
@@ -33,7 +63,7 @@ var modifynote = function( tone ){
       $( this ).html( vect[pos+tone+vect.length] );  
     }else{
       $( this ).html( vect[pos+tone] );
-    }
+    }*/
   });
 }
 
