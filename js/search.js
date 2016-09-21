@@ -2,6 +2,7 @@
 var audio;
 var playlist;
 var loop = false;
+var tab;
 
 //customlabels
 var customLabels = {
@@ -101,7 +102,7 @@ function setContent(){
 
 $( document ).ready(function(){
   //get acordes or lyrics
-  var tab = localStorage.getItem("tab");
+  tab = localStorage.getItem("tab");
   if( tab == null ){localStorage.setItem("tab","Letra");tab = "Letra";}
   //set songs on search
   setContent();
