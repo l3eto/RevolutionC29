@@ -49,14 +49,16 @@ Playlist.prototype.setSongs = function( artist ){
   $( artist ).each(function(){
     var src = this.getAttribute("name")+" - "+this.parentNode.parentNode.getAttribute("name");
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
-    audio.addEventListener("ended", that.songEnded.bind(that) );
+    //audio.addEventListener("ended", that.songEnded.bind(that) );
+    audio.onended =that.songEnded();
     songs.push( audio );
   });
   this._songs = songs;
 }
 
 Playlist.prototype.songEnded = function(){
-  console.log(this);
+ // console.log(this);
+  alert("playing next song");
   if( this._randomSong == true ){
     
   }else{
