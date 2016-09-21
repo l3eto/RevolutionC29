@@ -143,7 +143,14 @@ Playlist.prototype.increaseIndex = function(){
 }
 
 Playlist.prototype.randomIndex = function(){
-  this._index = Math.floor( Math.random()*this._songs.length );
+  var rnd = Math.floor( Math.random()*this._songs.length );
+  if( this._index == rnd ){
+    var rnd2 = Math.floor( Math.random()*2 );
+    if( rnd2 == 0) this.increaseIndex();
+    if( rnd2 == 1) this.decreaseIndex();
+  }else{
+    this._index = rnd;
+  }
 }
 
 Playlist.prototype.backwardSong = function(){
