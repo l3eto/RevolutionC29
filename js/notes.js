@@ -51,8 +51,8 @@ Playlist.prototype.setSongs = function( artist ){
     var audio = new Audio( "../audio/"+encodeURI(src)+".mp3");
     audio.song = this.parentNode.parentNode.getAttribute("name");
     audio.artist = this.getAttribute("name");
-    audio.addEventListener('canplaythrough', function(){that.songLoaded(this);}, false);
-    audio.addEventListener('ended', function(){that.songEnded();}, false);
+    audio.addEventListener('canplaythrough', that.songLoaded.bind(that) , false);
+    audio.addEventListener('ended', that.songEnded.bind(that) , false);
     songs.push( audio );
   });
   this._songs = songs;
@@ -62,7 +62,6 @@ Playlist.prototype.songEnded = function(){
   this.stopSong();
   if( this._randomSong == true ) this.randomIndex();
   if( this._randomSong == false ) this.increaseIndex();
-  this.setSong();
   this.playSong();
 }
 
@@ -74,10 +73,6 @@ Playlist.prototype.setIndex = function( index ){
   this._index = index;
 }
 
-Playlist.prototype.setSong = function(){
-  //this._song = this._songs[this._index];
-}
-
 Playlist.prototype.setTitleSong = function(){
   window.document.title = this._songs[this._index].song + " | Revolution C29";
 }
@@ -87,7 +82,7 @@ Playlist.prototype.restoreTitle = function(){
 }
 
 Playlist.prototype.playSong = function(){
-  if( this._index == null ){ this.setIndex(0);this.setSong();}
+  if( this._index == null ){ this.setIndex(0);}
   this.setTitleSong();
   if( this._songs[this._index].paused ){
     this._songs[this._index].play();
@@ -98,13 +93,13 @@ Playlist.prototype.playSong = function(){
 }
 
 Playlist.prototype.pauseSong = function(){
-  if( this._index == null ){ this.setIndex(0);this.setSong();}
+  if( this._index == null ){ this.setIndex(0);}
   this._songs[this._index].pause();
   this.restoreColor();
 }
 
 Playlist.prototype.stopSong = function(){
-  if( this._index == null ){ this.setIndex(0);this.setSong();}
+  if( this._index == null ){ this.setIndex(0);}
   this.restoreTitle();
   this.pauseSong();
   this._songs[this._index].currentTime = 0
@@ -138,7 +133,6 @@ Playlist.prototype.clickOnItem = function( item ){
   }else{
     this.stopSong();
     this.setIndex( newindex );
-    this.setSong();
     this.playSong();
   }
 }
@@ -160,14 +154,12 @@ Playlist.prototype.randomIndex = function(){
 Playlist.prototype.backwardSong = function(){
   this.stopSong();
   this.decreaseIndex();
-  this.setSong();
   this.playSong();
 }
 
 Playlist.prototype.forwardSong = function(){
   this.stopSong();
   this.increaseIndex();
-  this.setSong();
   this.playSong();
 }
 
