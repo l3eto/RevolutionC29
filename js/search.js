@@ -467,12 +467,14 @@ function setMenu(){
   item.setAttribute("class","active");
   if( tab == "Letra") item.setAttribute("class","item active");
   item.setAttribute("data-tab","Letra");
+  item.setAttribute("onclick","localStorage.setItem('tab','Letra');");
   item.innerHTML="Letra";
   div.appendChild(item);
   var item = document.createElement('A');
   item.setAttribute("class","item");
   if( tab == "Acordes") item.setAttribute("class","item active");
   item.setAttribute("data-tab","Acordes");
+  item.setAttribute("onclick","localStorage.setItem('tab','Acordes');");
   item.innerHTML="Acordes";
   div.appendChild(item);
   document.getElementById('search-result').appendChild( div );
