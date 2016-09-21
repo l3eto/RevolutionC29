@@ -464,7 +464,7 @@ function setMenu(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid two item tabs menu");
   var item = document.createElement('A');
-  item.setAttribute("class","active");
+  item.setAttribute("class","item");
   if( tab == "Letra") item.setAttribute("class","item active");
   item.setAttribute("data-tab","Letra");
   item.setAttribute("onclick","localStorage.setItem('tab','Letra');");
