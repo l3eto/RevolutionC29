@@ -89,7 +89,7 @@ Playlist.prototype.restoreTitle = function(){
 Playlist.prototype.playSong = function(){
   if( this._index == null ){ this.setIndex(0);this.setSong();}
   this.setTitleSong();
-  if( this._song.paused ){
+  if( this._songs[this._index].paused ){
     this._songs[this._index].play();
     this.setPlayColor();
   }else{
