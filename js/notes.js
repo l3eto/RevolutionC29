@@ -57,8 +57,7 @@ Playlist.prototype.setSongs = function( artist ){
 }
 
 Playlist.prototype.songEnded = function(){
- // console.log(this);
-  alert("playing next song");
+  console.log(this);
   if( this._randomSong == true ){
     
   }else{
