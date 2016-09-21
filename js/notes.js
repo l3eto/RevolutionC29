@@ -166,5 +166,6 @@ Playlist.prototype.forwardSong = function(){
 }
 
 Playlist.prototype.randomMode = function(){
+  $('.ui.compact.menu').find('i.random.icon').toggleClass("beru-text-color");
   this._randomMode =! this._randomMode;
 }
