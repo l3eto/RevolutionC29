@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
+    <header>Nos Vemos En Plaza Catalunya</header>
+     <date>Sábado 24 Septiembre</date>
+    <info>Este finde en Barcelona se celebra la merce y porque no aprovecharlo para compartir de un tiempo en familia.</info>
+    <alert>¡No faltes!</alert>
+    <location>Plaza Catalunya</location>
+    <hour>17h.</hour>
+    <src>../images/uploads/14368862_1834135593485781_520809729078261348_n.jpg</src>
+    <instagram>https://www.instagram.com/p/BKqGojPgL7G/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1834135593485781/</facebook>
+  </event>
+  <event>
     <header>¡Estamos de Vuelta!</header>
      <date>Sábado 17 Septiembre</date>
     <info>¡Asi es! Se terminaron las vacaciones y en Revolution ya estamos de vuelta para iniciar con muchos ánimos, asi que nos vemos éste sábado para compartir un tiempo estupendo en familia.</info>
