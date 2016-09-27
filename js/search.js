@@ -129,6 +129,7 @@ $( document ).ready(function(){
       var artist = [];
       for( var j = 0 ; j < artists.length ; j++ ){
         artist.push( artists[j].getAttribute("name") );
+        //artist id = artists[j].getAttribute("id")
       }
       var artistName = artist.join(" & ");
       var songName = song.getAttribute("name");
@@ -296,8 +297,7 @@ function setTitle( artist , song , imgsrc , artistid ){
   titlespancontainer.setAttribute("style","display:inline-block;")
   var span = document.createElement('A');
   span.setAttribute("class","beru-artist");
-  if( artistid == null ){span.setAttribute("href","#");}
-  else{ span.setAttribute("href","?artist="+artistid);}
+  span.setAttribute("href","?artist="+artistid);
   span.innerHTML = artist;
   titlespancontainer.appendChild(span);
   var br = document.createElement('BR');
@@ -311,7 +311,7 @@ function setTitle( artist , song , imgsrc , artistid ){
   //icon settings
   var setting = document.createElement("A");
   setting.setAttribute("class","ui right floated header beru-title");
-  setting.setAttribute("style","padding-top: 13px;");
+  setting.setAttribute("style","padding-top: 15px;position: absolute;right: 0px;");
   setting.setAttribute("onclick","$('.ui.setting-container').transition('drop', '500ms');")
   var icon = document.createElement('I');
   icon.setAttribute("class","setting icon");
