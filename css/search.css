@@ -246,12 +246,12 @@ a.ui.right.floated.header.beru-title:hover{
   position: absolute;
 }
 
-a.beru-artist{
+.beru-artist{
   color: #e17e77;
   margin-left: 70px!important;
 }
 
-span.beru-song{
+.beru-song{
   margin-left: 70px!important;
 }
 
@@ -267,7 +267,7 @@ span.beru-song{
   color:white!important;
 }
 
-a.beru-artist:hover{
+.beru-artist:hover{
   color: #ed3338;
   cursor:pointer;
 }
@@ -321,11 +321,11 @@ a.beru-artist:hover{
     padding-left: 4.07142857em!important;
     padding-right: 0em!important;
   }
-  a.beru-artist{
+  .beru-artist{
     margin-left: 50px!important;
   }
 
-  span.beru-song{
+  .beru-song{
     margin-left: 50px!important;
   }
 }
