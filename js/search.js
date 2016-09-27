@@ -305,7 +305,7 @@ function setTitle( song , imgsrc , artistid ){
     span.setAttribute("href","?artist="+artists[j].getAttribute("id") );
     span.innerHTML = artists[j].getAttribute("name");
     artistContainer.appendChild(span);
-    if( j < artist.length - 1 ){
+    if( j < artists.length - 1 ){
       var span = document.createElement('A');
       span.setAttribute("class","beru-artist");
       span.innerHTML = artists[j].getAttribute("name");
