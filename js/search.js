@@ -296,7 +296,6 @@ function setTitle( artist , song , imgsrc , artistid ){
   titlespancontainer.setAttribute("style","display:inline-block;")
   var span = document.createElement('A');
   span.setAttribute("class","beru-artist");
-  span.setAttribute("style","margin-left: 16px!important;");
   if( artistid == null ){span.setAttribute("href","#");}
   else{ span.setAttribute("href","?artist="+artistid);}
   span.innerHTML = artist;
@@ -305,7 +304,6 @@ function setTitle( artist , song , imgsrc , artistid ){
   titlespancontainer.appendChild(br);
   var span = document.createElement('SPAN');
   span.setAttribute("class","beru-song");
-  span.setAttribute("style","margin-left: 16px!important;")
   span.innerHTML = song;
   titlespancontainer.appendChild(span);
   h2.appendChild(titlespancontainer);
