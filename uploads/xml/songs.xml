@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
-  <song name="Increíble" id="w7e4spqw9s" order="intro-verse1-chorus">
+  <song name="Increíble" id="w7e4spqw9s" order="intro-verse1-chorus1-intro-verse2-chorus2-verse3-intro-bridge-bridge-intro-chorus1-chorus1-intro-bridge1">
     <artists>
       <artist name="Miel San Marcos" id="xprd92kwo1"></artist>
       <artist name="Evan Craft" id="om8wnxy28d"></artist>
@@ -26,11 +26,35 @@
         <p text="Rey de Reyes, asombroso"></p>
         <p text="incomparable"></p>
       </lyric>
-      <lyric name="chorus" chord="2">
+      <lyric name="verse2" chord="2">
+        <p text="You're almighty, never ending"></p>
+        <p text="you are holy, you are powerfull"></p>
+        <p text="King of all kings, incomparable"></p>
+        <p text="you are wonderfull"></p>
+      </lyric>
+      <lyric name="verse3" chord="2">
+        <p text="God you are almighty, strong and"></p>
+        <p text="you are so amazing"></p>
+        <p text="darkness you defeated"></p>
+        <p text="Jesus we lift you high"></p>
+      </lyric>
+      <lyric name="chorus1" chord="2">
         <p text="Eres increíble"></p>
         <p text="todopoderoso, grande"></p>
         <p text="eres increible"></p>
-        <p text="venciste las tinieblas,Cristo exaltado estas"></p>
+        <p text="venciste las tinieblas, Cristo exaltado estas"></p>
+      </lyric>
+      <lyric name="chorus2" chord="2">
+        <p text="You are so amazing, God you are almighty"></p>
+        <p text="strong and you are so amazing"></p>
+        <p text="darkness you defeated"></p>
+        <p text="Jesus you are so amazing"></p>
+      </lyric>
+      <lyric name="bridge1" chord="2">
+        <p text="Increíble, invencible"></p>
+        <p text="Dios sólo tu, sólo tu"></p>
+        <p text="tu eres increible, invencible"></p>
+        <p text="mi Dios sólo tu, sólo tu"></p>
       </lyric>
     </lyrics>
   </song>
