@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
-  <song name="Increíble" id="w7e4spqw9s" order="intro-verse1-chorus1-intro-verse2-chorus2-verse3-intro-bridge-bridge-intro-chorus1-chorus1-intro-bridge1">
+  <song name="Increíble" id="w7e4spqw9s" order="intro-verse1-chorus1-intro-verse2-chorus2-verse3-intro-bridge-bridge-intro-chorus1-chorus1-intro-bridge">
     <artists>
       <artist name="Miel San Marcos" id="xprd92kwo1"></artist>
       <artist name="Evan Craft" id="om8wnxy28d"></artist>
@@ -50,7 +50,7 @@
         <p text="darkness you defeated"></p>
         <p text="Jesus you are so amazing"></p>
       </lyric>
-      <lyric name="bridge1" chord="2">
+      <lyric name="bridge" chord="2">
         <p text="Increíble, invencible"></p>
         <p text="Dios sólo tu, sólo tu"></p>
         <p text="tu eres increible, invencible"></p>
