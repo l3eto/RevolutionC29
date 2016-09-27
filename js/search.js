@@ -301,14 +301,12 @@ function setTitle( song , imgsrc , artistid ){
   var artists = song.getElementsByTagName("artist");
   for( var j = 0 ; j < artists.length ; j++ ){
     var span = document.createElement('A');
-    span.setAttribute("class","beru-artist");
     span.setAttribute("href","?artist="+artists[j].getAttribute("id") );
     span.innerHTML = artists[j].getAttribute("name");
     artistContainer.appendChild(span);
     if( j < artists.length - 1 ){
-      var span = document.createElement('A');
-      span.setAttribute("class","beru-artist");
-      span.innerHTML = artists[j].getAttribute("name");
+      var span = document.createElement('SPAN');
+      span.innerHTML = " & ";
       artistContainer.appendChild(span);
     }
   }
