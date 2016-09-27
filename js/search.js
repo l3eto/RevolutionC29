@@ -143,7 +143,7 @@ $( document ).ready(function(){
       audio.addEventListener('ended', function() {
         if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
       }, false);
-      setTitle(artistName,songName,imgsrc,artistId);
+      setTitle(song,imgsrc,artistId);
       setMenu();
       setAudio( title );
       setLetras(song,orden);
@@ -280,7 +280,7 @@ function setSongs( artist ){
 }
 
 //set tittle
-function setTitle( artist , song , imgsrc , artistid ){
+function setTitle( song , imgsrc , artistid ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   //title container
@@ -294,17 +294,32 @@ function setTitle( artist , song , imgsrc , artistid ){
   //title
   var titlespancontainer = document.createElement('DIV');
   titlespancontainer.setAttribute("class","item");
-  titlespancontainer.setAttribute("style","display:inline-block;")
-  var span = document.createElement('A');
-  span.setAttribute("class","beru-artist");
-  span.setAttribute("href","?artist="+artistid);
-  span.innerHTML = artist;
-  titlespancontainer.appendChild(span);
+  titlespancontainer.setAttribute("style","display:inline-block;");
+  //set artists names
+  var artistContainer = document.createElement('DIV');
+  artistContainer.setAttribute("class","beru-artist");
+  var artists = song.getElementsByTagName("artist");
+  for( var j = 0 ; j < artists.length ; j++ ){
+    var span = document.createElement('A');
+    span.setAttribute("class","beru-artist");
+    span.setAttribute("href","?artist="+artists[j].getAttribute("id") );
+    span.innerHTML = artists[j].getAttribute("name");
+    artistContainer.appendChild(span);
+    if( j < artist.length - 1 ){
+      var span = document.createElement('A');
+      span.setAttribute("class","beru-artist");
+      span.innerHTML = artists[j].getAttribute("name");
+      artistContainer.appendChild(span);
+    }
+  }
+  titlespancontainer.appendChild(artistContainer);
+  //space
   var br = document.createElement('BR');
   titlespancontainer.appendChild(br);
+  //namesong
   var span = document.createElement('SPAN');
   span.setAttribute("class","beru-song");
-  span.innerHTML = song;
+  span.innerHTML = song.getAttribute("name");
   titlespancontainer.appendChild(span);
   h2.appendChild(titlespancontainer);
   div.appendChild(h2);
