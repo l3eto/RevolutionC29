@@ -251,7 +251,8 @@ a.ui.right.floated.header.beru-title:hover{
   margin-left: 70px!important;
 }
 
-.beru-artist > a,span{
+.beru-artist > a,
+.beru-artist > span{
   color: #e17e77;
 }
 
