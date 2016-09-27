@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="No Hay Lugar Más Alto" id="w1e2spqxz9" order="intro-verse1-prechorus-chorus-intro-verse1-prechorus-chorus-chorus-chorus-chorus-bridge-bridge-chorus-chorus-intro-intro-chorus-chorus">
+    <artists>
+      <artist name="Miel San Marcos" id="xprd92kwo1"></artist>
+      <artist name="Christine D'Clario" id="ow92iw9wie"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="A"></a><a temp="4" note="D"></a><a temp="4" note="F#m"></a><a temp="4" note="D"></a></p>
+        <p><a temp="4" note="A"></a><a temp="4" note="D"></a><a temp="4" note="F#m"></a><a temp="4" note="D"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="8" note="A"></a><a temp="8" note="D"></a></p>
+        <p><a temp="8" note="F#m"></a><a temp="8" note="D"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="D"></a></p>
+        <p><a temp="8" note="F#m"></a><a temp="8" note="D"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="8" note="D"></a><a temp="8" note="E"></a></p>
+        <p><a temp="8" note="F#m"></a><a temp="8" note="E"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="8" note="D"></a><a temp="8" note="E"></a></p>
+        <p><a temp="8" note="F#m"></a><a temp="8" note="A"></a></p>
+      </chord>
+      <chord name="5">
+        <p><a temp="4" note="D"></a><a temp="4" note="E"></a><a temp="2" note="A"></a><a temp="2" note="E"></a><a temp="4" note="F#m"></a></p>
+        <p><a temp="4" note="D"></a><a temp="4" note="E"></a><a temp="8" note="F#m"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="A tus pies, arde mi corazón"></p>
+        <p text="a tus pies, entrego lo que soy"></p>
+        <p text="es el lugar, de mi seguridad"></p>
+        <p text="donde nadie, me puede señalar"></p>
+      </lyric>
+      <lyric name="prechorus" chord="3">
+        <p text="Me perdonaste, me acercaste a tu presencia"></p>
+        <p text="Me levantaste, hoy me postro adorarte"></p>
+      </lyric>
+      <lyric name="chorus" chord="4">
+        <p text="No hay lugar más alto, más grande"></p>
+        <p text="que estar a tus pies, que estar a tus pies"></p>
+      </lyric>
+      <lyric name="bridge" chord="5">
+        <p text="Y aquí permaneceré, postrado a tus pies"></p>
+        <p text="y aquí permaneceré a los pies de Cristo"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Increíble" id="w7e4spqw9s" order="intro-verse1-chorus1-intro-verse2-chorus2-verse3-intro-bridge-bridge-intro-chorus1-chorus1-intro-bridge">
     <artists>
       <artist name="Miel San Marcos" id="xprd92kwo1"></artist>
