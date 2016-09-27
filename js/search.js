@@ -312,8 +312,8 @@ function setTitle( song , imgsrc , artistid ){
   }
   titlespancontainer.appendChild(artistContainer);
   //space
-  var br = document.createElement('BR');
-  titlespancontainer.appendChild(br);
+ // var br = document.createElement('BR');
+ // titlespancontainer.appendChild(br);
   //namesong
   var span = document.createElement('SPAN');
   span.setAttribute("class","beru-song");
