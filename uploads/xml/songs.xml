@@ -1,5 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Tu Presencia Es El Cielo" id="c82jd82u3s" order="intro-verse1-chorus-verse2-chorus-chorus-bridge-intro-verse3-chorus-chorus-chorus-bridge-bridge-bridge-bridge-chorus">
+    <artists>
+      <artist name="Israel Houghton" id="9so2ksidmc"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="4" note="Bm"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="16" note="G"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="4" note="A"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+        <p><a temp="4" note="A"></a><a temp="4" note="G"></a><a temp="8" note="D"></a></p>
+      </chord>
+      <chord name="5">
+        <p><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="8" note="A"></a></p>
+        <p><a temp="16" note="G"></a></p>
+        <p><a temp="4" note="D"></a><a temp="4" note="Bm"></a><a temp="8" note="A"></a></p>
+        <p><a temp="16" note="G"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Quien como tu en la tierra oh Señor"></p>
+        <p text="hermoso inigualable es tu valor"></p>
+        <p text="y nada en este mundo saciara"></p>
+        <p text="Jesús tu copa no se secara"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Tesoro de mi alma y corazón"></p>
+        <p text="me das tu gracia aunque débil soy"></p>
+        <p text="de mis errores eres redentor"></p>
+        <p text="de futuro eres el guardador"></p>
+      </lyric>
+      <lyric name="verse3" chord="2">
+        <p text="Y mientras tenga vida esperare"></p>
+        <p text="Cuando cara a cara te veré"></p>
+        <p text="Y nada en este mundo saciara"></p>
+        <p text="Jesús tu copa no se secara"></p>
+      </lyric>
+      <lyric name="verse4" chord="3">
+        <p text="JesÚS tu copa no se secara"></p>
+        <p text="no acabara"></p>
+      </lyric>
+      <lyric name="chorus" chord="4">
+        <p text="Tu Presencia es el cielo para mi"></p>
+        <p text="tu Presencia es el cielo para mi"></p>
+      </lyric>
+      <lyric name="bridge" chord="5">
+        <p text="Y cantamos Oh Cristo, Oh Cristo"></p>
+        <p text="tu Presencia es el cielo para mi"></p>
+        <p text="oh Cristo, oh Cristo"></p>
+        <p text="tu presencia es el cielo para mi"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="No Hay Lugar Más Alto" id="w1e2spqxz9" order="intro-verse1-prechorus-chorus-chorus-intro-verse1-prechorus-chorus-chorus-chorus-chorus-bridge-bridge-chorus-chorus-intro-intro-chorus-chorus">
     <artists>
       <artist name="Miel San Marcos" id="xprd92kwo1"></artist>
