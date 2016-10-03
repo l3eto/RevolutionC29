@@ -4,32 +4,6 @@ var playlist;
 var loop = false;
 var tab;
 
-//customlabels
-var customLabels = {
-  'intro':'Intro',
-  'prechorus':'Pre Coro',
-  'postchorus':'Coro',
-  'verse':'Verso',
-  'verse1':'Verso 1',
-  'verse2':'Verso 2',
-  'verse3':'Verso 3',
-  'verse4':'Verso 4',
-  'chorus':'Coro',
-  'chorus1':'Coro 1',
-  'chorus2':'Coro 2',
-  'bridge':'Puente',
-  'bridge1':'Puente 1',
-  'bridge2':'Puente 2',
-  'ending':'Final',
-  '2':'two',
-  '4':'four',
-  '6':'six',
-  '8':'eight',
-  '10':'ten',
-  '16':'sixteen'
-  
-}
-
 //get search
   function getSearchURL( type ){
     var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
@@ -44,7 +18,7 @@ var customLabels = {
       return null;
     }
   }
-  
+
 
 //read xml
   function readXML(file, callback) {
@@ -165,7 +139,7 @@ $( document ).ready(function(){
       //get artist
       var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
       var artistName = artist.get(0).getAttribute("name");
-      //playlist 
+      //playlist
       playlist = new Playlist(artist);
       //set title
       setArtistTitle(artistName,searchingartist);
@@ -173,7 +147,31 @@ $( document ).ready(function(){
       setSongs(artist);
     });
   }else{
-    $('#search-result').remove();
+    //$('#search-result').remove();
+    //show top 5 last updates
+    readXML("../uploads/xml/songs.xml", function(data){
+      if (window.DOMParser){
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(data, "text/xml");
+      }else{
+        xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+        xmlDoc.async = false;
+        xmlDoc.loadXML(data);
+      }
+      //get 5 latest songs
+      var songs = $( xmlDoc ).find('song');
+      console.log( songs );
+      /*
+      //get artist
+      var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
+      var artistName = artist.get(0).getAttribute("name");
+      //playlist
+      playlist = new Playlist(artist);
+      //set title
+      setArtistTitle(artistName,searchingartist);
+      setDivition();
+      setSongs(artist);*/
+    });
   }
 });
 
