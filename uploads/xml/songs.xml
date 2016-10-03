@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Bendito Jesús" id="qpsx3fecdi" order="intro-verse1-chorus1-verse2-chorus2-chorus2-chorus2">
+    <artists>
+      <artist name="Danilo Montero" id="oz71kvgqfr"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="8" note="B"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="G#m"></a><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="4" note="B"></a></p>
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="G#m"></a><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="4" note="B"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="8" note="B"></a></p>
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="8" note="B"></a></p>
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="E"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="8" note="B"></a></p>
+        <p><a temp="4" note="B"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="F#"></a><a temp="4" note="E"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="G#m"></a><a temp="4" note="F#m"></a><a temp="8" note="G#m"></a></p>
+        <p><a temp="4" note="G#m"></a><a temp="4" note="F#m"></a><a temp="8" note="E"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Por tí es mi clamor, y sin ningun temor"></p>
+        <p text="en tí puedo confiar, Bendito Jesus"></p>
+        <p text="hoy puedo escuchar, tú voz de sanidad"></p>
+        <p text="restaurando mi ser, Bendito Jesús"></p>
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Tú gracia y favor, conmigo puedo ver"></p>
+        <p text="llenando hoy mi ser, Bendito Jesús"></p>
+        <p text="y hoy mi voluntad, se rinde a tu verdad"></p>
+        <p text="tú amor y tu bondad, Bendito Jesús"></p>
+      </lyric>
+      <lyric name="chorus1" chord="3">
+        <p text="Mi deseo eres tú, mi momento de amor"></p>
+        <p text="la alegria de vivir, Bendito Jesús"></p>
+        <p text="eres mi fuente de amor, eres aire, y eres sol"></p>
+        <p text="el latir del corazón, Bendito Jesús"></p>
+        <p text="bendito amor de mi Señor"></p>
+      </lyric>
+      <lyric name="chorus2" chord="4">
+        <p text="Mi deseo eres tú, mi momento de amor"></p>
+        <p text="la alegria de vivir, Bendito Jesús"></p>
+        <p text="eres mi fuente de amor, eres aire, y eres sol"></p>
+        <p text="el latir del corazón, Bendito Jesús"></p>
+        <p text="bendito amor de mi Señor"></p>
+        <p text="bendito amor de mi Señor"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Tu Presencia Es El Cielo" id="c82jd82u3s" order="intro-verse1-chorus-verse2-chorus-chorus-bridge-intro-verse3-chorus-chorus-chorus-bridge-bridge-bridge-bridge-chorus">
     <artists>
       <artist name="Israel Houghton" id="9so2ksidmc"></artist>
