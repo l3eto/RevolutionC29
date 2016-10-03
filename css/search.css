@@ -23,6 +23,11 @@
   width: 25%;
 }
 
+.beru-title-order{
+  padding: 1em 1em 0.25em 1em !important;
+  margin-left:2em!important;
+}
+
 
 .low-weight{
   font-weight: 100;
@@ -309,6 +314,10 @@ a.ui.right.floated.header.beru-title:hover{
 }
 
 @media (max-width: 780px){
+  .beru-title-order{
+    padding: 1em 1em 0.25em 1em !important;
+    margin-left:0em!important;
+  }
   .beru-container > .ui.grid{
     margin: 0px 0em;
   }
