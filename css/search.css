@@ -314,6 +314,9 @@ a.ui.right.floated.header.beru-title:hover{
 }
 
 @media (max-width: 780px){
+  h1.ui.header {
+    font-size: 1.75rem;
+  }
   .beru-title-order{
     padding: 1em 1em 0.25em 1em !important;
     margin-left:0em!important;
