@@ -582,8 +582,7 @@ function setAcordes( song , orden ){
   for( var i = 0 ; i < orden.length ; i++ ){
     //set tittle
     var divGrid = document.createElement('DIV');
-    divGrid.setAttribute("class","left aligned sixteen wide column");
-    divGrid.setAttribute("style","padding: 1em 1em 0.25em 1em;;margin-left:2em;");
+    divGrid.setAttribute("class","left aligned sixteen wide column beru-title-order");
     var musicon = document.createElement('I');
     musicon.setAttribute("class","music icon");
     musicon.setAttribute("style","font-size:1.5em;");
