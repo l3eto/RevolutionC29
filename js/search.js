@@ -182,7 +182,7 @@ var setLastSongs = function( songs , numSongs ){
     watchsong.innerHTML="Ver";
     item.appendChild(watchsong);
     var icon = document.createElement('I');
-    icon.setAttribute("class","play icon");
+    icon.setAttribute("class","music icon");
     item.appendChild(icon);
     var content = document.createElement('DIV');
     content.setAttribute("class","content");
