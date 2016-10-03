@@ -205,7 +205,7 @@ h3.ui.header {
 .ui.divider:not(.vertical):not(.horizontal) {
     border-top: 1px solid #cecccc!important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 0em 3em !important;
+    margin: 0em 1em !important;
 }
 
 .ui.basic.red.labels a.label:hover, a.ui.basic.red.label:hover {
@@ -304,7 +304,14 @@ a.ui.right.floated.header.beru-title:hover{
   color:#e17e77!important;
 }
 
+.beru-container > .ui.grid{
+  margin: 0px 2em;
+}
+
 @media (max-width: 780px){
+  .beru-container > .ui.grid{
+    margin: 0px 0em;
+  }
   .beru-item{
     margin: 0em 0em !important;
   }
