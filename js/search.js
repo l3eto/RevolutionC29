@@ -160,7 +160,13 @@ $( document ).ready(function(){
       }
       //get 5 latest songs
       var songs = $( xmlDoc ).find('song');
+      setTitleNoSearching("thumbs up","Últimas 5 Canciones");
+      setDivition();
       console.log( songs );
+
+      thumbs up icon
+
+
       /*
       //get artist
       var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
@@ -174,6 +180,22 @@ $( document ).ready(function(){
     });
   }
 });
+
+//set title for no searchingartist
+var setTitleNoSearching = function(iconname,title){
+  var h1 = document.createElement('H1');
+  h1.setAttribute("class","ui header");
+  //author img
+  var icon = document.createElement("I");
+  icon.setAttribute("class",iconname+" icon");
+  h1.appendChild(icon);
+  //author name
+  var span = document.createElement("SPAN");
+  span.setAttribute("style","margin-left: 18px;");
+  span.innerHTML = title;
+  h1.appendChild(span);
+  document.getElementById('search-result').appendChild( h1 );
+}
 
 //set artitsTitle
 function setArtistTitle( name , id ){
