@@ -164,7 +164,6 @@ $( document ).ready(function(){
       setDivition();
       console.log( songs );
 
-      thumbs up icon
 
 
       /*
