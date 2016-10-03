@@ -24,7 +24,9 @@
 }
 
 
-
+.low-weight{
+  font-weight: 100;
+}
 
 .ui.menu.item.chords {
   border: none;
@@ -219,7 +221,7 @@ h3.ui.header {
 }
 
 .beru-title{
-  font-size:1.5rem !important;  
+  font-size:1.5rem !important;
   margin:0px!important;
 }
 
@@ -230,11 +232,11 @@ h3.ui.header {
 }
 
 .beru-only-mobile-desktop{
-  
+
 }
 
 .beru-only-desktop{
-  
+
 }
 
 a.ui.right.floated.header.beru-title:hover{
@@ -310,7 +312,7 @@ a.ui.right.floated.header.beru-title:hover{
     font-size:1rem !important;
   }
   .beru-title{
-    font-size:1.14285714rem !important;  
+    font-size:1.14285714rem !important;
   }
   .beru-only-desktop{
     font-size:0rem;
@@ -329,7 +331,6 @@ a.ui.right.floated.header.beru-title:hover{
   .beru-artist{
     margin-left: 50px!important;
   }
-
   .beru-song{
     margin-left: 50px!important;
   }
