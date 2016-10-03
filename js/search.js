@@ -103,7 +103,6 @@ $( document ).ready(function(){
       var artist = [];
       for( var j = 0 ; j < artists.length ; j++ ){
         artist.push( artists[j].getAttribute("name") );
-        //artist id = artists[j].getAttribute("id")
       }
       var artistName = artist.join(" & ");
       var songName = song.getAttribute("name");
@@ -188,7 +187,19 @@ var setLastSongs = function( songs , numSongs ){
     content.setAttribute("class","content");
     var header = document.createElement('DIV');
     header.setAttribute("class","header");
-    header.innerHTML = songName;
+    var span = document.createElement('SPAN');
+    span.innerHTML = songName;
+    header.appendChild(span);
+    var artists = song.getElementsByTagName("artist");
+    var artist = [];
+    for( var j = 0 ; j < artists.length ; j++ ){
+      artist.push( artists[j].getAttribute("name") );
+    }
+    var artistName = artist.join(" & ");
+    var span = document.createElement('SPAN');
+    span.setAttribute("class","beru-only-desktop");
+    span.innerHTML = artistName;
+    header.appendChild(span);
     content.appendChild(header);
     item.appendChild(content);
     div.appendChild(item);
