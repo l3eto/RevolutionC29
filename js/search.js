@@ -160,7 +160,7 @@ $( document ).ready(function(){
       }
       //get 5 latest songs
       var songs = $( xmlDoc ).find('song');
-      setTitleNoSearching("thumbs up","Últimas 5 Canciones");
+      setTitleNoSearching("thumbs up","5 últimas Actualizaciones");
       setDivition();
       setLastSongs( songs , 5 );
     });
