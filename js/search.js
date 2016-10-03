@@ -162,23 +162,39 @@ $( document ).ready(function(){
       var songs = $( xmlDoc ).find('song');
       setTitleNoSearching("thumbs up","Últimas 5 Canciones");
       setDivition();
-      console.log( songs );
-
-
-
-      /*
-      //get artist
-      var artist = $( xmlDoc ).find('artist[id="'+searchingartist+'"]');
-      var artistName = artist.get(0).getAttribute("name");
-      //playlist
-      playlist = new Playlist(artist);
-      //set title
-      setArtistTitle(artistName,searchingartist);
-      setDivition();
-      setSongs(artist);*/
+      setLastSongs( songs , 5 );
     });
   }
 });
+
+var setLastSongs = function( songs , numSongs ){
+  var div = document.createElement('DIV');
+  div.setAttribute("class","ui selection list");
+  for( var i = 0 ; i < numSongs ; i++ ){
+    var song = songs.get(i);
+    var songName = song.getAttribute("name");
+    var songId = song.getAttribute("id");
+    var item = document.createElement('DIV');
+    item.setAttribute("class","item beru-item");
+    var watchsong = document.createElement('A');
+    watchsong.setAttribute("class","right floated tiny beru-bg-color ui button");
+    watchsong.setAttribute("href","?song="+songId);
+    watchsong.innerHTML="Ver";
+    item.appendChild(watchsong);
+    var icon = document.createElement('I');
+    icon.setAttribute("class","play icon");
+    item.appendChild(icon);
+    var content = document.createElement('DIV');
+    content.setAttribute("class","content");
+    var header = document.createElement('DIV');
+    header.setAttribute("class","header");
+    header.innerHTML = songName;
+    content.appendChild(header);
+    item.appendChild(content);
+    div.appendChild(item);
+  }
+  document.getElementById('search-result').appendChild( div );
+}
 
 //set title for no searchingartist
 var setTitleNoSearching = function(iconname,title){
@@ -187,7 +203,7 @@ var setTitleNoSearching = function(iconname,title){
   //author img
   var icon = document.createElement("I");
   icon.setAttribute("class",iconname+" icon");
-  icon.setAttribute("style","position:absolute;margin-left: 15px;");
+  icon.setAttribute("style","position:absolute;margin-left: 15px;padding:0px;");
   h1.appendChild(icon);
   //author name
   var span = document.createElement("SPAN");
