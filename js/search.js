@@ -197,8 +197,8 @@ var setLastSongs = function( songs , numSongs ){
     }
     var artistName = artist.join(" & ");
     var span = document.createElement('SPAN');
-    span.setAttribute("class","beru-only-desktop");
-    span.innerHTML = artistName;
+    span.setAttribute("class","beru-only-desktop low-weight");
+    span.innerHTML = " - "+artistName;
     header.appendChild(span);
     content.appendChild(header);
     item.appendChild(content);
