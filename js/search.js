@@ -187,10 +187,11 @@ var setTitleNoSearching = function(iconname,title){
   //author img
   var icon = document.createElement("I");
   icon.setAttribute("class",iconname+" icon");
+  icon.setAttribute("style","position:absolute;margin-left: 15px;");
   h1.appendChild(icon);
   //author name
   var span = document.createElement("SPAN");
-  span.setAttribute("style","margin-left: 18px;");
+  span.setAttribute("style","margin-left: 75px;");
   span.innerHTML = title;
   h1.appendChild(span);
   document.getElementById('search-result').appendChild( h1 );
