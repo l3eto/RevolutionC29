@@ -322,11 +322,11 @@ function setSongs( artist ){
     span.innerHTML = songName;
     header.appendChild(span);
     var span = document.createElement('SPAN');
-    span.setAttribute('class','beru-only-desktop');
+    span.setAttribute('class','beru-only-desktop low-weight');
     var artists = this.parentNode;
     var artist = [];
     for( var i = 0 ; i < artists.length ; i++ ){
-      if( songId != artists[i].getAttribute("id") ){ artist.push(); }
+      if( songId != artists[i].getAttribute("id") ){ artist.push( artists[i].getAttribute("name") ); }
     }
     var artistName = artist.join(" & ");
     span.innerHTML = ' Feat. '+artistName;
