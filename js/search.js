@@ -4,6 +4,19 @@ var playlist;
 var loop = false;
 var tab;
 
+//prototype for get unique array
+Array.prototype.getUnique = function(){
+   var u = {}, a = [];
+   for(var i = 0, l = this.length; i < l; ++i){
+      if(u.hasOwnProperty(this[i])) {
+         continue;
+      }
+      a.push(this[i]);
+      u[this[i]] = 1;
+   }
+   return a;
+}
+
 //get search
   function getSearchURL( type ){
     var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
@@ -44,7 +57,8 @@ function setContent(){
       xmlDoc.async = false;
       xmlDoc.loadXML(data);
     }
-    var xmldata = [];
+    var xmlDataSong = [];
+    var xmlDataArtist = [];
     var song = xmlDoc.getElementsByTagName("song");
     var artist = xmlDoc.getElementsByTagName("artist");
     var error = xmlDoc.getElementsByTagName("parsererror");
@@ -52,7 +66,6 @@ function setContent(){
       if( song.length > 0 ){
         for( var i = 0 ; i < song.length ; i++ ){
           var songname = song[i].getAttribute("name");
-          var songid = song[i].getAttribute("id");
           var artists = song[i].getElementsByTagName("artist");
           var artistV = [];
           for( var j = 0 ; j < artists.length ; j++ ){
@@ -60,16 +73,17 @@ function setContent(){
           }
           var artistname = artistV.join(" & ");
           var title = artistname.concat(" - ",songname);
-          xmldata.push( { title: title  , description: songid } );
+          xmlDataSong.push( { title: title  , description: song[i].getAttribute("id") } );
         }
       }
       if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++ ){
-            console.log( artist[i].getAttribute("name") );
+          xmlDataArtist.push( { title:artist[i].getAttribute("name") , description: artist[i].getAttribute("id") } );
         }
+        console.log(xmlDataArtist);
       }
       $('.ui.search').search({
-        source: xmldata ,
+        source: xmlDataSong ,
         onSelect: function(result, response) {
           window.location.search = "?song=".concat(result.description);
         }
