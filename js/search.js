@@ -329,6 +329,7 @@ function setSongs( artist ){
       if( songId != artists[i].getAttribute("id") ){ artist.push( artists[i].getAttribute("name") ); }
     }
     var artistName = artist.join(" & ");
+    console.log(artist);
     span.innerHTML = ' Feat. '+artistName;
     if( artist.length > 0 ){header.appendChild(span);}
     content.appendChild(header);
