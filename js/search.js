@@ -324,6 +324,7 @@ function setSongs( artist ){
     var span = document.createElement('SPAN');
     span.setAttribute('class','beru-only-desktop low-weight');
     var artists = this.parentNode;
+    console.log(artists);
     var artist = [];
     for( var i = 0 ; i < artists.length ; i++ ){
       console.log(artists[i].getAttribute("id"));
