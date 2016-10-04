@@ -326,6 +326,8 @@ function setSongs( artist ){
     var artists = this.parentNode;
     var artist = [];
     for( var i = 0 ; i < artists.length ; i++ ){
+      console.log(artists[i].getAttribute("id"));
+      console.log(songId);
       if( songId != artists[i].getAttribute("id") ){ artist.push( artists[i].getAttribute("name") ); }
     }
     var artistName = artist.join(" & ");
