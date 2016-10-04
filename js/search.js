@@ -3,7 +3,7 @@ var audio;
 var playlist;
 var loop = false;
 var tab;
-
+var axx;
 //get search
   function getSearchURL( type ){
     var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
@@ -67,8 +67,8 @@ function setContent(){
         for( var i = 0 ; i < artist.length ; i++ ){
           xmlDataArtist.push( { title:artist[i].getAttribute("name") , description: artist[i].getAttribute("id") } );
         }
+        axx = xmlDataArtist;
         console.log(xmlDataArtist);
-        console.log( array.map(item => item.description).filter((value, index, self) => self.indexOf(value) === index) );
       }
       $('.ui.search').search({
         source: xmlDataSong ,
