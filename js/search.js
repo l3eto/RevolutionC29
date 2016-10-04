@@ -329,7 +329,7 @@ function setSongs( artist ){
       if( songId != artists[i].getAttribute("id") ){ artist.push(); }
     }
     var artistName = artist.join(" & ");
-    spain.innerHTML = ' Feat. '+artistName;
+    span.innerHTML = ' Feat. '+artistName;
     header.appendChild(span);
     content.appendChild(header);
     item.appendChild(content);
