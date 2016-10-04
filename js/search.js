@@ -21,17 +21,17 @@ var tab;
 
 
 //read xml
-  function readXML(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/xml");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
+function readXML(file, callback) {
+  var rawFile = new XMLHttpRequest();
+  rawFile.overrideMimeType("application/xml");
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function() {
+    if (rawFile.readyState === 4 && rawFile.status == "200") {
+      callback(rawFile.responseText);
     }
-    rawFile.send(null);
-  };
+  }
+  rawFile.send(null);
+};
 
 //get content
 function setContent(){
@@ -301,6 +301,7 @@ function setSongs( artist ){
   div.setAttribute("class","ui selection list");
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
+    console.log(this.parentNode);
     var songName = song.getAttribute("name");
     var songId = song.getAttribute("id");
     var item = document.createElement('DIV');
