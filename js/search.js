@@ -62,6 +62,13 @@ function setContent(){
           var title = artistname.concat(" - ",songname);
           xmlDataSong.push( { title: title  , description: song[i].getAttribute("id") } );
         }
+        //add data songs to search
+        $('.ui.search.bysong').search({
+          source: xmlDataSong ,
+          onSelect: function(result, response) {
+            window.location.search = "?song=".concat(result.description);
+          }
+        });
       }
       if( artist.length > 0 ){
         var temp=[];
@@ -73,14 +80,15 @@ function setContent(){
               xmlDataArtist.push({ title:name,description:id });
             }
         });
-        console.log(xmlDataArtist);
+        //add data songs to search
+        $('.ui.search.byartist').search({
+          source: xmlDataArtist ,
+          onSelect: function(result, response) {
+            window.location.search = "?artist=".concat(result.description);
+          }
+        });
       }
-      $('.ui.search.bysong').search({
-        source: xmlDataSong ,
-        onSelect: function(result, response) {
-          window.location.search = "?song=".concat(result.description);
-        }
-      });
+
     }else{
       console.log(error[0].innerText);
     }
