@@ -1,5 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Tocar El Cielo" id="a9hjafko6r" order="intro">
+    <artists>
+      <artist name="Majo Solís" id="y8yjuoko6r"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="E"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#m"></a><a temp="6" note="A"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="E"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#m"></a><a temp="6" note="A"></a></p>
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="E"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#m"></a><a temp="6" note="A"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="E"></a></p>
+        <p><a temp="6" note="E"></a><a temp="4" note="F#m"></a><a temp="6" note="A"></a></p>
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="E"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="E"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="8" note="A"></a><a temp="8" note="D"></a></p>
+        <p><a temp="16" note="E"></a></p>
+        <p><a temp="16" note="F#m"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="D"></a></p>
+        <p><a temp="16" note="E"></a></p>
+        <p><a temp="16" note="F#m"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="El cielo quise alcanzar"></p>
+        <p text="y las estrellas conquistar"></p>
+        <p text="llegué tan alto y descubrí"></p>
+        <p text="que tú bajaste a buscarme a mí"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="La libertad que tú me das"></p>
+        <p text="con oro no podré pagar"></p>
+        <p text="gané el mundo y me vendí"></p>
+        <p text="y tú viniste a comprarme otra vez"></p>
+      </lyric>
+      <lyric name="chorus" chord="3">
+        <p text="Mi corazón latiendo está"></p>
+        <p text="vida encontré al rendirme a tí"></p>
+        <p text="me postraré y el cielo yo"></p>
+        <p text="podré tocar, al caer a tus pies"></p>
+      </lyric>
+      <lyric name="bridge" chord="4">
+        <p text="A tus pies yo me rendiré"></p>
+        <p text="una y otra vez"></p>
+        <p text="lo que soy te lo entrego"></p>
+        <p text="con tu amor Dios rodéame"></p>
+        <p text="seguro estaré"></p>
+        <p text="en tus alas por siempre"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Bendito Jesús" id="qpsx3fecdi" order="intro-verse1-chorus1-verse2-chorus2-chorus2-chorus2">
     <artists>
       <artist name="Danilo Montero" id="oz71kvgqfr"></artist>
@@ -260,12 +321,6 @@
         <p><a temp="4" note="G"></a><a temp="4" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
         <p><a temp="4" note="G"></a><a temp="4" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
         <p><a temp="4" note="G"></a><a temp="4" note="C"></a><a temp="4" note="Em"></a><a temp="4" note="G"></a></p>
-        <!--<p><a temp="16" note="C"></a></p>
-        <p><a temp="16" note="Em"></a></p>
-        <p><a temp="6" note="G"></a><a temp="4" note="C"></a><a temp="6" note="Em"></a></p>
-        <p><a temp="8" note="G"></a><a temp="8" note="C"></a></p>
-        <p><a temp="16" note="Em"></a></p>
-        <p><a temp="6" note="G"></a><a temp="4" note="C"></a><a temp="4" note="Em"></a><a temp="2" note="G"></a></p>-->
       </chord>
       <chord name="4">
         <p><a temp="16" note="G"></a></p>
