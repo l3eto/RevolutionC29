@@ -19,6 +19,17 @@ function getSearchURL( type ){
   }
 }
 
+//get all id of
+function getAllIds(tag){
+  var t = [];
+  $( tag , xmlDoc).each(function() {
+    var id = this.getAttribute("id");
+    if($.inArray(id, t)===-1){
+      t.push(id);
+    }
+  });
+  return t;
+}
 
 //read xml
 function readXML(file, callback) {
