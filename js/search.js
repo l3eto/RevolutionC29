@@ -4,19 +4,6 @@ var playlist;
 var loop = false;
 var tab;
 
-//prototype for get unique array
-Array.prototype.getUnique = function(){
-   var u = {}, a = [];
-   for(var i = 0, l = this.length; i < l; ++i){
-      if(u.hasOwnProperty(this[i])) {
-         continue;
-      }
-      a.push(this[i]);
-      u[this[i]] = 1;
-   }
-   return a;
-}
-
 //get search
   function getSearchURL( type ){
     var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
@@ -81,6 +68,7 @@ function setContent(){
           xmlDataArtist.push( { title:artist[i].getAttribute("name") , description: artist[i].getAttribute("id") } );
         }
         console.log(xmlDataArtist);
+        console.log( array.map(item => item.description).filter((value, index, self) => self.indexOf(value) === index) );
       }
       $('.ui.search').search({
         source: xmlDataSong ,
