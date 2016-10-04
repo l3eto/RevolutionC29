@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Alaba" id="42durw9udi" order="verse1-verse2-chorus-chorus1-chorus2-chorus3-verse3-ver4-chorus-chorus1-chorus2-chorus3-chorus3">
+    <artists>
+      <artist name="GeneraSion" id="sgakfswcdi"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="2" note="E"></a><a temp="14" note="null"></a></p>
+        <p><a temp="12" note="A"></a><a temp="2" note="D"></a><a temp="2" note="A"></a></p>
+        <p><a temp="8" note="F#m"></a><a temp="8" note="B"></a></p>
+        <p><a temp="8" note="null"></a><a temp="2" note="E"></a><a temp="2" note="A"></a><a temp="2" note="E"></a><a temp="2" note="A"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="16" note="E"></a></p>
+        <p><a temp="16" note="A"></a></p>
+        <p><a temp="16" note="B"></a></p>
+        <p><a temp="14" note="E"></a><a temp="2" note="B"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="4" note="E"></a><a temp="12" note="null"></a></p>
+        <p><a temp="4" note="C#m"></a><a temp="12" note="null"></a></p>
+        <p><a temp="4" note="A"></a><a temp="12" note="null"></a></p>
+        <p><a temp="4" note="B"></a><a temp="12" note="null"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="4" note="null"></a><a temp="12" note="E"></a></p>
+        <p><a temp="4" note="null"></a><a temp="12" note="C#m"></a></p>
+        <p><a temp="4" note="null"></a><a temp="12" note="A"></a></p>
+        <p><a temp="4" note="null"></a><a temp="12" note="B"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="verse1" chord="1">
+        <p text="Dios no rechaza oración"></p>
+        <p text="oración es alimento"></p>
+        <p text="nunca vi un justo sin respuesta"></p>
+        <p text="o quedar en sufrimiento"></p>
+      </lyric>
+      <lyric name="verse2" chord="1">
+        <p text="Basta solamente esperar"></p>
+        <p text="lo que Dios ira a hacer"></p>
+        <p text="cuando el levanta sus manos"></p>
+        <p text="es hora de vencer"></p>
+      </lyric>
+      <lyric name="verse3" chord="1">
+        <p text="La gente necesita entender"></p>
+        <p text="lo que Dios esta hablando"></p>
+        <p text="cuando el queda en silencio"></p>
+        <p text="es porque esta trabajando"></p>
+      </lyric>
+      <lyric name="verse4" chord="1">
+        <p text="Basta solamente esperar"></p>
+        <p text="lo que Dios ira a hacer"></p>
+        <p text="cuando El extiende sus manos"></p>
+        <p text="es hora de vencer"></p>
+      </lyric>
+      <lyric name="chorus" chord="2">
+        <p text="Oh alaba, simplemente alaba"></p>
+        <p text="estas llorando alaba, en la prueba alaba"></p>
+        <p text="estas sufriendo alaba, no importa alaba"></p>
+        <p text="tu alabanza el escuchara"></p>
+      </lyric>
+      <lyric name="chorus1" chord="3">
+        <p text="Dios va al frente abriendo caminos"></p>
+        <p text="quebrando cadenas sacando espinas"></p>
+        <p text="manda a sus angeles contigo a luchar"></p>
+        <p text="el abre puertas nadie puede cerrar"></p>
+      </lyric>
+      <lyric name="chorus2" chord="3">
+        <p text="El trabaja para los que confian"></p>
+        <p text="camina contigo de noche y de dia"></p>
+        <p text="levanta tus manos tu victoria llego"></p>
+        <p text="comienza a cantar y"></p>
+      </lyric>
+      <lyric name="chorus3" chord="4">
+        <p text="Alaba a Dios"></p>
+        <p text="Alaba a Dios"></p>
+        <p text="Alaba a Dios"></p>
+        <p text="Alaba a Dios"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Tocar El Cielo" id="a9hjafko6r" order="intro-verse1-chorus-intro-verse2-chorus-intro-bridge-bridge-chorus-chorus-bridge-chorus-intro">
     <artists>
       <artist name="Majo Solís" id="y8yjuoko6r"></artist>
