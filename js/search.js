@@ -65,7 +65,7 @@ function setContent(){
       }
       if( artist.length > 0 ){
         var temp=[];
-        $('artist', axx).each(function() {
+        $('artist', xmlDoc).each(function() {
             var id= this.getAttribute("id");
             var name= this.getAttribute("name");
             if($.inArray(id, temp)===-1){
