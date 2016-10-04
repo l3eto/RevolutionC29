@@ -301,7 +301,6 @@ function setSongs( artist ){
   div.setAttribute("class","ui selection list");
   $( artist ).each(function(){
     var song = this.parentNode.parentNode;
-    console.log(this.parentNode);
     var songName = song.getAttribute("name");
     var songId = song.getAttribute("id");
     var item = document.createElement('DIV');
@@ -319,7 +318,19 @@ function setSongs( artist ){
     content.setAttribute("class","content");
     var header = document.createElement('DIV');
     header.setAttribute("class","header");
-    header.innerHTML = songName;
+    var span = document.createElement('SPAN');
+    span.innerHTML = songName;
+    header.appendChild(span);
+    var span = document.createElement('SPAN');
+    span.setAttribute('class','beru-only-desktop');
+    var artists = this.parentNode;
+    var artist = [];
+    for( var i = 0 ; i < artists.length ; i++ ){
+      if( songId != artists[i].getAttribute("id") ){ artist.push(); }
+    }
+    var artistName = artist.join(" & ");
+    spain.innerHTML = ' Feat. '+artistName;
+    header.appendChild(span);
     content.appendChild(header);
     item.appendChild(content);
     div.appendChild(item);
