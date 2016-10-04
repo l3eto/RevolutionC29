@@ -28,6 +28,10 @@
   margin-left:2em!important;
 }
 
+.ui.search.byartist,
+.ui.search.bysong{
+  padding: 0.3rem;
+}
 
 .low-weight{
   font-weight: 100;
@@ -314,6 +318,10 @@ a.ui.right.floated.header.beru-title:hover{
 }
 
 @media (max-width: 780px){
+  .ui.search.byartist,
+  .ui.search.bysong{
+    padding: 0rem;
+  }
   h1.ui.header {
     font-size: 1.75rem;
   }
