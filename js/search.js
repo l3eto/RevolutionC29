@@ -323,12 +323,12 @@ function setSongs( artist ){
     header.appendChild(span);
     var span = document.createElement('SPAN');
     span.setAttribute('class','beru-only-desktop low-weight');
-    var artists = this.parentNode.getElementsByTagName("artist");
-    var artistV = [];
+    var artists = this.parentNode.getElementsByTagName("artist")
+    var artist = [];
     for( var i = 0 ; i < artists.length ; i++ ){
-      if( artist.getAttribute("id") != artists[i].getAttribute("id") ){ artistV.push( artists[i].getAttribute("name") ); }
+      if( this.getAttribute("id") != artists[i].getAttribute("id") ){ artist.push( artists[i].getAttribute("name") ); }
     }
-    var artistName = artistV.join(" & ");
+    var artistName = artist.join(" & ");
     span.innerHTML = ' Feat. '+artistName;
     if( artist.length > 0 ){header.appendChild(span);}
     content.appendChild(header);
