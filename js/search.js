@@ -3,21 +3,21 @@ var audio;
 var playlist;
 var loop = false;
 var tab;
-var axx;
+
 //get search
-  function getSearchURL( type ){
-    var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
-    if(result){
-      result.shift();
-      if( result[0] == type){
-        return result[1];
-      }else{
-        return null;
-      }
+function getSearchURL( type ){
+  var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
+  if(result){
+    result.shift();
+    if( result[0] == type){
+      return result[1];
     }else{
       return null;
     }
+  }else{
+    return null;
   }
+}
 
 
 //read xml
@@ -64,11 +64,13 @@ function setContent(){
         }
       }
       if( artist.length > 0 ){
+
+        axx = artist;
+        //axx.map(item => item.title).filter((value, index, self) => self.indexOf(value) === index).length
+
         for( var i = 0 ; i < artist.length ; i++ ){
           xmlDataArtist.push( { title:artist[i].getAttribute("name") , description: artist[i].getAttribute("id") } );
         }
-        axx = xmlDataArtist;
-        console.log(xmlDataArtist);
       }
       $('.ui.search').search({
         source: xmlDataSong ,
