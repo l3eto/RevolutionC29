@@ -54,18 +54,18 @@ function setContent(){
           var songname = song[i].getAttribute("name");
           var songid = song[i].getAttribute("id");
           var artists = song[i].getElementsByTagName("artist");
-          var artist = [];
+          var artistV = [];
           for( var j = 0 ; j < artists.length ; j++ ){
-            artist.push( artists[j].getAttribute("name") );
+            artistV.push( artists[j].getAttribute("name") );
           }
-          var artistname = artist.join(" & ");
+          var artistname = artistV.join(" & ");
           var title = artistname.concat(" - ",songname);
           xmldata.push( { title: title  , description: songid } );
         }
       }
       if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++ ){
-            console.log(artist[i].getAttribute("name"));
+            console.log( artist[i].getAttribute("name") );
         }
       }
       $('.ui.search').search({
