@@ -65,7 +65,7 @@ function setContent(){
       }
       if( artist.length > 0 ){
         for( var i = 0 ; i < artist.length ; i++ ){
-            console.log(artist.getAttribute("name"));
+            console.log(artist[i].getAttribute("name"));
         }
       }
       $('.ui.search').search({
