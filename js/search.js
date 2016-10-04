@@ -3,7 +3,7 @@ var audio;
 var playlist;
 var loop = false;
 var tab;
-
+var axx;
 //get search
 function getSearchURL( type ){
   var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
@@ -65,7 +65,7 @@ function setContent(){
       }
       if( artist.length > 0 ){
 
-        axx = artist;
+        axx = xmlDoc;
         //axx.map(item => item.title).filter((value, index, self) => self.indexOf(value) === index).length
 
         for( var i = 0 ; i < artist.length ; i++ ){
