@@ -46,6 +46,7 @@ function setContent(){
     }
     var xmldata = [];
     var song = xmlDoc.getElementsByTagName("song");
+    var artist = xmlDoc.getElementsByTagName("artist");
     var error = xmlDoc.getElementsByTagName("parsererror");
     if( error.length == 0 ){
       if( song.length > 0 ){
@@ -60,6 +61,11 @@ function setContent(){
           var artistname = artist.join(" & ");
           var title = artistname.concat(" - ",songname);
           xmldata.push( { title: title  , description: songid } );
+        }
+      }
+      if( artist.length > 0 ){
+        for( var i = 0 ; i < artist.length ; i++ ){
+            console.log(artist.getAttribute("name"));
         }
       }
       $('.ui.search').search({
