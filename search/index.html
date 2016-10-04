@@ -87,16 +87,26 @@
 	<!--search-->
       <div class="ui text container">
         <div class="ui stackable two column grid">
-          <div class="column">test A</div>
-          <div class="column">test B</div>
+          <div class="column">
+            <div class="ui fluid search bysong">
+          	  <div class="ui fluid icon input">
+          	    <input class="prompt" type="text" placeholder="Buscar canción ...">
+          	    <i class="search icon"></i>
+          	  </div>
+          	  <div class="results"></div>
+          	</div>
+          </div>
+          <div class="column">
+            <div class="ui fluid search byartist">
+          	  <div class="ui fluid icon input">
+          	    <input class="prompt" type="text" placeholder="Buscar artista ...">
+          	    <i class="search icon"></i>
+          	  </div>
+          	  <div class="results"></div>
+          	</div>
+          </div>
         </div>
-        <div class="ui fluid search bysong">
-      	  <div class="ui fluid icon input">
-      	    <input class="prompt" type="text" placeholder="Buscar canción ...">
-      	    <i class="search icon"></i>
-      	  </div>
-      	  <div class="results"></div>
-      	</div>
+
       </div>
       <!--result-->
       <div class="ui text container" id="search-result" style="padding-top: 0em"></div>
