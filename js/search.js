@@ -3,7 +3,6 @@ var audio;
 var playlist;
 var loop = false;
 var tab;
-var axx;
 
 //get search
 function getSearchURL( type ){
@@ -65,16 +64,18 @@ function setContent(){
         }
       }
       if( artist.length > 0 ){
-        axx=xmlDoc;
-        $('artist', xmlDoc).each(function() {
-          var id= this.getAttribute("id");
-          var name= this.getAttribute("name");
-          if($.inArray(id, xmlDataArtist)===-1)
-            xmlDataArtist.push({title:name,description:id});
+        var temp=[];
+        $('artist', axx).each(function() {
+            var id= this.getAttribute("id");
+            var name= this.getAttribute("name");
+            if($.inArray(id, temp)===-1){
+              temp.push(id);
+              xmlDataArtist.push({ title:name,description:id });
+            }
         });
         console.log(xmlDataArtist);
       }
-      $('.ui.search').search({
+      $('.ui.search.bysong').search({
         source: xmlDataSong ,
         onSelect: function(result, response) {
           window.location.search = "?song=".concat(result.description);
