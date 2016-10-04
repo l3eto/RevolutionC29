@@ -330,7 +330,7 @@ function setSongs( artist ){
     }
     var artistName = artist.join(" & ");
     span.innerHTML = ' Feat. '+artistName;
-    header.appendChild(span);
+    if( artist.length > 0 ){header.appendChild(span);}
     content.appendChild(header);
     item.appendChild(content);
     div.appendChild(item);
