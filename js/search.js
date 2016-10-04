@@ -3,7 +3,7 @@ var audio;
 var playlist;
 var loop = false;
 var tab;
-var axx;
+
 //get search
 function getSearchURL( type ){
   var result = /^[?](.*)[=](.*)$/gmi.exec( window.location.search );
@@ -64,13 +64,12 @@ function setContent(){
         }
       }
       if( artist.length > 0 ){
-
-        axx = xmlDoc;
-        //axx.map(item => item.title).filter((value, index, self) => self.indexOf(value) === index).length
-
-        for( var i = 0 ; i < artist.length ; i++ ){
-          xmlDataArtist.push( { title:artist[i].getAttribute("name") , description: artist[i].getAttribute("id") } );
-        }
+        $('artist', xmlDoc).each(function() {
+          var id= this.getAttribute("id");
+          var name= this.getAttribute("name");
+          if($.inArray(id, xmlDataArtist)===-1){xmlDataArtist.push({title:name,description:id})};
+        });
+        console.log(xmlDataArtist);
       }
       $('.ui.search').search({
         source: xmlDataSong ,
