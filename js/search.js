@@ -322,7 +322,7 @@ function setSongs( artist ){
     span.innerHTML = songName;
     header.appendChild(span);
     var span = document.createElement('SPAN');
-    span.setAttribute('class','beru-only-desktop low-weight');
+    span.setAttribute('class','beru-only-desktop low-weight beru-text-color');
     var artists = this.parentNode.getElementsByTagName("artist")
     var artist = [];
     for( var i = 0 ; i < artists.length ; i++ ){
