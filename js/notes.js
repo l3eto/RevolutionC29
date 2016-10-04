@@ -22,6 +22,7 @@ var customLabels = {
   '6':'six',
   '8':'eight',
   '10':'ten',
+  '14':'fourteen',
   '16':'sixteen'
 
 }
