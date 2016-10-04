@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
+    <header>Retiro C29</header>
+     <date>7-9 Octubre</date>
+    <info>Recordar que este sábado no tendremos Revolution pues estaremos en el retiro de la iglesia, si no estas apuntado, aun estás a tiempo.</info>
+    <alert>¡No faltes!</alert>
+    <location>Plaza Catalunya</location>
+    <hour>Todo el día</hour>
+    <src>../images/uploads/14517426_1839919182907422_3336536241514757048_n.jpg</src>
+    <instagram>https://www.instagram.com/p/BLIZb6-gPld/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1839919182907422/</facebook>
+  </event>
+  <event>
     <header>Nos Vemos En Plaza Catalunya</header>
      <date>Sábado 24 Septiembre</date>
     <info>Este finde en Barcelona se celebra La Mercè y porque no aprovecharlo para compartir de un tiempo juntos.</info>
