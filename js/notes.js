@@ -293,6 +293,7 @@ var getAllSongs = function(){
   var checkResult = setInterval(function(){
     if( result == true ){
       clearInterval(checkResult);
+      console.log(xmlData);
       return xmlData;
     }
   }, 200);
