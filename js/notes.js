@@ -290,9 +290,12 @@ var getAllSongs = function(){
     result = true;
     console.log(result);
   });
-  /*while( result == false ){
-    console.log(result);
-  }*/
+  var refreshIntervalId = setInterval(function(){
+    console.log( result );
+    if( result == true ){
+      clearInterval(refreshIntervalId);
+    }
+  }, 1000);
   console.log(result);
   //return xmlData;
 }
