@@ -270,8 +270,7 @@ var getAllSongs = function(){
       xmlDoc.loadXML(data);
     }
     if( xmlDoc.getElementsByTagName("parsererror").length > 0 ){
-      return xmlDoc.getElementsByTagName("parsererror")[0].innerText;
-      console.log( xmlData );
+      //return xmlDoc.getElementsByTagName("parsererror")[0].innerText;
     }else{
       var song = xmlDoc.getElementsByTagName("song");
       if( song.length > 0 ){
@@ -285,10 +284,11 @@ var getAllSongs = function(){
         }
       }
       console.log( xmlData );
-      return xmlData;
+      //return xmlData;
     }
+    console.log( xmlData );
+    return xmlData;
   });
-  console.log( xmlData )
 }
 
 //get content
