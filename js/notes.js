@@ -260,6 +260,7 @@ function readXML(file, callback) {
 //serach inputs
 var getAllSongs = function(){
   var xmlData = [];
+  var result = false;
   readXML("../uploads/xml/songs.xml", function(data){
     if(window.DOMParser){
       parser = new DOMParser();
@@ -270,7 +271,8 @@ var getAllSongs = function(){
       xmlDoc.loadXML(data);
     }
     if( xmlDoc.getElementsByTagName("parsererror").length > 0 ){
-      //return xmlDoc.getElementsByTagName("parsererror")[0].innerText;
+      result = xmlDoc.getElementsByTagName("parsererror")[0].innerText;
+      result = true;
     }else{
       var song = xmlDoc.getElementsByTagName("song");
       if( song.length > 0 ){
@@ -283,12 +285,14 @@ var getAllSongs = function(){
           xmlData.push( { title: a.join( " & " ).concat( " - ", song[i].getAttribute("name") ) , description: song[i].getAttribute("id") } );
         }
       }
-      console.log( xmlData );
-      //return xmlData;
     }
-    console.log( xmlData );
-    return xmlData;
+    result = true;
   });
+  while( result == false ){
+    console.log(result);
+  }
+  console.log(result);
+  //return xmlData;
 }
 
 //get content
