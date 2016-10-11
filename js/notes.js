@@ -271,6 +271,7 @@ var getAllSongs = function(){
     }
     if( xmlDoc.getElementsByTagName("parsererror").length > 0 ){
       return xmlDoc.getElementsByTagName("parsererror")[0].innerText;
+      console.log( xmlData );
     }else{
       var song = xmlDoc.getElementsByTagName("song");
       if( song.length > 0 ){
@@ -283,9 +284,11 @@ var getAllSongs = function(){
           xmlData.push( { title: a.join( " & " ).concat( " - ", song[i].getAttribute("name") ) , description: song[i].getAttribute("id") } );
         }
       }
+      console.log( xmlData );
       return xmlData;
     }
   });
+  console.log( xmlData )
 }
 
 //get content
