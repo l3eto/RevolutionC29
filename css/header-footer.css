@@ -16,6 +16,9 @@
   color: white;
 }
 
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+    padding-top: 0.6em;
+}
 
 .four.wide.column.mobile-container{
   height: 50px;
