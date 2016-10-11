@@ -271,9 +271,10 @@ var getAllSongs = function(){
       xmlDoc.loadXML(data);
     }
     if( xmlDoc.getElementsByTagName("parsererror").length > 0 ){
-      result = xmlDoc.getElementsByTagName("parsererror")[0].innerText;
+      for( var j = 0 ; j < xmlDoc.getElementsByTagName("parsererror").length ; j++ ){
+        console.log( xmlDoc.getElementsByTagName("parsererror")[i].innerText );
+      }
       result = true;
-      console.log(result);
     }else{
       var song = xmlDoc.getElementsByTagName("song");
       if( song.length > 0 ){
@@ -288,16 +289,14 @@ var getAllSongs = function(){
       }
     }
     result = true;
-    console.log(result);
   });
-  var refreshIntervalId = setInterval(function(){
-    console.log( result );
+  var checkResult = setInterval(function(){
     if( result == true ){
-      clearInterval(refreshIntervalId);
+      clearInterval(checkResult);
+      return xmlData;
     }
-  }, 1000);
-  console.log(result);
-  //return xmlData;
+  }, 200);
+
 }
 
 //get content
