@@ -257,6 +257,37 @@ function readXML(file, callback) {
   rawFile.send(null);
 };
 
+//serach inputs
+var getAllSongs = function(){
+  var xmlData = [];
+  readXML("../uploads/xml/songs.xml", function(data){
+    if(window.DOMParser){
+      parser = new DOMParser();
+      xmlDoc = parser.parseFromString(data, "text/xml");
+    }else{
+      xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.loadXML(data);
+    }
+    if( xmlDoc.getElementsByTagName("parsererror").length > 0 ){
+      return xmlDoc.getElementsByTagName("parsererror")[0].innerText;
+    }else{
+      var song = xmlDoc.getElementsByTagName("song");
+      if( song.length > 0 ){
+        for( var i = 0 ; i < song.length ; i++ ){
+          var a = [];
+          var artists = song[i].getElementsByTagName("artist");
+          for( var j = 0 ; j < artists.length ; j++ ){
+            a.push( artists[j].getAttribute("name") );
+          }
+          xmlData.push( { title: a.join( " & " ).concat( " - ", song[i].getAttribute("name") , description: song[i].getAttribute("id") } );
+        }
+      }
+      return xmlData;
+    }
+  });
+}
+
 //get content
 function setContent(){
   readXML("../uploads/xml/songs.xml", function(data){
