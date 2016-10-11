@@ -245,16 +245,18 @@ function getAllIds(tag){
 }
 
 //read xml
-function readXML(file, callback) {
+var readXML = function(file, callback) {
   var rawFile = new XMLHttpRequest();
   rawFile.overrideMimeType("application/xml");
   rawFile.open("GET", file, true);
   rawFile.onreadystatechange = function() {
     if (rawFile.readyState === 4 && rawFile.status == "200") {
+      console.log('ok2');
       callback(rawFile.responseText);
     }
   }
   rawFile.send(null);
+  console.log('ok1');
 };
 
 //serach inputs
@@ -262,6 +264,7 @@ var getAllSongs = function(){
   var xmlData = [];
   var result = false;
   readXML("../uploads/xml/songs.xml", function(data){
+    console.log('ok23');
     if(window.DOMParser){
       parser = new DOMParser();
       xmlDoc = parser.parseFromString(data, "text/xml");
