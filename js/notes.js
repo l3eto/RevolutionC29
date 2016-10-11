@@ -273,6 +273,7 @@ var getAllSongs = function(){
     if( xmlDoc.getElementsByTagName("parsererror").length > 0 ){
       result = xmlDoc.getElementsByTagName("parsererror")[0].innerText;
       result = true;
+      console.log(result);
     }else{
       var song = xmlDoc.getElementsByTagName("song");
       if( song.length > 0 ){
@@ -287,10 +288,11 @@ var getAllSongs = function(){
       }
     }
     result = true;
-  });
-  while( result == false ){
     console.log(result);
-  }
+  });
+  /*while( result == false ){
+    console.log(result);
+  }*/
   console.log(result);
   //return xmlData;
 }
