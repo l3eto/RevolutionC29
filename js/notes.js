@@ -280,7 +280,7 @@ var getAllSongs = function(){
           for( var j = 0 ; j < artists.length ; j++ ){
             a.push( artists[j].getAttribute("name") );
           }
-          xmlData.push( { title: a.join( " & " ).concat( " - ", song[i].getAttribute("name") , description: song[i].getAttribute("id") } );
+          xmlData.push( { title: a.join( " & " ).concat( " - ", song[i].getAttribute("name") ) , description: song[i].getAttribute("id") } );
         }
       }
       return xmlData;
