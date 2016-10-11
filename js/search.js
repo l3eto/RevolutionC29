@@ -3,14 +3,14 @@ var audio;
 var playlist;
 var loop = false;
 var tab;
-
+var a;
 $( document ).ready(function(){
   //get acordes or lyrics
   tab = localStorage.getItem("tab");
   if( tab == null ){localStorage.setItem("tab","Letra");tab = "Letra";}
   //set songs on search
   setContent();
-  console.log( getAllSongs() );
+  a = getAllSongs();
   //read if some song is on search url
   var searchingsong = getSearchURL('song');
   //read if some artist is on search url
