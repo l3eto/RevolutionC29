@@ -10,7 +10,6 @@ $( document ).ready(function(){
   if( tab == null ){localStorage.setItem("tab","Letra");tab = "Letra";}
   //set songs on search
   setContent();
-  a = getAllSongs();
   //read if some song is on search url
   var searchingsong = getSearchURL('song');
   //read if some artist is on search url
