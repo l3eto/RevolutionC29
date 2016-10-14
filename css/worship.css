@@ -1,6 +1,6 @@
 .hidden-segment{
-  background: transparent;
-  border: 0px;
-  padding: 0px;
-  padding-top: 20px;
+  background: transparent !important;
+  border: 0px !important;
+  padding: 0px !important;
+  padding-top: 20px !important;
 }
