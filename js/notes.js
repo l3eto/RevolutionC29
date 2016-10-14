@@ -320,7 +320,7 @@ function setContent(){
 }
 
 
-var setLastSongs = function( songs , numSongs ){
+var getLastSongs = function( songs , numSongs ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui selection list");
   for( var i = 0 ; i < numSongs ; i++ ){
@@ -358,11 +358,11 @@ var setLastSongs = function( songs , numSongs ){
     item.appendChild(content);
     div.appendChild(item);
   }
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set title for no searchingartist
-var setTitleNoSearching = function(iconname,title){
+var getTitleNoSearching = function(iconname,title){
   var h1 = document.createElement('H1');
   h1.setAttribute("class","ui header");
   //author img
@@ -375,7 +375,7 @@ var setTitleNoSearching = function(iconname,title){
   span.setAttribute("style","margin-left: 75px;");
   span.innerHTML = title;
   h1.appendChild(span);
-  document.getElementById('search-result').appendChild( h1 );
+  return h1;
 }
 
 //set artitsTitle
@@ -442,11 +442,11 @@ var getArtistTitle = function( name , id ){
 }
 
 //set divition
-var setDivition = function(){
+var getDivition = function(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui divider");
   div.setAttribute("style","padding-bottom:14px;");
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set Songs
@@ -493,7 +493,7 @@ var getSongs = function( artist ){
 }
 
 //set tittle
-var setTitle = function( song , imgsrc , artistid ){
+var getTitle = function( song , imgsrc , artistid ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   //title container
@@ -638,11 +638,11 @@ var setTitle = function( song , imgsrc , artistid ){
   div2.appendChild(buttons);
   hiddendiv.appendChild(div2);
   div.appendChild(hiddendiv);
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set audio
-var setAudio = function( title ){
+var getAudio = function( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid four item menu effect-revolution");
   //pause
@@ -677,11 +677,11 @@ var setAudio = function( title ){
   icon.setAttribute("class","icon repeat");
   item.appendChild(icon);
   div.appendChild(item);
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set menu
-var setMenu = function(){
+var getMenu = function(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid two item tabs menu");
   var item = document.createElement('A');
@@ -698,11 +698,11 @@ var setMenu = function(){
   item.setAttribute("onclick","localStorage.setItem('tab','Acordes');");
   item.innerHTML="Acordes";
   div.appendChild(item);
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set letras
-var setLetras = function( song , orden ){
+var getLetras = function( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui tab");
   if( tab == "Letra") div.setAttribute("class","ui active tab");
@@ -729,11 +729,11 @@ var setLetras = function( song , orden ){
   }
   container.appendChild(songcontainer);
   div.appendChild(container);
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set acordes
-var setAcordes = function( song , orden ){
+var getAcordes = function( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui tab");
   if( tab == "Acordes") div.setAttribute("class","ui active tab");
@@ -805,5 +805,5 @@ var setAcordes = function( song , orden ){
   songcontainer.appendChild(grid);
   container.appendChild(songcontainer);
   div.appendChild(container);
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
