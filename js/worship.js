@@ -1,4 +1,3 @@
-
 $( document ).ready(function(){
-  $('.menu .item').tab();
+  $('#tab-songs.menu .item').tab();
 });
