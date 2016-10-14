@@ -49,11 +49,11 @@ $( document ).ready(function(){
         audio.addEventListener('ended', function() {
           if( loop == true){this.currentTime = 0;this.play();}else{this.currentTime = 0;this.pause();}
         }, false);
-        setTitle(song,imgsrc,artistId);
-        setMenu();
-        setAudio( title );
-        setLetras(song,orden);
-        setAcordes(song,orden);
+        resultDiv.appendChild( getTitle(song,imgsrc,artistId) );
+        resultDiv.appendChild( getMenu() );
+        resultDiv.appendChild( getAudio( title ) );
+        resultDiv.appendChild( getLetras(song,orden) );
+        resultDiv.appendChild( getAcordes(song,orden) );
         $('.menu .item').tab();
         $('.beru-note').click(function(){ shownote( this ); });
       });
@@ -75,7 +75,7 @@ $( document ).ready(function(){
         playlist = new Playlist(artist);
         //set title
         resultDiv.appendChild( getArtistTitle(artistName,searchingartist) );
-        setDivition();
+        resultDiv.appendChild( getDivition() );
         resultDiv.appendChild( getSongs(artist) );
       });
     }else{
@@ -92,9 +92,9 @@ $( document ).ready(function(){
         }
         //get 5 latest songs
         var songs = $( xmlDoc ).find('song');
-        setTitleNoSearching("thumbs up","5 Últimas Canciones");
-        setDivition();
-        setLastSongs( songs , 5 );
+        resultDiv.appendChild( getTitleNoSearching("thumbs up","5 Últimas Canciones") );
+        resultDiv.appendChild( getDivition() );
+        resultDiv.appendChild( getLastSongs( songs , 5 ) );
       });
     }
   }
