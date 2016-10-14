@@ -41,7 +41,6 @@ $( document ).ready(function(){
       }, false);
       div.appendChild( getTitle(song,imgsrc,artistId) );
       div.appendChild( getMenu() );
-      div.appendChild( getAudio( title ) );
       div.appendChild( getLetras(song,orden) );
       div.appendChild( getAcordes(song,orden) );
       $('#searchSong.menu .item').tab();
