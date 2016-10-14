@@ -379,7 +379,7 @@ var setTitleNoSearching = function(iconname,title){
 }
 
 //set artitsTitle
-function getArtistTitle( name , id ){
+var getArtistTitle = function( name , id ){
   var h1 = document.createElement('H1');
   h1.setAttribute("class","ui header");
   //author img
@@ -442,7 +442,7 @@ function getArtistTitle( name , id ){
 }
 
 //set divition
-function setDivition(){
+var setDivition = function(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui divider");
   div.setAttribute("style","padding-bottom:14px;");
@@ -450,7 +450,7 @@ function setDivition(){
 }
 
 //set Songs
-function getSongs( artist ){
+var getSongs = function( artist ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui selection list");
   $( artist ).each(function(){
@@ -493,7 +493,7 @@ function getSongs( artist ){
 }
 
 //set tittle
-function setTitle( song , imgsrc , artistid ){
+var setTitle = function( song , imgsrc , artistid ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui clearing segment");
   //title container
@@ -642,7 +642,7 @@ function setTitle( song , imgsrc , artistid ){
 }
 
 //set audio
-function setAudio( title ){
+var setAudio = function( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid four item menu effect-revolution");
   //pause
@@ -681,7 +681,7 @@ function setAudio( title ){
 }
 
 //set menu
-function setMenu(){
+var setMenu = function(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid two item tabs menu");
   var item = document.createElement('A');
@@ -702,7 +702,7 @@ function setMenu(){
 }
 
 //set letras
-function setLetras( song , orden ){
+var setLetras = function( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui tab");
   if( tab == "Letra") div.setAttribute("class","ui active tab");
@@ -733,7 +733,7 @@ function setLetras( song , orden ){
 }
 
 //set acordes
-function setAcordes( song , orden ){
+var setAcordes = function( song , orden ){
   var div = document.createElement('DIV')  ;
   div.setAttribute("class","ui tab");
   if( tab == "Acordes") div.setAttribute("class","ui active tab");
