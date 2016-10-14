@@ -54,7 +54,7 @@ $( document ).ready(function(){
         resultDiv.appendChild( getAudio( title ) );
         resultDiv.appendChild( getLetras(song,orden) );
         resultDiv.appendChild( getAcordes(song,orden) );
-        $('.menu .item').tab();
+        $('#searchSong.menu .item').tab();
         $('.beru-note').click(function(){ shownote( this ); });
       });
     }else if( searchingartist ){
