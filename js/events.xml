@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <events>
   <event>
+    <header>Me Rindo</header>
+    <date>Sábado 15 Octubre</date>
+    <info>Este sábado nos volvemos a ver en el local de sagrera para compartir un tiempo genial y con una tematica italiana.</info>
+    <alert>¡Te esperamos!</alert>
+    <location>Carrer Pinar del Río 5, bis.</location>
+    <hour>19h.</hour>
+    <src>../images/uploads/14517426_1839919182907422_3336536241514757048_n.jpg</src>
+    <instagram>https://www.instagram.com/p/BLjasnMgvSE/</instagram>
+    <facebook>https://www.facebook.com/revolutionc29/photos/a.1424212441144767.1073741828.1424015387831139/1845190779046929/</facebook>
+  </event>
+  <event>
     <header>Retiro C29</header>
-     <date>7-9 Octubre</date>
+    <date>7-9 Octubre</date>
     <info>Recordar que este sábado no tendremos Revolution pues estaremos en el retiro de la iglesia, si no estas apuntado, aun estás a tiempo.</info>
     <alert>¡No faltes!</alert>
-    <location>Plaza Catalunya</location>
+    <location>Hotel Plaka Park Salou</location>
     <hour>Todo el día</hour>
     <src>../images/uploads/14517426_1839919182907422_3336536241514757048_n.jpg</src>
     <instagram>https://www.instagram.com/p/BLIZb6-gPld/</instagram>
