@@ -12,7 +12,7 @@ $( document ).ready(function(){
       xmlDoc.loadXML(data);
     }
     for( var k = 0 ; k < songsList.length ; k++ ){
-      var div = document.getElementById(k+'Song');
+      var div = document.getElementById( (k+1).toString().concat('Song') );
       //get song
       var song = $( xmlDoc ).find('song[id="'+songsList[k]+'"]').get(0);
       //get values
