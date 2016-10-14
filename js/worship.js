@@ -1,4 +1,11 @@
+//global var
+var tab;
+
 $( document ).ready(function(){
+  //get acordes or lyrics
+  tab = localStorage.getItem("tab");
+  if( tab == null ){localStorage.setItem("tab","Letra");tab = "Letra";}
+  //tab for songs
   $('#tab-songs.menu .item').tab();
   var songsList = ['8xyb42pswv','w1e2spqxz9','wx2ka9w3jn'];
   //search especific artist
