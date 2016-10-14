@@ -7,7 +7,7 @@ $( document ).ready(function(){
   if( tab == null ){localStorage.setItem("tab","Letra");tab = "Letra";}
   //tab for songs
   $('#tab-songs.menu .item').tab();
-  var songsList = ['8xyb42pswv','w1e2spqxz9','wx2ka9w3jn'];
+  var songsList = ['8xyb42pswv','w1e2spqxz9','c82jd82u3s'];
   //search especific artist
   readXML("../uploads/xml/songs.xml", function(data){
     if (window.DOMParser){
