@@ -379,7 +379,7 @@ var setTitleNoSearching = function(iconname,title){
 }
 
 //set artitsTitle
-function setArtistTitle( name , id ){
+function getArtistTitle( name , id ){
   var h1 = document.createElement('H1');
   h1.setAttribute("class","ui header");
   //author img
@@ -438,7 +438,7 @@ function setArtistTitle( name , id ){
   music.appendChild(item);
   segment.appendChild(music);
   h1.appendChild(segment);
-  document.getElementById('search-result').appendChild( h1 );
+  return h1;
 }
 
 //set divition
@@ -450,7 +450,7 @@ function setDivition(){
 }
 
 //set Songs
-function setSongs( artist ){
+function getSongs( artist ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui selection list");
   $( artist ).each(function(){
@@ -489,7 +489,7 @@ function setSongs( artist ){
     item.appendChild(content);
     div.appendChild(item);
   });
-  document.getElementById('search-result').appendChild( div );
+  return div;
 }
 
 //set tittle
