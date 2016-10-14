@@ -684,6 +684,7 @@ var getAudio = function( title ){
 var getMenu = function(){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid two item tabs menu");
+  div.setAttribute("id","searchSong");
   var item = document.createElement('A');
   item.setAttribute("class","item");
   if( tab == "Letra") item.setAttribute("class","item active");
