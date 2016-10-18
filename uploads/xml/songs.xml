@@ -1,5 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
+  <song name="Gracia Incomparable" id="4iawfxn7b9" order="intro-verse1-verse2-prechorus-chorus-verse3-verse4-prechorus-chorus-intro-bridge-chorus">
+    <artists>
+      <artist name="Evan Craft" id="om8wnxy28d"></artist>
+      <artist name="Eva Luna" id="u7hb79cnmi"></artist>
+    </artists>
+    <chords>
+      <chord name="1">
+        <p><a temp="4" note="D"></a><a temp="4" note="G"></a><a temp="Bm" note="E"></a><a temp="4" note="G"></a></p>
+      </chord>
+      <chord name="2">
+        <p><a temp="8" note="D"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+        <p><a temp="8" note="A"></a><a temp="8" note="G"></a></p>
+      </chord>
+      <chord name="3">
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
+      </chord>
+      <chord name="4">
+        <p><a temp="8" note="D"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+        <p><a temp="8" note="Bm"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="D"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+        <p><a temp="8" note="Bm"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="D"></a><a temp="8" note="G"></a></p>
+        <p><a temp="8" note="G"></a><a temp="8" note="Bm"></a></p>
+        <p><a temp="8" note="Bm"></a><a temp="8" note="G"></a></p>
+      </chord>
+      <chord name="5">
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="4" note="G"></a><a temp="4" note="D"></a></p>
+        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
+      </chord>
+    </chords>
+    <lyrics>
+      <lyric name="intro" chord="1">
+      </lyric>
+      <lyric name="verse1" chord="2">
+        <p text="Dime, Quiero escuchar tu voz"></p>
+        <p text="hablarme de nuestro amor"></p>
+        <p text="cada latido de tu corazón"></p>
+      </lyric>
+      <lyric name="verse2" chord="2">
+        <p text="Dime, Secretos del universo"></p>
+        <p text="la infinidad y misterio"></p>
+        <p text="que cada día es nuevo"></p>
+      </lyric>
+      <lyric name="verse3" chord="2">
+        <p text="Dime, Como amar como un niño"></p>
+        <p text="inocente y sin prejuicio"></p>
+        <p text="y volver a soñar contigo"></p>
+      </lyric>
+      <lyric name="verse4" chord="2">
+        <p text="Dime, Al verte cara a cara"></p>
+        <p text="me quedaré sin palabras?"></p>
+        <p text="o perderme en tu mirada"></p>
+      </lyric>
+      <lyric name="prechorus" chord="3">
+        <p text="Conoces cada parte de mi alma"></p>
+        <p text="aún así me dices que me amas"></p>
+      </lyric>
+      <lyric name="chorus" chord="4">
+        <p text="Y Tú, Dios incomparable"></p>
+        <p text="Espíritu, Hijo, Padre"></p>
+        <p text="mi única esperanza"></p>
+        <p text="y yo, no merezco nada"></p>
+        <p text="por eso se llama gracia"></p>
+        <p text="sé que no es justo"></p>
+        <p text="tú me amas, oh oh oh"></p>
+        <p text="oh oh oh"></p>
+        <p text="oh oh oh"></p>
+      </lyric>
+      <lyric name="bridge" chord="5">
+        <p text="Conoces cada parte de mi alma"></p>
+        <p text="aún así me dices que me amas"></p>
+        <p text="¿cuán grande y perfecto, e infinito es tu amor?"></p>
+        <p text="que tú moriste y me diste salvación"></p>
+      </lyric>
+    </lyrics>
+  </song>
   <song name="Alaba" id="42durw9udi" order="verse1-verse2-chorus-chorus1-chorus2-chorus3-verse3-verse4-chorus-chorus1-chorus2-chorus3-chorus-chorus1-chorus2-chorus3">
     <artists>
       <artist name="GeneraSion" id="sgakfswcdi"></artist>
