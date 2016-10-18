@@ -97,9 +97,15 @@ Playlist.prototype.setSongs = function( artist ){
 
 Playlist.prototype.songEnded = function(){
   this.stopSong();
-  if( this._randomSong == true ) this.randomIndex();
-  if( this._randomSong == false ) this.increaseIndex();
-  this.playSong();
+  console.log(this);
+  if( this._randomSong == true ){
+    this.randomIndex();
+    this.playSong();
+  }
+  if( this._randomSong == false ){
+    this.increaseIndex();
+    this.playSong();
+  }
 }
 
 Playlist.prototype.setIndex = function( index ){
