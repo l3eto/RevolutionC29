@@ -7,7 +7,7 @@
     </artists>
     <chords>
       <chord name="1">
-        <p><a temp="4" note="D"></a><a temp="4" note="G"></a><a temp="Bm" note="E"></a><a temp="4" note="G"></a></p>
+        <p><a temp="4" note="D"></a><a temp="4" note="G"></a><a temp="4" note="Bm"></a><a temp="4" note="G"></a></p>
       </chord>
       <chord name="2">
         <p><a temp="8" note="D"></a><a temp="8" note="G"></a></p>
