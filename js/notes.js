@@ -645,12 +645,12 @@ var getTitle = function( song , imgsrc , artistid ){
 var getAudio = function( title ){
   var div = document.createElement('DIV');
   div.setAttribute("class","ui fluid four item menu effect-revolution");
-  //pause
+  //stop
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("onclick","audio.pause();");
+  item.setAttribute("onclick","audio.pause();audio.currentTime = 0;;");
   var icon = document.createElement('I');
-  icon.setAttribute("class","icon pause");
+  icon.setAttribute("class","icon stop");
   item.appendChild(icon);
   div.appendChild(item);
   //play
@@ -661,12 +661,12 @@ var getAudio = function( title ){
   icon.setAttribute("class","icon play");
   item.appendChild(icon);
   div.appendChild(item);
-  //stop
+  //pause
   var item = document.createElement('DIV');
   item.setAttribute("class","item effect-revolution");
-  item.setAttribute("onclick","audio.pause();audio.currentTime = 0;;");
+  item.setAttribute("onclick","audio.pause();");
   var icon = document.createElement('I');
-  icon.setAttribute("class","icon stop");
+  icon.setAttribute("class","icon pause");
   item.appendChild(icon);
   div.appendChild(item);
   //repeat
