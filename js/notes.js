@@ -795,7 +795,6 @@ var getAcordes = function( song , orden ){
         }
         //add lyrics if exists
         if( lyric.getElementsByTagName("p").length > 0 ){
-          console.log( lyric );
           var divGrid = document.createElement('DIV');
           divGrid.setAttribute("class","sixteen wide column");
           divGrid.innerHTML = lyric.getElementsByTagName("p")[j].getAttribute("text");
