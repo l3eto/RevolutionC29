@@ -97,12 +97,11 @@ Playlist.prototype.setSongs = function( artist ){
 
 Playlist.prototype.songEnded = function(){
   this.stopSong();
-  console.log(this);
-  if( this._randomSong == true ){
+  if( this._randomSong === true ){
     this.randomIndex();
     this.playSong();
   }
-  if( this._randomSong == false ){
+  if( this._randomSong === false ){
     this.increaseIndex();
     this.playSong();
   }
@@ -190,8 +189,12 @@ Playlist.prototype.randomIndex = function(){
   var rnd = Math.floor( Math.random()*this._songs.length );
   if( this._index == rnd ){
     var rnd2 = Math.floor( Math.random()*2 );
-    if( rnd2 == 0) this.increaseIndex();
-    if( rnd2 == 1) this.decreaseIndex();
+    if( rnd2 == 0){
+      this.increaseIndex();
+    }
+    if( rnd2 == 1){
+      this.decreaseIndex();
+    }
   }else{
     this._index = rnd;
   }
