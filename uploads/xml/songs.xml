@@ -32,7 +32,7 @@
       <chord name="5">
         <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
         <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
-        <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="4" note="G"></a><a temp="4" note="D"></a></p>
+        <p><a temp="4" note="A"></a><a temp="4" note="D"></a><a temp="4" note="G"></a><a temp="4" note="D"></a></p>
         <p><a temp="6" note="A"></a><a temp="4" note="D"></a><a temp="6" note="G"></a></p>
       </chord>
     </chords>
