@@ -187,6 +187,7 @@ Playlist.prototype.increaseIndex = function(){
 
 Playlist.prototype.randomIndex = function(){
   var rnd = Math.floor( Math.random()*this._songs.length );
+  console.log(rnd);
   if( this._index == rnd ){
     var rnd2 = Math.floor( Math.random()*2 );
     if( rnd2 == 0){
@@ -198,6 +199,7 @@ Playlist.prototype.randomIndex = function(){
   }else{
     this._index = rnd;
   }
+  console.log(this);
 }
 
 Playlist.prototype.backwardSong = function(){
