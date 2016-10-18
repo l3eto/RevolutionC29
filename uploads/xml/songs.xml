@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <songs>
-  <song name="Exaltado" id="2kmc6p3nmi" order="intro-verse1-verse2-prechorus-postchorus-verse1-verse2-prechorus-chorus-chorus-prechorus-verse3-verse4-prechorus-chorus-chorus">
+  <song name="Exaltado" id="2kmc6p3nmi" order="intro-verse1-verse2-prechorus-postchorus-verse1-verse2-prechorus-chorus-chorus-prechorus-verse3-verse4-prechorus-chorus-chorus-ending">
     <artists>
       <artist name="Yonathan Pino" id="woyy0evcxr"></artist>
     </artists>
@@ -75,6 +75,8 @@
         <p text="exaltado"></p>
         <p text="Mi Dios, tu nombre es exaltado"></p>
         <p text="exaltado"></p>
+      </lyric>
+      <lyric name="ending" chord="7">
       </lyric>
     </lyrics>
   </song>
