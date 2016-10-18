@@ -98,10 +98,12 @@ Playlist.prototype.setSongs = function( artist ){
 Playlist.prototype.songEnded = function(){
   this.stopSong();
   if( this._randomSong === true ){
+    console.log('ok');
     this.randomIndex();
     this.playSong();
   }
   if( this._randomSong === false ){
+    console.log('ok2');
     this.increaseIndex();
     this.playSong();
   }
